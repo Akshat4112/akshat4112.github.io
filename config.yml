@@ -26,6 +26,9 @@ menu:
 #    - name: Search
 #      url: search/
 #      weight: 10
+    - name: Talks
+      url: talks/
+      weight: 10
     - name: About
       url: about/
       weight: 15
