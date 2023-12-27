@@ -1,7 +1,7 @@
 baseURL: "https://akshat4112.github.io/"
 title: Akshat Gupta
 #paginate: 5
-theme: PaperMod
+#theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
