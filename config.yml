@@ -29,12 +29,15 @@ menu:
     - name: Talks
       url: talks/
       weight: 10
+    - name: Events
+      url: events/
+      weight: 15
     - name: About
       url: about/
-      weight: 15
+      weight: 20
     - name: CV
       url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
-      weight: 20
+      weight: 25
 
 env: production
 
