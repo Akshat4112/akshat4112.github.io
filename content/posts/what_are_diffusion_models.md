@@ -5,7 +5,7 @@ dateString: December 2023
 draft: false
 tags: ["generative-ai", "deep-learning", "diffusion-models"]
 weight: 102
-katex: true
+math: true
 #markup: 'mmark'
 #cover:
 #    image: "/posts/diffusion_models_ho.png"
