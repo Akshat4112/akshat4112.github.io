@@ -4,9 +4,9 @@ title: "What are Diffusion Models?"
 dateString: December 2023
 draft: false
 tags: ["generative-ai", "deep-learning", "diffusion-models"]
-weight: 101
+weight: 102
 katex: true
-markup: 'mmark'
+#markup: 'mmark'
 #cover:
 #    image: "/posts/diffusion_models_ho.png"
 ---
