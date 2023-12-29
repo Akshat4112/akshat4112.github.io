@@ -17,9 +17,9 @@ minify:
 
 menu:
   main:
-#    - name: Posts
-#      url: posts
-#      weight: 5
+    - name: Posts
+      url: posts
+      weight: 5
     - name: Publications
       url: publications/
       weight: 10
@@ -28,13 +28,13 @@ menu:
 #      weight: 10
     - name: Talks
       url: talks/
-      weight: 10
+      weight: 15
     - name: Events
       url: events/
-      weight: 15
+      weight: 20
     - name: About
       url: about/
-      weight: 20
+      weight: 25
     - name: CV
       url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
       weight: 25

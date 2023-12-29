@@ -6,7 +6,7 @@ tags: ["machine-learning", "workshop", "natural-language-processing"]
 weight: 102
 venue: 
 cover:
-    image: "/talks/WhatsApp Image 2020-09-08 at 7.35.40 AM.jpeg"
+    image: "/talks/p1poornimauni.jpeg"
 ---
 
 **Date of Event:** May 05, 2020  
