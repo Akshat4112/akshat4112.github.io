@@ -3,6 +3,7 @@ title: Akshat Gupta
 #paginate: 5
 theme: PaperMod
 googleAnalytics: "G-8YC2E5MW2M"
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -13,7 +14,7 @@ pygmentsUseClasses: true
 
 minify:
   disableXML: true
-  # minifyOutput: true
+  minifyOutput: true
 
 menu:
   main:
@@ -39,9 +40,11 @@ menu:
       url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
       weight: 25
 
-env: production
-
 params:
+  math: true
+  comments: true
+  env: production
+
   profileMode:
     enabled: true
     title: "Akshat Gupta" # optional default will be site title
@@ -51,7 +54,18 @@ params:
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
 
-  math: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
 #Params:
 #  ShowReadingTime: true
 #  ShowPostNavLinks: true
