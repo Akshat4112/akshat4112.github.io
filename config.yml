@@ -50,7 +50,8 @@ params:
     imageTitle: "Akshat Gupta" # optional
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
-    math: true
+
+  math: true
 #Params:
 #  ShowReadingTime: true
 #  ShowPostNavLinks: true
