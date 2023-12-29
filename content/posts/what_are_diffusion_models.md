@@ -26,7 +26,7 @@ Image Source: [Ho et al.](https://arxiv.org/abs/2006.11239)
 
 This corruption is executed through the **forward diffusion process**. It is characterized by the iterative addition of small quantities of Gaussian noise to the data \\(x_0\\) over \\(T\\) discrete time steps. This process is mathematically expressed as:
 
-$$x_t = \sqrt{1 - \beta_t} \times x_{t-1} + \sqrt{\beta_t} \times \epsilon$$
+\\[ x_t = \\sqrt{1 - \\beta_t} \\times x_{t-1} + \\sqrt{\\beta_t} \\times \\epsilon \\]
 
 In this equation, \\(x_t\\) represents the partially corrupted data at time \\(t\\), \\(\\beta_t\\) is the noise parameter that controls variance, and \\(\\epsilon\\) signifies Gaussian noise. As \\(t\\) increases, \\(\\beta_t\\) is progressively annealed from a lower to higher value, methodically erasing the structure in \\(x_0\\) until it becomes unrecognizable noise \\(x_T\\).
 
