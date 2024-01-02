@@ -1,7 +1,7 @@
 ---
 title: "What are Diffusion Models?"
 #description: ""
-dateString: December 2023
+dateString: date = 2023-22-02T21:27:57+01:00
 draft: false
 tags: ["generative-ai", "deep-learning", "diffusion-models"]
 weight: 102
