@@ -17,6 +17,14 @@ Background and history
 ------
 Previously I was an undergrad at APJ Abdul Kalam Technical University studying computers and maths. my major project was on "Automatic Catalogue Tagging using Deep Learning". Other minor projects include an online examination system, school ERP, seawater quality monitoring system, and, online certificate generator. I'm from Agra and currently living in Stuttgart.
 
-Other works
+Other Works
 ------
-Intel software innovator, member of the board of studies at OP Jindal University, author with Packt publications, and Kaggle 3x expert. 
+- Intel Software Innovator
+- AAAI Reviewer 
+- Member of the Board of Studies at OP Jindal University
+- Author with Packt publications
+- Kaggle 3x expert, Top 1% of 300k+ Kaggle users
+
+Interests
+------
+- Table Tennis, Chess, Financial Markets, Quantum Physics
