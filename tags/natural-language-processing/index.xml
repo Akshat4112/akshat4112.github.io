@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Natural-Language-Processing on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/natural-language-processing/</link>
+    <description>Recent content in Natural-Language-Processing on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://akshat4112.github.io/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Role of Natural Language Processing in Healthcare</title>
+      <link>https://akshat4112.github.io/talks/nlp_in_healthcare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/talks/nlp_in_healthcare/</guid>
+      <description>Poornima University, Jaipur, Rajasthan, India</description>
+    </item>
+  </channel>
+</rss>

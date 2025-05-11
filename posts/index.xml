@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/posts/</link>
+    <description>Recent content in Posts on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What are Diffusion Models?</title>
+      <link>https://akshat4112.github.io/posts/what_are_diffusion_models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Generative modeling&lt;/strong&gt; is currently one of the most thrilling domains in deep learning research.
+Traditional models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, &lt;strong&gt;diffusion models&lt;/strong&gt; is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fairness in Machine Learning</title>
+      <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
+      <pubDate>Tue, 02 Jan 2024 21:27:57 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.&lt;/p&gt;
+&lt;h2 id=&#34;defining-fairness&#34;&gt;Defining Fairness&lt;/h2&gt;
+&lt;p&gt;Fairness in machine learning can be understood in several ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Group Fairness&lt;/strong&gt;: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender. For instance, ensuring a loan application system doesn&amp;rsquo;t have a higher false rejection rate for one gender compared to another.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Are Vector Databases?</title>
+      <link>https://akshat4112.github.io/posts/vector-databases/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/posts/vector-databases/</guid>
+      <description>An in-depth, beginner-friendly guide to vector databases, what they are, how they work, and where they fit in GenAI systems.</description>
+    </item>
+  </channel>
+</rss>

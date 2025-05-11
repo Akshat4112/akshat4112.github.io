@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Generative-Ai on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/generative-ai/</link>
+    <description>Recent content in Generative-Ai on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://akshat4112.github.io/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What are Diffusion Models?</title>
+      <link>https://akshat4112.github.io/posts/what_are_diffusion_models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Generative modeling&lt;/strong&gt; is currently one of the most thrilling domains in deep learning research.
+Traditional models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, &lt;strong&gt;diffusion models&lt;/strong&gt; is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
