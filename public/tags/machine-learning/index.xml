@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine-Learning on Akshat Gupta</title>
+    <link>http://localhost:62513/tags/machine-learning/</link>
+    <description>Recent content in Machine-Learning on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Jan 2024 21:27:57 +0100</lastBuildDate>
+    <atom:link href="http://localhost:62513/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks</title>
+      <link>http://localhost:62513/publications/glyphnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62513/publications/glyphnet/</guid>
+      <description>Paper
+Authors: Akshat Gupta, Laxman Singh Tomar, Ridhima Garg
+Abstract Cyber attacks deceive machines into believing something that does not exist in the first place. However, there are some to which even humans fall prey. One such famous attack that attackers have used over the years to exploit the vulnerability of vision is known to be a Homoglyph attack. It employs a primary yet effective mechanism to create illegitimate domains that are hard to differentiate from legit ones.</description>
+    </item>
+    <item>
+      <title>Recap of Intel&#39;s Machine Learning Workshop at Dr. Akhilesh Das Gupta Institute</title>
+      <link>http://localhost:62513/talks/intel_machine_learning_workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62513/talks/intel_machine_learning_workshop/</guid>
+      <description>Delhi, India</description>
+    </item>
+    <item>
+      <title>Hands-on Deep Learning with Tensorflow 2.0</title>
+      <link>http://localhost:62513/publications/deep_learning_with_tensorflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62513/publications/deep_learning_with_tensorflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Role of Natural Language Processing in Healthcare</title>
+      <link>http://localhost:62513/talks/nlp_in_healthcare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62513/talks/nlp_in_healthcare/</guid>
+      <description>Poornima University, Jaipur, Rajasthan, India</description>
+    </item>
+    <item>
+      <title>Fairness in Machine Learning</title>
+      <link>http://localhost:62513/posts/fairness_in_machine_learning_/</link>
+      <pubDate>Tue, 02 Jan 2024 21:27:57 +0100</pubDate>
+      <guid>http://localhost:62513/posts/fairness_in_machine_learning_/</guid>
+      <description>As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.
+Defining Fairness Fairness in machine learning can be understood in several ways:
+Group Fairness: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender.</description>
+    </item>
+    <item>
+      <title>Introduction to Artificial Intelligence Workshop in Ujjain</title>
+      <link>http://localhost:62513/talks/kips_artificial_intelligence_workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62513/talks/kips_artificial_intelligence_workshop/</guid>
+      <description>Ujjain, Madhya Pradesh, India</description>
+    </item>
+  </channel>
+</rss>
