@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transformers on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/transformers/</link>
+    <description>Recent content in Transformers on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Apr 2025 17:30:00 +0200</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/transformers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM Fine-Tuning and LoRA: Making Large Models Work for You</title>
+      <link>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</link>
+      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</guid>
+      <description>&lt;p&gt;As powerful as large language models (LLMs) like GPT, LLaMA, and Mistral are, they’re still &lt;em&gt;general-purpose&lt;/em&gt;. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to &lt;strong&gt;fine-tune&lt;/strong&gt; them.&lt;/p&gt;
+&lt;p&gt;And thanks to a technique called &lt;strong&gt;LoRA (Low-Rank Adaptation)&lt;/strong&gt;, you can now fine-tune LLMs with a fraction of the data, compute, and cost.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-what-is-fine-tuning&#34;&gt;🔧 What is Fine-Tuning?&lt;/h2&gt;
+&lt;p&gt;Fine-tuning is the process of &lt;strong&gt;continuing the training&lt;/strong&gt; of a pre-trained LLM on your own dataset so that it learns domain-specific patterns, vocabulary, tone, or tasks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
+      <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
+      <description>&lt;p&gt;When people say &amp;ldquo;Transformers revolutionized NLP,&amp;rdquo; what they &lt;em&gt;really&lt;/em&gt; mean is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt; revolutionized NLP.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;From GPT and BERT to LLaMA and Claude, &lt;strong&gt;attention mechanisms&lt;/strong&gt; are the beating heart of modern large language models.&lt;/p&gt;
+&lt;p&gt;But what exactly is attention? Why is it so powerful? And how many types are there?&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-what-is-attention&#34;&gt;🧠 What is Attention?&lt;/h2&gt;
+&lt;p&gt;In the simplest sense, &lt;strong&gt;attention is a way for a model to focus on the most relevant parts of the input when generating output&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PEFT on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/peft/</link>
+    <description>Recent content in PEFT on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 May 2024 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/peft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM Fine-Tuning and LoRA: Making Large Models Work for You</title>
+      <link>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</link>
+      <pubDate>Wed, 15 May 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</guid>
+      <description>While pre-trained Large Language Models (LLMs) like GPT-4, Llama, and Mistral demonstrate impressive capabilities out of the box, they often need refinement to excel at specialized tasks. This is where fine-tuning techniques come in, particularly LoRA (Low-Rank Adaptation) — a method that has revolutionized how we customize these massive models.
+Let&amp;rsquo;s explore how these techniques work and how you can implement them for your specific use cases.
+🔍 Why Fine-Tune LLMs?</description>
+    </item>
+  </channel>
+</rss>

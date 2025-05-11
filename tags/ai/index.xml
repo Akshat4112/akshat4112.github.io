@@ -6,7 +6,7 @@
     <description>Recent content in AI on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Apr 2024 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fairness in Machine Learning</title>
@@ -33,6 +33,17 @@
 &lt;p&gt;In the simplest terms:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>LLM Fine-Tuning and LoRA: Making Large Models Work for You</title>
+      <link>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</link>
+      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</guid>
+      <description>&lt;p&gt;As powerful as large language models (LLMs) like GPT, LLaMA, and Mistral are, they’re still &lt;em&gt;general-purpose&lt;/em&gt;. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to &lt;strong&gt;fine-tune&lt;/strong&gt; them.&lt;/p&gt;
+&lt;p&gt;And thanks to a technique called &lt;strong&gt;LoRA (Low-Rank Adaptation)&lt;/strong&gt;, you can now fine-tune LLMs with a fraction of the data, compute, and cost.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-what-is-fine-tuning&#34;&gt;🔧 What is Fine-Tuning?&lt;/h2&gt;
+&lt;p&gt;Fine-tuning is the process of &lt;strong&gt;continuing the training&lt;/strong&gt; of a pre-trained LLM on your own dataset so that it learns domain-specific patterns, vocabulary, tone, or tasks.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What Are Knowledge Graphs?</title>
       <link>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
@@ -53,6 +64,68 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;-what-is-prompt-engineering&#34;&gt;🧠 What Is Prompt Engineering?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Prompt engineering&lt;/strong&gt; is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Evaluating LLMs: How Do You Measure a Model&#39;s Mind?</title>
+      <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
+      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
+      <description>&lt;p&gt;As large language models (LLMs) become central to search, productivity tools, education, and coding, &lt;strong&gt;evaluating them&lt;/strong&gt; is no longer optional. You &lt;em&gt;have&lt;/em&gt; to ask:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is this model reliable? Accurate? Safe? Biased? Smart enough for my task?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;But here&amp;rsquo;s the catch: LLMs are &lt;em&gt;not&lt;/em&gt; deterministic functions. They generate free-form text, can be right in one sentence and wrong in the next — and vary wildly depending on the prompt.&lt;/p&gt;
+&lt;p&gt;So how do we evaluate them meaningfully?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG and LLMs: Teaching Large Models to Use External Knowledge</title>
+      <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
+      <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
+      <description>&lt;p&gt;Large Language Models (LLMs) like GPT or LLaMA are great at generating text. But there&amp;rsquo;s a catch:&lt;br&gt;
+They &lt;strong&gt;only know what they were trained on&lt;/strong&gt;, and that knowledge is frozen at training time.&lt;/p&gt;
+&lt;p&gt;So what happens when you ask them something from after their training cutoff? Or something super niche, like a policy from your internal HR docs?&lt;/p&gt;
+&lt;p&gt;Enter &lt;strong&gt;RAG&lt;/strong&gt; – Retrieval-Augmented Generation.&lt;br&gt;
+A technique that combines LLMs with a &lt;strong&gt;search engine&lt;/strong&gt;, enabling them to look up facts on the fly.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
+      <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
+      <description>&lt;p&gt;When people say &amp;ldquo;Transformers revolutionized NLP,&amp;rdquo; what they &lt;em&gt;really&lt;/em&gt; mean is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt; revolutionized NLP.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;From GPT and BERT to LLaMA and Claude, &lt;strong&gt;attention mechanisms&lt;/strong&gt; are the beating heart of modern large language models.&lt;/p&gt;
+&lt;p&gt;But what exactly is attention? Why is it so powerful? And how many types are there?&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-what-is-attention&#34;&gt;🧠 What is Attention?&lt;/h2&gt;
+&lt;p&gt;In the simplest sense, &lt;strong&gt;attention is a way for a model to focus on the most relevant parts of the input when generating output&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Model Extraction Attacks: How Hackers Steal AI Models</title>
+      <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
+      <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
+      <description>&lt;p&gt;In the world of machine learning, especially with the rise of large language models (LLMs) and deep neural networks, model extraction attacks are a growing concern. These attacks aim to replicate the behavior of a machine learning model by querying it and then using the responses to reverse-engineer its underlying architecture and parameters.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-model-extraction-attack&#34;&gt;What is a Model Extraction Attack?&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;model extraction attack&lt;/strong&gt; occurs when an adversary tries to replicate a machine learning model by making repeated queries to it and analyzing its responses. The goal of the attacker is to create a new model that mimics the target model’s functionality, often without direct access to its architecture or parameters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaker Anonymization: Protecting Voice Identity in the AI Era</title>
+      <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
+      <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/speaker-anonymization/</guid>
+      <description>&lt;p&gt;Speaker anonymization refers to the process of modifying the characteristics of a speaker&amp;rsquo;s voice so that the speaker&amp;rsquo;s identity cannot be easily determined while preserving the speech&amp;rsquo;s intelligibility. With the increasing usage of speech data in virtual assistants, surveillance systems, and other applications, ensuring privacy in speech data has become critical.&lt;/p&gt;
+&lt;p&gt;In this post, we&amp;rsquo;ll dive into the technical details of speaker anonymization techniques, including implementation approaches using machine learning, deep learning models, and popular libraries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LLM Agents: Building AI Systems That Can Reason and Act</title>
+      <link>https://akshat4112.github.io/posts/llm-agents/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
+      <description>&lt;h1 id=&#34;understanding-llm-agents-the-future-of-autonomous-ai-systems&#34;&gt;Understanding LLM Agents: The Future of Autonomous AI Systems&lt;/h1&gt;
+&lt;p&gt;Large Language Models (LLMs), like GPT-3, GPT-4, and others, have taken the world by storm due to their impressive language generation and understanding capabilities. However, when these models are augmented with decision-making capabilities, memory, and actions in specific environments, they become even more powerful. Enter &lt;strong&gt;LLM Agents&lt;/strong&gt; — autonomous systems built on top of large language models to perform tasks, make decisions, and act autonomously based on user instructions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

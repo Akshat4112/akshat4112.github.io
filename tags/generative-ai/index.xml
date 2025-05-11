@@ -6,7 +6,7 @@
     <description>Recent content in Generative-Ai on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Feb 2024 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2024 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What are Diffusion Models?</title>
@@ -15,6 +15,17 @@
       <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Generative modeling&lt;/strong&gt; is currently one of the most thrilling domains in deep learning research.
 Traditional models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, &lt;strong&gt;diffusion models&lt;/strong&gt; is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG and LLMs: Teaching Large Models to Use External Knowledge</title>
+      <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
+      <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
+      <description>&lt;p&gt;Large Language Models (LLMs) like GPT or LLaMA are great at generating text. But there&amp;rsquo;s a catch:&lt;br&gt;
+They &lt;strong&gt;only know what they were trained on&lt;/strong&gt;, and that knowledge is frozen at training time.&lt;/p&gt;
+&lt;p&gt;So what happens when you ask them something from after their training cutoff? Or something super niche, like a policy from your internal HR docs?&lt;/p&gt;
+&lt;p&gt;Enter &lt;strong&gt;RAG&lt;/strong&gt; – Retrieval-Augmented Generation.&lt;br&gt;
+A technique that combines LLMs with a &lt;strong&gt;search engine&lt;/strong&gt;, enabling them to look up facts on the fly.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
