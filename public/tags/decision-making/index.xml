@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decision-Making on Akshat Gupta</title>
+    <link>http://localhost:50281/tags/decision-making/</link>
+    <description>Recent content in Decision-Making on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:50281/tags/decision-making/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM Agents: Building AI Systems That Can Reason and Act</title>
+      <link>http://localhost:50281/posts/llm-agents/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/llm-agents/</guid>
+      <description>Understanding LLM Agents: The Future of Autonomous AI Systems Large Language Models (LLMs), like GPT-3, GPT-4, and others, have taken the world by storm due to their impressive language generation and understanding capabilities. However, when these models are augmented with decision-making capabilities, memory, and actions in specific environments, they become even more powerful. Enter LLM Agents — autonomous systems built on top of large language models to perform tasks, make decisions, and act autonomously based on user instructions.</description>
+    </item>
+  </channel>
+</rss>

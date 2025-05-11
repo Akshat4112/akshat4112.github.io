@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kips on Akshat Gupta</title>
-    <link>https://akshat4112.github.io/tags/kips/</link>
+    <link>http://localhost:50281/tags/kips/</link>
     <description>Recent content in Kips on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://akshat4112.github.io/tags/kips/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50281/tags/kips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Artificial Intelligence Workshop in Ujjain</title>
-      <link>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</link>
+      <link>http://localhost:50281/talks/kips_artificial_intelligence_workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</guid>
+      <guid>http://localhost:50281/talks/kips_artificial_intelligence_workshop/</guid>
       <description>Ujjain, Madhya Pradesh, India</description>
     </item>
   </channel>

@@ -2,25 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep-Learning on Akshat Gupta</title>
-    <link>https://akshat4112.github.io/tags/deep-learning/</link>
+    <link>http://localhost:50281/tags/deep-learning/</link>
     <description>Recent content in Deep-Learning on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Feb 2024 09:00:00 +0100</lastBuildDate>
-    <atom:link href="https://akshat4112.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:50281/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What are Diffusion Models?</title>
-      <link>https://akshat4112.github.io/posts/what_are_diffusion_models/</link>
+      <link>http://localhost:50281/posts/what_are_diffusion_models/</link>
       <pubDate>Thu, 15 Feb 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
+      <guid>http://localhost:50281/posts/what_are_diffusion_models/</guid>
       <description>Generative modeling is currently one of the most thrilling domains in deep learning research. Traditional models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, diffusion models is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.</description>
     </item>
     <item>
       <title>Hands-on Deep Learning with Tensorflow 2.0</title>
-      <link>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</link>
+      <link>http://localhost:50281/publications/deep_learning_with_tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</guid>
+      <guid>http://localhost:50281/publications/deep_learning_with_tensorflow/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Evaluating LLMs: How Do You Measure a Model&#39;s Mind?</title>
+      <link>http://localhost:50281/posts/evaluating-llms/</link>
+      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/evaluating-llms/</guid>
+      <description>As large language models (LLMs) become central to search, productivity tools, education, and coding, evaluating them is no longer optional. You have to ask:
+Is this model reliable? Accurate? Safe? Biased? Smart enough for my task?
+But here&amp;rsquo;s the catch: LLMs are not deterministic functions. They generate free-form text, can be right in one sentence and wrong in the next — and vary wildly depending on the prompt.
+So how do we evaluate them meaningfully?</description>
+    </item>
+    <item>
+      <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
+      <link>http://localhost:50281/posts/attention-in-transformers/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/attention-in-transformers/</guid>
+      <description>When people say &amp;ldquo;Transformers revolutionized NLP,&amp;rdquo; what they really mean is:
+Attention revolutionized NLP.
+From GPT and BERT to LLaMA and Claude, attention mechanisms are the beating heart of modern large language models.
+But what exactly is attention? Why is it so powerful? And how many types are there?
+Let&amp;rsquo;s dive in.
+🧠 What is Attention? In the simplest sense, attention is a way for a model to focus on the most relevant parts of the input when generating output.</description>
+    </item>
+    <item>
+      <title>Model Extraction Attacks: How Hackers Steal AI Models</title>
+      <link>http://localhost:50281/posts/model-extraction-attacks/</link>
+      <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/model-extraction-attacks/</guid>
+      <description>In the world of machine learning, especially with the rise of large language models (LLMs) and deep neural networks, model extraction attacks are a growing concern. These attacks aim to replicate the behavior of a machine learning model by querying it and then using the responses to reverse-engineer its underlying architecture and parameters.
+What is a Model Extraction Attack? A model extraction attack occurs when an adversary tries to replicate a machine learning model by making repeated queries to it and analyzing its responses.</description>
+    </item>
+    <item>
+      <title>Speaker Anonymization: Protecting Voice Identity in the AI Era</title>
+      <link>http://localhost:50281/posts/speaker-anonymization/</link>
+      <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/speaker-anonymization/</guid>
+      <description>Speaker anonymization refers to the process of modifying the characteristics of a speaker&amp;rsquo;s voice so that the speaker&amp;rsquo;s identity cannot be easily determined while preserving the speech&amp;rsquo;s intelligibility. With the increasing usage of speech data in virtual assistants, surveillance systems, and other applications, ensuring privacy in speech data has become critical.
+In this post, we&amp;rsquo;ll dive into the technical details of speaker anonymization techniques, including implementation approaches using machine learning, deep learning models, and popular libraries.</description>
+    </item>
+    <item>
+      <title>LLM Agents: Building AI Systems That Can Reason and Act</title>
+      <link>http://localhost:50281/posts/llm-agents/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/llm-agents/</guid>
+      <description>Understanding LLM Agents: The Future of Autonomous AI Systems Large Language Models (LLMs), like GPT-3, GPT-4, and others, have taken the world by storm due to their impressive language generation and understanding capabilities. However, when these models are augmented with decision-making capabilities, memory, and actions in specific environments, they become even more powerful. Enter LLM Agents — autonomous systems built on top of large language models to perform tasks, make decisions, and act autonomously based on user instructions.</description>
     </item>
   </channel>
 </rss>

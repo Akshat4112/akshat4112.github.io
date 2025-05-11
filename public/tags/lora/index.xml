@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LoRA on Akshat Gupta</title>
+    <link>http://localhost:50281/tags/lora/</link>
+    <description>Recent content in LoRA on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Apr 2025 17:30:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:50281/tags/lora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM Fine-Tuning and LoRA: Making Large Models Work for You</title>
+      <link>http://localhost:50281/posts/llm-fine-tuning-lora/</link>
+      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
+      <guid>http://localhost:50281/posts/llm-fine-tuning-lora/</guid>
+      <description>As powerful as large language models (LLMs) like GPT, LLaMA, and Mistral are, they’re still general-purpose. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to fine-tune them.
+And thanks to a technique called LoRA (Low-Rank Adaptation), you can now fine-tune LLMs with a fraction of the data, compute, and cost.
+🔧 What is Fine-Tuning? Fine-tuning is the process of continuing the training of a pre-trained LLM on your own dataset so that it learns domain-specific patterns, vocabulary, tone, or tasks.</description>
+    </item>
+  </channel>
+</rss>

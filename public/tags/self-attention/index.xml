@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self-Attention on Akshat Gupta</title>
+    <link>http://localhost:50281/tags/self-attention/</link>
+    <description>Recent content in Self-Attention on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Aug 2024 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:50281/tags/self-attention/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
+      <link>http://localhost:50281/posts/attention-in-transformers/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/attention-in-transformers/</guid>
+      <description>When people say &amp;ldquo;Transformers revolutionized NLP,&amp;rdquo; what they really mean is:
+Attention revolutionized NLP.
+From GPT and BERT to LLaMA and Claude, attention mechanisms are the beating heart of modern large language models.
+But what exactly is attention? Why is it so powerful? And how many types are there?
+Let&amp;rsquo;s dive in.
+🧠 What is Attention? In the simplest sense, attention is a way for a model to focus on the most relevant parts of the input when generating output.</description>
+    </item>
+  </channel>
+</rss>

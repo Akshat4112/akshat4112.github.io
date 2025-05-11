@@ -2,10 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LLM on Akshat Gupta</title>
-    <link>http://localhost:63263/tags/llm/</link>
+    <link>http://localhost:50281/tags/llm/</link>
     <description>Recent content in LLM on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:63263/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:50281/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM Fine-Tuning and LoRA: Making Large Models Work for You</title>
+      <link>http://localhost:50281/posts/llm-fine-tuning-lora/</link>
+      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
+      <guid>http://localhost:50281/posts/llm-fine-tuning-lora/</guid>
+      <description>As powerful as large language models (LLMs) like GPT, LLaMA, and Mistral are, they’re still general-purpose. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to fine-tune them.
+And thanks to a technique called LoRA (Low-Rank Adaptation), you can now fine-tune LLMs with a fraction of the data, compute, and cost.
+🔧 What is Fine-Tuning? Fine-tuning is the process of continuing the training of a pre-trained LLM on your own dataset so that it learns domain-specific patterns, vocabulary, tone, or tasks.</description>
+    </item>
+    <item>
+      <title>Evaluating LLMs: How Do You Measure a Model&#39;s Mind?</title>
+      <link>http://localhost:50281/posts/evaluating-llms/</link>
+      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/evaluating-llms/</guid>
+      <description>As large language models (LLMs) become central to search, productivity tools, education, and coding, evaluating them is no longer optional. You have to ask:
+Is this model reliable? Accurate? Safe? Biased? Smart enough for my task?
+But here&amp;rsquo;s the catch: LLMs are not deterministic functions. They generate free-form text, can be right in one sentence and wrong in the next — and vary wildly depending on the prompt.
+So how do we evaluate them meaningfully?</description>
+    </item>
+    <item>
+      <title>RAG and LLMs: Teaching Large Models to Use External Knowledge</title>
+      <link>http://localhost:50281/posts/rag-and-llms/</link>
+      <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/rag-and-llms/</guid>
+      <description>Large Language Models (LLMs) like GPT or LLaMA are great at generating text. But there&amp;rsquo;s a catch:
+They only know what they were trained on, and that knowledge is frozen at training time.
+So what happens when you ask them something from after their training cutoff? Or something super niche, like a policy from your internal HR docs?
+Enter RAG – Retrieval-Augmented Generation.
+A technique that combines LLMs with a search engine, enabling them to look up facts on the fly.</description>
+    </item>
+    <item>
+      <title>LLM Agents: Building AI Systems That Can Reason and Act</title>
+      <link>http://localhost:50281/posts/llm-agents/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/llm-agents/</guid>
+      <description>Understanding LLM Agents: The Future of Autonomous AI Systems Large Language Models (LLMs), like GPT-3, GPT-4, and others, have taken the world by storm due to their impressive language generation and understanding capabilities. However, when these models are augmented with decision-making capabilities, memory, and actions in specific environments, they become even more powerful. Enter LLM Agents — autonomous systems built on top of large language models to perform tasks, make decisions, and act autonomously based on user instructions.</description>
+    </item>
   </channel>
 </rss>

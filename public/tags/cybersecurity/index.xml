@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cybersecurity on Akshat Gupta</title>
+    <link>http://localhost:50281/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Oct 2024 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:50281/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Model Extraction Attacks: How Hackers Steal AI Models</title>
+      <link>http://localhost:50281/posts/model-extraction-attacks/</link>
+      <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/model-extraction-attacks/</guid>
+      <description>In the world of machine learning, especially with the rise of large language models (LLMs) and deep neural networks, model extraction attacks are a growing concern. These attacks aim to replicate the behavior of a machine learning model by querying it and then using the responses to reverse-engineer its underlying architecture and parameters.
+What is a Model Extraction Attack? A model extraction attack occurs when an adversary tries to replicate a machine learning model by making repeated queries to it and analyzing its responses.</description>
+    </item>
+    <item>
+      <title>Speaker Anonymization: Protecting Voice Identity in the AI Era</title>
+      <link>http://localhost:50281/posts/speaker-anonymization/</link>
+      <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
+      <guid>http://localhost:50281/posts/speaker-anonymization/</guid>
+      <description>Speaker anonymization refers to the process of modifying the characteristics of a speaker&amp;rsquo;s voice so that the speaker&amp;rsquo;s identity cannot be easily determined while preserving the speech&amp;rsquo;s intelligibility. With the increasing usage of speech data in virtual assistants, surveillance systems, and other applications, ensuring privacy in speech data has become critical.
+In this post, we&amp;rsquo;ll dive into the technical details of speaker anonymization techniques, including implementation approaches using machine learning, deep learning models, and popular libraries.</description>
+    </item>
+  </channel>
+</rss>

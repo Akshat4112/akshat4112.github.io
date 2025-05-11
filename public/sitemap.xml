@@ -2,142 +2,233 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://akshat4112.github.io/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</loc>
+    <loc>http://localhost:50281/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/posts/what_are_diffusion_models/</loc>
+    <loc>http://localhost:50281/posts/what_are_diffusion_models/</loc>
     <lastmod>2024-02-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</loc>
+    <loc>http://localhost:50281/posts/fairness_in_machine_learning_/</loc>
     <lastmod>2023-10-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/publications/glyphnet/</loc>
+    <loc>http://localhost:50281/publications/glyphnet/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/events/mesh_hackathon_stuttgart_2023/</loc>
+    <loc>http://localhost:50281/events/mesh_hackathon_stuttgart_2023/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</loc>
+    <loc>http://localhost:50281/talks/intel_machine_learning_workshop/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</loc>
+    <loc>http://localhost:50281/publications/deep_learning_with_tensorflow/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/talks/nlp_in_healthcare/</loc>
+    <loc>http://localhost:50281/talks/nlp_in_healthcare/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/events/smart_india_hackathon_2017/</loc>
+    <loc>http://localhost:50281/events/smart_india_hackathon_2017/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/posts/vector-databases/</loc>
+    <loc>http://localhost:50281/posts/vector-databases/</loc>
     <lastmod>2023-12-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</loc>
+    <loc>http://localhost:50281/talks/kips_artificial_intelligence_workshop/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</loc>
+    <loc>http://localhost:50281/posts/ontology-in-knowledge-graphs/</loc>
     <lastmod>2024-01-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</loc>
+    <loc>http://localhost:50281/posts/llm-fine-tuning-lora/</loc>
+    <lastmod>2025-04-20T17:30:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/posts/what-are-knowledge-graphs/</loc>
     <lastmod>2024-03-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/posts/prompt-engineering/</loc>
+    <loc>http://localhost:50281/posts/prompt-engineering/</loc>
     <lastmod>2024-04-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/ai/</loc>
+    <loc>http://localhost:50281/posts/evaluating-llms/</loc>
+    <lastmod>2024-06-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/posts/rag-and-llms/</loc>
+    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/posts/attention-in-transformers/</loc>
+    <lastmod>2024-08-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/posts/model-extraction-attacks/</loc>
+    <lastmod>2024-09-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/posts/speaker-anonymization/</loc>
+    <lastmod>2024-10-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/posts/llm-agents/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/agents/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/ai/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/autonomous-systems/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/decision-making/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/deep-learning/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/llm/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/posts/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/reinforcement-learning/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/</loc>
+    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/fine-tuning/</loc>
+    <lastmod>2025-04-20T17:30:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/lora/</loc>
+    <lastmod>2025-04-20T17:30:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/transformers/</loc>
+    <lastmod>2025-04-20T17:30:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/anonymization/</loc>
+    <lastmod>2024-10-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/cybersecurity/</loc>
+    <lastmod>2024-10-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/privacy/</loc>
+    <lastmod>2024-10-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/speech-processing/</loc>
+    <lastmod>2024-10-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/voice-conversion/</loc>
+    <lastmod>2024-10-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/ai-security/</loc>
+    <lastmod>2024-09-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/llms/</loc>
+    <lastmod>2024-09-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/machine-learning/</loc>
+    <lastmod>2024-09-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/model-extraction/</loc>
+    <lastmod>2024-09-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/attention/</loc>
+    <lastmod>2024-08-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/neural-networks/</loc>
+    <lastmod>2024-08-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/nlp/</loc>
+    <lastmod>2024-08-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/self-attention/</loc>
+    <lastmod>2024-08-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/embeddings/</loc>
+    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/generative-ai/</loc>
+    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/information-retrieval/</loc>
+    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/rag/</loc>
+    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/vector-databases/</loc>
+    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/benchmarks/</loc>
+    <lastmod>2024-06-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/evaluation/</loc>
+    <lastmod>2024-06-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/natural-language-processing/</loc>
+    <lastmod>2024-06-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:50281/tags/chatgpt/</loc>
     <lastmod>2024-04-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/</loc>
+    <loc>http://localhost:50281/tags/instruction-tuning/</loc>
     <lastmod>2024-04-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/chatgpt/</loc>
+    <loc>http://localhost:50281/tags/prompt-engineering/</loc>
     <lastmod>2024-04-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/instruction-tuning/</loc>
-    <lastmod>2024-04-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/llms/</loc>
-    <lastmod>2024-04-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/posts/</loc>
-    <lastmod>2024-04-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/prompt-engineering/</loc>
-    <lastmod>2024-04-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/rag/</loc>
-    <lastmod>2024-04-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/</loc>
-    <lastmod>2024-04-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/data-modeling/</loc>
+    <loc>http://localhost:50281/tags/data-modeling/</loc>
     <lastmod>2024-03-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/knowledge-graph/</loc>
+    <loc>http://localhost:50281/tags/knowledge-graph/</loc>
     <lastmod>2024-03-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/semantic-search/</loc>
+    <loc>http://localhost:50281/tags/semantic-search/</loc>
     <lastmod>2024-03-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/deep-learning/</loc>
+    <loc>http://localhost:50281/tags/diffusion-models/</loc>
     <lastmod>2024-02-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/diffusion-models/</loc>
-    <lastmod>2024-02-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/generative-ai/</loc>
-    <lastmod>2024-02-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/ontology/</loc>
+    <loc>http://localhost:50281/tags/ontology/</loc>
     <lastmod>2024-01-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/semantic-web/</loc>
+    <loc>http://localhost:50281/tags/semantic-web/</loc>
     <lastmod>2024-01-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/ai-infrastructure/</loc>
+    <loc>http://localhost:50281/tags/ai-infrastructure/</loc>
     <lastmod>2023-12-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/embeddings/</loc>
+    <loc>http://localhost:50281/tags/vector-database/</loc>
     <lastmod>2023-12-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/vector-database/</loc>
-    <lastmod>2023-12-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/bias/</loc>
+    <loc>http://localhost:50281/tags/bias/</loc>
     <lastmod>2023-10-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/ethics/</loc>
+    <loc>http://localhost:50281/tags/ethics/</loc>
     <lastmod>2023-10-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/fairness/</loc>
+    <loc>http://localhost:50281/tags/fairness/</loc>
     <lastmod>2023-10-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/machine-learning/</loc>
-    <lastmod>2023-10-15T09:00:00+01:00</lastmod>
+    <loc>http://localhost:50281/tags/aaai/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/aaai/</loc>
+    <loc>http://localhost:50281/about/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/about/</loc>
+    <loc>http://localhost:50281/tags/aics/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/aics/</loc>
+    <loc>http://localhost:50281/categories/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/categories/</loc>
+    <loc>http://localhost:50281/tags/computer-vision/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/computer-vision/</loc>
+    <loc>http://localhost:50281/events/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/events/</loc>
+    <loc>http://localhost:50281/publication/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/publication/</loc>
+    <loc>http://localhost:50281/tags/intel-innovator/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/intel-innovator/</loc>
+    <loc>http://localhost:50281/tags/kips/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/kips/</loc>
+    <loc>http://localhost:50281/posts/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/natural-language-processing/</loc>
+    <loc>http://localhost:50281/publications/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/posts/</loc>
+    <loc>http://localhost:50281/search/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/publications/</loc>
+    <loc>http://localhost:50281/talks/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/search/</loc>
+    <loc>http://localhost:50281/tags/tensorflow/</loc>
   </url><url>
-    <loc>https://akshat4112.github.io/talks/</loc>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/tensorflow/</loc>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/workshop/</loc>
+    <loc>http://localhost:50281/tags/workshop/</loc>
   </url>
 </urlset>
