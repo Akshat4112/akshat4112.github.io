@@ -4,6 +4,13 @@ title: Akshat Gupta
 theme: PaperMod
 googleAnalytics: "G-8YC2E5MW2M"
 
+# Environment-specific settings
+# Hugo will use these settings when running in development (local) mode
+# You can override these with CLI parameters
+development:
+  baseURL: "http://localhost:1313/"
+  googleAnalytics: ""  # Disable analytics in development
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
