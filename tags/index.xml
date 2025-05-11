@@ -9,10 +9,31 @@
     <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AI</title>
+      <link>https://akshat4112.github.io/tags/ai/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>AI Infrastructure</title>
       <link>https://akshat4112.github.io/tags/ai-infrastructure/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/tags/ai-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Modeling</title>
+      <link>https://akshat4112.github.io/tags/data-modeling/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/tags/data-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge Graph</title>
+      <link>https://akshat4112.github.io/tags/knowledge-graph/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/tags/knowledge-graph/</guid>
       <description></description>
     </item>
     <item>
@@ -23,10 +44,24 @@
       <description></description>
     </item>
     <item>
+      <title>Ontology</title>
+      <link>https://akshat4112.github.io/tags/ontology/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/tags/ontology/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Semantic Search</title>
       <link>https://akshat4112.github.io/tags/semantic-search/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/tags/semantic-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semantic Web</title>
+      <link>https://akshat4112.github.io/tags/semantic-web/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/tags/semantic-web/</guid>
       <description></description>
     </item>
     <item>

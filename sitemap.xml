@@ -26,6 +26,9 @@
     <loc>https://akshat4112.github.io/categories/ai/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://akshat4112.github.io/tags/ai/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://akshat4112.github.io/tags/ai-infrastructure/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -35,7 +38,16 @@
     <loc>https://akshat4112.github.io/categories/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://akshat4112.github.io/tags/data-modeling/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://akshat4112.github.io/categories/databases/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/tags/knowledge-graph/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/categories/knowledge-graphs/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/llm/</loc>
@@ -44,10 +56,16 @@
     <loc>https://akshat4112.github.io/categories/ml/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://akshat4112.github.io/tags/ontology/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://akshat4112.github.io/posts/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/semantic-search/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/tags/semantic-web/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/</loc>
@@ -57,6 +75,9 @@
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/vector-databases/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/deep-learning/</loc>
