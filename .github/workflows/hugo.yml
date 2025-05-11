@@ -60,7 +60,14 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
+      # First upload as regular artifact for potential debugging
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: hugo-public
+          path: ./public
+      # Then upload as pages artifact for deployment
+      - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
