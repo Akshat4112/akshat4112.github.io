@@ -80,6 +80,15 @@
     <loc>http://localhost:63263/posts/ontology-in-knowledge-graphs/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:63263/tags/graph-databases/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/tags/knowledge-graphs/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/posts/what-are-knowledge-graphs/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:63263/tags/deep-learning/</loc>
     <lastmod>2024-01-02T21:27:57+01:00</lastmod>
   </url><url>
@@ -110,8 +119,6 @@
     <loc>http://localhost:63263/tags/intel-innovator/</loc>
   </url><url>
     <loc>http://localhost:63263/tags/kips/</loc>
-  </url><url>
-    <loc>http://localhost:63263/tags/knowledge-graphs/</loc>
   </url><url>
     <loc>http://localhost:63263/categories/knowledge-representation/</loc>
   </url><url>

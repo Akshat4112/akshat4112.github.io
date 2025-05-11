@@ -38,5 +38,12 @@ Group Fairness: This implies equal treatment or outcomes for different groups ca
       <guid>http://localhost:63263/posts/ontology-in-knowledge-graphs/</guid>
       <description>A beginner-friendly explanation of what an ontology is, why it&amp;rsquo;s central to knowledge graphs, and how it helps machines understand complex relationships.</description>
     </item>
+    <item>
+      <title>What Are Knowledge Graphs?</title>
+      <link>http://localhost:63263/posts/what-are-knowledge-graphs/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/posts/what-are-knowledge-graphs/</guid>
+      <description>A comprehensive guide to knowledge graphs - what they are, how they work, their benefits, and their transformative role in modern AI and data systems.</description>
+    </item>
   </channel>
 </rss>
