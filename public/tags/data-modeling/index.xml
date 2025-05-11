@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Modeling on Akshat Gupta</title>
+    <link>http://localhost:63263/tags/data-modeling/</link>
+    <description>Recent content in Data Modeling on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:63263/tags/data-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is an Ontology in a Knowledge Graph?</title>
+      <link>http://localhost:63263/posts/ontology-in-knowledge-graphs/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/posts/ontology-in-knowledge-graphs/</guid>
+      <description>A beginner-friendly explanation of what an ontology is, why it&amp;rsquo;s central to knowledge graphs, and how it helps machines understand complex relationships.</description>
+    </item>
+  </channel>
+</rss>

@@ -2,10 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Akshat Gupta</title>
-    <link>http://localhost:62513/categories/</link>
+    <link>http://localhost:63263/categories/</link>
     <description>Recent content in Categories on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:62513/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:63263/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:63263/categories/ai/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Databases</title>
+      <link>http://localhost:63263/categories/databases/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/categories/databases/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ML</title>
+      <link>http://localhost:63263/categories/ml/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/categories/ml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Science</title>
+      <link>http://localhost:63263/categories/data-science/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/categories/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge Representation</title>
+      <link>http://localhost:63263/categories/knowledge-representation/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/categories/knowledge-representation/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

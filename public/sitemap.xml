@@ -2,104 +2,131 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</loc>
+    <loc>http://localhost:63263/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</loc>
   </url><url>
-    <loc>http://localhost:1313/publications/glyphnet/</loc>
+    <loc>http://localhost:63263/publications/glyphnet/</loc>
   </url><url>
-    <loc>http://localhost:1313/events/mesh_hackathon_stuttgart_2023/</loc>
+    <loc>http://localhost:63263/events/mesh_hackathon_stuttgart_2023/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/intel_machine_learning_workshop/</loc>
+    <loc>http://localhost:63263/talks/intel_machine_learning_workshop/</loc>
   </url><url>
-    <loc>http://localhost:1313/publications/deep_learning_with_tensorflow/</loc>
+    <loc>http://localhost:63263/publications/deep_learning_with_tensorflow/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/nlp_in_healthcare/</loc>
+    <loc>http://localhost:63263/talks/nlp_in_healthcare/</loc>
   </url><url>
-    <loc>http://localhost:1313/events/smart_india_hackathon_2017/</loc>
+    <loc>http://localhost:63263/events/smart_india_hackathon_2017/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/what_are_diffusion_models/</loc>
+    <loc>http://localhost:63263/posts/what_are_diffusion_models/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/fairness_in_machine_learning_/</loc>
+    <loc>http://localhost:63263/posts/fairness_in_machine_learning_/</loc>
     <lastmod>2024-01-02T21:27:57+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/talks/kips_artificial_intelligence_workshop/</loc>
+    <loc>http://localhost:63263/talks/kips_artificial_intelligence_workshop/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/ai/</loc>
+    <loc>http://localhost:63263/tags/ai/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai-infrastructure/</loc>
+    <loc>http://localhost:63263/categories/ai/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:63263/tags/ai-infrastructure/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:63263/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/databases/</loc>
+    <loc>http://localhost:63263/categories/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/llm/</loc>
+    <loc>http://localhost:63263/tags/data-modeling/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ml/</loc>
+    <loc>http://localhost:63263/categories/databases/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:63263/tags/knowledge-graph/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/semantic-search/</loc>
+    <loc>http://localhost:63263/categories/knowledge-graphs/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:63263/tags/llm/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vector-database/</loc>
+    <loc>http://localhost:63263/categories/ml/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/vector-databases/</loc>
+    <loc>http://localhost:63263/tags/ontology/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/deep-learning/</loc>
+    <loc>http://localhost:63263/posts/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/tags/semantic-search/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/tags/semantic-web/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/tags/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/tags/vector-database/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/posts/vector-databases/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/posts/ontology-in-knowledge-graphs/</loc>
+    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:63263/tags/deep-learning/</loc>
     <lastmod>2024-01-02T21:27:57+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fairness/</loc>
+    <loc>http://localhost:63263/tags/fairness/</loc>
     <lastmod>2024-01-02T21:27:57+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <loc>http://localhost:63263/tags/machine-learning/</loc>
     <lastmod>2024-01-02T21:27:57+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/aaai/</loc>
+    <loc>http://localhost:63263/tags/aaai/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:63263/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/aics/</loc>
+    <loc>http://localhost:63263/tags/aics/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/computer-vision/</loc>
+    <loc>http://localhost:63263/tags/computer-vision/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/diffusion-models/</loc>
+    <loc>http://localhost:63263/categories/data-science/</loc>
   </url><url>
-    <loc>http://localhost:1313/events/</loc>
+    <loc>http://localhost:63263/tags/diffusion-models/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/generative-ai/</loc>
+    <loc>http://localhost:63263/events/</loc>
   </url><url>
-    <loc>http://localhost:1313/publication/</loc>
+    <loc>http://localhost:63263/tags/generative-ai/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/intel-innovator/</loc>
+    <loc>http://localhost:63263/publication/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/kips/</loc>
+    <loc>http://localhost:63263/tags/intel-innovator/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/natural-language-processing/</loc>
+    <loc>http://localhost:63263/tags/kips/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:63263/tags/knowledge-graphs/</loc>
   </url><url>
-    <loc>http://localhost:1313/publications/</loc>
+    <loc>http://localhost:63263/categories/knowledge-representation/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>http://localhost:63263/tags/natural-language-processing/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/</loc>
+    <loc>http://localhost:63263/posts/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/tensorflow/</loc>
+    <loc>http://localhost:63263/publications/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/workshop/</loc>
+    <loc>http://localhost:63263/search/</loc>
+  </url><url>
+    <loc>http://localhost:63263/talks/</loc>
+  </url><url>
+    <loc>http://localhost:63263/tags/tensorflow/</loc>
+  </url><url>
+    <loc>http://localhost:63263/tags/workshop/</loc>
   </url>
 </urlset>

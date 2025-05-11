@@ -2,101 +2,164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Akshat Gupta</title>
-    <link>http://localhost:62513/tags/</link>
+    <link>http://localhost:63263/tags/</link>
     <description>Recent content in Tags on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jan 2024 21:27:57 +0100</lastBuildDate>
-    <atom:link href="http://localhost:62513/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:63263/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Infrastructure</title>
+      <link>http://localhost:63263/tags/ai-infrastructure/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/ai-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:63263/tags/llm/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semantic Search</title>
+      <link>http://localhost:63263/tags/semantic-search/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/semantic-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vector Database</title>
+      <link>http://localhost:63263/tags/vector-database/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/vector-database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:63263/tags/ai/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Modeling</title>
+      <link>http://localhost:63263/tags/data-modeling/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/data-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge Graphs</title>
+      <link>http://localhost:63263/tags/knowledge-graphs/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/knowledge-graphs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ontology</title>
+      <link>http://localhost:63263/tags/ontology/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/ontology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semantic Web</title>
+      <link>http://localhost:63263/tags/semantic-web/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63263/tags/semantic-web/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Deep-Learning</title>
-      <link>http://localhost:62513/tags/deep-learning/</link>
+      <link>http://localhost:63263/tags/deep-learning/</link>
       <pubDate>Tue, 02 Jan 2024 21:27:57 +0100</pubDate>
-      <guid>http://localhost:62513/tags/deep-learning/</guid>
+      <guid>http://localhost:63263/tags/deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Fairness</title>
-      <link>http://localhost:62513/tags/fairness/</link>
+      <link>http://localhost:63263/tags/fairness/</link>
       <pubDate>Tue, 02 Jan 2024 21:27:57 +0100</pubDate>
-      <guid>http://localhost:62513/tags/fairness/</guid>
+      <guid>http://localhost:63263/tags/fairness/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine-Learning</title>
-      <link>http://localhost:62513/tags/machine-learning/</link>
+      <link>http://localhost:63263/tags/machine-learning/</link>
       <pubDate>Tue, 02 Jan 2024 21:27:57 +0100</pubDate>
-      <guid>http://localhost:62513/tags/machine-learning/</guid>
+      <guid>http://localhost:63263/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Aaai</title>
-      <link>http://localhost:62513/tags/aaai/</link>
+      <link>http://localhost:63263/tags/aaai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/aaai/</guid>
+      <guid>http://localhost:63263/tags/aaai/</guid>
       <description></description>
     </item>
     <item>
       <title>Aics</title>
-      <link>http://localhost:62513/tags/aics/</link>
+      <link>http://localhost:63263/tags/aics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/aics/</guid>
+      <guid>http://localhost:63263/tags/aics/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer-Vision</title>
-      <link>http://localhost:62513/tags/computer-vision/</link>
+      <link>http://localhost:63263/tags/computer-vision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/computer-vision/</guid>
+      <guid>http://localhost:63263/tags/computer-vision/</guid>
       <description></description>
     </item>
     <item>
       <title>Diffusion-Models</title>
-      <link>http://localhost:62513/tags/diffusion-models/</link>
+      <link>http://localhost:63263/tags/diffusion-models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/diffusion-models/</guid>
+      <guid>http://localhost:63263/tags/diffusion-models/</guid>
       <description></description>
     </item>
     <item>
       <title>Generative-Ai</title>
-      <link>http://localhost:62513/tags/generative-ai/</link>
+      <link>http://localhost:63263/tags/generative-ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/generative-ai/</guid>
+      <guid>http://localhost:63263/tags/generative-ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Intel-Innovator</title>
-      <link>http://localhost:62513/tags/intel-innovator/</link>
+      <link>http://localhost:63263/tags/intel-innovator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/intel-innovator/</guid>
+      <guid>http://localhost:63263/tags/intel-innovator/</guid>
       <description></description>
     </item>
     <item>
       <title>Kips</title>
-      <link>http://localhost:62513/tags/kips/</link>
+      <link>http://localhost:63263/tags/kips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/kips/</guid>
+      <guid>http://localhost:63263/tags/kips/</guid>
       <description></description>
     </item>
     <item>
       <title>Natural-Language-Processing</title>
-      <link>http://localhost:62513/tags/natural-language-processing/</link>
+      <link>http://localhost:63263/tags/natural-language-processing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/natural-language-processing/</guid>
+      <guid>http://localhost:63263/tags/natural-language-processing/</guid>
       <description></description>
     </item>
     <item>
       <title>Tensorflow</title>
-      <link>http://localhost:62513/tags/tensorflow/</link>
+      <link>http://localhost:63263/tags/tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/tensorflow/</guid>
+      <guid>http://localhost:63263/tags/tensorflow/</guid>
       <description></description>
     </item>
     <item>
       <title>Workshop</title>
-      <link>http://localhost:62513/tags/workshop/</link>
+      <link>http://localhost:63263/tags/workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62513/tags/workshop/</guid>
+      <guid>http://localhost:63263/tags/workshop/</guid>
       <description></description>
     </item>
   </channel>
