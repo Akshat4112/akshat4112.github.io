@@ -62,7 +62,7 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       # First upload as regular artifact for potential debugging
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: hugo-public
           path: ./public
