@@ -76,3 +76,5 @@ The site is automatically deployed to GitHub Pages when changes are pushed to th
 ## License
 
 The content of this project is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), and the underlying source code is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
+
+<!-- Last updated: May 11, 2025 -->
