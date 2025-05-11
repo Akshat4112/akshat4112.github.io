@@ -2,18 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Modeling on Akshat Gupta</title>
-    <link>http://localhost:63263/tags/data-modeling/</link>
+    <link>https://akshat4112.github.io/tags/data-modeling/</link>
     <description>Recent content in Data Modeling on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:63263/tags/data-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Mar 2024 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/data-modeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is an Ontology in a Knowledge Graph?</title>
-      <link>http://localhost:63263/posts/ontology-in-knowledge-graphs/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/posts/ontology-in-knowledge-graphs/</guid>
-      <description>A beginner-friendly explanation of what an ontology is, why it&amp;rsquo;s central to knowledge graphs, and how it helps machines understand complex relationships.</description>
+      <link>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</link>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</guid>
+      <description>If you&amp;rsquo;re working with knowledge graphs, one term that keeps popping up is ontology. Sounds academic, right? Like something you&amp;rsquo;d find buried in a philosophy textbook.
+But in the world of AI, data science, and search engines, an ontology is far from abstract — it&amp;rsquo;s the blueprint that gives your knowledge graph meaning. Let&amp;rsquo;s break it down and explore how it all fits together.
+🧠 What Is an Ontology (in AI)?</description>
+    </item>
+    <item>
+      <title>What Are Knowledge Graphs?</title>
+      <link>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</link>
+      <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</guid>
+      <description>We hear the term knowledge graph everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly is a knowledge graph, and why is everyone suddenly obsessed with it?
+In this post, I&amp;rsquo;ll break down knowledge graphs in plain language: what they are, how they work, and how I use them in my own projects.
+🧱 The Basics: What Is a Knowledge Graph? At its core, a knowledge graph is a network of real-world entities (people, places, things) and the relationships between them.</description>
     </item>
   </channel>
 </rss>

@@ -2,121 +2,127 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Akshat Gupta</title>
-    <link>http://localhost:63263/</link>
+    <link>https://akshat4112.github.io/</link>
     <description>Recent content on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:63263/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Mar 2024 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cyber Valley AI Startup Bootcamp</title>
-      <link>http://localhost:63263/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</link>
+      <link>https://akshat4112.github.io/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</guid>
+      <guid>https://akshat4112.github.io/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</guid>
       <description>Stuttgart, Tubingen, Zurich</description>
     </item>
     <item>
+      <title>What are Diffusion Models?</title>
+      <link>https://akshat4112.github.io/posts/what_are_diffusion_models/</link>
+      <pubDate>Thu, 15 Feb 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
+      <description>Generative modeling is currently one of the most thrilling domains in deep learning research. Traditional models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, diffusion models is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.</description>
+    </item>
+    <item>
+      <title>Fairness in Machine Learning</title>
+      <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
+      <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
+      <description>As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.
+Defining Fairness Fairness in machine learning can be understood in several ways:
+Group Fairness: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender.</description>
+    </item>
+    <item>
       <title>GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks</title>
-      <link>http://localhost:63263/publications/glyphnet/</link>
+      <link>https://akshat4112.github.io/publications/glyphnet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/publications/glyphnet/</guid>
+      <guid>https://akshat4112.github.io/publications/glyphnet/</guid>
       <description>Paper
 Authors: Akshat Gupta, Laxman Singh Tomar, Ridhima Garg
 Abstract Cyber attacks deceive machines into believing something that does not exist in the first place. However, there are some to which even humans fall prey. One such famous attack that attackers have used over the years to exploit the vulnerability of vision is known to be a Homoglyph attack. It employs a primary yet effective mechanism to create illegitimate domains that are hard to differentiate from legit ones.</description>
     </item>
     <item>
       <title>MESH Hackathon</title>
-      <link>http://localhost:63263/events/mesh_hackathon_stuttgart_2023/</link>
+      <link>https://akshat4112.github.io/events/mesh_hackathon_stuttgart_2023/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/events/mesh_hackathon_stuttgart_2023/</guid>
+      <guid>https://akshat4112.github.io/events/mesh_hackathon_stuttgart_2023/</guid>
       <description>Stuttgart, Germany</description>
     </item>
     <item>
       <title>Recap of Intel&#39;s Machine Learning Workshop at Dr. Akhilesh Das Gupta Institute</title>
-      <link>http://localhost:63263/talks/intel_machine_learning_workshop/</link>
+      <link>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/talks/intel_machine_learning_workshop/</guid>
+      <guid>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</guid>
       <description>Delhi, India</description>
     </item>
     <item>
       <title>Hands-on Deep Learning with Tensorflow 2.0</title>
-      <link>http://localhost:63263/publications/deep_learning_with_tensorflow/</link>
+      <link>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/publications/deep_learning_with_tensorflow/</guid>
+      <guid>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</guid>
       <description></description>
     </item>
     <item>
       <title>Role of Natural Language Processing in Healthcare</title>
-      <link>http://localhost:63263/talks/nlp_in_healthcare/</link>
+      <link>https://akshat4112.github.io/talks/nlp_in_healthcare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/talks/nlp_in_healthcare/</guid>
+      <guid>https://akshat4112.github.io/talks/nlp_in_healthcare/</guid>
       <description>Poornima University, Jaipur, Rajasthan, India</description>
     </item>
     <item>
       <title>Smart India Hackathon 2017: Minitry of Earth Sciences</title>
-      <link>http://localhost:63263/events/smart_india_hackathon_2017/</link>
+      <link>https://akshat4112.github.io/events/smart_india_hackathon_2017/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/events/smart_india_hackathon_2017/</guid>
+      <guid>https://akshat4112.github.io/events/smart_india_hackathon_2017/</guid>
       <description>Chennai, Tamil Nadu, India</description>
     </item>
     <item>
-      <title>What are Diffusion Models?</title>
-      <link>http://localhost:63263/posts/what_are_diffusion_models/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/posts/what_are_diffusion_models/</guid>
-      <description>Generative modeling is currently one of the most thrilling domains in deep learning research. Traditional models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, diffusion models is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.</description>
-    </item>
-    <item>
-      <title>Fairness in Machine Learning</title>
-      <link>http://localhost:63263/posts/fairness_in_machine_learning_/</link>
-      <pubDate>Tue, 02 Jan 2024 21:27:57 +0100</pubDate>
-      <guid>http://localhost:63263/posts/fairness_in_machine_learning_/</guid>
-      <description>As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.
-Defining Fairness Fairness in machine learning can be understood in several ways:
-Group Fairness: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender.</description>
+      <title>What is a Vector Database?</title>
+      <link>https://akshat4112.github.io/posts/vector-databases/</link>
+      <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/vector-databases/</guid>
+      <description>If you&amp;rsquo;ve been working with modern AI systems — particularly in the realm of Large Language Models (LLMs), image embeddings, or recommendation engines — you&amp;rsquo;ve probably heard of vector databases. But what are they really? And why is everyone in the ML community suddenly so excited about them?
+Let me break it down in simple terms, along with how I&amp;rsquo;ve been exploring them in my own projects.
+🔍 The Problem: Why Traditional Databases Fall Short Traditional databases (like PostgreSQL or MongoDB) are great when you&amp;rsquo;re dealing with exact matches or relational queries:</description>
     </item>
     <item>
       <title>Introduction to Artificial Intelligence Workshop in Ujjain</title>
-      <link>http://localhost:63263/talks/kips_artificial_intelligence_workshop/</link>
+      <link>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/talks/kips_artificial_intelligence_workshop/</guid>
+      <guid>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</guid>
       <description>Ujjain, Madhya Pradesh, India</description>
     </item>
     <item>
-      <title>What Are Vector Databases?</title>
-      <link>http://localhost:63263/posts/vector-databases/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/posts/vector-databases/</guid>
-      <description>An in-depth, beginner-friendly guide to vector databases, what they are, how they work, and where they fit in GenAI systems.</description>
-    </item>
-    <item>
       <title>What is an Ontology in a Knowledge Graph?</title>
-      <link>http://localhost:63263/posts/ontology-in-knowledge-graphs/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/posts/ontology-in-knowledge-graphs/</guid>
-      <description>A beginner-friendly explanation of what an ontology is, why it&amp;rsquo;s central to knowledge graphs, and how it helps machines understand complex relationships.</description>
+      <link>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</link>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</guid>
+      <description>If you&amp;rsquo;re working with knowledge graphs, one term that keeps popping up is ontology. Sounds academic, right? Like something you&amp;rsquo;d find buried in a philosophy textbook.
+But in the world of AI, data science, and search engines, an ontology is far from abstract — it&amp;rsquo;s the blueprint that gives your knowledge graph meaning. Let&amp;rsquo;s break it down and explore how it all fits together.
+🧠 What Is an Ontology (in AI)?</description>
     </item>
     <item>
       <title>What Are Knowledge Graphs?</title>
-      <link>http://localhost:63263/posts/what-are-knowledge-graphs/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/posts/what-are-knowledge-graphs/</guid>
-      <description>A comprehensive guide to knowledge graphs - what they are, how they work, their benefits, and their transformative role in modern AI and data systems.</description>
+      <link>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</link>
+      <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</guid>
+      <description>We hear the term knowledge graph everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly is a knowledge graph, and why is everyone suddenly obsessed with it?
+In this post, I&amp;rsquo;ll break down knowledge graphs in plain language: what they are, how they work, and how I use them in my own projects.
+🧱 The Basics: What Is a Knowledge Graph? At its core, a knowledge graph is a network of real-world entities (people, places, things) and the relationships between them.</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:63263/about/</link>
+      <link>https://akshat4112.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/about/</guid>
+      <guid>https://akshat4112.github.io/about/</guid>
       <description>I&amp;rsquo;m a machine learning engineer and my research interests are in generative modelling, speech processing, text analysis, machine learning, and deep learning. Currently pursuing a master&amp;rsquo;s from the University of Stuttgart, my major is in computational linguistics.
 Current work Research work includes denoising diffusion on speaker embeddings, explainability of CRF-LSTM-based NER models, temporal and spatial word embeddings, and homoglyph detection using attention-based CNNs.
 My work includes Before this, I worked at Quantiphi, Scanta, and Mobile Programming LLC as a machine learning engineer and worked on speaker diarization, multimodal sentiment analysis, NLP augmentor, clinical ner, chatbot using AWS Lex and Dialogflow, customer care call analytics, neural machine translation.</description>
     </item>
     <item>
       <title>GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks</title>
-      <link>http://localhost:63263/publication/</link>
+      <link>https://akshat4112.github.io/publication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/publication/</guid>
+      <guid>https://akshat4112.github.io/publication/</guid>
       <description></description>
     </item>
   </channel>

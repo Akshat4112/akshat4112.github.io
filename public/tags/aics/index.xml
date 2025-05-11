@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aics on Akshat Gupta</title>
-    <link>http://localhost:63263/tags/aics/</link>
+    <link>https://akshat4112.github.io/tags/aics/</link>
     <description>Recent content in Aics on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:63263/tags/aics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akshat4112.github.io/tags/aics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks</title>
-      <link>http://localhost:63263/publications/glyphnet/</link>
+      <link>https://akshat4112.github.io/publications/glyphnet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/publications/glyphnet/</guid>
+      <guid>https://akshat4112.github.io/publications/glyphnet/</guid>
       <description>Paper
 Authors: Akshat Gupta, Laxman Singh Tomar, Ridhima Garg
 Abstract Cyber attacks deceive machines into believing something that does not exist in the first place. However, there are some to which even humans fall prey. One such famous attack that attackers have used over the years to exploit the vulnerability of vision is known to be a Homoglyph attack. It employs a primary yet effective mechanism to create illegitimate domains that are hard to differentiate from legit ones.</description>

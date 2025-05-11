@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ethics on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/ethics/</link>
+    <description>Recent content in Ethics on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Oct 2023 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fairness in Machine Learning</title>
+      <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
+      <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
+      <description>As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.
+Defining Fairness Fairness in machine learning can be understood in several ways:
+Group Fairness: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender.</description>
+    </item>
+  </channel>
+</rss>

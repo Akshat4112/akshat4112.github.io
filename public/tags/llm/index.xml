@@ -6,14 +6,6 @@
     <description>Recent content in LLM on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:63263/tags/llm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What Are Vector Databases?</title>
-      <link>http://localhost:63263/posts/vector-databases/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63263/posts/vector-databases/</guid>
-      <description>An in-depth, beginner-friendly guide to vector databases, what they are, how they work, and where they fit in GenAI systems.</description>
-    </item>
   </channel>
 </rss>

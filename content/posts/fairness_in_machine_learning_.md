@@ -1,9 +1,9 @@
 +++
 title = 'Fairness in Machine Learning'
-date = 2024-01-02T21:27:57+01:00
+date = 2023-10-15T09:00:00+01:00
 draft = false
-tags = ["fairness", "deep-learning", "machine-learning"]
-weight = 103
+tags = ["fairness", "machine learning", "ethics", "AI", "bias"]
+weight = 101
 +++
 ---
 
