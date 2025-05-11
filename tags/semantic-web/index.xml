@@ -6,14 +6,18 @@
     <description>Recent content in Semantic Web on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jan 2024 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/semantic-web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is an Ontology in a Knowledge Graph?</title>
       <link>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</guid>
-      <description>A beginner-friendly explanation of what an ontology is, why it&amp;rsquo;s central to knowledge graphs, and how it helps machines understand complex relationships.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re working with &lt;strong&gt;knowledge graphs&lt;/strong&gt;, one term that keeps popping up is &lt;strong&gt;ontology&lt;/strong&gt;. Sounds academic, right? Like something you&amp;rsquo;d find buried in a philosophy textbook.&lt;/p&gt;
+&lt;p&gt;But in the world of AI, data science, and search engines, an ontology is far from abstract — it&amp;rsquo;s the &lt;strong&gt;blueprint&lt;/strong&gt; that gives your knowledge graph meaning. Let&amp;rsquo;s break it down and explore how it all fits together.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-what-is-an-ontology-in-ai&#34;&gt;🧠 What Is an Ontology (in AI)?&lt;/h2&gt;
+&lt;p&gt;In the simplest terms:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

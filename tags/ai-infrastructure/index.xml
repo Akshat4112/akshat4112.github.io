@@ -6,14 +6,18 @@
     <description>Recent content in AI Infrastructure on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Dec 2023 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/ai-infrastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What Are Vector Databases?</title>
+      <title>What is a Vector Database?</title>
       <link>https://akshat4112.github.io/posts/vector-databases/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/vector-databases/</guid>
-      <description>An in-depth, beginner-friendly guide to vector databases, what they are, how they work, and where they fit in GenAI systems.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;ve been working with modern AI systems — particularly in the realm of &lt;a href=&#34;https://huggingface.co/learn/nlp-course/chapter1/3?utm_source=chatgpt&#34;&gt;Large Language Models (LLMs)&lt;/a&gt;, image embeddings, or recommendation engines — you&amp;rsquo;ve probably heard of &lt;strong&gt;vector databases&lt;/strong&gt;. But what are they really? And why is everyone in the ML community suddenly so excited about them?&lt;/p&gt;
+&lt;p&gt;Let me break it down in simple terms, along with how I&amp;rsquo;ve been exploring them in my own projects.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-the-problem-why-traditional-databases-fall-short&#34;&gt;🔍 The Problem: Why Traditional Databases Fall Short&lt;/h2&gt;
+&lt;p&gt;Traditional databases (like &lt;a href=&#34;https://www.postgresql.org/&#34;&gt;PostgreSQL&lt;/a&gt; or &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt;) are great when you&amp;rsquo;re dealing with exact matches or relational queries:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

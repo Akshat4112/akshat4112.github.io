@@ -6,8 +6,21 @@
     <description>Recent content in Machine-Learning on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jan 2024 21:27:57 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2023 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fairness in Machine Learning</title>
+      <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
+      <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.&lt;/p&gt;
+&lt;h2 id=&#34;defining-fairness&#34;&gt;Defining Fairness&lt;/h2&gt;
+&lt;p&gt;Fairness in machine learning can be understood in several ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Group Fairness&lt;/strong&gt;: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender. For instance, ensuring a loan application system doesn&amp;rsquo;t have a higher false rejection rate for one gender compared to another.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks</title>
       <link>https://akshat4112.github.io/publications/glyphnet/</link>
@@ -38,19 +51,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/talks/nlp_in_healthcare/</guid>
       <description>Poornima University, Jaipur, Rajasthan, India</description>
-    </item>
-    <item>
-      <title>Fairness in Machine Learning</title>
-      <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
-      <pubDate>Tue, 02 Jan 2024 21:27:57 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.&lt;/p&gt;
-&lt;h2 id=&#34;defining-fairness&#34;&gt;Defining Fairness&lt;/h2&gt;
-&lt;p&gt;Fairness in machine learning can be understood in several ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Group Fairness&lt;/strong&gt;: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender. For instance, ensuring a loan application system doesn&amp;rsquo;t have a higher false rejection rate for one gender compared to another.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Artificial Intelligence Workshop in Ujjain</title>
