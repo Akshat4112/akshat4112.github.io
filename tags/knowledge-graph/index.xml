@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge Graph on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/knowledge-graph/</link>
+    <description>Recent content in Knowledge Graph on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 Mar 2024 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/knowledge-graph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is an Ontology in a Knowledge Graph?</title>
+      <link>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</link>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re working with &lt;strong&gt;knowledge graphs&lt;/strong&gt;, one term that keeps popping up is &lt;strong&gt;ontology&lt;/strong&gt;. Sounds academic, right? Like something you&amp;rsquo;d find buried in a philosophy textbook.&lt;/p&gt;
+&lt;p&gt;But in the world of AI, data science, and search engines, an ontology is far from abstract — it&amp;rsquo;s the &lt;strong&gt;blueprint&lt;/strong&gt; that gives your knowledge graph meaning. Let&amp;rsquo;s break it down and explore how it all fits together.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-what-is-an-ontology-in-ai&#34;&gt;🧠 What Is an Ontology (in AI)?&lt;/h2&gt;
+&lt;p&gt;In the simplest terms:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Are Knowledge Graphs?</title>
+      <link>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</link>
+      <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</guid>
+      <description>&lt;p&gt;We hear the term &lt;strong&gt;knowledge graph&lt;/strong&gt; everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly &lt;em&gt;is&lt;/em&gt; a knowledge graph, and why is everyone suddenly obsessed with it?&lt;/p&gt;
+&lt;p&gt;In this post, I&amp;rsquo;ll break down knowledge graphs in plain language: what they are, how they work, and how I use them in my own projects.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-the-basics-what-is-a-knowledge-graph&#34;&gt;🧱 The Basics: What Is a Knowledge Graph?&lt;/h2&gt;
+&lt;p&gt;At its core, a &lt;strong&gt;knowledge graph&lt;/strong&gt; is a network of real-world entities (people, places, things) and the relationships between them. It&amp;rsquo;s how machines can represent, understand, and reason about the world — kind of like a human brain, but for structured data.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

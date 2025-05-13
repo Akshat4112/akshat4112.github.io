@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deeplearning on Akshat Gupta</title>
+    <link>http://localhost:63992/tags/deeplearning/</link>
+    <description>Recent content in Deeplearning on Akshat Gupta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Nov 2023 09:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:63992/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLMs</title>
+      <link>http://localhost:63992/posts/what_are_llms/</link>
+      <pubDate>Wed, 15 Nov 2023 09:00:00 +0100</pubDate>
+      <guid>http://localhost:63992/posts/what_are_llms/</guid>
+      <description>What are LLMs</description>
+    </item>
+  </channel>
+</rss>
