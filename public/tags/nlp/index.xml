@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NLP on Akshat Gupta</title>
-    <link>http://localhost:50281/tags/nlp/</link>
+    <link>https://akshat4112.github.io/tags/nlp/</link>
     <description>Recent content in NLP on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 15 Aug 2024 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:50281/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akshat4112.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
-      <link>http://localhost:50281/posts/attention-in-transformers/</link>
+      <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/posts/attention-in-transformers/</guid>
+      <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
       <description>When people say &amp;ldquo;Transformers revolutionized NLP,&amp;rdquo; what they really mean is:
 Attention revolutionized NLP.
 From GPT and BERT to LLaMA and Claude, attention mechanisms are the beating heart of modern large language models.

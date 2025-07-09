@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tensorflow on Akshat Gupta</title>
-    <link>http://localhost:50281/tags/tensorflow/</link>
+    <link>https://akshat4112.github.io/tags/tensorflow/</link>
     <description>Recent content in Tensorflow on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:50281/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akshat4112.github.io/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hands-on Deep Learning with Tensorflow 2.0</title>
-      <link>http://localhost:50281/publications/deep_learning_with_tensorflow/</link>
+      <link>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/publications/deep_learning_with_tensorflow/</guid>
+      <guid>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Information-Retrieval on Akshat Gupta</title>
-    <link>http://localhost:50281/tags/information-retrieval/</link>
+    <link>https://akshat4112.github.io/tags/information-retrieval/</link>
     <description>Recent content in Information-Retrieval on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Jul 2024 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:50281/tags/information-retrieval/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akshat4112.github.io/tags/information-retrieval/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RAG and LLMs: Teaching Large Models to Use External Knowledge</title>
-      <link>http://localhost:50281/posts/rag-and-llms/</link>
+      <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/posts/rag-and-llms/</guid>
+      <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
       <description>Large Language Models (LLMs) like GPT or LLaMA are great at generating text. But there&amp;rsquo;s a catch:
 They only know what they were trained on, and that knowledge is frozen at training time.
 So what happens when you ask them something from after their training cutoff? Or something super niche, like a policy from your internal HR docs?

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Model-Extraction on Akshat Gupta</title>
-    <link>http://localhost:50281/tags/model-extraction/</link>
+    <link>https://akshat4112.github.io/tags/model-extraction/</link>
     <description>Recent content in Model-Extraction on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Sep 2024 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:50281/tags/model-extraction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akshat4112.github.io/tags/model-extraction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Model Extraction Attacks: How Hackers Steal AI Models</title>
-      <link>http://localhost:50281/posts/model-extraction-attacks/</link>
+      <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/posts/model-extraction-attacks/</guid>
+      <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
       <description>In the world of machine learning, especially with the rise of large language models (LLMs) and deep neural networks, model extraction attacks are a growing concern. These attacks aim to replicate the behavior of a machine learning model by querying it and then using the responses to reverse-engineer its underlying architecture and parameters.
 What is a Model Extraction Attack? A model extraction attack occurs when an adversary tries to replicate a machine learning model by making repeated queries to it and analyzing its responses.</description>
     </item>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Voice-Conversion on Akshat Gupta</title>
-    <link>http://localhost:50281/tags/voice-conversion/</link>
+    <link>https://akshat4112.github.io/tags/voice-conversion/</link>
     <description>Recent content in Voice-Conversion on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 15 Oct 2024 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:50281/tags/voice-conversion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akshat4112.github.io/tags/voice-conversion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Speaker Anonymization: Protecting Voice Identity in the AI Era</title>
-      <link>http://localhost:50281/posts/speaker-anonymization/</link>
+      <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/posts/speaker-anonymization/</guid>
+      <guid>https://akshat4112.github.io/posts/speaker-anonymization/</guid>
       <description>Speaker anonymization refers to the process of modifying the characteristics of a speaker&amp;rsquo;s voice so that the speaker&amp;rsquo;s identity cannot be easily determined while preserving the speech&amp;rsquo;s intelligibility. With the increasing usage of speech data in virtual assistants, surveillance systems, and other applications, ensuring privacy in speech data has become critical.
 In this post, we&amp;rsquo;ll dive into the technical details of speaker anonymization techniques, including implementation approaches using machine learning, deep learning models, and popular libraries.</description>
     </item>

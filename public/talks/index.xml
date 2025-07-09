@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks on Akshat Gupta</title>
-    <link>http://localhost:50281/talks/</link>
+    <link>https://akshat4112.github.io/talks/</link>
     <description>Recent content in Talks on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:50281/talks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akshat4112.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recap of Intel&#39;s Machine Learning Workshop at Dr. Akhilesh Das Gupta Institute</title>
-      <link>http://localhost:50281/talks/intel_machine_learning_workshop/</link>
+      <link>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/talks/intel_machine_learning_workshop/</guid>
+      <guid>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</guid>
       <description>Delhi, India</description>
     </item>
     <item>
       <title>Role of Natural Language Processing in Healthcare</title>
-      <link>http://localhost:50281/talks/nlp_in_healthcare/</link>
+      <link>https://akshat4112.github.io/talks/nlp_in_healthcare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/talks/nlp_in_healthcare/</guid>
+      <guid>https://akshat4112.github.io/talks/nlp_in_healthcare/</guid>
       <description>Poornima University, Jaipur, Rajasthan, India</description>
     </item>
     <item>
       <title>Introduction to Artificial Intelligence Workshop in Ujjain</title>
-      <link>http://localhost:50281/talks/kips_artificial_intelligence_workshop/</link>
+      <link>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/talks/kips_artificial_intelligence_workshop/</guid>
+      <guid>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</guid>
       <description>Ujjain, Madhya Pradesh, India</description>
     </item>
   </channel>

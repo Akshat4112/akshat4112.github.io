@@ -2,374 +2,374 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Akshat Gupta</title>
-    <link>http://localhost:50281/tags/</link>
+    <link>https://akshat4112.github.io/tags/</link>
     <description>Recent content in Tags on Akshat Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Apr 2025 17:30:00 +0200</lastBuildDate>
-    <atom:link href="http://localhost:50281/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI</title>
-      <link>http://localhost:50281/tags/ai/</link>
-      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
-      <guid>http://localhost:50281/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fine-Tuning</title>
-      <link>http://localhost:50281/tags/fine-tuning/</link>
-      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
-      <guid>http://localhost:50281/tags/fine-tuning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM</title>
-      <link>http://localhost:50281/tags/llm/</link>
-      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
-      <guid>http://localhost:50281/tags/llm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LoRA</title>
-      <link>http://localhost:50281/tags/lora/</link>
-      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
-      <guid>http://localhost:50281/tags/lora/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Transformers</title>
-      <link>http://localhost:50281/tags/transformers/</link>
-      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
-      <guid>http://localhost:50281/tags/transformers/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agents</title>
-      <link>http://localhost:50281/tags/agents/</link>
-      <pubDate>Fri, 15 Nov 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/agents/</guid>
+      <link>https://akshat4112.github.io/tags/agents/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/agents/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>https://akshat4112.github.io/tags/ai/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Autonomous-Systems</title>
-      <link>http://localhost:50281/tags/autonomous-systems/</link>
-      <pubDate>Fri, 15 Nov 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/autonomous-systems/</guid>
+      <link>https://akshat4112.github.io/tags/autonomous-systems/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/autonomous-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Decision-Making</title>
-      <link>http://localhost:50281/tags/decision-making/</link>
-      <pubDate>Fri, 15 Nov 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/decision-making/</guid>
+      <link>https://akshat4112.github.io/tags/decision-making/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/decision-making/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep-Learning</title>
-      <link>http://localhost:50281/tags/deep-learning/</link>
-      <pubDate>Fri, 15 Nov 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/deep-learning/</guid>
+      <link>https://akshat4112.github.io/tags/deep-learning/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>https://akshat4112.github.io/tags/llm/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/llm/</guid>
       <description></description>
     </item>
     <item>
       <title>Reinforcement-Learning</title>
-      <link>http://localhost:50281/tags/reinforcement-learning/</link>
-      <pubDate>Fri, 15 Nov 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/reinforcement-learning/</guid>
+      <link>https://akshat4112.github.io/tags/reinforcement-learning/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fine-Tuning</title>
+      <link>https://akshat4112.github.io/tags/fine-tuning/</link>
+      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/tags/fine-tuning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LoRA</title>
+      <link>https://akshat4112.github.io/tags/lora/</link>
+      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/tags/lora/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transformers</title>
+      <link>https://akshat4112.github.io/tags/transformers/</link>
+      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/tags/transformers/</guid>
       <description></description>
     </item>
     <item>
       <title>Anonymization</title>
-      <link>http://localhost:50281/tags/anonymization/</link>
+      <link>https://akshat4112.github.io/tags/anonymization/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/anonymization/</guid>
+      <guid>https://akshat4112.github.io/tags/anonymization/</guid>
       <description></description>
     </item>
     <item>
       <title>Cybersecurity</title>
-      <link>http://localhost:50281/tags/cybersecurity/</link>
+      <link>https://akshat4112.github.io/tags/cybersecurity/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/cybersecurity/</guid>
+      <guid>https://akshat4112.github.io/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>http://localhost:50281/tags/privacy/</link>
+      <link>https://akshat4112.github.io/tags/privacy/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/privacy/</guid>
+      <guid>https://akshat4112.github.io/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Speech-Processing</title>
-      <link>http://localhost:50281/tags/speech-processing/</link>
+      <link>https://akshat4112.github.io/tags/speech-processing/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/speech-processing/</guid>
+      <guid>https://akshat4112.github.io/tags/speech-processing/</guid>
       <description></description>
     </item>
     <item>
       <title>Voice-Conversion</title>
-      <link>http://localhost:50281/tags/voice-conversion/</link>
+      <link>https://akshat4112.github.io/tags/voice-conversion/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/voice-conversion/</guid>
+      <guid>https://akshat4112.github.io/tags/voice-conversion/</guid>
       <description></description>
     </item>
     <item>
       <title>AI-Security</title>
-      <link>http://localhost:50281/tags/ai-security/</link>
+      <link>https://akshat4112.github.io/tags/ai-security/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/ai-security/</guid>
+      <guid>https://akshat4112.github.io/tags/ai-security/</guid>
       <description></description>
     </item>
     <item>
       <title>LLMs</title>
-      <link>http://localhost:50281/tags/llms/</link>
+      <link>https://akshat4112.github.io/tags/llms/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/llms/</guid>
+      <guid>https://akshat4112.github.io/tags/llms/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine-Learning</title>
-      <link>http://localhost:50281/tags/machine-learning/</link>
+      <link>https://akshat4112.github.io/tags/machine-learning/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/machine-learning/</guid>
+      <guid>https://akshat4112.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Model-Extraction</title>
-      <link>http://localhost:50281/tags/model-extraction/</link>
+      <link>https://akshat4112.github.io/tags/model-extraction/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/model-extraction/</guid>
+      <guid>https://akshat4112.github.io/tags/model-extraction/</guid>
       <description></description>
     </item>
     <item>
       <title>Attention</title>
-      <link>http://localhost:50281/tags/attention/</link>
+      <link>https://akshat4112.github.io/tags/attention/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/attention/</guid>
+      <guid>https://akshat4112.github.io/tags/attention/</guid>
       <description></description>
     </item>
     <item>
       <title>Neural-Networks</title>
-      <link>http://localhost:50281/tags/neural-networks/</link>
+      <link>https://akshat4112.github.io/tags/neural-networks/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/neural-networks/</guid>
+      <guid>https://akshat4112.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
     <item>
       <title>NLP</title>
-      <link>http://localhost:50281/tags/nlp/</link>
+      <link>https://akshat4112.github.io/tags/nlp/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/nlp/</guid>
+      <guid>https://akshat4112.github.io/tags/nlp/</guid>
       <description></description>
     </item>
     <item>
       <title>Self-Attention</title>
-      <link>http://localhost:50281/tags/self-attention/</link>
+      <link>https://akshat4112.github.io/tags/self-attention/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/self-attention/</guid>
+      <guid>https://akshat4112.github.io/tags/self-attention/</guid>
       <description></description>
     </item>
     <item>
       <title>Embeddings</title>
-      <link>http://localhost:50281/tags/embeddings/</link>
+      <link>https://akshat4112.github.io/tags/embeddings/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/embeddings/</guid>
+      <guid>https://akshat4112.github.io/tags/embeddings/</guid>
       <description></description>
     </item>
     <item>
       <title>Generative-Ai</title>
-      <link>http://localhost:50281/tags/generative-ai/</link>
+      <link>https://akshat4112.github.io/tags/generative-ai/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/generative-ai/</guid>
+      <guid>https://akshat4112.github.io/tags/generative-ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Information-Retrieval</title>
-      <link>http://localhost:50281/tags/information-retrieval/</link>
+      <link>https://akshat4112.github.io/tags/information-retrieval/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/information-retrieval/</guid>
+      <guid>https://akshat4112.github.io/tags/information-retrieval/</guid>
       <description></description>
     </item>
     <item>
       <title>RAG</title>
-      <link>http://localhost:50281/tags/rag/</link>
+      <link>https://akshat4112.github.io/tags/rag/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/rag/</guid>
+      <guid>https://akshat4112.github.io/tags/rag/</guid>
       <description></description>
     </item>
     <item>
       <title>Vector-Databases</title>
-      <link>http://localhost:50281/tags/vector-databases/</link>
+      <link>https://akshat4112.github.io/tags/vector-databases/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/vector-databases/</guid>
+      <guid>https://akshat4112.github.io/tags/vector-databases/</guid>
       <description></description>
     </item>
     <item>
       <title>Benchmarks</title>
-      <link>http://localhost:50281/tags/benchmarks/</link>
+      <link>https://akshat4112.github.io/tags/benchmarks/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/benchmarks/</guid>
+      <guid>https://akshat4112.github.io/tags/benchmarks/</guid>
       <description></description>
     </item>
     <item>
       <title>Evaluation</title>
-      <link>http://localhost:50281/tags/evaluation/</link>
+      <link>https://akshat4112.github.io/tags/evaluation/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/evaluation/</guid>
+      <guid>https://akshat4112.github.io/tags/evaluation/</guid>
       <description></description>
     </item>
     <item>
       <title>Natural-Language-Processing</title>
-      <link>http://localhost:50281/tags/natural-language-processing/</link>
+      <link>https://akshat4112.github.io/tags/natural-language-processing/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/natural-language-processing/</guid>
+      <guid>https://akshat4112.github.io/tags/natural-language-processing/</guid>
       <description></description>
     </item>
     <item>
       <title>ChatGPT</title>
-      <link>http://localhost:50281/tags/chatgpt/</link>
+      <link>https://akshat4112.github.io/tags/chatgpt/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/chatgpt/</guid>
+      <guid>https://akshat4112.github.io/tags/chatgpt/</guid>
       <description></description>
     </item>
     <item>
       <title>Instruction-Tuning</title>
-      <link>http://localhost:50281/tags/instruction-tuning/</link>
+      <link>https://akshat4112.github.io/tags/instruction-tuning/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/instruction-tuning/</guid>
+      <guid>https://akshat4112.github.io/tags/instruction-tuning/</guid>
       <description></description>
     </item>
     <item>
       <title>Prompt-Engineering</title>
-      <link>http://localhost:50281/tags/prompt-engineering/</link>
+      <link>https://akshat4112.github.io/tags/prompt-engineering/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/prompt-engineering/</guid>
+      <guid>https://akshat4112.github.io/tags/prompt-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Modeling</title>
-      <link>http://localhost:50281/tags/data-modeling/</link>
+      <link>https://akshat4112.github.io/tags/data-modeling/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/data-modeling/</guid>
+      <guid>https://akshat4112.github.io/tags/data-modeling/</guid>
       <description></description>
     </item>
     <item>
       <title>Knowledge Graph</title>
-      <link>http://localhost:50281/tags/knowledge-graph/</link>
+      <link>https://akshat4112.github.io/tags/knowledge-graph/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/knowledge-graph/</guid>
+      <guid>https://akshat4112.github.io/tags/knowledge-graph/</guid>
       <description></description>
     </item>
     <item>
       <title>Semantic Search</title>
-      <link>http://localhost:50281/tags/semantic-search/</link>
+      <link>https://akshat4112.github.io/tags/semantic-search/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/semantic-search/</guid>
+      <guid>https://akshat4112.github.io/tags/semantic-search/</guid>
       <description></description>
     </item>
     <item>
       <title>Diffusion-Models</title>
-      <link>http://localhost:50281/tags/diffusion-models/</link>
+      <link>https://akshat4112.github.io/tags/diffusion-models/</link>
       <pubDate>Thu, 15 Feb 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/diffusion-models/</guid>
+      <guid>https://akshat4112.github.io/tags/diffusion-models/</guid>
       <description></description>
     </item>
     <item>
       <title>Ontology</title>
-      <link>http://localhost:50281/tags/ontology/</link>
+      <link>https://akshat4112.github.io/tags/ontology/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/ontology/</guid>
+      <guid>https://akshat4112.github.io/tags/ontology/</guid>
       <description></description>
     </item>
     <item>
       <title>Semantic Web</title>
-      <link>http://localhost:50281/tags/semantic-web/</link>
+      <link>https://akshat4112.github.io/tags/semantic-web/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/semantic-web/</guid>
+      <guid>https://akshat4112.github.io/tags/semantic-web/</guid>
       <description></description>
     </item>
     <item>
       <title>AI Infrastructure</title>
-      <link>http://localhost:50281/tags/ai-infrastructure/</link>
+      <link>https://akshat4112.github.io/tags/ai-infrastructure/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/ai-infrastructure/</guid>
+      <guid>https://akshat4112.github.io/tags/ai-infrastructure/</guid>
       <description></description>
     </item>
     <item>
       <title>Vector Database</title>
-      <link>http://localhost:50281/tags/vector-database/</link>
+      <link>https://akshat4112.github.io/tags/vector-database/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/vector-database/</guid>
+      <guid>https://akshat4112.github.io/tags/vector-database/</guid>
       <description></description>
     </item>
     <item>
       <title>Bias</title>
-      <link>http://localhost:50281/tags/bias/</link>
+      <link>https://akshat4112.github.io/tags/bias/</link>
       <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/bias/</guid>
+      <guid>https://akshat4112.github.io/tags/bias/</guid>
       <description></description>
     </item>
     <item>
       <title>Ethics</title>
-      <link>http://localhost:50281/tags/ethics/</link>
+      <link>https://akshat4112.github.io/tags/ethics/</link>
       <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/ethics/</guid>
+      <guid>https://akshat4112.github.io/tags/ethics/</guid>
       <description></description>
     </item>
     <item>
       <title>Fairness</title>
-      <link>http://localhost:50281/tags/fairness/</link>
+      <link>https://akshat4112.github.io/tags/fairness/</link>
       <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
-      <guid>http://localhost:50281/tags/fairness/</guid>
+      <guid>https://akshat4112.github.io/tags/fairness/</guid>
       <description></description>
     </item>
     <item>
       <title>Aaai</title>
-      <link>http://localhost:50281/tags/aaai/</link>
+      <link>https://akshat4112.github.io/tags/aaai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/tags/aaai/</guid>
+      <guid>https://akshat4112.github.io/tags/aaai/</guid>
       <description></description>
     </item>
     <item>
       <title>Aics</title>
-      <link>http://localhost:50281/tags/aics/</link>
+      <link>https://akshat4112.github.io/tags/aics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/tags/aics/</guid>
+      <guid>https://akshat4112.github.io/tags/aics/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer-Vision</title>
-      <link>http://localhost:50281/tags/computer-vision/</link>
+      <link>https://akshat4112.github.io/tags/computer-vision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/tags/computer-vision/</guid>
+      <guid>https://akshat4112.github.io/tags/computer-vision/</guid>
       <description></description>
     </item>
     <item>
       <title>Intel-Innovator</title>
-      <link>http://localhost:50281/tags/intel-innovator/</link>
+      <link>https://akshat4112.github.io/tags/intel-innovator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/tags/intel-innovator/</guid>
+      <guid>https://akshat4112.github.io/tags/intel-innovator/</guid>
       <description></description>
     </item>
     <item>
       <title>Kips</title>
-      <link>http://localhost:50281/tags/kips/</link>
+      <link>https://akshat4112.github.io/tags/kips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/tags/kips/</guid>
+      <guid>https://akshat4112.github.io/tags/kips/</guid>
       <description></description>
     </item>
     <item>
       <title>Tensorflow</title>
-      <link>http://localhost:50281/tags/tensorflow/</link>
+      <link>https://akshat4112.github.io/tags/tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/tags/tensorflow/</guid>
+      <guid>https://akshat4112.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     <item>
       <title>Workshop</title>
-      <link>http://localhost:50281/tags/workshop/</link>
+      <link>https://akshat4112.github.io/tags/workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50281/tags/workshop/</guid>
+      <guid>https://akshat4112.github.io/tags/workshop/</guid>
       <description></description>
     </item>
   </channel>
