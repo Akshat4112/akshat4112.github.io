@@ -1,7 +1,7 @@
 ---
 title: "GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks"
 #description: ""
-dateString: March 2023
+date: 2023-03-01T00:00:00+00:00
 draft: false
 tags: ["machine-learning", "aics", "aaai", "computer-vision"]
 weight: 101

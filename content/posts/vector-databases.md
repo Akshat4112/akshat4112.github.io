@@ -1,10 +1,12 @@
-+++
-title = 'What is a Vector Database?'
-date = 2023-12-15T09:00:00+01:00
-draft = false
-tags = ["vector database", "semantic search", "embeddings", "RAG", "AI infrastructure"]
-weight = 103
-+++
+---
+title: "What is a Vector Database?"
+date: 2023-12-15T09:00:00+01:00
+draft: false
+tags: ["vector-database", "semantic-search", "embeddings", "RAG", "ai-infrastructure"]
+weight: 103
+author: "Akshat Gupta"
+description: "An introduction to vector databases — what they are, how they power semantic search, and why they're essential infrastructure for modern AI applications."
+---
 
 
 If you've been working with modern AI systems — particularly in the realm of [Large Language Models (LLMs)](https://huggingface.co/learn/nlp-course/chapter1/3?utm_source=chatgpt), image embeddings, or recommendation engines — you've probably heard of **vector databases**. But what are they really? And why is everyone in the ML community suddenly so excited about them?
@@ -72,7 +74,7 @@ Some practical examples I've seen or built:
 
 - **[RAG (Retrieval-Augmented Generation)](https://www.pinecone.io/learn/retrieval-augmented-generation/)** pipelines: Retrieving the most relevant documents before feeding them to an LLM.
 - **Image Search**: Finding visually similar images using [CLIP embeddings](https://huggingface.co/blog/clip).
-- **Voiceprint Matching**: In a speaker diarization project, I embedded speaker audio and searched for similar embeddings.
+- **Voiceprint Matching**: In a [speaker diarization](https://en.wikipedia.org/wiki/Speaker_diarisation) project, I embedded speaker audio and searched for similar embeddings.
 - **Semantic QA**: Matching a question against a corpus of answers using dense embeddings instead of keywords.
 
 ---
@@ -80,7 +82,7 @@ Some practical examples I've seen or built:
 ## 🧪 My Learnings & Tips
 
 1. **Start Small**: Use [FAISS](https://github.com/facebookresearch/faiss) or [Chroma](https://www.trychroma.com/) locally before scaling to managed solutions like Pinecone.
-2. **Hybrid Search Rocks**: Combining vector similarity with keyword search (like in Weaviate or Elasticsearch) often yields better results.
+2. **Hybrid Search Rocks**: Combining vector similarity with keyword search (like in Weaviate or [Elasticsearch](https://www.elastic.co/)) often yields better results.
 3. **Fine-Tune Embeddings**: Pretrained models work well, but fine-tuning with libraries like [SentenceTransformers](https://www.sbert.net/) can significantly improve relevance.
 4. **Storage + Speed Tradeoffs**: ANN methods sacrifice some accuracy for speed — you'll need to balance these based on your use case.
 

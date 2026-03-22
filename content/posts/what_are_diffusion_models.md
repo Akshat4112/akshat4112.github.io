@@ -1,18 +1,20 @@
 ---
 title: "What are Diffusion Models?"
-#description: ""
+description: "A technical exploration of diffusion models — how the forward/reverse diffusion process works, U-Net architectures, denoising score matching, and why they outperform GANs."
 date: 2024-02-15T09:00:00+01:00
 draft: false
 tags: ["generative-ai", "deep-learning", "diffusion-models"]
 weight: 101
 math: true
-#markup: 'mmark'
-#cover:
-#    image: "/posts/diffusion_models_ho.png"
+author: "Akshat Gupta"
+showtoc: true
+cover:
+    image: "/posts/diffusion_models_ho.png"
+    alt: "Diffusion model forward and reverse process (Ho et al.)"
 ---
 
 **Generative modeling** is currently one of the most thrilling domains in deep learning research. 
-Traditional models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, **diffusion models** is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.
+Traditional models like [Generative Adversarial Networks (GANs)](https://en.wikipedia.org/wiki/Generative_adversarial_network) and [Variational Autoencoders (VAEs)](https://en.wikipedia.org/wiki/Variational_autoencoder) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, **[diffusion models](https://en.wikipedia.org/wiki/Diffusion_model)** is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.
 
 The foundations of diffusion models were introduced in papers by [Sohl-Dickstein](https://arxiv.org/pdf/1503.03585.pdf) et al. and [Ho](https://arxiv.org/pdf/2006.11239.pdf) et al.
 
@@ -38,7 +40,7 @@ A critical aspect of this training involves **denoising score matching**, where 
 
 ### Diffusion Model Architectures
 
-Diffusion models commonly utilize **convolutional neural networks**, particularly U-Net architectures. The contracting and expanding paths in U-Nets facilitate both local and global attention to the noise, yielding high-quality outputs.
+Diffusion models commonly utilize **convolutional neural networks**, particularly [U-Net](https://arxiv.org/abs/1505.04597) architectures. The contracting and expanding paths in U-Nets facilitate both local and global attention to the noise, yielding high-quality outputs.
 
 Conditional variants of these models integrate class embeddings at intermediate layers, allowing for controlled sampling of specific classes of data, like images of diverse objects.
 

@@ -1,11 +1,11 @@
 ---
 title: "Introduction to Artificial Intelligence Workshop in Ujjain"
 description: "Ujjain, Madhya Pradesh, India"
+date: 2019-12-17T00:00:00+05:30
 draft: false
-tags: ["machine-learning", "workshop", "kips"]
+tags: ["machine-learning", "AI", "workshop"]
 weight: 103
-venue: 
-#cover:
+venue:
 #    image: "/talks/IMG20190906130457.jpg"
 ---
 

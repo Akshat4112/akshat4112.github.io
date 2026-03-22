@@ -5,6 +5,9 @@ draft: false
 tags: ["LLM", "evaluation", "benchmarks", "AI", "natural-language-processing", "deep-learning"]
 weight: 110
 math: true
+author: "Akshat Gupta"
+showtoc: true
+description: "A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality."
 ---
 
 As large language models (LLMs) become central to search, productivity tools, education, and coding, **evaluating them** is no longer optional. You *have* to ask:  
@@ -40,13 +43,13 @@ These are computed automatically without human judgment.
 - **Perplexity**: Measures how well a model predicts the next word (lower = better).  
   Not ideal for generation tasks, but useful during pretraining.
 
-- **BLEU / ROUGE / METEOR**: Compare generated output to a reference.  
-  Best for short-form tasks like translation or summarization.  
+- **[BLEU](https://en.wikipedia.org/wiki/BLEU) / ROUGE / METEOR**: Compare generated output to a reference.
+  Best for short-form tasks like translation or summarization.
   [BLEU paper](https://aclanthology.org/P02-1040/)
 
 - **Exact Match / F1 Score**: Used in QA tasks with ground truth answers.
 
-- **BERTScore**: Embedding-based similarity using BERT. Good for semantics.
+- **BERTScore**: Embedding-based similarity using [BERT](https://arxiv.org/abs/1810.04805). Good for semantics.
 
 > 🚫 Problem: These scores often fail to capture nuance, creativity, or reasoning.
 
@@ -134,7 +137,7 @@ In my own projects (like document Q&A or multi-agent GenAI), I often mix:
 - 🔍 **Hard metrics** (accuracy, F1) for structured data extraction
 - 🧪 **Prompt-based unit tests** using `OpenAI Evals` or `LangChain`
 - 👨‍👩‍👧 **Manual grading** for edge cases and critical flows
-- 📊 **Leaderboards** when comparing LLaMA, Mixtral, GPT-4, Claude, etc.
+- 📊 **Leaderboards** when comparing [LLaMA](https://github.com/meta-llama/llama), Mixtral, GPT-4, Claude, etc.
 
 For production? **Human-in-the-loop testing** is key — especially for regulated or high-risk domains.
 

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Attention on Akshat Gupta</title>
-    <link>https://akshat4112.github.io/tags/attention/</link>
+    <link>http://localhost:60381/tags/attention/</link>
     <description>Recent content in Attention on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>http://localhost:60381/akshat_gupta.jpg</url>
+      <link>http://localhost:60381/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 15 Aug 2024 09:00:00 +0100</lastBuildDate>
-    <atom:link href="https://akshat4112.github.io/tags/attention/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:60381/tags/attention/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
-      <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
+      <link>http://localhost:60381/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>When people say &amp;ldquo;Transformers revolutionized NLP,&amp;rdquo; what they really mean is:
-Attention revolutionized NLP.
-From GPT and BERT to LLaMA and Claude, attention mechanisms are the beating heart of modern large language models.
-But what exactly is attention? Why is it so powerful? And how many types are there?
-Let&amp;rsquo;s dive in.
-🧠 What is Attention? In the simplest sense, attention is a way for a model to focus on the most relevant parts of the input when generating output.</description>
+      <guid>http://localhost:60381/posts/attention-in-transformers/</guid>
+      <description>A deep dive into self-attention mechanisms — how they work, why they power modern Transformers, and the different attention variants used in GPT, BERT, and LLaMA.</description>
     </item>
   </channel>
 </rss>

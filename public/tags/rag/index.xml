@@ -2,49 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RAG on Akshat Gupta</title>
-    <link>https://akshat4112.github.io/tags/rag/</link>
+    <link>http://localhost:60381/tags/rag/</link>
     <description>Recent content in RAG on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>http://localhost:60381/akshat_gupta.jpg</url>
+      <link>http://localhost:60381/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Jul 2024 09:00:00 +0100</lastBuildDate>
-    <atom:link href="https://akshat4112.github.io/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:60381/tags/rag/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is a Vector Database?</title>
-      <link>https://akshat4112.github.io/posts/vector-databases/</link>
+      <link>http://localhost:60381/posts/vector-databases/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/vector-databases/</guid>
-      <description>If you&amp;rsquo;ve been working with modern AI systems — particularly in the realm of Large Language Models (LLMs), image embeddings, or recommendation engines — you&amp;rsquo;ve probably heard of vector databases. But what are they really? And why is everyone in the ML community suddenly so excited about them?
-Let me break it down in simple terms, along with how I&amp;rsquo;ve been exploring them in my own projects.
-🔍 The Problem: Why Traditional Databases Fall Short Traditional databases (like PostgreSQL or MongoDB) are great when you&amp;rsquo;re dealing with exact matches or relational queries:</description>
+      <guid>http://localhost:60381/posts/vector-databases/</guid>
+      <description>An introduction to vector databases — what they are, how they power semantic search, and why they&amp;#39;re essential infrastructure for modern AI applications.</description>
     </item>
     <item>
       <title>What Are Knowledge Graphs?</title>
-      <link>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</link>
+      <link>http://localhost:60381/posts/what-are-knowledge-graphs/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</guid>
-      <description>We hear the term knowledge graph everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly is a knowledge graph, and why is everyone suddenly obsessed with it?
-In this post, I&amp;rsquo;ll break down knowledge graphs in plain language: what they are, how they work, and how I use them in my own projects.
-🧱 The Basics: What Is a Knowledge Graph? At its core, a knowledge graph is a network of real-world entities (people, places, things) and the relationships between them.</description>
+      <guid>http://localhost:60381/posts/what-are-knowledge-graphs/</guid>
+      <description>A plain-language introduction to knowledge graphs — how they represent real-world entities and relationships, and why they&amp;#39;re central to modern AI and search systems.</description>
     </item>
     <item>
       <title>Prompt Engineering: The Art of Talking to AI</title>
-      <link>https://akshat4112.github.io/posts/prompt-engineering/</link>
+      <link>http://localhost:60381/posts/prompt-engineering/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/prompt-engineering/</guid>
-      <description>We&amp;rsquo;ve all played with ChatGPT, Copilot, or Claude — typing in questions and marveling at their responses. But behind the scenes, there&amp;rsquo;s a powerful craft at play: prompt engineering.
-It&amp;rsquo;s not just about &amp;ldquo;asking a question.&amp;rdquo; It&amp;rsquo;s about how you phrase it, structure it, and guide the model. Prompt engineering is the new programming skill — and it&amp;rsquo;s transforming how we interact with AI.
-🧠 What Is Prompt Engineering? Prompt engineering is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs.</description>
+      <guid>http://localhost:60381/posts/prompt-engineering/</guid>
+      <description>A practical guide to prompt engineering — the art of crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
     </item>
     <item>
       <title>RAG and LLMs: Teaching Large Models to Use External Knowledge</title>
-      <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
+      <link>http://localhost:60381/posts/rag-and-llms/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
-      <description>Large Language Models (LLMs) like GPT or LLaMA are great at generating text. But there&amp;rsquo;s a catch:
-They only know what they were trained on, and that knowledge is frozen at training time.
-So what happens when you ask them something from after their training cutoff? Or something super niche, like a policy from your internal HR docs?
-Enter RAG – Retrieval-Augmented Generation.
-A technique that combines LLMs with a search engine, enabling them to look up facts on the fly.</description>
+      <guid>http://localhost:60381/posts/rag-and-llms/</guid>
+      <description>A technical introduction to Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
     </item>
   </channel>
 </rss>

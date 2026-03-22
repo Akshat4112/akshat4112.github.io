@@ -4,9 +4,11 @@ date: 2024-04-15T09:00:00+01:00
 draft: false
 tags: ["prompt-engineering", "LLMs", "AI", "chatGPT", "RAG", "instruction-tuning"]
 weight: 108
+author: "Akshat Gupta"
+description: "A practical guide to prompt engineering — the art of crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques."
 ---
 
-We've all played with ChatGPT, Copilot, or Claude — typing in questions and marveling at their responses. But behind the scenes, there's a powerful craft at play: **prompt engineering**.
+We've all played with ChatGPT, Copilot, or Claude — typing in questions and marveling at their responses. But behind the scenes, there's a powerful craft at play: **prompt engineering**. [OpenAI](https://openai.com/) and [Anthropic](https://www.anthropic.com/) both publish guidance on how best to prompt their models.
 
 It's not just about "asking a question." It's about how you phrase it, structure it, and guide the model. Prompt engineering is the new programming skill — and it's transforming how we interact with AI.
 
@@ -14,7 +16,7 @@ It's not just about "asking a question." It's about how you phrase it, structure
 
 ## 🧠 What Is Prompt Engineering?
 
-**Prompt engineering** is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs.
+**Prompt engineering** is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs. This technique complements approaches such as [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) and [LoRA](https://arxiv.org/abs/2106.09685) fine-tuning.
 
 It's half science, half art. A good prompt can mean the difference between:
 
@@ -113,6 +115,7 @@ Here are some tools to experiment with prompt engineering:
 - [LangChain](https://www.langchain.com/)
 - [Promptable](https://www.promptable.ai/)
 - [LlamaIndex](https://www.llamaindex.ai/)
+- [HuggingFace](https://huggingface.co/) – model hub and Transformers library
 
 ---
 

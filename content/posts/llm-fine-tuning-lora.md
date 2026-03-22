@@ -1,12 +1,14 @@
-+++
-title = 'LLM Fine-Tuning and LoRA: Making Large Models Work for You'
-date = 2025-04-20T17:30:00+02:00
-draft = false
-tags = ["LLM", "fine-tuning", "LoRA", "AI", "transformers"]
-weight = 105
-+++
+---
+title: "LLM Fine-Tuning and LoRA: Making Large Models Work for You"
+date: 2025-04-20T17:30:00+02:00
+draft: false
+tags: ["LLM", "fine-tuning", "LoRA", "AI", "transformers"]
+weight: 105
+author: "Akshat Gupta"
+description: "How to fine-tune large language models efficiently using LoRA — low-rank adaptation that dramatically reduces compute and memory requirements."
+---
 
-As powerful as large language models (LLMs) like GPT, LLaMA, and Mistral are, they’re still *general-purpose*. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to **fine-tune** them.
+As powerful as large language models (LLMs) like GPT, [LLaMA](https://github.com/meta-llama/llama), and [Mistral](https://mistral.ai/) are, they’re still *general-purpose*. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to **fine-tune** them.
 
 And thanks to a technique called **LoRA (Low-Rank Adaptation)**, you can now fine-tune LLMs with a fraction of the data, compute, and cost.
 
@@ -88,13 +90,13 @@ Perfect for startups, researchers, and builders who want **domain-specific LLMs*
 | Domain-specific language or symbols      | Fine-tuning          |
 | Instruction-following improvements       | LoRA or full fine-tune|
 
-For general Q&A or document tasks, **combine LoRA with a RAG pipeline** to get best results.
+For general Q&A or document tasks, **combine LoRA with a [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) pipeline** to get best results.
 
 ---
 
 ## 🧰 Popular Libraries for LoRA
 
-- [**PEFT**](https://huggingface.co/docs/peft/index) – Hugging Face’s library for Parameter-Efficient Fine-Tuning  
+- [**PEFT**](https://huggingface.co/docs/peft/index) – [HuggingFace](https://huggingface.co/)’s library for Parameter-Efficient Fine-Tuning
 - [**QLoRA**](https://huggingface.co/blog/4bit-transformers-bitsandbytes) – Quantized LoRA (8-bit/4-bit) for even more memory savings  
 - [**Axolotl**](https://github.com/OpenAccess-AI-Collective/axolotl) – Powerful config-based trainer  
 - [**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory) – Quick setup for finetuning LLaMA and Mistral models

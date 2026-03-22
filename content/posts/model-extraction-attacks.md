@@ -5,153 +5,153 @@ draft: false
 tags: ["AI-security", "model-extraction", "machine-learning", "cybersecurity", "LLMs", "deep-learning", "AI"]
 weight: 113
 math: true
+author: "Akshat Gupta"
+showtoc: true
+description: "A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, the formal threat model, and principled defences."
 ---
 
-In the world of machine learning, especially with the rise of large language models (LLMs) and deep neural networks, model extraction attacks are a growing concern. These attacks aim to replicate the behavior of a machine learning model by querying it and then using the responses to reverse-engineer its underlying architecture and parameters.
+Training a state-of-the-art machine learning model is expensive. Large language models like [GPT-3](https://arxiv.org/abs/2005.14165) required hundreds of petaflop-days of compute and millions of dollars. Yet once deployed behind an API, they are vulnerable to a surprisingly subtle attack: an adversary who never sees the weights, never reads the training data, and never touches the server — but can still *steal the model* by asking it questions.
 
-## What is a Model Extraction Attack?
+This is a **model extraction attack**, and it is one of the more underappreciated threats in production ML security. Related adversarial work — see [Goodfellow et al.](https://arxiv.org/abs/1412.6572) on FGSM — focuses on perturbing inputs to fool a model. Model extraction goes further: the attacker wants a *copy* of the model itself.
 
-A **model extraction attack** occurs when an adversary tries to replicate a machine learning model by making repeated queries to it and analyzing its responses. The goal of the attacker is to create a new model that mimics the target model’s functionality, often without direct access to its architecture or parameters.
+---
 
-Once the adversary has successfully replicated a model, they can use it for various malicious purposes, including:
+## 🎯 Formal Threat Model
 
-- **Stealing intellectual property**: By extracting a proprietary model, attackers can use it to bypass legal or technical protections or even re-sell it.
-- **Bypassing security measures**: An extracted model might reveal vulnerabilities or ways to exploit the system, allowing attackers to bypass security checks.
-- **Creating competitive advantages**: Competitors can replicate expensive and sophisticated models without having to invest in training them from scratch.
+Let the target model be a function:
 
-## Types of Model Extraction Attacks
+$$f^*: \mathcal{X} \rightarrow \mathcal{Y}$$
 
-There are two primary categories of model extraction attacks:
+mapping inputs $x \in \mathcal{X}$ to outputs $y \in \mathcal{Y}$ (e.g., class probabilities, logits, or generated text). The attacker has no access to $f^*$'s parameters $\theta^*$ or training data $\mathcal{D}$. Their only interface is an oracle:
 
-### 1. **Black-box Attacks**
-In a **black-box** attack, the adversary only has access to the model’s input-output behavior, without any information about its internals. The attacker can make queries to the model and receive outputs, which they will use to infer the model’s behavior and architecture.
+$$\mathcal{O}(x) = f^*(x)$$
 
-#### Example: 
-Suppose an attacker wants to replicate a language model like GPT. They can send in a variety of text prompts to the model, such as "What’s the weather like today?" or "Tell me a joke," and observe the responses. After making enough queries, the attacker can train their own model on these input-output pairs, essentially trying to reproduce the target model's performance.
+The attacker's goal is to construct a surrogate model $\hat{f}$ that approximates $f^*$:
 
-**Techniques used in Black-box Attacks**:
-- **Querying the model extensively**: This is usually the most straightforward approach. The attacker queries the model with diverse inputs to gather enough data to approximate the model’s behavior.
-- **Model Distillation**: The adversary can train a smaller surrogate model using the same input-output pairs. Although the extracted model will not match the target exactly, it can still replicate much of the functionality.
+$$\hat{f} \approx f^* \quad \text{such that} \quad \mathbb{E}_{x \sim \mathcal{P}}[\ell(\hat{f}(x), f^*(x))] < \varepsilon$$
 
-#### Real-World Example:
-Researchers from the **University of California, Berkeley** demonstrated a black-box attack on image classification models. They used a model distillation technique where they queried a black-box image classifier (like Google Vision API) with thousands of images, extracting a surrogate model that performed similarly to the original model on classification tasks.
+for some loss $\ell$ and input distribution $\mathcal{P}$, with as few oracle queries as possible.
 
-### 2. **White-box Attacks**
-In a **white-box** attack, the adversary has full access to the model’s architecture, weights, and sometimes even its training data. This gives them an advantage in replicating the model, as they can directly inspect its components and behaviors.
+---
 
-#### Example:
-If an attacker gains access to a model's source code or API endpoint (e.g., through a vulnerable cloud service), they can directly extract information about the model’s structure. This could include its layers, weights, and biases, making it much easier to create a replica.
+## 🗂️ Attack Taxonomy
 
-**Techniques used in White-box Attacks**:
-- **Exploiting exposed models**: If a company or service exposes their model without adequate protection (like an open-source model or poorly secured API), an attacker can directly replicate it.
-- **Model stealing via backdoors**: Some attackers try to inject vulnerabilities into the model itself that would allow them to extract its parameters without permission.
+### Black-Box Attacks
 
-#### Real-World Example:
-In **NIPS 2016**, researchers successfully conducted a white-box model extraction attack on a neural network model by reverse-engineering the model architecture and retraining a copy of the model on their own data. This demonstrated the feasibility of stealing a model from an exposed API.
+The adversary can only observe inputs and outputs — no knowledge of architecture, weights, or training procedure. This is the most realistic and most studied setting.
 
-## Steps Involved in Model Extraction Attacks
+The attacker constructs a **query dataset** $\mathcal{D}_q = \{(x_i, \mathcal{O}(x_i))\}_{i=1}^n$ by selecting inputs $x_i$ and recording the oracle's responses, then trains $\hat{f}$ on $\mathcal{D}_q$:
 
-### Step 1: Querying the Target Model
-The adversary typically starts by querying the target model. In the case of black-box attacks, they don’t know the internal structure of the model, so they send a variety of queries, often including edge cases and adversarial inputs, to collect a wide range of responses.
+$$\hat{\theta} = \arg\min_\theta \sum_{i=1}^n \ell(\hat{f}_\theta(x_i), \mathcal{O}(x_i))$$
 
-**Example Implementation**:
-```python
-import requests
+The key question is *how to choose* $x_i$. A random distribution wastes queries on uninformative regions of $\mathcal{X}$; adaptive strategies focus queries where the oracle's decision boundary is most informative.
 
-def query_model(input_text):
-    response = requests.post('https://example.com/predict', data={'input': input_text})
-    return response.json()
+### White-Box Attacks
 
-queries = [
-    "What is 2+2?",
-    "Tell me a story about a dragon.",
-    "What is the capital of France?"
-]
+The adversary has full access to the model — its architecture, weights, and sometimes training data. This typically arises from a misconfigured API, leaked model file, or insider access. White-box extraction is trivially easy (copy the weights directly) and is primarily a deployment security problem rather than a learning theory one.
 
-responses = [query_model(query) for query in queries]
-```
+The interesting problem — and the focus of research — is black-box extraction.
 
-In this case, the attacker collects responses from the target model and stores them for further analysis.
+---
 
-### Step 2: Analyzing the Responses
-After gathering enough input-output pairs, the attacker will analyze the responses. They may look for patterns or anomalies that help them understand the model’s decision-making process.
+## 📐 The Mathematics of Extraction
 
-For example, the attacker might notice that the model tends to classify certain types of input in a specific way, suggesting a particular feature in the underlying architecture.
+### Model Distillation as Extraction
 
-### Step 3: Rebuilding the Model
-In the final step, the attacker will attempt to train a new model using the gathered data. This process involves feeding the input-output pairs into a new model and adjusting its parameters until the model closely replicates the behavior of the target model.
+Model extraction is structurally identical to **knowledge distillation** (Hinton et al., 2015), except that distillation is a cooperative compression technique and extraction is adversarial.
 
-**Example Implementation**:
-```python
-from sklearn.neural_network import MLPClassifier
+In distillation, a student $\hat{f}$ is trained to match the soft output distribution of a teacher $f^*$. The loss uses the **Kullback-Leibler divergence**:
 
-# Example: Train a simple MLP classifier on the extracted data
-X_train = [[1, 2], [2, 3], [3, 4]]  # Example inputs
-y_train = [0, 1, 1]  # Example outputs (targets)
+$$\mathcal{L}_\text{KD} = \tau^2 \cdot D_\text{KL}(\sigma(f^*(x)/\tau) \| \sigma(\hat{f}(x)/\tau))$$
 
-model = MLPClassifier(hidden_layer_sizes=(10,))
-model.fit(X_train, y_train)
+where $\sigma$ is the softmax function and $\tau > 1$ is a temperature that softens the probability distribution, preserving more information about the teacher's beliefs across all classes — not just the top prediction.
 
-# Predict on new data
-model.predict([[4, 5]])
-```
+Soft labels are far more informative than hard labels. If $f^*$ outputs $[0.7, 0.28, 0.02]$ rather than just class 0, the attacker learns both the decision boundary *and* how confident the model is near it.
 
-This new model trained on the attacker’s collected data will likely approximate the behavior of the original model.
+### Query Complexity
 
-## Risks and Implications
+How many queries $n$ does an attacker need? This depends on the complexity of $f^*$. For a linear classifier in $\mathbb{R}^d$, the decision boundary has $d$ degrees of freedom, so $O(d)$ queries suffice. For a neural network with $p$ parameters, extraction in the worst case requires $O(p)$ queries — but in practice far fewer, because real-world models have low intrinsic dimensionality in their decision surfaces.
 
-The risks posed by model extraction attacks are vast:
+Formally, the extraction error is bounded by a generalisation-style argument:
 
-- **Intellectual Property Theft**: Large companies invest a lot in developing machine learning models, and model extraction attacks make it easier for malicious actors to replicate their models, potentially leading to loss of competitive advantage.
-- **Security Vulnerabilities**: Once an attacker has replicated a model, they could use it to exploit weaknesses or gain unauthorized access to sensitive data, especially if the model is used in mission-critical systems like finance or healthcare.
-- **Reduction in Trust**: If model extraction attacks become more prevalent, users may lose trust in machine learning systems, fearing that adversaries could easily replicate and misuse models.
+$$\mathbb{E}[\ell(\hat{f}, f^*)] \leq \mathcal{O}\!\left(\sqrt{\frac{\text{VC}(\hat{f})}{n}}\right)$$
 
-## Mitigating Model Extraction Attacks
+where $\text{VC}(\hat{f})$ is the VC dimension of the surrogate model class and $n$ is the number of queries. Increasing $n$ or restricting the expressiveness of the surrogate class reduces extraction error.
 
-### 1. **Limit Query Access**
-Limiting the number of queries an external party can make to a model is a simple yet effective measure. Implementing rate limiting, CAPTCHA, or query restrictions can prevent an adversary from gathering enough data to replicate the model.
+### Active Query Selection
 
-**Implementation Example**:
-```python
-import time
-from functools import wraps
+Passive (random) querying is inefficient. Active strategies select the most informative $x_i$ at each step. A natural criterion is **uncertainty sampling**: query the oracle at points where the current surrogate is most uncertain:
 
-def limit_queries(rate_limit):
-    def decorator(func):
-        last_called = [0.0]
+$$x_i^* = \arg\max_{x} H(\hat{f}(x))$$
 
-        @wraps(func)
-        def wrapped(*args, **kwargs):
-            elapsed = time.time() - last_called[0]
-            if elapsed < rate_limit:
-                time.sleep(rate_limit - elapsed)
-            last_called[0] = time.time()
-            return func(*args, **kwargs)
+where $H$ is the entropy of the surrogate's output distribution. High entropy means the surrogate doesn't yet know what to predict there — so the oracle's response is maximally informative.
 
-        return wrapped
-    return decorator
+This turns extraction into an active learning problem, substantially reducing the query budget.
 
-@limit_queries(1)  # Only allow one query per second
-def query_model(input_text):
-    response = requests.post('https://example.com/predict', data={'input': input_text})
-    return response.json()
-```
+---
 
-### 2. **Model Watermarking**
-Watermarking involves embedding unique markers within a model’s behavior. If an attacker replicates the model, these markers can be used to track and prove ownership.
+## ⚠️ Why Soft Outputs Are the Attacker's Best Friend
 
-### 3. **Obfuscating Model Outputs**
-To make it harder for attackers to learn from the model’s behavior, you can introduce noise into the model’s outputs, making them less predictable and more difficult to replicate.
+Most APIs return not just the predicted class but a full probability vector (confidence scores). This is a serious vulnerability.
 
-### 4. **Differential Privacy**
-Differential privacy techniques can be applied to the model to ensure that individual data points cannot be reverse-engineered from the model’s responses. This reduces the effectiveness of model extraction attacks, as the model will not reveal sensitive information about specific data points.
+Consider a binary classifier. A hard-label response tells the attacker which side of the boundary $x$ falls on — one bit of information. A soft-label response like $f^*(x) = 0.83$ also reveals *how far* from the boundary $x$ is. Aggregating many such responses allows the attacker to reconstruct the shape of the decision boundary with far fewer queries than hard labels would require.
 
-## Final Thoughts
+**The practical implication**: APIs that return only the top-1 prediction (hard labels) are significantly harder to extract from than those that return full probability distributions.
 
-Model extraction attacks are a growing threat in the world of AI and machine learning. As models become more powerful and are deployed at scale, it’s crucial to understand the risks and employ countermeasures to protect intellectual property and secure sensitive systems.
+---
 
-By implementing appropriate defenses, including query limitations, model watermarking, and differential privacy, we can reduce the likelihood of successful model extraction and ensure that the benefits of AI are not overshadowed by malicious exploitation.
+## 🛡️ Defences
 
-Stay tuned for more posts where we dive deeper into defense techniques and specific case studies.
+### 1. Query Rate Limiting
+
+The simplest defence is to bound the number of queries per user over a time window. If the attacker needs $n_\text{extract}$ queries to achieve extraction error $\varepsilon$, rate limiting forces the attack to take time $\geq n_\text{extract} / r$ for rate $r$ — raising the cost.
+
+### 2. Output Perturbation
+
+Adding noise $\eta$ to the model's output before returning it:
+
+$$\tilde{f}(x) = f^*(x) + \eta, \quad \eta \sim \mathcal{N}(0, \sigma^2 \mathbf{I})$$
+
+increases the attacker's effective loss floor. The surrogate trained on noisy labels has a floor on how well it can approximate $f^*$:
+
+$$\mathbb{E}[\ell(\hat{f}, f^*)] \geq \Omega(\sigma^2)$$
+
+The tradeoff: too much noise degrades the API's usefulness for legitimate users.
+
+### 3. Model Watermarking
+
+A watermark embeds a set of **backdoor trigger-response pairs** $\{(x_w^{(i)}, y_w^{(i)})\}$ into $f^*$ during training. These are inputs that produce a specific, unusual output that no naturally-trained model would produce.
+
+If an extracted model $\hat{f}$ is later suspected, the owner queries it on $\{x_w^{(i)}\}$ and checks whether it reproduces $\{y_w^{(i)}\}$. Probability of a false positive is:
+
+$$\Pr[\hat{f}(x_w^{(i)}) = y_w^{(i)} \text{ by chance}] = \prod_{i=1}^k \frac{1}{|\mathcal{Y}|}$$
+
+For $k = 10$ watermark queries on a 10-class classifier, this is $10^{-10}$ — essentially zero. Watermarking provides **cryptographic-strength provenance** for model ownership.
+
+### 4. Differential Privacy
+
+[Differential privacy](https://en.wikipedia.org/wiki/Differential_privacy) during training bounds how much any single training point influences the model's outputs. A model trained with $(\varepsilon, \delta)$-DP satisfies:
+
+$$\Pr[f^*(x) \in S] \leq e^\varepsilon \cdot \Pr[f^{*\prime}(x) \in S] + \delta$$
+
+for any neighbouring datasets differing by one example. This limits the information an attacker can extract about training data via the oracle, reducing the attack's utility for membership inference and related attacks.
+
+---
+
+## 🔬 My Research Context
+
+At Validaitor, I built **model security assessment workflows** including copycat and model-stealing attack simulations. This involved evaluating how many queries a surrogate needed to reach target fidelity across different model types (classifiers, embedding models, LLMs), and implementing watermarking and fingerprinting as countermeasures. The most practically effective defence was a combination of output truncation (returning only top-3 probabilities) and rate limiting — neither alone was sufficient for a determined adversary.
+
+---
+
+## 🧠 Final Thoughts
+
+Model extraction is a clean, well-posed problem that sits at the intersection of learning theory, information theory, and adversarial ML. The attacker and defender are playing a minimax game:
+
+$$\min_{\hat{f}} \max_{\text{query strategy}} \;\mathbb{E}[\ell(\hat{f}, f^*)]$$
+
+subject to the oracle budget constraint. Defences that raise the query cost, degrade the informativeness of outputs, or embed verifiable watermarks each attack a different term in this objective.
+
+As ML APIs become more powerful and more profitable, model extraction will only grow in importance. The field is moving toward **certified defences** — provable bounds on extraction fidelity rather than empirical evaluations against known attack strategies.
 
 — Akshat

@@ -1,13 +1,15 @@
-+++
-title = 'What is an Ontology in a Knowledge Graph?'
-date = 2024-01-15T09:00:00+01:00
-draft = false
-tags = ["ontology", "knowledge graph", "semantic web", "AI", "data modeling"]
-weight = 104
-+++
+---
+title: "What is an Ontology in a Knowledge Graph?"
+date: 2024-01-15T09:00:00+01:00
+draft: false
+tags: ["ontology", "knowledge-graph", "semantic-web", "AI", "data-modeling"]
+weight: 104
+author: "Akshat Gupta"
+description: "A clear explanation of ontologies in AI — the formal schemas that give knowledge graphs their meaning and enable structured machine reasoning."
+---
 
 
-If you're working with **knowledge graphs**, one term that keeps popping up is **ontology**. Sounds academic, right? Like something you'd find buried in a philosophy textbook.
+If you're working with **[knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph)**, one term that keeps popping up is **[ontology](https://en.wikipedia.org/wiki/Ontology_(information_science))**. Sounds academic, right? Like something you'd find buried in a philosophy textbook.
 
 But in the world of AI, data science, and search engines, an ontology is far from abstract — it's the **blueprint** that gives your knowledge graph meaning. Let's break it down and explore how it all fits together.
 
@@ -92,7 +94,7 @@ Here's why you should care about them if you're working in AI or data science:
 I've used ontologies in:
 - A healthcare project, where patient symptoms, diagnoses, and treatments were modeled using the [SNOMED CT](https://www.snomed.org/snomed-ct) ontology.
 - A personal finance KG, where *Income*, *Expense*, and *Account* were tightly defined — enabling automated categorization and reasoning.
-- Integrating RAG pipelines with structured knowledge graphs to improve retrieval precision using typed entity constraints.
+- Integrating [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) pipelines with structured knowledge graphs to improve retrieval precision using typed entity constraints.
 
 It's honestly been a game-changer for building **explainable AI** systems.
 

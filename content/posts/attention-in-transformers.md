@@ -5,12 +5,15 @@ draft: false
 tags: ["transformers", "attention", "deep-learning", "NLP", "self-attention", "neural-networks", "AI"]
 weight: 112
 math: true
+author: "Akshat Gupta"
+showtoc: true
+description: "A deep dive into self-attention mechanisms — how they work, why they power modern Transformers, and the different attention variants used in GPT, BERT, and LLaMA."
 ---
 
-When people say "Transformers revolutionized NLP," what they *really* mean is:
+When people say "[Transformers](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) revolutionized NLP," what they *really* mean is:
 > **Attention** revolutionized NLP.
 
-From GPT and BERT to LLaMA and Claude, **attention mechanisms** are the beating heart of modern large language models.
+From GPT and [BERT](https://arxiv.org/abs/1810.04805) to [LLaMA](https://github.com/meta-llama/llama) and Claude, **[attention mechanisms](https://en.wikipedia.org/wiki/Attention_(machine_learning))** are the beating heart of modern large language models.
 
 But what exactly is attention? Why is it so powerful? And how many types are there?
 
@@ -141,6 +144,6 @@ From GPT's self-attention to BERT's bidirectional masking, every major NLP break
 
 > "Pay attention to what matters — and learn how to pay attention."
 
-In upcoming posts, I'll dive into positional encodings, attention visualization, and how LoRA modifies attention layers.
+In upcoming posts, I'll dive into positional encodings, attention visualization, and how [LoRA](https://arxiv.org/abs/2106.09685) modifies attention layers.
 
 — Akshat

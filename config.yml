@@ -31,32 +31,33 @@ menu:
     - name: Publications
       url: publications/
       weight: 10
-#    - name: Search
-#      url: search/
-#      weight: 10
     - name: Talks
       url: talks/
       weight: 15
     - name: Events
       url: events/
       weight: 20
+    - name: Search
+      url: search/
+      weight: 22
     - name: About
       url: about/
       weight: 25
     - name: CV
       url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
-      weight: 25
+      weight: 30
 
 params:
   math: true
-  comments: true
   env: production
+  description: "Machine Learning Engineer specializing in Generative AI, LLMs, Diffusion Models, and NLP. Writing about AI research, practical ML engineering, and deep learning."
+  images: ["/akshat_gupta.jpg"]
 
   profileMode:
     enabled: true
     title: "Akshat Gupta" # optional default will be site title
-    subtitle: "Machine Learning Engineer | Generative AI | Diffusion Models | LLMs"
-    imageUrl: "../assets/akshat_gupta.jpg" # optional
+    subtitle: "Senior ML Engineer | Agentic AI & LLM Systems | Production GenAI"
+    imageUrl: "/akshat_gupta.jpg" # optional
     imageTitle: "Akshat Gupta" # optional
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
@@ -66,7 +67,7 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  disableSpecial1stPost: false
+  disableSpecial1stPost: true
   disableScrollToTop: false
   hidemeta: false
   hideSummary: false

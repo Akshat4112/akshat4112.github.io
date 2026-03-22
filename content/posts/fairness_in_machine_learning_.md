@@ -1,13 +1,14 @@
-+++
-title = 'Fairness in Machine Learning'
-date = 2023-10-15T09:00:00+01:00
-draft = false
-tags = ["fairness", "machine learning", "ethics", "AI", "bias"]
-weight = 101
-+++
+---
+title: "Fairness in Machine Learning"
+date: 2023-10-15T09:00:00+01:00
+draft: false
+tags: ["fairness", "machine-learning", "ethics", "AI", "bias"]
+weight: 101
+author: "Akshat Gupta"
+description: "An exploration of fairness in ML systems — defining group, individual, and causal fairness, sources of algorithmic bias, and techniques to address them."
 ---
 
-As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it's essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.
+As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it's essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning. Related discussions on algorithmic accountability often draw on tools such as [HuggingFace](https://huggingface.co/) model cards, which document bias evaluations for publicly released models.
 
 ## Defining Fairness
 
@@ -37,7 +38,7 @@ Addressing unfairness involves strategies across the ML pipeline:
 - **In-processing**: Modifying the model training process to incorporate fairness constraints.
 - **Post-processing**: Applying techniques post-training to correct biases.
 - **Improved Evaluation**: Using specific metrics to assess fairness in different contexts.
-- **Causal Modeling**: Employing causal inference techniques to understand and mitigate biases.
+- **Causal Modeling**: Employing [causal inference](https://en.wikipedia.org/wiki/Causal_inference) techniques to understand and mitigate biases.
 
 ## Real-World Example: Bias in Digital Recruitment Advertising
 

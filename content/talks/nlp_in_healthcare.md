@@ -1,8 +1,9 @@
 ---
 title: "Role of Natural Language Processing in Healthcare"
 description: "Poornima University, Jaipur, Rajasthan, India"
+date: 2020-05-05T00:00:00+05:30
 draft: false
-tags: ["machine-learning", "workshop", "natural-language-processing"]
+tags: ["machine-learning", "NLP", "healthcare", "workshop"]
 weight: 102
 venue: 
 cover:

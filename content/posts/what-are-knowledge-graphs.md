@@ -2,12 +2,13 @@
 title: 'What Are Knowledge Graphs?'
 date: 2024-03-15T09:00:00+01:00
 draft: false
-tags: ["knowledge graph", "semantic search", "AI", "data modeling", "RAG"]
+tags: ["knowledge-graph", "semantic-search", "AI", "data-modeling", "RAG"]
 weight: 107
-
+author: "Akshat Gupta"
+description: "A plain-language introduction to knowledge graphs — how they represent real-world entities and relationships, and why they're central to modern AI and search systems."
 ---
 
-We hear the term **knowledge graph** everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly *is* a knowledge graph, and why is everyone suddenly obsessed with it?
+We hear the term **[knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)** everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly *is* a knowledge graph, and why is everyone suddenly obsessed with it?
 
 In this post, I'll break down knowledge graphs in plain language: what they are, how they work, and how I use them in my own projects.
 
@@ -98,7 +99,7 @@ Here's what goes into a real-world knowledge graph:
 
 I've worked with knowledge graphs in several domains:
 
-- **Insurance Claims Automation**: Extract structured facts from documents using OpenAI + Neo4j to speed up FNOL (First Notice of Loss).
+- **Insurance Claims Automation**: Extract structured facts from documents using [OpenAI](https://openai.com/) + Neo4j to speed up FNOL (First Notice of Loss).
 - **RAG Pipelines**: Create mini knowledge graphs from PDFs and inject triples into prompts for better LLM accuracy.
 - **German Tax Assistant**: Model deductions, expenses, and income types as nodes to generate explainable tax advice.
 

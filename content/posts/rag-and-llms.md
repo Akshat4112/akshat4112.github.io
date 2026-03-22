@@ -5,14 +5,17 @@ draft: false
 tags: ["RAG", "LLM", "vector-databases", "embeddings", "AI", "information-retrieval", "generative-ai"]
 weight: 111
 math: true
+author: "Akshat Gupta"
+showtoc: true
+description: "A technical introduction to Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses."
 ---
 
-Large Language Models (LLMs) like GPT or LLaMA are great at generating text. But there's a catch:  
+Large Language Models (LLMs) like GPT or [LLaMA](https://github.com/meta-llama/llama) are great at generating text. But there's a catch:  
 They **only know what they were trained on**, and that knowledge is frozen at training time.
 
 So what happens when you ask them something from after their training cutoff? Or something super niche, like a policy from your internal HR docs?
 
-Enter **RAG** – Retrieval-Augmented Generation.  
+Enter **[RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)** – Retrieval-Augmented Generation.
 A technique that combines LLMs with a **search engine**, enabling them to look up facts on the fly.
 
 ---
@@ -37,7 +40,7 @@ The RAG architecture typically has three stages:
 
 2. **Retrieval**  
    - The system converts the query into an embedding (via a model like `all-MiniLM`).
-   - Searches a vector database (like **FAISS**, **Weaviate**, **Qdrant**) for top relevant chunks.
+   - Searches a [vector database](https://en.wikipedia.org/wiki/Vector_database) (like **[FAISS](https://github.com/facebookresearch/faiss)**, **[Weaviate](https://weaviate.io/)**, **[Qdrant](https://qdrant.tech/)**) for top relevant chunks.
 
 3. **Generation**  
    - The LLM gets the **original query + retrieved context**.
@@ -62,10 +65,10 @@ It’s the backbone of many **enterprise AI apps**, **chat-with-your-PDF**, **co
 
 ## 🧰 Tools and Frameworks for RAG
 
-- **LangChain** – End-to-end pipelines with retrieval and LLM chaining ([docs](https://docs.langchain.com/))
+- **[LangChain](https://www.langchain.com/)** – End-to-end pipelines with retrieval and LLM chaining ([docs](https://docs.langchain.com/))
 - **Haystack** – Search-native RAG framework from deepset
 - **LlamaIndex** – Lightweight RAG with document loaders and query engines
-- **Pinecone / Weaviate / Qdrant** – Vector DBs to store and retrieve embeddings
+- **[Pinecone](https://www.pinecone.io/) / Weaviate / Qdrant** – Vector DBs to store and retrieve embeddings
 - **FAISS** – Facebook AI similarity search, blazing fast and open source
 
 > Bonus: Use [sentence-transformers](https://www.sbert.net/) to embed documents.
