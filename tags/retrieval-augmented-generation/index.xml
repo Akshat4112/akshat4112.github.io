@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Retrieval-Augmented-Generation on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/retrieval-augmented-generation/</link>
+    <description>Recent content in Retrieval-Augmented-Generation on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/retrieval-augmented-generation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Memories in Large Language Models: How AI Models Remember and Retrieve</title>
+      <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
+      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based long-term retrieval — and what this means for building AI systems.</description>
+    </item>
+  </channel>
+</rss>

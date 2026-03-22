@@ -4,6 +4,11 @@
     <title>Instruction-Tuning on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/instruction-tuning/</link>
     <description>Recent content in Instruction-Tuning on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Apr 2024 09:00:00 +0100</lastBuildDate>
@@ -13,11 +18,7 @@
       <link>https://akshat4112.github.io/posts/prompt-engineering/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/prompt-engineering/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ve all played with ChatGPT, Copilot, or Claude — typing in questions and marveling at their responses. But behind the scenes, there&amp;rsquo;s a powerful craft at play: &lt;strong&gt;prompt engineering&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s not just about &amp;ldquo;asking a question.&amp;rdquo; It&amp;rsquo;s about how you phrase it, structure it, and guide the model. Prompt engineering is the new programming skill — and it&amp;rsquo;s transforming how we interact with AI.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-what-is-prompt-engineering&#34;&gt;🧠 What Is Prompt Engineering?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Prompt engineering&lt;/strong&gt; is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs.&lt;/p&gt;</description>
+      <description>A practical guide to prompt engineering — the art of crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
     </item>
   </channel>
 </rss>

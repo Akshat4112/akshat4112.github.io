@@ -4,6 +4,11 @@
     <title>Information-Retrieval on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/information-retrieval/</link>
     <description>Recent content in Information-Retrieval on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Jul 2024 09:00:00 +0100</lastBuildDate>
@@ -13,11 +18,7 @@
       <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
-      <description>&lt;p&gt;Large Language Models (LLMs) like GPT or LLaMA are great at generating text. But there&amp;rsquo;s a catch:&lt;br&gt;
-They &lt;strong&gt;only know what they were trained on&lt;/strong&gt;, and that knowledge is frozen at training time.&lt;/p&gt;
-&lt;p&gt;So what happens when you ask them something from after their training cutoff? Or something super niche, like a policy from your internal HR docs?&lt;/p&gt;
-&lt;p&gt;Enter &lt;strong&gt;RAG&lt;/strong&gt; – Retrieval-Augmented Generation.&lt;br&gt;
-A technique that combines LLMs with a &lt;strong&gt;search engine&lt;/strong&gt;, enabling them to look up facts on the fly.&lt;/p&gt;</description>
+      <description>A technical introduction to Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
     </item>
   </channel>
 </rss>

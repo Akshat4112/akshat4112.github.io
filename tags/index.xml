@@ -4,22 +4,62 @@
     <title>Tags on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/</link>
     <description>Recent content in Tags on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://akshat4112.github.io/tags/ai/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep-Learning</title>
+      <link>https://akshat4112.github.io/tags/deep-learning/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>https://akshat4112.github.io/tags/llm/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory</title>
+      <link>https://akshat4112.github.io/tags/memory/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/memory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neural-Networks</title>
+      <link>https://akshat4112.github.io/tags/neural-networks/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/neural-networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retrieval-Augmented-Generation</title>
+      <link>https://akshat4112.github.io/tags/retrieval-augmented-generation/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/retrieval-augmented-generation/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Agents</title>
       <link>https://akshat4112.github.io/tags/agents/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/agents/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>https://akshat4112.github.io/tags/ai/</link>
-      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
@@ -34,20 +74,6 @@
       <link>https://akshat4112.github.io/tags/decision-making/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/decision-making/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Deep-Learning</title>
-      <link>https://akshat4112.github.io/tags/deep-learning/</link>
-      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM</title>
-      <link>https://akshat4112.github.io/tags/llm/</link>
-      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/llm/</guid>
       <description></description>
     </item>
     <item>
@@ -149,13 +175,6 @@
       <description></description>
     </item>
     <item>
-      <title>Neural-Networks</title>
-      <link>https://akshat4112.github.io/tags/neural-networks/</link>
-      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/neural-networks/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>NLP</title>
       <link>https://akshat4112.github.io/tags/nlp/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
@@ -247,21 +266,21 @@
       <description></description>
     </item>
     <item>
-      <title>Data Modeling</title>
+      <title>Data-Modeling</title>
       <link>https://akshat4112.github.io/tags/data-modeling/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/data-modeling/</guid>
       <description></description>
     </item>
     <item>
-      <title>Knowledge Graph</title>
+      <title>Knowledge-Graph</title>
       <link>https://akshat4112.github.io/tags/knowledge-graph/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/knowledge-graph/</guid>
       <description></description>
     </item>
     <item>
-      <title>Semantic Search</title>
+      <title>Semantic-Search</title>
       <link>https://akshat4112.github.io/tags/semantic-search/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/semantic-search/</guid>
@@ -282,21 +301,21 @@
       <description></description>
     </item>
     <item>
-      <title>Semantic Web</title>
+      <title>Semantic-Web</title>
       <link>https://akshat4112.github.io/tags/semantic-web/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/semantic-web/</guid>
       <description></description>
     </item>
     <item>
-      <title>AI Infrastructure</title>
+      <title>Ai-Infrastructure</title>
       <link>https://akshat4112.github.io/tags/ai-infrastructure/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/ai-infrastructure/</guid>
       <description></description>
     </item>
     <item>
-      <title>Vector Database</title>
+      <title>Vector-Database</title>
       <link>https://akshat4112.github.io/tags/vector-database/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/vector-database/</guid>
@@ -324,52 +343,94 @@
       <description></description>
     </item>
     <item>
+      <title>Hackathon</title>
+      <link>https://akshat4112.github.io/tags/hackathon/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/tags/hackathon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stuttgart</title>
+      <link>https://akshat4112.github.io/tags/stuttgart/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/tags/stuttgart/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Startups</title>
+      <link>https://akshat4112.github.io/tags/startups/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/tags/startups/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Aaai</title>
       <link>https://akshat4112.github.io/tags/aaai/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/tags/aaai/</guid>
       <description></description>
     </item>
     <item>
       <title>Aics</title>
       <link>https://akshat4112.github.io/tags/aics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/tags/aics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>https://akshat4112.github.io/tags/book/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/tags/book/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer-Vision</title>
       <link>https://akshat4112.github.io/tags/computer-vision/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Intel-Innovator</title>
-      <link>https://akshat4112.github.io/tags/intel-innovator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://akshat4112.github.io/tags/intel-innovator/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kips</title>
-      <link>https://akshat4112.github.io/tags/kips/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://akshat4112.github.io/tags/kips/</guid>
       <description></description>
     </item>
     <item>
       <title>Tensorflow</title>
       <link>https://akshat4112.github.io/tags/tensorflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Healthcare</title>
+      <link>https://akshat4112.github.io/tags/healthcare/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0530</pubDate>
+      <guid>https://akshat4112.github.io/tags/healthcare/</guid>
       <description></description>
     </item>
     <item>
       <title>Workshop</title>
       <link>https://akshat4112.github.io/tags/workshop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/tags/workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intel-Innovator</title>
+      <link>https://akshat4112.github.io/tags/intel-innovator/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0530</pubDate>
+      <guid>https://akshat4112.github.io/tags/intel-innovator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Government</title>
+      <link>https://akshat4112.github.io/tags/government/</link>
+      <pubDate>Fri, 28 Apr 2017 00:00:00 +0530</pubDate>
+      <guid>https://akshat4112.github.io/tags/government/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>India</title>
+      <link>https://akshat4112.github.io/tags/india/</link>
+      <pubDate>Fri, 28 Apr 2017 00:00:00 +0530</pubDate>
+      <guid>https://akshat4112.github.io/tags/india/</guid>
       <description></description>
     </item>
   </channel>

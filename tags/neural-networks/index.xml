@@ -4,24 +4,28 @@
     <title>Neural-Networks on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/neural-networks/</link>
     <description>Recent content in Neural-Networks on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Aug 2024 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/neural-networks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>&lt;p&gt;When people say &amp;ldquo;Transformers revolutionized NLP,&amp;rdquo; what they &lt;em&gt;really&lt;/em&gt; mean is:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt; revolutionized NLP.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;From GPT and BERT to LLaMA and Claude, &lt;strong&gt;attention mechanisms&lt;/strong&gt; are the beating heart of modern large language models.&lt;/p&gt;
-&lt;p&gt;But what exactly is attention? Why is it so powerful? And how many types are there?&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s dive in.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-what-is-attention&#34;&gt;🧠 What is Attention?&lt;/h2&gt;
-&lt;p&gt;In the simplest sense, &lt;strong&gt;attention is a way for a model to focus on the most relevant parts of the input when generating output&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>A deep dive into self-attention mechanisms — how they work, why they power modern Transformers, and the different attention variants used in GPT, BERT, and LLaMA.</description>
+    </item>
+    <item>
+      <title>Memories in Large Language Models: How AI Models Remember and Retrieve</title>
+      <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
+      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
+      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based long-term retrieval — and what this means for building AI systems.</description>
     </item>
   </channel>
 </rss>

@@ -4,6 +4,11 @@
     <title>Evaluation on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/evaluation/</link>
     <description>Recent content in Evaluation on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Jun 2024 09:00:00 +0100</lastBuildDate>
@@ -13,11 +18,7 @@
       <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
-      <description>&lt;p&gt;As large language models (LLMs) become central to search, productivity tools, education, and coding, &lt;strong&gt;evaluating them&lt;/strong&gt; is no longer optional. You &lt;em&gt;have&lt;/em&gt; to ask:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Is this model reliable? Accurate? Safe? Biased? Smart enough for my task?&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;But here&amp;rsquo;s the catch: LLMs are &lt;em&gt;not&lt;/em&gt; deterministic functions. They generate free-form text, can be right in one sentence and wrong in the next — and vary wildly depending on the prompt.&lt;/p&gt;
-&lt;p&gt;So how do we evaluate them meaningfully?&lt;/p&gt;</description>
+      <description>A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality.</description>
     </item>
   </channel>
 </rss>

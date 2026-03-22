@@ -4,6 +4,11 @@
     <title>Bias on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/bias/</link>
     <description>Recent content in Bias on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Oct 2023 09:00:00 +0100</lastBuildDate>
@@ -13,13 +18,7 @@
       <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
       <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.&lt;/p&gt;
-&lt;h2 id=&#34;defining-fairness&#34;&gt;Defining Fairness&lt;/h2&gt;
-&lt;p&gt;Fairness in machine learning can be understood in several ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Group Fairness&lt;/strong&gt;: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender. For instance, ensuring a loan application system doesn&amp;rsquo;t have a higher false rejection rate for one gender compared to another.&lt;/p&gt;</description>
+      <description>An exploration of fairness in ML systems — defining group, individual, and causal fairness, sources of algorithmic bias, and techniques to address them.</description>
     </item>
   </channel>
 </rss>

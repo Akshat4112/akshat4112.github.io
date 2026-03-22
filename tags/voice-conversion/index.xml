@@ -4,6 +4,11 @@
     <title>Voice-Conversion on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/voice-conversion/</link>
     <description>Recent content in Voice-Conversion on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 15 Oct 2024 09:00:00 +0100</lastBuildDate>
@@ -13,8 +18,7 @@
       <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/speaker-anonymization/</guid>
-      <description>&lt;p&gt;Speaker anonymization refers to the process of modifying the characteristics of a speaker&amp;rsquo;s voice so that the speaker&amp;rsquo;s identity cannot be easily determined while preserving the speech&amp;rsquo;s intelligibility. With the increasing usage of speech data in virtual assistants, surveillance systems, and other applications, ensuring privacy in speech data has become critical.&lt;/p&gt;
-&lt;p&gt;In this post, we&amp;rsquo;ll dive into the technical details of speaker anonymization techniques, including implementation approaches using machine learning, deep learning models, and popular libraries.&lt;/p&gt;</description>
+      <description>A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, speech synthesis, and differential privacy for protecting speaker identity.</description>
     </item>
   </channel>
 </rss>

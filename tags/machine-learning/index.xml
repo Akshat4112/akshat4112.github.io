@@ -4,6 +4,11 @@
     <title>Machine-Learning on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/machine-learning/</link>
     <description>Recent content in Machine-Learning on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Sep 2024 09:00:00 +0100</lastBuildDate>
@@ -13,18 +18,12 @@
       <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
       <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it&amp;rsquo;s essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning.&lt;/p&gt;
-&lt;h2 id=&#34;defining-fairness&#34;&gt;Defining Fairness&lt;/h2&gt;
-&lt;p&gt;Fairness in machine learning can be understood in several ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Group Fairness&lt;/strong&gt;: This implies equal treatment or outcomes for different groups categorized by sensitive attributes like race or gender. For instance, ensuring a loan application system doesn&amp;rsquo;t have a higher false rejection rate for one gender compared to another.&lt;/p&gt;</description>
+      <description>An exploration of fairness in ML systems — defining group, individual, and causal fairness, sources of algorithmic bias, and techniques to address them.</description>
     </item>
     <item>
       <title>GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks</title>
       <link>https://akshat4112.github.io/publications/glyphnet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/publications/glyphnet/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2306.10392&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Akshat Gupta, Laxman Singh Tomar, Ridhima Garg&lt;/p&gt;
@@ -34,28 +33,35 @@
     <item>
       <title>Recap of Intel&#39;s Machine Learning Workshop at Dr. Akhilesh Das Gupta Institute</title>
       <link>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</guid>
       <description>Delhi, India</description>
     </item>
     <item>
-      <title>Hands-on Deep Learning with Tensorflow 2.0</title>
+      <title>Hands-on Deep Learning with TensorFlow 2.0</title>
       <link>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</guid>
-      <description></description>
+      <description>A practical guide to building deep learning models with TensorFlow 2.0, published by Packt Publishing.</description>
     </item>
     <item>
       <title>Role of Natural Language Processing in Healthcare</title>
       <link>https://akshat4112.github.io/talks/nlp_in_healthcare/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/talks/nlp_in_healthcare/</guid>
       <description>Poornima University, Jaipur, Rajasthan, India</description>
     </item>
     <item>
+      <title>Smart India Hackathon 2017 — Ministry of Earth Sciences</title>
+      <link>https://akshat4112.github.io/events/smart_india_hackathon_2017/</link>
+      <pubDate>Fri, 28 Apr 2017 00:00:00 +0530</pubDate>
+      <guid>https://akshat4112.github.io/events/smart_india_hackathon_2017/</guid>
+      <description>Chennai, Tamil Nadu, India</description>
+    </item>
+    <item>
       <title>Introduction to Artificial Intelligence Workshop in Ujjain</title>
       <link>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</guid>
       <description>Ujjain, Madhya Pradesh, India</description>
     </item>
@@ -64,9 +70,7 @@
       <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>&lt;p&gt;In the world of machine learning, especially with the rise of large language models (LLMs) and deep neural networks, model extraction attacks are a growing concern. These attacks aim to replicate the behavior of a machine learning model by querying it and then using the responses to reverse-engineer its underlying architecture and parameters.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-a-model-extraction-attack&#34;&gt;What is a Model Extraction Attack?&lt;/h2&gt;
-&lt;p&gt;A &lt;strong&gt;model extraction attack&lt;/strong&gt; occurs when an adversary tries to replicate a machine learning model by making repeated queries to it and analyzing its responses. The goal of the attacker is to create a new model that mimics the target model’s functionality, often without direct access to its architecture or parameters.&lt;/p&gt;</description>
+      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, the formal threat model, and principled defences.</description>
     </item>
   </channel>
 </rss>

@@ -4,6 +4,11 @@
     <title>Diffusion-Models on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/diffusion-models/</link>
     <description>Recent content in Diffusion-Models on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 15 Feb 2024 09:00:00 +0100</lastBuildDate>
@@ -13,8 +18,7 @@
       <link>https://akshat4112.github.io/posts/what_are_diffusion_models/</link>
       <pubDate>Thu, 15 Feb 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Generative modeling&lt;/strong&gt; is currently one of the most thrilling domains in deep learning research.
-Traditional models like Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) have already demonstrated impressive capabilities in synthetically generating realistic data, such as images and text. However, &lt;strong&gt;diffusion models&lt;/strong&gt; is swiftly gaining prominence as a powerful model in the arena of high-quality and stable generative modeling. This blog explores diffusion models, examining their operational mechanisms, architectural designs, training processes, sampling methods, and the key advantages that position them at the forefront of generative AI.&lt;/p&gt;</description>
+      <description>A technical exploration of diffusion models — how the forward/reverse diffusion process works, U-Net architectures, denoising score matching, and why they outperform GANs.</description>
     </item>
   </channel>
 </rss>
