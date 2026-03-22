@@ -2,7 +2,7 @@
 title: "Understanding Attention in Transformers: The Core of Modern NLP"
 date: 2024-08-15T09:00:00+01:00
 draft: false
-tags: ["transformers", "attention", "deep-learning", "NLP", "self-attention", "neural-networks", "AI"]
+tags: ["transformers", "attention", "deep-learning", "nlp", "self-attention", "neural-networks", "ai"]
 weight: 112
 math: true
 author: "Akshat Gupta"

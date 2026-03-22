@@ -37,6 +37,9 @@ menu:
     - name: Events
       url: events/
       weight: 20
+    - name: Tags
+      url: tags/
+      weight: 21
     - name: Search
       url: search/
       weight: 22
@@ -50,6 +53,8 @@ menu:
 params:
   math: true
   env: production
+  mainSections:
+    - posts
   description: "Machine Learning Engineer specializing in Generative AI, LLMs, Diffusion Models, and NLP. Writing about AI research, practical ML engineering, and deep learning."
   images: ["/akshat_gupta.jpg"]
 
@@ -91,6 +96,8 @@ params:
       url: "https://twitter.com/akshat_rg"
     - name: "kaggle"
       url: "https://kaggle.com/akshat4112/"
+    - name: "rss"
+      url: "/index.xml"
 
 outputs:
   home:

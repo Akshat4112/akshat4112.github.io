@@ -2,7 +2,7 @@
 title: "Speaker Anonymization: Protecting Voice Identity in the AI Era"
 date: 2024-10-15T09:00:00+01:00
 draft: false
-tags: ["speech-processing", "privacy", "deep-learning", "voice-conversion", "anonymization", "cybersecurity", "AI"]
+tags: ["speech-processing", "privacy", "deep-learning", "voice-conversion", "anonymization", "cybersecurity", "ai"]
 weight: 114
 math: true
 author: "Akshat Gupta"

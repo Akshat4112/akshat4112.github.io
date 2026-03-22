@@ -2,7 +2,7 @@
 title: "What is a Vector Database?"
 date: 2023-12-15T09:00:00+01:00
 draft: false
-tags: ["vector-database", "semantic-search", "embeddings", "RAG", "ai-infrastructure"]
+tags: ["vector-databases", "semantic-search", "embeddings", "rag", "ai-infrastructure"]
 weight: 103
 author: "Akshat Gupta"
 description: "An introduction to vector databases — what they are, how they power semantic search, and why they're essential infrastructure for modern AI applications."

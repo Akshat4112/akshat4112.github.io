@@ -2,7 +2,7 @@
 title: "LLM Agents: Building AI Systems That Can Reason and Act"
 date: 2025-05-05T09:00:00+01:00
 draft: false
-tags: ["LLM", "agents", "deep-learning", "AI", "reinforcement-learning", "decision-making", "autonomous-systems"]
+tags: ["llm", "agents", "deep-learning", "ai", "reinforcement-learning", "decision-making", "autonomous-systems"]
 weight: 115
 math: true
 author: "Akshat Gupta"

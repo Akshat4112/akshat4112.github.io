@@ -2,6 +2,7 @@
 title: "About"
 date: 2024-01-01T00:00:00+00:00
 description: "About Akshat Gupta — Senior Machine Learning Engineer specializing in Agentic AI, LLM Systems, and Production GenAI."
+schema_type: ProfilePage
 ---
 
 I'm a Senior Machine Learning Engineer who builds production-grade AI systems, with experience spanning large language models, multimodal learning, and agentic AI architectures.

@@ -2,7 +2,7 @@
 title: "Model Extraction Attacks: How Hackers Steal AI Models"
 date: 2024-09-15T09:00:00+01:00
 draft: false
-tags: ["AI-security", "model-extraction", "machine-learning", "cybersecurity", "LLMs", "deep-learning", "AI"]
+tags: ["ai-security", "model-extraction", "machine-learning", "cybersecurity", "llm", "deep-learning", "ai"]
 weight: 113
 math: true
 author: "Akshat Gupta"

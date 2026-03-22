@@ -2,7 +2,7 @@
 title: "Evaluating LLMs: How Do You Measure a Model's Mind?"
 date: 2024-06-15T09:00:00+01:00
 draft: false
-tags: ["LLM", "evaluation", "benchmarks", "AI", "natural-language-processing", "deep-learning"]
+tags: ["llm", "evaluation", "benchmarks", "ai", "nlp", "deep-learning"]
 weight: 110
 math: true
 author: "Akshat Gupta"

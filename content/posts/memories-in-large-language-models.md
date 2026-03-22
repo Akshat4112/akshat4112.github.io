@@ -2,7 +2,7 @@
 title: "Memories in Large Language Models: How AI Models Remember and Retrieve"
 date: 2025-07-10T09:00:00+01:00
 draft: false
-tags: ["LLM", "memory", "retrieval-augmented-generation", "AI", "deep-learning", "neural-networks"]
+tags: ["llm", "memory", "rag", "ai", "deep-learning", "neural-networks"]
 weight: 114
 math: true
 author: "Akshat Gupta"
@@ -16,7 +16,7 @@ Spoiler: it’s *all of the above*, depending on which time scale you’re talki
 
 ---
 
-## 🧠 Three Levels of Memory
+## Three Levels of Memory
 
 | Time Scale | Mechanism | Typical Capacity | Example |
 |------------|-----------|------------------|---------|
@@ -34,7 +34,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\rig
 
 The matrices $Q$, $K$, and $V$ are computed *on the fly* for the current prompt + previous tokens (bounded by the window size). Once the window is full, older tokens are dropped or compressed (e.g., attention sink in Longformer).
 
-> 🔍 *Rule of thumb:* Context window ⟶ working memory. Nothing is stored after generation ends.
+> *Rule of thumb:* Context window ⟶ working memory. Nothing is stored after generation ends.
 
 Recent research pushes this limit:
 
@@ -86,26 +86,23 @@ Key tricks:
 
 ---
 
-## 🏗️ Architectures That Combine All Three
+## Architectures That Combine All Three
 
-1. **ChatGPT w/ Memory Rubric** – OpenAI stores user preferences (e.g., name, locale) in a *profile store* that is re-injected on new chats.
-2. **[ReAct](https://arxiv.org/abs/2210.03629) + RAG Agents** – Working memory is the agent scratch-pad, long-term memory is a knowledge base.
-3. **Glonger** – Google’s Gemini prototype that uses attention ➕ retrieval ➕ scratchpad 📝.
+1. **ChatGPT w/ Memory** – OpenAI stores user preferences (name, locale, facts) in a *profile store* that is re-injected at the start of new conversations.
+2. **[ReAct](https://arxiv.org/abs/2210.03629) + RAG Agents** – Working memory is the agent scratch-pad; long-term memory is an external knowledge base queried on demand.
+3. **Gemini + Retrieval** – Google’s long-context models combine attention over long windows with retrieval over external corpora.
 
+The RAG flow at inference time is:
 
-```mermaid
-sequenceDiagram
-  autonumber
-  User->>Client: Query
-  Client->>Retriever: Vector search
-  Retriever-->>Client: Top-k docs
-  Client->>LLM: [Query + Docs]
-  LLM-->>Client: Response
-```
+$$\text{Answer} = \text{LLM}\!\left(\,q,\; \text{Retrieve}(q, \mathcal{D}, k)\,\right)$$
+
+where $q$ is the user query, $\mathcal{D}$ is the document store, and $k$ is the number of retrieved chunks. The retrieval step uses approximate nearest-neighbour search over dense embeddings:
+
+$$\text{Retrieve}(q, \mathcal{D}, k) = \operatorname*{top\text{-}k}_{d \in \mathcal{D}} \cos\!\left(\phi(q),\, \phi(d)\right)$$
 
 ---
 
-## ⚖️ Memory vs Privacy
+## Memory vs Privacy
 
 Storing user interactions raises privacy flags:
 
@@ -117,7 +114,7 @@ Mitigations include *time-based TTL*, **write filters**, and **content-safety la
 
 ---
 
-## 🚧 Open Challenges
+## Open Challenges
 
 1. **Catastrophic forgetting** during fine-tuning
 2. **Memory editing** (e.g., remove private facts from weights) without full retraining
@@ -126,7 +123,7 @@ Mitigations include *time-based TTL*, **write filters**, and **content-safety la
 
 ---
 
-## 🔮 The Future
+## The Future
 
 In 2025-26 we’ll likely see:
 

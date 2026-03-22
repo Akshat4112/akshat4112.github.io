@@ -2,7 +2,7 @@
 title: "Fairness in Machine Learning"
 date: 2023-10-15T09:00:00+01:00
 draft: false
-tags: ["fairness", "machine-learning", "ethics", "AI", "bias"]
+tags: ["fairness", "machine-learning", "ethics", "ai", "bias"]
 weight: 101
 author: "Akshat Gupta"
 description: "An exploration of fairness in ML systems — defining group, individual, and causal fairness, sources of algorithmic bias, and techniques to address them."
