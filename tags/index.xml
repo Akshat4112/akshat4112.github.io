@@ -28,7 +28,7 @@
       <description></description>
     </item>
     <item>
-      <title>LLM</title>
+      <title>Llm</title>
       <link>https://akshat4112.github.io/tags/llm/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/llm/</guid>
@@ -49,10 +49,10 @@
       <description></description>
     </item>
     <item>
-      <title>Retrieval-Augmented-Generation</title>
-      <link>https://akshat4112.github.io/tags/retrieval-augmented-generation/</link>
+      <title>Rag</title>
+      <link>https://akshat4112.github.io/tags/rag/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/retrieval-augmented-generation/</guid>
+      <guid>https://akshat4112.github.io/tags/rag/</guid>
       <description></description>
     </item>
     <item>
@@ -91,7 +91,7 @@
       <description></description>
     </item>
     <item>
-      <title>LoRA</title>
+      <title>Lora</title>
       <link>https://akshat4112.github.io/tags/lora/</link>
       <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
       <guid>https://akshat4112.github.io/tags/lora/</guid>
@@ -140,17 +140,10 @@
       <description></description>
     </item>
     <item>
-      <title>AI-Security</title>
+      <title>Ai-Security</title>
       <link>https://akshat4112.github.io/tags/ai-security/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/ai-security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LLMs</title>
-      <link>https://akshat4112.github.io/tags/llms/</link>
-      <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/llms/</guid>
       <description></description>
     </item>
     <item>
@@ -210,13 +203,6 @@
       <description></description>
     </item>
     <item>
-      <title>RAG</title>
-      <link>https://akshat4112.github.io/tags/rag/</link>
-      <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/rag/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Vector-Databases</title>
       <link>https://akshat4112.github.io/tags/vector-databases/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
@@ -238,14 +224,7 @@
       <description></description>
     </item>
     <item>
-      <title>Natural-Language-Processing</title>
-      <link>https://akshat4112.github.io/tags/natural-language-processing/</link>
-      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/natural-language-processing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ChatGPT</title>
+      <title>Chatgpt</title>
       <link>https://akshat4112.github.io/tags/chatgpt/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/chatgpt/</guid>
@@ -312,13 +291,6 @@
       <link>https://akshat4112.github.io/tags/ai-infrastructure/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/ai-infrastructure/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vector-Database</title>
-      <link>https://akshat4112.github.io/tags/vector-database/</link>
-      <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/vector-database/</guid>
       <description></description>
     </item>
     <item>

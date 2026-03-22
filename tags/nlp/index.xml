@@ -21,6 +21,13 @@
       <description>Poornima University, Jaipur, Rajasthan, India</description>
     </item>
     <item>
+      <title>Evaluating LLMs: How Do You Measure a Model&#39;s Mind?</title>
+      <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
+      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
+      <description>A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality.</description>
+    </item>
+    <item>
       <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>

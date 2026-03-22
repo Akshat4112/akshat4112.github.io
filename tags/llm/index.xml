@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LLM on Akshat Gupta</title>
+    <title>Llm on Akshat Gupta</title>
     <link>https://akshat4112.github.io/tags/llm/</link>
-    <description>Recent content in LLM on Akshat Gupta</description>
+    <description>Recent content in Llm on Akshat Gupta</description>
     <image>
       <title>Akshat Gupta</title>
       <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
@@ -21,6 +21,13 @@
       <description>How to fine-tune large language models efficiently using LoRA — low-rank adaptation that dramatically reduces compute and memory requirements.</description>
     </item>
     <item>
+      <title>Prompt Engineering: The Art of Talking to AI</title>
+      <link>https://akshat4112.github.io/posts/prompt-engineering/</link>
+      <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/prompt-engineering/</guid>
+      <description>A practical guide to prompt engineering — the art of crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
+    </item>
+    <item>
       <title>Evaluating LLMs: How Do You Measure a Model&#39;s Mind?</title>
       <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
@@ -33,6 +40,13 @@
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
       <description>A technical introduction to Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
+    </item>
+    <item>
+      <title>Model Extraction Attacks: How Hackers Steal AI Models</title>
+      <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
+      <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
+      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, the formal threat model, and principled defences.</description>
     </item>
     <item>
       <title>Memories in Large Language Models: How AI Models Remember and Retrieve</title>
