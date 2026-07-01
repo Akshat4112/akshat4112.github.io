@@ -5,7 +5,6 @@ draft: false
 tags: ["speech-processing", "privacy", "deep-learning", "voice-conversion", "anonymization", "cybersecurity", "ai"]
 weight: 114
 math: true
-author: "Akshat Gupta"
 showtoc: true
 description: "A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, speech synthesis, and differential privacy for protecting speaker identity."
 ---

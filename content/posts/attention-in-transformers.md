@@ -5,7 +5,6 @@ draft: false
 tags: ["transformers", "attention", "deep-learning", "nlp", "self-attention", "neural-networks", "ai"]
 weight: 112
 math: true
-author: "Akshat Gupta"
 showtoc: true
 description: "A deep dive into self-attention mechanisms — how they work, why they power modern Transformers, and the different attention variants used in GPT, BERT, and LLaMA."
 ---

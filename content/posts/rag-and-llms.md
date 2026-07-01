@@ -5,7 +5,6 @@ draft: false
 tags: ["rag", "llm", "vector-databases", "embeddings", "ai", "information-retrieval", "generative-ai"]
 weight: 111
 math: true
-author: "Akshat Gupta"
 showtoc: true
 description: "A technical introduction to Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses."
 ---

@@ -6,7 +6,6 @@ draft: false
 tags: ["generative-ai", "deep-learning", "diffusion-models"]
 weight: 101
 math: true
-author: "Akshat Gupta"
 showtoc: true
 cover:
     image: "/posts/diffusion_models_ho.png"

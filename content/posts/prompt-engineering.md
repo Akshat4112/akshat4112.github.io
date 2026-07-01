@@ -4,7 +4,6 @@ date: 2024-04-15T09:00:00+01:00
 draft: false
 tags: ["prompt-engineering", "llm", "ai", "chatgpt", "rag", "instruction-tuning"]
 weight: 108
-author: "Akshat Gupta"
 description: "A practical guide to prompt engineering — the art of crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques."
 ---
 

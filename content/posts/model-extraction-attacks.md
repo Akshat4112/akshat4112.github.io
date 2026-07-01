@@ -5,7 +5,6 @@ draft: false
 tags: ["ai-security", "model-extraction", "machine-learning", "cybersecurity", "llm", "deep-learning", "ai"]
 weight: 113
 math: true
-author: "Akshat Gupta"
 showtoc: true
 description: "A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, the formal threat model, and principled defences."
 ---

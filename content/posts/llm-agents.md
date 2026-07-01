@@ -5,7 +5,6 @@ draft: false
 tags: ["llm", "agents", "deep-learning", "ai", "reinforcement-learning", "decision-making", "autonomous-systems"]
 weight: 115
 math: true
-author: "Akshat Gupta"
 showtoc: true
 description: "A theory and mathematics-first guide to LLM agents — how autonomous AI systems reason, plan, act, and remember, with formal definitions and architectural principles."
 ---
