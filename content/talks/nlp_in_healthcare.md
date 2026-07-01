@@ -8,6 +8,7 @@ weight: 102
 venue: 
 cover:
     image: "/talks/p1poornimauni.jpeg"
+    alt: "NLP in Healthcare workshop at Poornima University"
 ---
 
 **Date of Event:** May 05, 2020  

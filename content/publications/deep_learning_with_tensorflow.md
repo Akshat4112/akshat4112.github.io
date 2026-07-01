@@ -8,7 +8,7 @@ weight: 102
 showtoc: true
 cover:
     image: "/publications/deeplearningwithtf.png"
-    alt: "Hands-on Deep Learning with TensorFlow 2.0"
+    alt: "Book cover of Hands-on Deep Learning with TensorFlow 2.0"
 ---
 
 [View on Packt](https://www.packtpub.com/) · [GitHub](https://github.com/akshat4112)

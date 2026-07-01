@@ -5,6 +5,7 @@ draft: false
 tags: ["vector-databases", "semantic-search", "embeddings", "rag", "ai-infrastructure"]
 weight: 103
 description: "An introduction to vector databases — what they are, how they power semantic search, and why they're essential infrastructure for modern AI applications."
+showtoc: true
 ---
 
 

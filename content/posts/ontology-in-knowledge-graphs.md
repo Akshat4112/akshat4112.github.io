@@ -5,6 +5,7 @@ draft: false
 tags: ["ontology", "knowledge-graph", "semantic-web", "ai", "data-modeling"]
 weight: 104
 description: "A clear explanation of ontologies in AI — the formal schemas that give knowledge graphs their meaning and enable structured machine reasoning."
+showtoc: true
 ---
 
 

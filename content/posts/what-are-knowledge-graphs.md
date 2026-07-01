@@ -5,6 +5,7 @@ draft: false
 tags: ["knowledge-graph", "semantic-search", "ai", "data-modeling", "rag"]
 weight: 107
 description: "A plain-language introduction to knowledge graphs — how they represent real-world entities and relationships, and why they're central to modern AI and search systems."
+showtoc: true
 ---
 
 We hear the term **[knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)** everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly *is* a knowledge graph, and why is everyone suddenly obsessed with it?

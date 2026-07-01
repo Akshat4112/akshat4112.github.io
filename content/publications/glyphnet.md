@@ -1,6 +1,6 @@
 ---
 title: "GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks"
-#description: ""
+description: "GlyphNet — a 4M-domain image dataset and attention-based CNN for detecting homoglyph phishing attacks, presented at AAAI AICS 2023."
 date: 2023-03-01T00:00:00+00:00
 draft: false
 tags: ["machine-learning", "aics", "aaai", "computer-vision"]

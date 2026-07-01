@@ -8,6 +8,7 @@ weight: 101
 venue: 
 cover:
     image: "/talks/IMG20190906130457.jpg"
+    alt: "Intel Machine Learning Workshop at Dr. Akhilesh Das Gupta Institute"
 ---
 
 **Date of Event:** September 6, 2019  

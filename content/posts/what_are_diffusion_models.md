@@ -9,7 +9,7 @@ math: true
 showtoc: true
 cover:
     image: "/posts/diffusion_models_ho.png"
-    alt: "Diffusion model forward and reverse process (Ho et al.)"
+    alt: "Diagram showing the forward and reverse diffusion process from Ho et al."
 ---
 
 **Generative modeling** is currently one of the most thrilling domains in deep learning research. 

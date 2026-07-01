@@ -117,7 +117,8 @@
     {{- else -}}
   {
     "@type": "Person",
-    "name": {{ . }}
+    "name": {{ . }},
+    "url": {{ site.BaseURL }}
   },
     {{- end -}}
   {{- end }}

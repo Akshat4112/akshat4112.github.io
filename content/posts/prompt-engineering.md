@@ -5,6 +5,7 @@ draft: false
 tags: ["prompt-engineering", "llm", "ai", "chatgpt", "rag", "instruction-tuning"]
 weight: 108
 description: "A practical guide to prompt engineering — the art of crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques."
+showtoc: true
 ---
 
 We've all played with ChatGPT, Copilot, or Claude — typing in questions and marveling at their responses. But behind the scenes, there's a powerful craft at play: **prompt engineering**. [OpenAI](https://openai.com/) and [Anthropic](https://www.anthropic.com/) both publish guidance on how best to prompt their models.

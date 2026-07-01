@@ -52,8 +52,10 @@ menu:
 
 params:
   author: "Akshat Gupta"
-  math: true
+  defaultTheme: auto
   env: production
+  social:
+    twitter: akshat_rg
   mainSections:
     - posts
   description: "Machine Learning Engineer specializing in Generative AI, LLMs, Diffusion Models, and NLP. Writing about AI research, practical ML engineering, and deep learning."

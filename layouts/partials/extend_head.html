@@ -3,7 +3,7 @@
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
 
-{{ if or .Params.math site.Params.math }}
+{{ if .Params.math }}
 <!-- KaTeX support (self-hosted) -->
 <link rel="stylesheet" href="/lib/katex/katex.min.css">
 <script defer src="/lib/katex/katex.min.js"></script>
