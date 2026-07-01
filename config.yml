@@ -51,6 +51,7 @@ menu:
       weight: 30
 
 params:
+  author: "Akshat Gupta"
   math: true
   env: production
   mainSections:

@@ -4,7 +4,6 @@ date: 2025-04-20T17:30:00+02:00
 draft: false
 tags: ["llm", "fine-tuning", "lora", "ai", "transformers"]
 weight: 105
-author: "Akshat Gupta"
 description: "How to fine-tune large language models efficiently using LoRA — low-rank adaptation that dramatically reduces compute and memory requirements."
 ---
 

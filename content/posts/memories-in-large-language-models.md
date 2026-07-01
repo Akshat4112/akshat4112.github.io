@@ -5,7 +5,6 @@ draft: false
 tags: ["llm", "memory", "rag", "ai", "deep-learning", "neural-networks"]
 weight: 114
 math: true
-author: "Akshat Gupta"
 showtoc: true
 description: "How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based long-term retrieval — and what this means for building AI systems."
 ---

@@ -4,7 +4,6 @@ date: 2024-01-15T09:00:00+01:00
 draft: false
 tags: ["ontology", "knowledge-graph", "semantic-web", "ai", "data-modeling"]
 weight: 104
-author: "Akshat Gupta"
 description: "A clear explanation of ontologies in AI — the formal schemas that give knowledge graphs their meaning and enable structured machine reasoning."
 ---
 

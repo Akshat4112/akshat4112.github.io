@@ -5,7 +5,7 @@ date: 2023-03-01T00:00:00+00:00
 draft: false
 tags: ["machine-learning", "aics", "aaai", "computer-vision"]
 weight: 101
-ShowToc: true
+showtoc: true
 #cover:
 #    image: "/publications/akshat_gupta.jpg"
 

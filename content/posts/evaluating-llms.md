@@ -5,7 +5,6 @@ draft: false
 tags: ["llm", "evaluation", "benchmarks", "ai", "nlp", "deep-learning"]
 weight: 110
 math: true
-author: "Akshat Gupta"
 showtoc: true
 description: "A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality."
 ---

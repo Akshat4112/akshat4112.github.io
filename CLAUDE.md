@@ -8,7 +8,7 @@ Personal portfolio website for Akshat Gupta, hosted at [akshat4112.github.io](ht
 
 - **Hugo Extended** v0.147.2+ — static site generator
 - **PaperMod theme** — included as a git submodule at `themes/PaperMod`
-- **KaTeX** — math rendering (loaded via CDN when `math: true` in front matter or site config)
+- **KaTeX** v0.16.8 — math rendering, self-hosted in `static/lib/katex/`
 - **GitHub Actions** — CI/CD via `.github/workflows/hugo.yml`, deploys to `gh-pages` branch on push to `main`
 
 ## Repository Structure
@@ -29,13 +29,18 @@ Personal portfolio website for Akshat Gupta, hosted at [akshat4112.github.io](ht
 │       ├── extend_head.html   # Custom <head> (author meta, KaTeX)
 │       ├── header.html        # Custom header
 │       └── templates/         # OpenGraph, Twitter Cards, Schema.org overrides
-├── static/                 # Static assets (images organized by content type)
+├── static/                 # Static assets
 │   ├── posts/              # Post images
 │   ├── publications/       # Publication images
 │   ├── talks/              # Talk images
-│   └── events/             # Event images
+│   ├── events/             # Event images
+│   ├── lib/katex/          # Self-hosted KaTeX (CSS, JS, fonts)
+│   ├── favicon.ico         # Favicons (generated from profile image)
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   └── apple-touch-icon.png
 ├── assets/                 # Hugo-processed assets (profile photo)
-├── archetypes/default.md   # Template for `hugo new` content
+├── archetypes/default.md   # Template for `hugo new` content (YAML front matter)
 ├── themes/PaperMod/        # Theme (git submodule — do not edit directly)
 └── .github/workflows/hugo.yml  # CI/CD pipeline
 ```
@@ -46,7 +51,7 @@ Personal portfolio website for Akshat Gupta, hosted at [akshat4112.github.io](ht
 
 ### Front Matter (YAML)
 
-All content uses YAML front matter (`---` delimiters). Required and common fields:
+All content uses YAML front matter (`---` delimiters). The default author is set globally in `config.yml` (`params.author`), so individual posts do not need an `author` field.
 
 ```yaml
 ---
@@ -56,9 +61,8 @@ draft: false                         # Must be false for published content
 tags: ["tag1", "tag2"]               # Lowercase, hyphenated
 weight: 112                          # Controls sort order (lower = higher priority)
 description: "SEO description"       # Used in meta tags and search
-author: "Akshat Gupta"               # Optional, defaults to site author
 math: true                           # Enable KaTeX rendering
-showtoc: true                        # Show table of contents
+showtoc: true                        # Show table of contents (lowercase)
 cover:
     image: "/section/filename.jpg"   # Cover image path (relative to static/)
 ---
@@ -110,12 +114,13 @@ hugo --minify
 Push to `main` triggers the GitHub Actions workflow (`.github/workflows/hugo.yml`):
 1. Checks out repo with submodules
 2. Builds with `hugo --minify` (Hugo Extended v0.147.2)
-3. Deploys `public/` to `gh-pages` branch via `peaceiris/actions-gh-pages`
+3. Deploys `public/` to `gh-pages` branch via `peaceiris/actions-gh-pages@v4`
 
 ## Key Configuration (`config.yml`)
 
 - `baseURL`: `https://akshat4112.github.io/`
 - `theme`: PaperMod
+- `params.author`: `Akshat Gupta` (global default, no need to repeat in posts)
 - `profileMode`: Enabled (homepage shows profile card)
 - `mainSections`: `["posts"]` — only posts appear on the homepage feed
 - `outputs.home`: HTML, RSS, JSON (JSON required for search)
@@ -126,15 +131,8 @@ Push to `main` triggers the GitHub Actions workflow (`.github/workflows/hugo.yml
 
 The site overrides several PaperMod partials in `layouts/`:
 - `layouts/index.html` — custom homepage with profile + post listing
-- `layouts/partials/extend_head.html` — author meta tag + KaTeX script loading
+- `layouts/partials/extend_head.html` — author meta tag + self-hosted KaTeX loading
 - `layouts/partials/header.html` — custom site header
 - `layouts/partials/templates/` — custom OpenGraph, Twitter Cards, Schema.org JSON-LD
 
 Do **not** edit files in `themes/PaperMod/` directly. Override by placing files with the same path under `layouts/`.
-
-## Things to Watch
-
-- The `layouts/partials 2/` directory appears to be a duplicate/backup — avoid using it.
-- The `.idea/` directory is IDE config (JetBrains) and should not be modified.
-- The repo root contains pre-built HTML files (`index.html`, `404.html`, `sitemap.xml`, etc.) alongside the Hugo source — these are likely legacy or from a previous build. The canonical source is always in `content/`.
-- Static files include spaces in filenames (e.g., `static/talks/WhatsApp Image...`) — preserve existing naming when referencing.

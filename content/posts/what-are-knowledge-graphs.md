@@ -4,7 +4,6 @@ date: 2024-03-15T09:00:00+01:00
 draft: false
 tags: ["knowledge-graph", "semantic-search", "ai", "data-modeling", "rag"]
 weight: 107
-author: "Akshat Gupta"
 description: "A plain-language introduction to knowledge graphs — how they represent real-world entities and relationships, and why they're central to modern AI and search systems."
 ---
 

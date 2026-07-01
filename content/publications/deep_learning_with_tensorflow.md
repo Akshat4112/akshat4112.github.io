@@ -5,7 +5,7 @@ date: 2023-03-01T00:00:00+00:00
 draft: false
 tags: ["machine-learning", "deep-learning", "tensorflow", "book"]
 weight: 102
-ShowToc: true
+showtoc: true
 cover:
     image: "/publications/deeplearningwithtf.png"
     alt: "Hands-on Deep Learning with TensorFlow 2.0"
