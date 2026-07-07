@@ -18,17 +18,17 @@
       <link>https://akshat4112.github.io/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0200</pubDate>
       <guid>https://akshat4112.github.io/events/cyber_valley_ai_bootcamp_stuttgart_tubingen_zurich_2023/</guid>
-      <description>Stuttgart · Tübingen · Zurich</description>
+      <description>Cyber Valley AI Startup Bootcamp across Stuttgart, Tübingen, and Zurich — foundation models, AI startup formation, and responsible AI.</description>
     </item>
     <item>
       <title>What are Diffusion Models?</title>
       <link>https://akshat4112.github.io/posts/what_are_diffusion_models/</link>
       <pubDate>Thu, 15 Feb 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
-      <description>A technical exploration of diffusion models — how the forward/reverse diffusion process works, U-Net architectures, denoising score matching, and why they outperform GANs.</description>
+      <description>A technical exploration of diffusion models — the forward/reverse process, U-Net architectures, denoising score matching, and why they outperform GANs.</description>
     </item>
     <item>
-      <title>RAG and LLMs: Teaching Large Models to Use External Knowledge</title>
+      <title>RAG and LLMs: Using External Knowledge</title>
       <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>

@@ -14,7 +14,7 @@
     <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LLM Fine-Tuning and LoRA: Making Large Models Work for You</title>
+      <title>LLM Fine-Tuning with LoRA</title>
       <link>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</link>
       <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</guid>
@@ -25,42 +25,42 @@
       <link>https://akshat4112.github.io/posts/prompt-engineering/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/prompt-engineering/</guid>
-      <description>A practical guide to prompt engineering — the art of crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
+      <description>A practical guide to prompt engineering — crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
     </item>
     <item>
-      <title>Evaluating LLMs: How Do You Measure a Model&#39;s Mind?</title>
+      <title>How Do You Evaluate LLMs?</title>
       <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
       <description>A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality.</description>
     </item>
     <item>
-      <title>RAG and LLMs: Teaching Large Models to Use External Knowledge</title>
+      <title>RAG and LLMs: Using External Knowledge</title>
       <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
       <description>A technical introduction to Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
     </item>
     <item>
-      <title>Model Extraction Attacks: How Hackers Steal AI Models</title>
+      <title>Model Extraction Attacks Explained</title>
       <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, the formal threat model, and principled defences.</description>
+      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, and principled defences.</description>
     </item>
     <item>
-      <title>Memories in Large Language Models: How AI Models Remember and Retrieve</title>
+      <title>Memory in Large Language Models</title>
       <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
-      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based long-term retrieval — and what this means for building AI systems.</description>
+      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based retrieval — and what this means for building AI systems.</description>
     </item>
     <item>
-      <title>LLM Agents: Building AI Systems That Can Reason and Act</title>
+      <title>LLM Agents: AI Systems That Reason and Act</title>
       <link>https://akshat4112.github.io/posts/llm-agents/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
-      <description>A theory and mathematics-first guide to LLM agents — how autonomous AI systems reason, plan, act, and remember, with formal definitions and architectural principles.</description>
+      <description>A theory and math-first guide to LLM agents — how autonomous AI systems reason, plan, act, and remember, with formal architectural principles.</description>
     </item>
   </channel>
 </rss>

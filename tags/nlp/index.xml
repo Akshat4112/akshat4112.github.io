@@ -18,21 +18,21 @@
       <link>https://akshat4112.github.io/talks/nlp_in_healthcare/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/talks/nlp_in_healthcare/</guid>
-      <description>Poornima University, Jaipur, Rajasthan, India</description>
+      <description>A workshop on the Role of Natural Language Processing in Healthcare at Poornima University, Rajasthan, covering NLP applications and ethics in medicine.</description>
     </item>
     <item>
-      <title>Evaluating LLMs: How Do You Measure a Model&#39;s Mind?</title>
+      <title>How Do You Evaluate LLMs?</title>
       <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
       <description>A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality.</description>
     </item>
     <item>
-      <title>Understanding Attention in Transformers: The Core of Modern NLP</title>
+      <title>Understanding Attention in Transformers</title>
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>A deep dive into self-attention mechanisms — how they work, why they power modern Transformers, and the different attention variants used in GPT, BERT, and LLaMA.</description>
+      <description>A deep dive into self-attention — how it works, why it powers modern Transformers, and the attention variants used in GPT, BERT, and LLaMA.</description>
     </item>
   </channel>
 </rss>

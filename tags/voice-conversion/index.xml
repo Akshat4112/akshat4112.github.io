@@ -14,11 +14,11 @@
     <lastBuildDate>Tue, 15 Oct 2024 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/voice-conversion/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Speaker Anonymization: Protecting Voice Identity in the AI Era</title>
+      <title>Speaker Anonymization in the AI Era</title>
       <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/speaker-anonymization/</guid>
-      <description>A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, speech synthesis, and differential privacy for protecting speaker identity.</description>
+      <description>A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, and differential privacy for protecting speaker identity.</description>
     </item>
   </channel>
 </rss>

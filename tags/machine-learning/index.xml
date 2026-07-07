@@ -21,21 +21,18 @@
       <description>An exploration of fairness in ML systems — defining group, individual, and causal fairness, sources of algorithmic bias, and techniques to address them.</description>
     </item>
     <item>
-      <title>GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks</title>
+      <title>GlyphNet: Homoglyph Domain Detection with CNNs</title>
       <link>https://akshat4112.github.io/publications/glyphnet/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/publications/glyphnet/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2306.10392&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Akshat Gupta, Laxman Singh Tomar, Ridhima Garg&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Cyber attacks deceive machines into believing something that does not exist in the first place. However, there are some to which even humans fall prey. One such famous attack that attackers have used over the years to exploit the vulnerability of vision is known to be a Homoglyph attack. It employs a primary yet effective mechanism to create illegitimate domains that are hard to differentiate from legit ones. Moreover, as the difference is pretty indistinguishable for a user to notice, they cannot stop themselves from clicking on these homoglyph domain names.&lt;/p&gt;</description>
+      <description>GlyphNet — a 4M-domain image dataset and attention-based CNN for detecting homoglyph phishing attacks, presented at AAAI AICS 2023.</description>
     </item>
     <item>
-      <title>Recap of Intel&#39;s Machine Learning Workshop at Dr. Akhilesh Das Gupta Institute</title>
+      <title>Intel Machine Learning Workshop Recap</title>
       <link>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/talks/intel_machine_learning_workshop/</guid>
-      <description>Delhi, India</description>
+      <description>Recap of the Intel-organized Machine Learning workshop at Dr. Akhilesh Das Gupta Institute, Delhi, covering ML fundamentals and hands-on sessions.</description>
     </item>
     <item>
       <title>Hands-on Deep Learning with TensorFlow 2.0</title>
@@ -49,28 +46,28 @@
       <link>https://akshat4112.github.io/talks/nlp_in_healthcare/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/talks/nlp_in_healthcare/</guid>
-      <description>Poornima University, Jaipur, Rajasthan, India</description>
+      <description>A workshop on the Role of Natural Language Processing in Healthcare at Poornima University, Rajasthan, covering NLP applications and ethics in medicine.</description>
     </item>
     <item>
-      <title>Smart India Hackathon 2017 — Ministry of Earth Sciences</title>
+      <title>Smart India Hackathon 2017</title>
       <link>https://akshat4112.github.io/events/smart_india_hackathon_2017/</link>
       <pubDate>Fri, 28 Apr 2017 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/events/smart_india_hackathon_2017/</guid>
-      <description>Chennai, Tamil Nadu, India</description>
+      <description>Building a solution for the Ministry of Earth Sciences track at Smart India Hackathon 2017 in Chennai, one of the world&amp;#39;s largest open innovation hackathons.</description>
     </item>
     <item>
-      <title>Introduction to Artificial Intelligence Workshop in Ujjain</title>
+      <title>AI Workshop in Ujjain</title>
       <link>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:00 +0530</pubDate>
       <guid>https://akshat4112.github.io/talks/kips_artificial_intelligence_workshop/</guid>
-      <description>Ujjain, Madhya Pradesh, India</description>
+      <description>An introductory Artificial Intelligence workshop in Ujjain, Madhya Pradesh, covering AI fundamentals for students and enthusiasts.</description>
     </item>
     <item>
-      <title>Model Extraction Attacks: How Hackers Steal AI Models</title>
+      <title>Model Extraction Attacks Explained</title>
       <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, the formal threat model, and principled defences.</description>
+      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, and principled defences.</description>
     </item>
   </channel>
 </rss>

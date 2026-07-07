@@ -14,14 +14,11 @@
     <lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/aaai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks</title>
+      <title>GlyphNet: Homoglyph Domain Detection with CNNs</title>
       <link>https://akshat4112.github.io/publications/glyphnet/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/publications/glyphnet/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2306.10392&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Akshat Gupta, Laxman Singh Tomar, Ridhima Garg&lt;/p&gt;
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;Cyber attacks deceive machines into believing something that does not exist in the first place. However, there are some to which even humans fall prey. One such famous attack that attackers have used over the years to exploit the vulnerability of vision is known to be a Homoglyph attack. It employs a primary yet effective mechanism to create illegitimate domains that are hard to differentiate from legit ones. Moreover, as the difference is pretty indistinguishable for a user to notice, they cannot stop themselves from clicking on these homoglyph domain names.&lt;/p&gt;</description>
+      <description>GlyphNet — a 4M-domain image dataset and attention-based CNN for detecting homoglyph phishing attacks, presented at AAAI AICS 2023.</description>
     </item>
   </channel>
 </rss>
