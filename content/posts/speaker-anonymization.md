@@ -1,12 +1,12 @@
 ---
-title: "Speaker Anonymization: Protecting Voice Identity in the AI Era"
+title: "Speaker Anonymization in the AI Era"
 date: 2024-10-15T09:00:00+01:00
 draft: false
 tags: ["speech-processing", "privacy", "deep-learning", "voice-conversion", "anonymization", "cybersecurity", "ai"]
 weight: 114
 math: true
 showtoc: true
-description: "A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, speech synthesis, and differential privacy for protecting speaker identity."
+description: "A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, and differential privacy for protecting speaker identity."
 ---
 
 Every time you speak to a voice assistant, attend a recorded meeting, or submit audio to a diagnostic tool, your voice reveals something deeply personal: **your identity**. Unlike a password, you cannot change your voice. This makes speaker anonymization — the task of modifying speech so a speaker cannot be identified, while keeping the content intact — one of the more important problems in applied AI privacy.

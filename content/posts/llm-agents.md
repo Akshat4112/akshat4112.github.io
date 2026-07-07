@@ -1,12 +1,12 @@
 ---
-title: "LLM Agents: Building AI Systems That Can Reason and Act"
+title: "LLM Agents: AI Systems That Reason and Act"
 date: 2025-05-05T09:00:00+01:00
 draft: false
 tags: ["llm", "agents", "deep-learning", "ai", "reinforcement-learning", "decision-making", "autonomous-systems"]
 weight: 115
 math: true
 showtoc: true
-description: "A theory and mathematics-first guide to LLM agents — how autonomous AI systems reason, plan, act, and remember, with formal definitions and architectural principles."
+description: "A theory and math-first guide to LLM agents — how autonomous AI systems reason, plan, act, and remember, with formal architectural principles."
 ---
 
 Large Language Models (LLMs), like [GPT-3](https://arxiv.org/abs/2005.14165), GPT-4, and others, have taken the world by storm due to their impressive language generation and understanding capabilities. However, when these models are augmented with decision-making capabilities, memory, and actions in specific environments, they become something fundamentally more powerful.

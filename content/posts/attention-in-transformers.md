@@ -1,12 +1,12 @@
 ---
-title: "Understanding Attention in Transformers: The Core of Modern NLP"
+title: "Understanding Attention in Transformers"
 date: 2024-08-15T09:00:00+01:00
 draft: false
 tags: ["transformers", "attention", "deep-learning", "nlp", "self-attention", "neural-networks", "ai"]
 weight: 112
 math: true
 showtoc: true
-description: "A deep dive into self-attention mechanisms — how they work, why they power modern Transformers, and the different attention variants used in GPT, BERT, and LLaMA."
+description: "A deep dive into self-attention — how it works, why it powers modern Transformers, and the attention variants used in GPT, BERT, and LLaMA."
 ---
 
 When people say "[Transformers](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) revolutionized NLP," what they *really* mean is:

@@ -3,11 +3,15 @@
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
 
+{{ if site.Config.Services.GoogleAnalytics.ID }}
+<link rel="preconnect" href="https://www.googletagmanager.com">
+{{ end }}
+
 {{ if .Params.math }}
-<!-- KaTeX support (self-hosted) -->
-<link rel="stylesheet" href="/lib/katex/katex.min.css">
-<script defer src="/lib/katex/katex.min.js"></script>
-<script defer src="/lib/katex/contrib/auto-render.min.js"
+<!-- KaTeX support (self-hosted, pinned to v0.16.8) -->
+<link crossorigin="anonymous" rel="preload stylesheet" as="style" href="/lib/katex/katex.min.css?v=0.16.8" integrity="sha384-vadlg9cMmrvje0CrC2aNxPhZJaMwKARd1AY5x70x0KeIg53pfEYJ/va939/U3RCG">
+<script defer crossorigin="anonymous" src="/lib/katex/katex.min.js?v=0.16.8" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"></script>
+<script defer crossorigin="anonymous" src="/lib/katex/contrib/auto-render.min.js?v=0.16.8" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
     onload="renderMathInElement(document.body);"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {

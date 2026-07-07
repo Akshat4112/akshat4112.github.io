@@ -1,5 +1,5 @@
 ---
-title: "RAG and LLMs: Teaching Large Models to Use External Knowledge"
+title: "RAG and LLMs: Using External Knowledge"
 date: 2024-07-15T09:00:00+01:00
 draft: false
 tags: ["rag", "llm", "vector-databases", "embeddings", "ai", "information-retrieval", "generative-ai"]

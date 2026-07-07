@@ -4,7 +4,7 @@ date: 2024-03-15T09:00:00+01:00
 draft: false
 tags: ["knowledge-graph", "semantic-search", "ai", "data-modeling", "rag"]
 weight: 107
-description: "A plain-language introduction to knowledge graphs — how they represent real-world entities and relationships, and why they're central to modern AI and search systems."
+description: "A plain-language introduction to knowledge graphs — how they represent entities and relationships, and why they're central to modern AI and search."
 showtoc: true
 ---
 
@@ -89,7 +89,7 @@ Here's what goes into a real-world knowledge graph:
 
 1. **Entities**: The nodes — people, places, products, concepts.
 2. **Relationships**: The edges — how entities are connected.
-3. **Ontology**: Defines classes, properties, and constraints. *(Read my [ontology post](../what-is-an-ontology-in-a-knowledge-graph/) for details!)*
+3. **Ontology**: Defines classes, properties, and constraints. *(Read my [ontology post](../ontology-in-knowledge-graphs/) for details!)*
 4. **Identifiers**: Unique URIs to refer to each concept.
 5. **Query Layer**: Languages like [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) or [Cypher](https://neo4j.com/developer/cypher/) to retrieve insights.
 

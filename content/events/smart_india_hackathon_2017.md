@@ -1,6 +1,6 @@
 ---
-title: "Smart India Hackathon 2017 — Ministry of Earth Sciences"
-description: "Chennai, Tamil Nadu, India"
+title: "Smart India Hackathon 2017"
+description: "Building a solution for the Ministry of Earth Sciences track at Smart India Hackathon 2017 in Chennai, one of the world's largest open innovation hackathons."
 date: 2017-04-28T00:00:00+05:30
 draft: false
 tags: ["hackathon", "machine-learning", "government", "India"]

@@ -1,5 +1,5 @@
 ---
-title: "LLM Fine-Tuning and LoRA: Making Large Models Work for You"
+title: "LLM Fine-Tuning with LoRA"
 date: 2025-04-20T17:30:00+02:00
 draft: false
 tags: ["llm", "fine-tuning", "lora", "ai", "transformers"]
