@@ -1,6 +1,6 @@
 ---
-title: "Introduction to Artificial Intelligence Workshop in Ujjain"
-description: "Ujjain, Madhya Pradesh, India"
+title: "AI Workshop in Ujjain"
+description: "An introductory Artificial Intelligence workshop in Ujjain, Madhya Pradesh, covering AI fundamentals for students and enthusiasts."
 date: 2019-12-17T00:00:00+05:30
 draft: false
 tags: ["machine-learning", "AI", "workshop"]

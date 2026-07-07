@@ -1,12 +1,12 @@
 ---
-title: "Memories in Large Language Models: How AI Models Remember and Retrieve"
+title: "Memory in Large Language Models"
 date: 2025-07-10T09:00:00+01:00
 draft: false
 tags: ["llm", "memory", "rag", "ai", "deep-learning", "neural-networks"]
 weight: 114
 math: true
 showtoc: true
-description: "How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based long-term retrieval — and what this means for building AI systems."
+description: "How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based retrieval — and what this means for building AI systems."
 ---
 
 Large language models (LLMs) like GPT-4, Claude, and [Llama 3](https://github.com/meta-llama/llama) feel *almost* sentient at times. They can reference earlier parts of a conversation, recall facts from pre-training, and even “remember” user preferences across sessions. But what **is** memory in a language model?  

@@ -5,10 +5,11 @@ draft: false
 tags: ["vector-databases", "semantic-search", "embeddings", "rag", "ai-infrastructure"]
 weight: 103
 description: "An introduction to vector databases — what they are, how they power semantic search, and why they're essential infrastructure for modern AI applications."
+showtoc: true
 ---
 
 
-If you've been working with modern AI systems — particularly in the realm of [Large Language Models (LLMs)](https://huggingface.co/learn/nlp-course/chapter1/3?utm_source=chatgpt), image embeddings, or recommendation engines — you've probably heard of **vector databases**. But what are they really? And why is everyone in the ML community suddenly so excited about them?
+If you've been working with modern AI systems — particularly in the realm of [Large Language Models (LLMs)](https://huggingface.co/learn/nlp-course/chapter1/3), image embeddings, or recommendation engines — you've probably heard of **vector databases**. But what are they really? And why is everyone in the ML community suddenly so excited about them?
 
 Let me break it down in simple terms, along with how I've been exploring them in my own projects.
 

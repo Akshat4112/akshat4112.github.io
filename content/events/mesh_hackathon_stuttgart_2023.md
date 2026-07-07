@@ -1,6 +1,6 @@
 ---
 title: "MESH Hackathon Stuttgart 2023"
-description: "Stuttgart, Germany"
+description: "Building AI prototypes in 48 hours at the MESH Hackathon in Stuttgart, Germany — a student and industry innovation event."
 date: 2023-04-15T00:00:00+02:00
 draft: false
 tags: ["hackathon", "AI", "deep-learning", "Stuttgart"]

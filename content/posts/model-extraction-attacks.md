@@ -1,12 +1,12 @@
 ---
-title: "Model Extraction Attacks: How Hackers Steal AI Models"
+title: "Model Extraction Attacks Explained"
 date: 2024-09-15T09:00:00+01:00
 draft: false
 tags: ["ai-security", "model-extraction", "machine-learning", "cybersecurity", "llm", "deep-learning", "ai"]
 weight: 113
 math: true
 showtoc: true
-description: "A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, the formal threat model, and principled defences."
+description: "A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, and principled defences."
 ---
 
 Training a state-of-the-art machine learning model is expensive. Large language models like [GPT-3](https://arxiv.org/abs/2005.14165) required hundreds of petaflop-days of compute and millions of dollars. Yet once deployed behind an API, they are vulnerable to a surprisingly subtle attack: an adversary who never sees the weights, never reads the training data, and never touches the server — but can still *steal the model* by asking it questions.

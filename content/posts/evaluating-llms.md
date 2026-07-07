@@ -1,5 +1,5 @@
 ---
-title: "Evaluating LLMs: How Do You Measure a Model's Mind?"
+title: "How Do You Evaluate LLMs?"
 date: 2024-06-15T09:00:00+01:00
 draft: false
 tags: ["llm", "evaluation", "benchmarks", "ai", "nlp", "deep-learning"]

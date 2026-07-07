@@ -1,0 +1,12 @@
+{{- $destination := .Destination -}}
+{{- $img := "" -}}
+{{- if not (urls.Parse $destination).IsAbs -}}
+  {{- with resources.Get (strings.TrimPrefix "/" $destination) -}}
+    {{- $img = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if $img -}}
+<img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+{{- else -}}
+<img src="{{ $destination | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+{{- end -}}

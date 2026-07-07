@@ -1,6 +1,6 @@
 ---
 title: "What are Diffusion Models?"
-description: "A technical exploration of diffusion models — how the forward/reverse diffusion process works, U-Net architectures, denoising score matching, and why they outperform GANs."
+description: "A technical exploration of diffusion models — the forward/reverse process, U-Net architectures, denoising score matching, and why they outperform GANs."
 date: 2024-02-15T09:00:00+01:00
 draft: false
 tags: ["generative-ai", "deep-learning", "diffusion-models"]
@@ -9,7 +9,7 @@ math: true
 showtoc: true
 cover:
     image: "/posts/diffusion_models_ho.png"
-    alt: "Diffusion model forward and reverse process (Ho et al.)"
+    alt: "Diagram showing the forward and reverse diffusion process from Ho et al."
 ---
 
 **Generative modeling** is currently one of the most thrilling domains in deep learning research. 
@@ -21,7 +21,7 @@ The foundations of diffusion models were introduced in papers by [Sohl-Dickstein
 
 Diffusion models function on a principal strategy of training a model to reverse a gradual process of data corruption, transitioning from a clean data point to pure noise and then back to clean data point.
 
-![asd](/posts/diffusion_models_ho.png)
+![Forward and reverse diffusion process](/posts/diffusion_models_ho.png)
 Image Source: [Ho et al.](https://arxiv.org/abs/2006.11239)
 #### Forward Diffusion Process
 

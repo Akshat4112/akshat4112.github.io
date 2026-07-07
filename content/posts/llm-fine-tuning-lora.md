@@ -1,10 +1,11 @@
 ---
-title: "LLM Fine-Tuning and LoRA: Making Large Models Work for You"
+title: "LLM Fine-Tuning with LoRA"
 date: 2025-04-20T17:30:00+02:00
 draft: false
 tags: ["llm", "fine-tuning", "lora", "ai", "transformers"]
 weight: 105
 description: "How to fine-tune large language models efficiently using LoRA — low-rank adaptation that dramatically reduces compute and memory requirements."
+showtoc: true
 ---
 
 As powerful as large language models (LLMs) like GPT, [LLaMA](https://github.com/meta-llama/llama), and [Mistral](https://mistral.ai/) are, they’re still *general-purpose*. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to **fine-tune** them.

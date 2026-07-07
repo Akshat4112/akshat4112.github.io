@@ -1,13 +1,13 @@
 ---
 title: "Cyber Valley AI Startup Bootcamp"
-description: "Stuttgart · Tübingen · Zurich"
+description: "Cyber Valley AI Startup Bootcamp across Stuttgart, Tübingen, and Zurich — foundation models, AI startup formation, and responsible AI."
 date: 2023-04-01T00:00:00+02:00
 draft: false
 tags: ["AI", "startups", "deep-learning", "generative-ai"]
 weight: 100
 cover:
     image: "/events/cyber_valley.JPG"
-    alt: "Cyber Valley AI Startup Bootcamp 2023"
+    alt: "Participants at the Cyber Valley AI Startup Bootcamp 2023 in Stuttgart"
 ---
 
 **Date:** April 2023

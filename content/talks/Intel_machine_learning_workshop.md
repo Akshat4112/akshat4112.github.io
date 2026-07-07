@@ -1,6 +1,6 @@
 ---
-title: "Recap of Intel's Machine Learning Workshop at Dr. Akhilesh Das Gupta Institute"
-description: "Delhi, India"
+title: "Intel Machine Learning Workshop Recap"
+description: "Recap of the Intel-organized Machine Learning workshop at Dr. Akhilesh Das Gupta Institute, Delhi, covering ML fundamentals and hands-on sessions."
 date: 2019-09-06T00:00:00+05:30
 draft: false
 tags: ["machine-learning", "workshop", "intel-innovator"]
@@ -8,6 +8,7 @@ weight: 101
 venue: 
 cover:
     image: "/talks/IMG20190906130457.jpg"
+    alt: "Intel Machine Learning Workshop at Dr. Akhilesh Das Gupta Institute"
 ---
 
 **Date of Event:** September 6, 2019  

@@ -4,13 +4,6 @@ title: Akshat Gupta
 theme: PaperMod
 googleAnalytics: "G-8YC2E5MW2M"
 
-# Environment-specific settings
-# Hugo will use these settings when running in development (local) mode
-# You can override these with CLI parameters
-development:
-  baseURL: "http://localhost:1313/"
-  googleAnalytics: ""  # Disable analytics in development
-
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -52,8 +45,16 @@ menu:
 
 params:
   author: "Akshat Gupta"
-  math: true
+  defaultTheme: auto
   env: production
+  social:
+    twitter: akshat_rg
+  schema:
+    sameAs:
+      - "https://www.linkedin.com/in/akshat-rg/"
+      - "https://github.com/akshat4112"
+      - "https://twitter.com/akshat_rg"
+      - "https://kaggle.com/akshat4112/"
   mainSections:
     - posts
   description: "Machine Learning Engineer specializing in Generative AI, LLMs, Diffusion Models, and NLP. Writing about AI research, practical ML engineering, and deep learning."
@@ -105,5 +106,3 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
-
-
