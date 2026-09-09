@@ -1,170 +1,140 @@
 {{- define "main" }}
 <div class="portfolio-home">
-  <section class="portfolio-hero" aria-labelledby="hero-title">
-    <div class="hero-copy reveal">
-      <p class="hello-note">Hello — I’m Akshat.</p>
-      <h1 id="hero-title">Applied AI engineer.<br><span>Researcher at heart.</span></h1>
-      <p class="hero-lede">I turn ideas from machine learning research into AI systems that work in the real world. My focus is agentic AI, document intelligence, evaluation, and the engineering needed to make models dependable.</p>
-      <div class="hero-actions" aria-label="Primary actions">
-        <a class="button-primary" href="#work">See what I build <span aria-hidden="true">↓</span></a>
-        <a class="button-secondary" href="/about/">My story</a>
-      </div>
-      <div class="hero-links" aria-label="Professional profiles">
-        <a href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        <a href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-        <a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Research <span aria-hidden="true">↗</span></a>
-      </div>
+  <header class="personal-intro reveal" aria-labelledby="intro-title">
+    <div class="intro-copy">
+      <p class="intro-role">Applied AI engineer · researcher</p>
+      <h1 id="intro-title">Akshat Gupta</h1>
+      <p class="intro-lede">I build machine-learning systems and study how to make them useful, reliable, and understandable.</p>
+      <p>I currently work on agentic AI and document intelligence for finance and insurance. My day-to-day sits between research and engineering: reading papers, designing evaluations, building production systems, and finding out where models fail.</p>
+      <p>Before generative AI, I worked across NLP, speech, computer vision, and adversarial machine learning. I studied Computational Linguistics at the University of Stuttgart and have been building with ML since 2018.</p>
+      <nav class="intro-links" aria-label="Akshat's profiles">
+        <a href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Research ↗</a>
+        <a href="https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link" target="_blank" rel="noopener noreferrer">CV ↗</a>
+      </nav>
     </div>
+    <figure class="intro-portrait">
+      {{- with resources.Get "akshat_gupta.jpg" }}
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Akshat Gupta" fetchpriority="high">
+      {{- end }}
+      <figcaption>Stuttgart, Germany</figcaption>
+    </figure>
+  </header>
 
-    <aside class="portrait-wrap reveal" aria-label="Portrait and current interests">
-      <div class="portrait-card">
-        {{- with resources.Get "akshat_gupta.jpg" }}
-        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Akshat Gupta" fetchpriority="high">
-        {{- end }}
-        <div class="portrait-caption"><strong>Akshat Gupta</strong><span>Stuttgart, Germany</span></div>
-      </div>
-      <div class="margin-note">
-        <span>Currently curious about</span>
-        <strong>Agents that can explain<br>why they made a decision.</strong>
-      </div>
-      <span class="portrait-mark" aria-hidden="true">build · study · share</span>
-    </aside>
-  </section>
+  <aside class="current-focus reveal" aria-labelledby="current-title">
+    <h2 id="current-title">Currently</h2>
+    <p>Building agent-based document and decision workflows; exploring evaluation, grounding, and observability for production LLM systems; writing down what I learn.</p>
+  </aside>
 
-  <section class="personal-strip reveal" aria-label="A few things about Akshat">
-    <div><strong>8+ years</strong><span>building with machine learning</span></div>
-    <div><strong>M.Sc.</strong><span>Computational Linguistics</span></div>
-    <div><strong>Engineer + researcher</strong><span>from papers to production</span></div>
-  </section>
-
-  <section class="now-section section-block" aria-labelledby="now-title">
-    <div class="section-heading reveal">
-      <div><p class="section-kicker">Now / 2026</p><h2 id="now-title">What occupies<br>my notebook.</h2></div>
-      <p>I like working where the answer is not just “use a bigger model”—where domain knowledge, system design, and careful evaluation matter just as much.</p>
-    </div>
-    <div class="notebook-grid">
-      <article class="note-card note-card-wide reveal">
-        <span class="note-number">01</span>
-        <p class="note-label">At work</p>
-        <h3>Agentic AI for complex decisions</h3>
-        <p>I build document and decision workflows for finance and insurance: extracting evidence, coordinating specialized agents, validating outputs, and keeping every result traceable.</p>
-        <div class="tag-row"><span>LLM agents</span><span>Document AI</span><span>Evaluation</span><span>Azure</span></div>
-      </article>
-      <article class="note-card reveal">
-        <span class="note-number">02</span>
-        <p class="note-label">Research questions</p>
-        <h3>How do we know an AI system is reliable?</h3>
-        <p>Grounding, robustness, multimodal reasoning, model security, and evaluation beyond a single benchmark score.</p>
-      </article>
-      <article class="note-card note-card-ink reveal">
-        <span class="note-number">03</span>
-        <p class="note-label">Outside the model</p>
-        <h3>I write, review, and open-source what I learn.</h3>
-        <p>Technical notes, research implementations, paper collections, and the occasional experiment that starts with “what if?”</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="work-section section-block" id="work" aria-labelledby="work-title">
-    <div class="section-heading reveal">
-      <div><p class="section-kicker">Selected work</p><h2 id="work-title">Things I’ve<br>built and studied.</h2></div>
-      <p>A mix of production systems, published research, and open-source experiments. Some solve immediate problems; others help me ask better questions.</p>
-    </div>
-
-    <div class="project-list">
-      <article class="project-row project-row-featured reveal">
-        <div class="project-index"><span>01</span><small>Production AI</small></div>
-        <div class="project-body">
-          <p class="project-meta">Applied AI · Finance & insurance</p>
+  <section class="portfolio-section" id="work" aria-labelledby="work-title">
+    <div class="section-label reveal"><span>01</span><h2 id="work-title">Selected work</h2></div>
+    <div class="work-list">
+      <article class="work-entry reveal">
+        <div>
+          <p class="entry-meta">2024—Now · Production AI</p>
           <h3>Document intelligence for regulated workflows</h3>
-          <p>Agentic extraction and validation for multilingual financial and insurance documents—designed around structured outputs, evidence, review, and auditability.</p>
-          <div class="tag-row"><span>Azure OpenAI</span><span>OCR</span><span>Agent orchestration</span><span>FastAPI</span></div>
+          <p>I design agentic systems that turn multilingual financial and insurance documents into structured, decision-ready information. The work spans OCR, retrieval, orchestration, schema validation, evaluation, and production APIs.</p>
+          <p class="entry-links"><a href="/about/#experience">Work details →</a></p>
         </div>
-        <a class="project-link" href="/about/#experience">Experience <span aria-hidden="true">↗</span></a>
+        <ul class="entry-aside" aria-label="Technology areas"><li>Agentic AI</li><li>Azure OpenAI</li><li>OCR</li><li>Evaluation</li></ul>
       </article>
 
-      <article class="project-row reveal">
-        <div class="project-index"><span>02</span><small>Published research</small></div>
-        <div class="project-body">
-          <p class="project-meta">Computer vision · Cybersecurity</p>
+      <article class="work-entry reveal">
+        <div>
+          <p class="entry-meta">2023 · Published research</p>
           <h3>GlyphNet</h3>
-          <p>A vision-based approach to detecting homoglyph phishing domains with attention-based CNNs. The work includes a public dataset of 2.57M labelled images and reports 0.93 AUC.</p>
-          <div class="project-actions"><a href="https://github.com/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Paper ↗</a></div>
+          <p>A vision-based approach to detecting homoglyph phishing domains. Domain names are rendered as images and classified with attention-based convolutional neural networks, catching visual look-alikes that string methods miss.</p>
+          <p class="entry-links"><a href="https://github.com/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://huggingface.co/datasets/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Dataset ↗</a></p>
         </div>
-        <div class="project-sketch glyph-sketch" aria-hidden="true"><span>real</span><span>phish</span><i></i></div>
+        <dl class="entry-result"><div><dt>AUC</dt><dd>0.93</dd></div><div><dt>Dataset</dt><dd>2.57M images</dd></div></dl>
       </article>
 
-      <article class="project-row reveal">
-        <div class="project-index"><span>03</span><small>Research prototype</small></div>
-        <div class="project-body">
-          <p class="project-meta">Speech · Generative models</p>
+      <article class="work-entry reveal">
+        <div>
+          <p class="entry-meta">2023 · Research prototype</p>
           <h3>SpeakerDiff</h3>
-          <p>A diffusion model for generating speaker embeddings while preserving useful speech characteristics and anonymizing identifying information.</p>
-          <div class="project-actions"><a href="https://github.com/Akshat4112/speaker-diffusion" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div>
+          <p>A denoising diffusion model for generating speaker embeddings. The project investigates whether useful speech characteristics can be preserved while identifying information is anonymized.</p>
+          <p class="entry-links"><a href="https://github.com/Akshat4112/speaker-diffusion" target="_blank" rel="noopener noreferrer">Code and experiments ↗</a></p>
         </div>
-        <div class="project-sketch diffusion-sketch" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <ul class="entry-aside" aria-label="Research areas"><li>Diffusion models</li><li>Speech</li><li>Privacy</li></ul>
       </article>
     </div>
 
-    <div class="opensource-shelf reveal">
-      <div class="shelf-heading"><p class="section-kicker">More from GitHub</p><a href="https://github.com/Akshat4112?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories ↗</a></div>
-      <div class="repo-grid">
-        <a href="https://github.com/Akshat4112/machine-learning-case-studies" target="_blank" rel="noopener noreferrer"><span>Notebook collection</span><strong>Machine Learning Case Studies</strong><small>Applied ML across NLP, vision, prediction, and classification.</small></a>
-        <a href="https://github.com/Akshat4112/Awesome-NLP-Resources" target="_blank" rel="noopener noreferrer"><span>Curated learning</span><strong>Awesome NLP Resources</strong><small>Landmark papers and practical reading across modern NLP.</small></a>
-        <a href="https://github.com/Akshat4112/research-paper-presentations" target="_blank" rel="noopener noreferrer"><span>Research notes</span><strong>Paper Presentations</strong><small>Visual explanations and presentations of papers I’ve studied.</small></a>
+    <div class="more-code reveal">
+      <h3>More code</h3>
+      <ul>
+        <li><a href="https://github.com/Akshat4112/machine-learning-case-studies" target="_blank" rel="noopener noreferrer"><strong>Machine Learning Case Studies</strong><span>Practical notebooks across NLP, vision, and classical ML.</span></a></li>
+        <li><a href="https://github.com/Akshat4112/Awesome-NLP-Resources" target="_blank" rel="noopener noreferrer"><strong>Awesome NLP Resources</strong><span>A curated collection of landmark papers and learning material.</span></a></li>
+        <li><a href="https://github.com/Akshat4112/research-paper-presentations" target="_blank" rel="noopener noreferrer"><strong>Research Paper Presentations</strong><span>Visual explanations of papers I have studied.</span></a></li>
+      </ul>
+      <a class="quiet-link" href="https://github.com/Akshat4112?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories ↗</a>
+    </div>
+  </section>
+
+  <section class="portfolio-section" aria-labelledby="research-title">
+    <div class="section-label reveal"><span>02</span><h2 id="research-title">Research & publications</h2></div>
+    <div class="plain-list research-list">
+      <a class="plain-row reveal" href="/publications/glyphnet/">
+        <span class="row-year">2023</span>
+        <span class="row-main"><strong>GlyphNet: Homoglyph domains dataset and detection using attention-based CNNs</strong><small>Research paper · Computer vision and cybersecurity</small></span>
+        <span>↗</span>
+      </a>
+      <a class="plain-row reveal" href="/publications/deep_learning_with_tensorflow/">
+        <span class="row-year">2019</span>
+        <span class="row-main"><strong>Hands-On Deep Learning with TensorFlow 2.0</strong><small>Book · Packt Publishing</small></span>
+        <span>↗</span>
+      </a>
+      <div class="plain-row reveal">
+        <span class="row-year">2022</span>
+        <span class="row-main"><strong>Spatio-temporal word representations</strong><small>Research · University of Stuttgart</small></span>
+        <span></span>
       </div>
+      <a class="plain-row reveal" href="/about/#community-recognition">
+        <span class="row-year">Ongoing</span>
+        <span class="row-main"><strong>Research reviewing and technical community</strong><small>AAAI reviewer · Intel Software Innovator · Kaggle 3× Expert</small></span>
+        <span>↗</span>
+      </a>
     </div>
   </section>
 
-  <section class="journey section-block" aria-labelledby="journey-title">
-    <div class="journey-intro reveal"><p class="section-kicker">The path so far</p><h2 id="journey-title">A career spent<br><span>following the hard parts.</span></h2></div>
-    <ol class="timeline">
-      <li class="reveal"><time>2018</time><div><strong>Started building applied ML</strong><p>Machine translation and biomedical entity recognition—the beginning of my interest in language systems.</p></div></li>
-      <li class="reveal"><time>2021</time><div><strong>Moved into multimodal AI</strong><p>Speech, text, emotion recognition, and speaker diarization at production scale.</p></div></li>
-      <li class="reveal"><time>2022</time><div><strong>Returned to research</strong><p>Computational Linguistics at the University of Stuttgart, with work on temporal and geographic language representations.</p></div></li>
-      <li class="reveal"><time>2023</time><div><strong>Focused on trustworthy AI</strong><p>Adversarial robustness, model extraction, fairness, bias, toxicity, and how models fail before they reach users.</p></div></li>
-      <li class="reveal"><time>Now</time><div><strong>Building production GenAI</strong><p>Agentic systems, document intelligence, and evaluation for real decisions in regulated domains.</p></div></li>
-    </ol>
-    <a class="text-link reveal" href="/about/">Read the full story <span aria-hidden="true">→</span></a>
-  </section>
-
-  <section class="writing-section section-block" aria-labelledby="writing-title">
-    <div class="section-heading reveal">
-      <div><p class="section-kicker">Writing</p><h2 id="writing-title">Notes from<br>the workbench.</h2></div>
-      <p>I write to make technical ideas clearer—to myself first, and then to anyone building alongside me.</p>
-    </div>
-    <div class="writing-list">
-      {{- $featured := slice (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") }}
-      {{- range $index, $page := $featured }}
+  <section class="portfolio-section" aria-labelledby="writing-title">
+    <div class="section-label reveal"><span>03</span><h2 id="writing-title">Recent writing</h2></div>
+    <p class="section-intro reveal">Notes on ideas I am learning, systems I am building, and questions that remain unresolved.</p>
+    <div class="plain-list writing-list">
+      {{- $featured := slice (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") (site.GetPage "/posts/what_are_diffusion_models") }}
+      {{- range $page := $featured }}
       {{- with $page }}
-      <a class="writing-row reveal" href="{{ .RelPermalink }}">
-        <span class="writing-number">0{{ add $index 1 }}</span>
-        <div><p>{{ delimit (.Params.tags | first 2) " · " }}</p><h3>{{ .Title }}</h3></div>
-        <span class="writing-meta">{{ .ReadingTime }} min read <i aria-hidden="true">↗</i></span>
+      <a class="plain-row reveal" href="{{ .RelPermalink }}">
+        <span class="row-year">{{ .Date.Format "2006" }}</span>
+        <span class="row-main"><strong>{{ .Title }}</strong><small>{{ delimit (.Params.tags | first 3) " · " }} · {{ .ReadingTime }} min read</small></span>
+        <span>↗</span>
       </a>
       {{- end }}
       {{- end }}
     </div>
-    <a class="text-link reveal" href="/posts/">Browse all notes <span aria-hidden="true">→</span></a>
+    <a class="more-link reveal" href="/posts/">All writing →</a>
   </section>
 
-  <section class="research-shelf reveal" aria-labelledby="research-title">
-    <div class="research-copy"><p class="section-kicker">Research & community</p><h2 id="research-title">I learn in public.</h2><p>Publishing, reviewing, teaching, and sharing are part of how I become a better engineer.</p></div>
-    <div class="research-items">
-      <a href="/publications/glyphnet/"><span>Paper</span><strong>GlyphNet</strong><small>Homoglyph detection with attention-based CNNs</small></a>
-      <a href="/publications/deep_learning_with_tensorflow/"><span>Book</span><strong>Hands-On Deep Learning</strong><small>TensorFlow 2.0 · Packt</small></a>
-      <a href="/about/#community-recognition"><span>Community</span><strong>Reviewer, educator, contributor</strong><small>AAAI · Intel Software Innovator · Kaggle 3× Expert</small></a>
+  <section class="portfolio-section" aria-labelledby="experience-title">
+    <div class="section-label reveal"><span>04</span><h2 id="experience-title">Experience</h2></div>
+    <div class="experience-list">
+      <div class="experience-row reveal"><time>2024—Now</time><div><strong>AI Engineer · additiv</strong><p>Agentic AI, document intelligence, and decision systems for finance and insurance.</p></div></div>
+      <div class="experience-row reveal"><time>2023—2024</time><div><strong>Machine Learning Engineer · Validaitor</strong><p>Model robustness, adversarial ML, security, fairness, bias, and toxicity evaluation.</p></div></div>
+      <div class="experience-row reveal"><time>2022</time><div><strong>Research Assistant · University of Stuttgart</strong><p>Temporal and geographic representations for language understanding.</p></div></div>
+      <div class="experience-row reveal"><time>2018—2021</time><div><strong>Machine Learning Engineer</strong><p>NLP, machine translation, biomedical NER, speech, diarization, and multimodal learning.</p></div></div>
     </div>
+    <a class="more-link reveal" href="/about/#experience">Complete experience →</a>
   </section>
 
-  <section class="contact-band reveal" aria-labelledby="contact-title">
-    <p class="hello-note">One more thing—</p>
-    <h2 id="contact-title">If you’re working on a difficult AI problem, I’d like to hear about it.</h2>
-    <p>Especially if it involves agents, documents, evaluation, language, or the messy gap between a good demo and a dependable system.</p>
-    <div class="hero-actions">
-      <a class="button-primary" href="mailto:akshat41121995@gmail.com">Write to me <span aria-hidden="true">↗</span></a>
-      <a class="button-secondary" href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-    </div>
+  <section class="personal-end reveal" aria-labelledby="personal-title">
+    <h2 id="personal-title">Away from the keyboard</h2>
+    <p>I play table tennis and chess, cycle around Stuttgart, follow financial markets, and read about quantum physics. I am usually carrying a notebook—digital or otherwise.</p>
   </section>
+
+  <footer class="home-contact reveal">
+    <p>Want to exchange ideas about applied AI or research?</p>
+    <a href="mailto:akshat41121995@gmail.com">akshat41121995@gmail.com</a>
+  </footer>
 </div>
 {{- end }}
