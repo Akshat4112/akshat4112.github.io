@@ -18,30 +18,21 @@ minify:
 
 menu:
   main:
-    - name: Posts
-      url: posts
+    - name: Work
+      url: /#work
       weight: 5
-    - name: Publications
-      url: publications/
+    - name: Writing
+      url: /posts/
       weight: 10
-    - name: Talks
-      url: talks/
+    - name: Research
+      url: /publications/
       weight: 15
-    - name: Events
-      url: events/
-      weight: 20
-    - name: Tags
-      url: tags/
-      weight: 21
-    - name: Search
-      url: search/
-      weight: 22
     - name: About
-      url: about/
-      weight: 25
+      url: /about/
+      weight: 20
     - name: CV
       url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
-      weight: 30
+      weight: 25
 
 params:
   author: "Akshat Gupta"
@@ -57,7 +48,7 @@ params:
       - "https://kaggle.com/akshat4112/"
   mainSections:
     - posts
-  description: "Machine Learning Engineer specializing in Generative AI, LLMs, Diffusion Models, and NLP. Writing about AI research, practical ML engineering, and deep learning."
+  description: "Senior AI Engineer building production GenAI and agentic systems for regulated finance and insurance, with a focus on grounded, auditable AI."
   images: ["/akshat_gupta.jpg"]
 
   profileMode:

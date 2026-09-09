@@ -3,13 +3,15 @@ title: "About"
 date: 2024-01-01T00:00:00+00:00
 description: "About Akshat Gupta — Senior Machine Learning Engineer specializing in Agentic AI, LLM Systems, and Production GenAI."
 schema_type: ProfilePage
+hideMeta: true
+ShowBreadCrumbs: false
 ---
 
-I'm a Senior Machine Learning Engineer who builds production-grade AI systems, with experience spanning large language models, multimodal learning, and agentic AI architectures.
+I'm an AI engineer who builds production GenAI systems—large language models and agentic architectures that ship into real, regulated workflows rather than staying in notebooks.
 
-Over the years I've worked across NLP, computer vision, speech processing, OCR, and generative models (LLMs, GANs, diffusion) — applying them to real-world systems rather than isolated experiments. My recent work focuses on designing end-to-end AI workflows that combine structured data, documents, images, and contextual signals into reliable, explainable outputs used in production.
+My recent work turns complex financial and insurance documents into structured, decision-ready data for credit origination, claims, and policy analysis. The hard part is not simply the model; it is making the output trustworthy. My work therefore centers on grounding safeguards, deterministic validation, and model-based verification that make AI outputs accurate and auditable enough for real decisions.
 
-I operate at the intersection of ML engineering, system design, and applied AI safety — translating complex models into scalable platforms that can be trusted beyond the lab.
+Across NLP, computer vision, speech, and generative models, the throughline is the same: translating complex models into systems people can actually rely on. I work at the intersection of ML engineering, system design, and applied AI safety.
 
 ---
 
