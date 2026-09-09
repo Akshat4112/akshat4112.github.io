@@ -1,56 +1,156 @@
 {{- define "main" }}
+<div class="portfolio-home">
+  <section class="portfolio-hero" aria-labelledby="hero-title">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Senior AI Engineer · Stuttgart, Germany</p>
+      <h1 id="hero-title">I build AI<br>systems people<br><span>can trust.</span></h1>
+      <p class="hero-lede">I design production GenAI and agentic systems for regulated finance and insurance—turning complex documents and decisions into grounded, auditable workflows.</p>
+      <div class="hero-actions" aria-label="Primary actions">
+        <a class="button-primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+        <a class="button-secondary" href="/posts/">Read the journal</a>
+      </div>
+      <div class="hero-links" aria-label="Professional profiles">
+        <a href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/akshat4112" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Research <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
 
-{{- partial "index_profile.html" . }}
+    <div class="hero-system reveal" aria-label="A visual model of Akshat's approach to reliable AI systems">
+      <div class="system-topline">
+        <span>Production intelligence</span>
+        <span class="system-live"><i aria-hidden="true"></i> System online</span>
+      </div>
+      <div class="system-canvas">
+        <svg class="system-paths" viewBox="0 0 620 460" role="img" aria-label="Information flows from multimodal inputs through orchestration and verification to auditable decisions">
+          <defs>
+            <linearGradient id="flow-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#637bff" stop-opacity=".15" />
+              <stop offset=".5" stop-color="#637bff" stop-opacity=".9" />
+              <stop offset="1" stop-color="#35bda8" stop-opacity=".35" />
+            </linearGradient>
+          </defs>
+          <path d="M126 96 C220 96 218 218 304 218" />
+          <path d="M126 360 C220 360 218 242 304 242" />
+          <path d="M316 218 C404 218 404 96 494 96" />
+          <path d="M316 242 C404 242 404 360 494 360" />
+          <circle class="flow-dot flow-dot-one" cx="0" cy="0" r="5" />
+          <circle class="flow-dot flow-dot-two" cx="0" cy="0" r="5" />
+        </svg>
 
-{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
-{{- $paginator := .Paginate $pages }}
+        <div class="system-node node-input"><span class="node-index">01</span><strong>Understand</strong><small>Documents · Images · Context</small></div>
+        <div class="system-node node-guard"><span class="node-index">02</span><strong>Ground</strong><small>Retrieval · Schemas · Evidence</small></div>
+        <div class="system-core"><span>Agentic</span><strong>Trust Loop</strong><i aria-hidden="true"></i></div>
+        <div class="system-node node-evaluate"><span class="node-index">03</span><strong>Verify</strong><small>Evaluators · Rules · Review</small></div>
+        <div class="system-node node-output"><span class="node-index">04</span><strong>Decide</strong><small>Reliable · Explainable · Auditable</small></div>
+      </div>
+      <div class="system-footer"><span>Grounded by design</span><span>Observable in production</span></div>
+    </div>
+  </section>
 
-{{- range $index, $page := $paginator.Pages }}
-{{- $class := "post-entry" }}
-<article class="{{ $class }}">
-  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-      {{- .Title }}
-    </h2>
-  </header>
-  {{- if (ne (.Param "hideSummary") true) }}
-  <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-  </div>
-  {{- end }}
-  {{- if not (.Param "hideMeta") }}
-  <footer class="entry-footer">
-    {{- partial "post_meta.html" . -}}
-  </footer>
-  {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-</article>
-{{- end }}
+  <section class="proof-strip reveal" aria-label="Professional highlights">
+    <div><strong>2018—Now</strong><span>Shipping applied ML systems</span></div>
+    <div><strong>Finance · Insurance</strong><span>Experience in regulated domains</span></div>
+    <div><strong>Research → Production</strong><span>From experiments to dependable platforms</span></div>
+  </section>
 
-{{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-      «&nbsp;{{ i18n "prev_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+  <section class="section-block" id="work" aria-labelledby="work-title">
+    <div class="section-heading reveal">
+      <div><p class="section-kicker">Selected work</p><h2 id="work-title">Systems beyond<br>the prototype.</h2></div>
+      <p>Selected examples of how I turn ambiguous AI problems into dependable, production-ready workflows.</p>
+    </div>
+
+    <div class="work-grid">
+      <article class="work-card work-card-featured reveal">
+        <div class="work-card-top"><span>01 / Document intelligence</span><span>Azure · LLMs · OCR</span></div>
+        <div class="work-card-visual document-visual" aria-hidden="true">
+          <div class="document-sheet"><i></i><i></i><i></i><i></i></div>
+          <div class="document-result"><span>schema</span><b>validated</b><em>✓</em></div>
+          <svg viewBox="0 0 500 220"><path d="M185 110 C245 110 245 110 310 110" /><circle cx="247" cy="110" r="4" /></svg>
+        </div>
+        <div class="work-card-copy">
+          <p class="work-label">Production AI platform</p>
+          <h3>Financial document intelligence</h3>
+          <p>Agentic extraction and validation for multilingual financial documents, designed around schema-locked outputs, grounding safeguards, and auditability.</p>
+          <a href="/about/#experience">View experience <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="work-card reveal">
+        <div class="work-card-top"><span>02 / Agentic systems</span><span>Insurance AI</span></div>
+        <div class="mini-orbit" aria-hidden="true"><i class="orbit-center">AI</i><i class="orbit-node orbit-a"></i><i class="orbit-node orbit-b"></i><i class="orbit-node orbit-c"></i></div>
+        <div class="work-card-copy">
+          <p class="work-label">Coordinated intelligence</p>
+          <h3>Multi-agent insurance reasoning</h3>
+          <p>Specialized agents for policy extraction, claim analysis and decision support—with verification embedded into the workflow.</p>
+          <a href="/posts/llm-agents/">Read about agent systems <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="work-card reveal">
+        <div class="work-card-top"><span>03 / Trustworthy AI</span><span>Evaluation · Security</span></div>
+        <div class="signal-visual" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><i></i></div>
+        <div class="work-card-copy">
+          <p class="work-label">Reliability before release</p>
+          <h3>Model evaluation and security</h3>
+          <p>Evaluation pipelines for robustness, fairness, bias and toxicity, alongside adversarial testing for model theft and tampering.</p>
+          <a href="/posts/evaluating-llms/">Explore LLM evaluation <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="principles section-block" aria-labelledby="principles-title">
+    <div class="principles-intro reveal">
+      <p class="section-kicker">Engineering philosophy</p>
+      <h2 id="principles-title">Trust is not a final check.<br><span>It is the architecture.</span></h2>
+    </div>
+    <div class="principle-grid">
+      <article class="reveal"><span>01</span><h3>Grounded</h3><p>Connect generation to evidence, domain context and explicit source material.</p></article>
+      <article class="reveal"><span>02</span><h3>Constrained</h3><p>Use schemas and deterministic rules wherever ambiguity creates risk.</p></article>
+      <article class="reveal"><span>03</span><h3>Evaluated</h3><p>Measure behavior continuously, including failure cases—not only happy paths.</p></article>
+      <article class="reveal"><span>04</span><h3>Observable</h3><p>Make decisions traceable for engineers, reviewers and domain experts.</p></article>
+    </div>
+  </section>
+
+  <section class="section-block writing-section" aria-labelledby="writing-title">
+    <div class="section-heading reveal">
+      <div><p class="section-kicker">Technical journal</p><h2 id="writing-title">Ideas, made<br>useful.</h2></div>
+      <p>Notes on agentic AI, model evaluation, security and the engineering choices behind reliable systems.</p>
+    </div>
+
+    <div class="writing-list">
+      {{- $featured := slice (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") }}
+      {{- range $index, $page := $featured }}
+      {{- with $page }}
+      <a class="writing-row reveal" href="{{ .RelPermalink }}">
+        <span class="writing-number">0{{ add $index 1 }}</span>
+        <div><p>{{ delimit (.Params.tags | first 2) " · " }}</p><h3>{{ .Title }}</h3></div>
+        <span class="writing-meta">{{ .ReadingTime }} min read <i aria-hidden="true">↗</i></span>
+      </a>
       {{- end }}
-    </a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
-      {{- i18n "next_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
-      {{- end }}&nbsp;»
-    </a>
-    {{- end }}
-  </nav>
-</footer>
-{{- end }}
+      {{- end }}
+    </div>
+    <a class="text-link reveal" href="/posts/">View all writing <span aria-hidden="true">→</span></a>
+  </section>
 
-{{- end }}{{- /* end main */ -}}
+  <section class="research-band reveal" aria-labelledby="research-title">
+    <div><p class="section-kicker">Research & recognition</p><h2 id="research-title">A builder with<br>research depth.</h2></div>
+    <div class="research-items">
+      <a href="/publications/glyphnet/"><span>Published research</span><strong>GlyphNet</strong><small>Homoglyph detection with attention-based CNNs</small></a>
+      <a href="/publications/deep_learning_with_tensorflow/"><span>Published book</span><strong>Hands-On Deep Learning</strong><small>TensorFlow 2.0 · Packt</small></a>
+      <a href="/about/#community-recognition"><span>Community</span><strong>Reviewer & educator</strong><small>AAAI · Intel Software Innovator · Workshops</small></a>
+    </div>
+  </section>
+
+  <section class="contact-band reveal" aria-labelledby="contact-title">
+    <p class="section-kicker">Let’s connect</p>
+    <h2 id="contact-title">Building something that<br>needs to work in the real world?</h2>
+    <p>I’m always glad to exchange ideas about reliable AI systems, agent architectures and production ML.</p>
+    <div class="hero-actions">
+      <a class="button-primary" href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">Start a conversation <span aria-hidden="true">↗</span></a>
+      <a class="button-secondary" href="/about/">More about me</a>
+    </div>
+  </section>
+</div>
+{{- end }}
