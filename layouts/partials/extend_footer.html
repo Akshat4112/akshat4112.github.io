@@ -17,13 +17,5 @@
       items.forEach(function (item) { item.classList.add('is-visible'); });
     }
 
-    var system = document.querySelector('.hero-system');
-    if (system && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      system.addEventListener('pointermove', function (event) {
-        var rect = system.getBoundingClientRect();
-        system.style.setProperty('--pointer-x', ((event.clientX - rect.left) / rect.width * 100) + '%');
-        system.style.setProperty('--pointer-y', ((event.clientY - rect.top) / rect.height * 100) + '%');
-      });
-    }
   }());
 </script>

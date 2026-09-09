@@ -48,7 +48,7 @@ params:
       - "https://kaggle.com/akshat4112/"
   mainSections:
     - posts
-  description: "Senior AI Engineer building production GenAI and agentic systems for regulated finance and insurance, with a focus on grounded, auditable AI."
+  description: "Akshat Gupta is an applied AI engineer and researcher working across agentic AI, document intelligence, evaluation, NLP, speech, and trustworthy machine learning."
   images: ["/akshat_gupta.jpg"]
 
   profileMode:
