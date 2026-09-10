@@ -9,7 +9,7 @@ showtoc: true
 description: "A theory and math-first guide to LLM agents — how autonomous AI systems reason, plan, act, and remember, with formal architectural principles."
 ---
 
-Large Language Models (LLMs), like [GPT-3](https://arxiv.org/abs/2005.14165), GPT-4, and others, have taken the world by storm due to their impressive language generation and understanding capabilities. However, when these models are augmented with decision-making capabilities, memory, and actions in specific environments, they become something fundamentally more powerful.
+Large language models (LLMs), like [GPT-3](https://arxiv.org/abs/2005.14165), GPT-4, and others, have taken the world by storm due to their impressive language generation and understanding capabilities. However, when these models are augmented with decision-making capabilities, memory, and actions in specific environments, they become something fundamentally more powerful.
 
 Enter **LLM Agents** — autonomous systems built on top of large language models that can pursue goals, use tools, plan multi-step actions, and adapt based on feedback.
 
