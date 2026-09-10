@@ -6,7 +6,7 @@ tags: ["transformers", "attention", "deep-learning", "nlp", "self-attention", "n
 weight: 112
 math: true
 showtoc: true
-description: "A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and LLaMA."
+description: "A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and Llama."
 ---
 
 When people say "[Transformers](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) revolutionized NLP," what they *really* mean is:
@@ -62,7 +62,7 @@ Each head learns different types of relationships (e.g., syntactic, semantic).
 
 ---
 
-## 🧩 Types of Attention in Transformers
+## 🧩 Types of attention in transformers
 
 Let's look at the key attention variations used in different transformer architectures.
 
@@ -114,7 +114,7 @@ Used in **Performer** ([Choromanski et al., 2020](https://arxiv.org/abs/2009.147
 
 ---
 
-## 🏗️ Attention Block in Transformers
+## 🏗️ Attention block in transformers
 
 Each transformer layer consists of:
 
