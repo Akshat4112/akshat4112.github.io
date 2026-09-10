@@ -6,22 +6,22 @@ tags: ["rag", "llm", "vector-databases", "embeddings", "ai", "information-retrie
 weight: 111
 math: true
 showtoc: true
-description: "A technical introduction to Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses."
+description: "A technical introduction to retrieval-augmented generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses."
 ---
 
-Large Language Models (LLMs) like GPT or [LLaMA](https://github.com/meta-llama/llama) are great at generating text. But there's a catch:  
+Large language models (LLMs) like GPT or [Llama](https://github.com/meta-llama/llama) are great at generating text. But there's a catch:  
 They **only know what they were trained on**, and that knowledge is frozen at training time.
 
 So what happens when you ask them something from after their training cutoff? Or something super niche, like a policy from your internal HR docs?
 
-Enter **[RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)** – Retrieval-Augmented Generation.
+Enter **[RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)** – retrieval-augmented generation.
 A technique that combines LLMs with a **search engine**, enabling them to look up facts on the fly.
 
 ---
 
 ## 🧠 What is RAG?
 
-**RAG** (Retrieval-Augmented Generation) is a framework that augments the input to an LLM with **retrieved documents or chunks** from an external knowledge source.
+**RAG** (retrieval-augmented generation) is a framework that augments the input to an LLM with **retrieved documents or chunks** from an external knowledge source.
 
 Instead of relying solely on the model’s internal weights, RAG pulls in real, current, or domain-specific content to ground its responses.
 
@@ -84,7 +84,7 @@ RAG is ideal for Q&A over:
 - 💻 Codebases
 - 🏢 HR manuals
 
-You chunk the docs (e.g., into 500-word segments), embed them, and index in a vector DB. When the user asks a question, the system retrieves relevant chunks and passes them to the LLM for answering.
+You chunk the docs (e.g., into 500-word segments), embed them, and index in a vector database. When the user asks a question, the system retrieves relevant chunks and passes them to the LLM for answering.
 
 ---
 
@@ -93,7 +93,7 @@ You chunk the docs (e.g., into 500-word segments), embed them, and index in a ve
 | Situation                              | Technique       |
 |----------------------------------------|------------------|
 | Need accurate info from private docs   | ✅ RAG            |
-| Need tone/style/domain adaptation      | 🔁 LoRA or finetune |
+| Need tone/style/domain adaptation      | 🔁 LoRA or fine-tune |
 | Need dynamic updates (e.g., news)      | ✅ RAG            |
 | Have small structured data             | 🔄 Toolformer / APIs |
 | Want to reduce hallucinations          | ✅ RAG + prompt tuning |
