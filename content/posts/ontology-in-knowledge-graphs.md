@@ -89,14 +89,14 @@ Here's why you should care about them if you're working in AI or data science:
 
 ---
 
-## 🧪 In My Own Projects
+## 🧪 Applied examples
 
-I've used ontologies in:
-- A healthcare project, where patient symptoms, diagnoses, and treatments were modeled using the [SNOMED CT](https://www.snomed.org/snomed-ct) ontology.
-- A personal finance KG, where *Income*, *Expense*, and *Account* were tightly defined — enabling automated categorization and reasoning.
-- Integrating [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) pipelines with structured knowledge graphs to improve retrieval precision using typed entity constraints.
+Ontologies can support:
+- Healthcare knowledge graphs, where symptoms, diagnoses, and treatments are modelled using standards such as [SNOMED CT](https://www.snomed.org/snomed-ct).
+- Personal-finance knowledge graphs, where concepts such as *Income*, *Expense*, and *Account* are explicitly defined.
+- Retrieval-augmented generation pipelines that use typed entities and relationships to constrain retrieval.
 
-It's honestly been a game-changer for building **explainable AI** systems.
+These structures can improve traceability, but explainability still depends on the data, inference rules, and application design.
 
 ---
 
