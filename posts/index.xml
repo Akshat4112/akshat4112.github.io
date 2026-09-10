@@ -14,11 +14,11 @@
     <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What are Diffusion Models?</title>
+      <title>What Are Diffusion Models?</title>
       <link>https://akshat4112.github.io/posts/what_are_diffusion_models/</link>
       <pubDate>Thu, 15 Feb 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
-      <description>A technical exploration of diffusion models — the forward/reverse process, U-Net architectures, denoising score matching, and why they outperform GANs.</description>
+      <description>A technical guide to diffusion models: the forward process, noise-prediction objective, reverse sampling, guidance, latent diffusion, and practical trade-offs.</description>
     </item>
     <item>
       <title>Fairness in Machine Learning</title>

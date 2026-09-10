@@ -21,11 +21,11 @@
       <description>Cyber Valley AI Startup Bootcamp across Stuttgart, Tübingen, and Zurich — foundation models, AI startup formation, and responsible AI.</description>
     </item>
     <item>
-      <title>What are Diffusion Models?</title>
+      <title>What Are Diffusion Models?</title>
       <link>https://akshat4112.github.io/posts/what_are_diffusion_models/</link>
       <pubDate>Thu, 15 Feb 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/what_are_diffusion_models/</guid>
-      <description>A technical exploration of diffusion models — the forward/reverse process, U-Net architectures, denoising score matching, and why they outperform GANs.</description>
+      <description>A technical guide to diffusion models: the forward process, noise-prediction objective, reverse sampling, guidance, latent diffusion, and practical trade-offs.</description>
     </item>
     <item>
       <title>MESH Hackathon Stuttgart 2023</title>
