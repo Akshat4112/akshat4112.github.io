@@ -1,195 +1,305 @@
 ---
-title: "Speaker Anonymization in the AI Era"
+title: "Speaker Anonymization: Privacy Beyond Changing a Voice"
 date: 2024-10-15T09:00:00+01:00
 draft: false
-tags: ["speech-processing", "privacy", "deep-learning", "voice-conversion", "anonymization", "cybersecurity", "ai"]
+tags: ["speech-processing", "privacy", "voice-conversion", "speaker-verification", "anonymization"]
 weight: 114
 math: true
 showtoc: true
-description: "A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, and differential privacy for protecting speaker identity."
+description: "A threat-model-first guide to speaker anonymization: modern architectures, informed attackers, privacy and utility metrics, differential privacy, and lessons from SpeakerDiff."
 ---
 
-Every time you speak to a voice assistant, attend a recorded meeting, or submit audio to a diagnostic tool, your voice reveals something deeply personal: **your identity**. Unlike a password, you cannot change your voice. This makes speaker anonymization — the task of modifying speech so a speaker cannot be identified, while keeping the content intact — one of the more important problems in applied AI privacy.
+Speech carries more than words. It can reveal speaker identity, accent, age cues, emotion, health information, recording environment, and conversational context. Speaker anonymization transforms a recording to reduce identity disclosure while retaining the information required for an authorised use.
 
-[Speaker diarization](https://en.wikipedia.org/wiki/Speaker_diarisation) tells us *who* spoke and *when*. Speaker anonymization does the inverse — it ensures that even if someone has the audio, they cannot determine *who* it was.
+That goal is narrower than making audio “anonymous”. A transformed utterance may still identify someone through names, places, background sounds, linguistic habits, or linkage across recordings. Even the voice itself may remain linkable under a stronger attacker than the one used during development.
 
----
+The right question is therefore not whether a voice sounds different. It is whether a defined attacker can still infer or link the protected identity, and what utility the transformation removes in the process.
 
-## 🎯 Formal Problem Definition
+## Anonymization is not inverse diarization
 
-Let $x \in \mathbb{R}^T$ be a raw speech waveform of length $T$. Associated with $x$ is a speaker identity $s \in \mathcal{S}$ and a linguistic content $c$ (the words spoken).
+Speaker diarization answers **who spoke when** within a recording. It segments speech and clusters segments believed to come from the same speaker; it need not know the speaker’s real-world identity.
 
-The goal of speaker anonymization is to find a transformation $\mathcal{F}$ such that:
+Speaker anonymization changes or suppresses identity-bearing cues in the signal. A multi-speaker pipeline may use diarization first so that each speaker receives a consistent pseudo-voice, but the tasks are not inverses:
 
-$$\hat{x} = \mathcal{F}(x), \quad \text{where } \text{id}(\hat{x}) \neq s \quad \text{and} \quad \text{content}(\hat{x}) \approx c$$
+$$
+\text{audio}
+\xrightarrow{\text{diarization}}
+\{(t_{\text{start}},t_{\text{end}},k)\}
+\xrightarrow{\text{anonymization}}
+\tilde{x}.
+$$
 
-In other words:
-- An **speaker verification** system should fail to link $\hat{x}$ to $s$
-- An **ASR** (automatic speech recognition) system should still correctly transcribe $\hat{x}$
+Diarization can even preserve privacy-sensitive structure: it may reveal that the same unknown person spoke in several places. An anonymizer must decide deliberately whether such within-session or cross-session linkability should remain.
 
-The tension between these two objectives — privacy vs. utility — is the central challenge.
+## Define the privacy objective
 
----
+Let \(x\) be an utterance from source speaker \(s\), with linguistic content \(c\), paralinguistic attributes \(r\), and recording context \(b\). An anonymization mechanism \(M\) produces
 
-## 🔊 Speech Representation
+$$
+\tilde{x} \sim M(x; \pi),
+$$
 
-Before discussing anonymization methods, it's useful to understand how speech is typically represented mathematically.
+where \(\pi\) is the privacy policy—for example, whether all utterances from one speaker share a pseudo-identity and whether that identity changes between sessions.
 
-### Mel-Frequency Cepstral Coefficients (MFCCs)
+A useful design does not demand an undefined condition such as \(\operatorname{id}(\tilde{x})\neq s\). Instead, it measures an attacker \(A\) under stated knowledge \(K_A\):
 
-MFCCs are the most common feature representation. For a short frame of audio $x_t$:
+$$
+\operatorname{Risk}(M,A,K_A)
+= \Pr[A(\tilde{x},K_A)=s].
+$$
 
-1. Apply a short-time Fourier transform (STFT) to get spectrum $X(\omega)$
-2. Map to the Mel scale: $m = 2595 \cdot \log_{10}\!\left(1 + \frac{f}{700}\right)$
-3. Apply a log and discrete cosine transform (DCT) to get coefficients $\mathbf{c} \in \mathbb{R}^K$
+For verification, the attacker decides whether enrolment and trial speech belong to the same speaker. For closed-set identification, it chooses among enrolled speakers. For linkability, it asks whether two anonymized utterances came from the same source without naming that source. These are different privacy questions.
 
-The Mel scale approximates human auditory perception — it compresses high frequencies where we are less sensitive, and expands low frequencies. MFCCs are compact: typically $K = 13$ coefficients capture the spectral envelope, which encodes both content and speaker characteristics.
+The utility objective is also task-dependent:
 
-### Speaker Embeddings
+$$
+\operatorname{Utility}(M; T)
+= \mathbb{E}\left[u_T(\tilde{x},x)\right],
+$$
 
-Modern systems use neural speaker embeddings (e.g., **x-vectors** or **d-vectors**) — fixed-length vectors extracted from a deep neural network trained on speaker verification:
+where \(T\) may be transcription, emotion recognition, conversation analysis, or human listening. There is no single privacy–utility number that describes every intended use.
 
-$$\mathbf{e}_s = f_\phi(x) \in \mathbb{R}^d$$
+## Attacker knowledge changes the result
 
-where $f_\phi$ maps an utterance to a $d$-dimensional embedding that captures speaker-specific characteristics (fundamental frequency, vocal tract shape, speaking style). Anonymization must ensure that $\mathbf{e}_{\hat{x}}$ is sufficiently far from $\mathbf{e}_x$ in embedding space.
+VoicePrivacy evaluations distinguish conditions based on what the attacker knows and how the speaker-verification system is trained. The exact names vary by challenge edition, but three broad cases are useful:
 
----
+| Attacker | Enrolment and model knowledge | What it tests |
+|---|---|---|
+| Ignorant | Enrols on original speech and is unaware of the transformation | Protection against an unadapted verifier |
+| Lazy-informed | Has anonymized enrolment data produced with a related or approximate configuration | Linkability when the pipeline is partly known |
+| Semi-informed | Trains or adapts the verifier using anonymized speech from the target mechanism | Resistance to a stronger, mechanism-aware attacker |
 
-## 🛠️ Anonymization Techniques
+An anonymizer that defeats only the ignorant attacker may rely on distribution shift rather than removal of identity information. The semi-informed case is more demanding because the verifier can learn residual cues specific to the transformation.
 
-### 1. Voice Conversion
+The protocol should also state whether:
 
-Voice conversion (VC) is the most powerful technique. It transforms the acoustic characteristics of a source speaker $s$ to match those of a target speaker $s'$, while preserving the linguistic content.
+- the attacker knows the algorithm and parameters;
+- pseudo-speaker mappings are secret;
+- enrolment audio is original or anonymized;
+- multiple utterances per source speaker are available;
+- auxiliary demographic or linguistic information is available;
+- the attacker can query the anonymizer adaptively.
 
-The VC function learns a mapping:
+Privacy claims apply only to the evaluated conditions.
 
-$$\mathcal{F}_\text{VC}: (\mathbf{c}_s, \mathbf{e}_s) \rightarrow (\mathbf{c}_{s'}, \mathbf{e}_{s'})$$
+## A modern anonymization pipeline
 
-In practice, this is implemented as a regression from source MFCC sequences to target MFCC sequences. A common formulation uses a sequence-to-sequence model trained with a reconstruction loss:
+Many systems separate speech into representations, replace or transform identity information, and resynthesise a waveform:
 
-$$\mathcal{L}_\text{VC} = \mathbb{E}\left[\|\hat{\mathbf{C}} - \mathbf{C}_{s'}\|_2^2\right]$$
+$$
+x
+\xrightarrow{E}
+(z_{\text{content}}, z_{\text{speaker}}, z_{\text{prosody}})
+\xrightarrow{P}
+(z_{\text{content}}', \tilde{z}_{\text{speaker}}, z_{\text{prosody}}')
+\xrightarrow{G}
+\tilde{x}.
+$$
 
-where $\hat{\mathbf{C}}$ is the predicted MFCC sequence and $\mathbf{C}_{s'}$ is the ground-truth target. A vocoder (e.g., WaveNet or Griffin-Lim) then reconstructs a waveform from the converted features.
+Here \(E\) is an encoder, \(P\) applies the privacy policy, and \(G\) is a decoder or vocoder. The decomposition is useful, but it is not guaranteed to be clean. Content and prosody representations can retain speaker information; the decoder can reintroduce correlations learned during training.
 
-**Anonymization variant:** Rather than converting to a *real* target speaker, a pseudo-target embedding $\mathbf{e}^*$ is synthesised that is far from all known speaker embeddings:
+### Speaker-embedding replacement
 
-$$\mathbf{e}^* = \arg\max_{\mathbf{e}} \min_{s \in \mathcal{S}_\text{known}} \|\mathbf{e} - \mathbf{e}_s\|_2$$
+Earlier VoicePrivacy baselines extracted linguistic features, fundamental frequency, and an x-vector. They selected distant speaker embeddings from an external pool, averaged a subset to form a pseudo-speaker, and synthesised speech with an acoustic model and neural waveform generator.
 
-This is the approach adopted in the **VoicePrivacy Challenge** (INTERSPEECH), where the anonymisation target is generated rather than borrowed from a real person.
+Distance from the source embedding is only a selection heuristic:
 
----
+$$
+\tilde{e}
+= \frac{1}{K}\sum_{j\in N_{\text{far}}(e_s)} e_j.
+$$
 
-### 2. Pitch and Prosody Modification
+It does not prove unlinkability. The synthesised signal contains information from every conditioned representation, and averaging can create an embedding distribution unlike natural speakers. Distribution-preserving work has specifically examined this mismatch.
 
-Pitch is one of the strongest speaker-identifying cues. The fundamental frequency $F_0$ (measured in Hz) directly reflects vocal fold vibration rate and varies significantly between speakers.
+### Self-supervised and neural-codec systems
 
-**Pitch shifting** applies a multiplicative factor $\alpha$ to $F_0$:
+Modern systems increasingly use self-supervised speech representations or neural codecs to separate semantic, acoustic, speaker, and prosodic factors. A decoder conditions on selected codes and a replacement speaker representation.
 
-$$F_0^{\text{anon}} = \alpha \cdot F_0$$
+These architectures can improve naturalness and retain richer prosody, but “disentangled” is an empirical property, not an architectural guarantee. Test whether an attacker can predict the source speaker from every intermediate representation and from the final waveform. VoicePrivacy 2024 explicitly broadened utility evaluation to include emotional-state preservation alongside linguistic content and naturalness.
 
-In the frequency domain, this is equivalent to resampling the signal. For a signal $x(t)$, pitch shifting by factor $\alpha$ produces:
+### Signal-processing transformations
 
-$$\hat{x}(t) = x\!\left(\frac{t}{\alpha}\right) \quad \text{(resampled and time-stretched back)}$$
+Pitch shifting, formant modification, temporal perturbation, and spectral warping are inexpensive and can support real-time use. For example,
 
-**Time stretching** modifies duration without changing pitch, using phase vocoder techniques that operate on the short-time Fourier transform:
+$$
+\tilde{F}_0(t)=\alpha(t)F_0(t)
+$$
 
-$$X_\text{stretched}(k, m) = X\!\left(k, \lfloor m / \beta \rfloor\right) \cdot e^{i \cdot \Delta\phi(k, m)}$$
+changes the fundamental-frequency contour. Speaker identity, however, is distributed across vocal-tract characteristics, prosody, rhythm, pronunciation, and channel cues. A verifier trained on transformed speech may learn to compensate for simple fixed perturbations.
 
-where $\beta$ is the stretch factor and $\Delta\phi$ is a phase correction to maintain coherence.
+These methods should be evaluated as baselines or layers, not assumed to provide strong anonymity.
 
-Pitch and time modification alone are insufficient for strong anonymization — a well-trained speaker verification model can often compensate. They are most effective when combined with other techniques.
+### ASR followed by TTS
 
----
+A transcription–synthesis pipeline replaces the original acoustics:
 
-### 3. Speech Synthesis (TTS-based Anonymization)
+$$
+x \xrightarrow{\mathrm{ASR}} \hat{c}
+\xrightarrow{\mathrm{TTS}(\tilde{e},r')} \tilde{x}.
+$$
 
-A more radical approach is to use text-to-speech synthesis: transcribe the speech to text with an ASR system, then re-synthesise with a generic or anonymized voice.
+This can remove many direct voice cues, but “zero acoustic trace” is not justified. The transcript may preserve lexical choices, disfluencies, dialect markers, names, and timing decisions associated with the speaker. ASR errors may be speaker-dependent, and prosody-transfer components can carry identity cues. The generated voice may also be linkable across utterances or resemble a real person in the synthesis model’s training data.
 
-The pipeline is:
+TTS therefore changes the attack surface; it does not automatically establish anonymity.
 
-$$x \xrightarrow{\text{ASR}} \hat{c} \xrightarrow{\text{TTS}(\mathbf{e}^*)} \hat{x}$$
+## Pseudonymisation and consistency
 
-where $\hat{c}$ is the transcribed text and $\mathbf{e}^*$ is a neutral or randomly generated speaker embedding.
+The pseudo-speaker policy affects both privacy and usefulness:
 
-This provides the strongest identity removal — the output waveform has zero acoustic trace of the original speaker. The cost is that prosody, emotion, and paralinguistic information (stress, intonation, pauses) are lost in transcription, reducing naturalness and utility for downstream tasks like sentiment or emotion analysis.
+- **Per utterance:** a new pseudo-identity for each recording reduces cross-recording linkability but may disrupt conversation analysis.
+- **Per session:** one pseudo-identity is maintained within a conversation, preserving speaker turns.
+- **Per speaker:** the same mapping is reused across sessions, supporting longitudinal analysis but enabling tracking.
 
----
+A deterministic mapping should not be derived from a public speaker identifier. If consistent pseudonyms are required, generate them through a protected mapping service with access control and rotation. Keep the mapping separate from released audio.
 
-### 4. Differential Privacy on Speech Features
+Multi-speaker audio adds diarization errors. Speaker swaps, overlapping speech, and missed segments can produce inconsistent conversion or leave portions unanonymized. Evaluate the entire pipeline, not only isolated single-speaker utterances.
 
-[Differential privacy](https://en.wikipedia.org/wiki/Differential_privacy) (DP) provides a formal privacy guarantee. A randomised mechanism $\mathcal{M}$ satisfies $(\varepsilon, \delta)$-differential privacy if for all pairs of adjacent datasets $D, D'$ and all outputs $\mathcal{O}$:
+## Measure privacy with more than one number
 
-$$\Pr[\mathcal{M}(D) \in \mathcal{O}] \leq e^\varepsilon \cdot \Pr[\mathcal{M}(D') \in \mathcal{O}] + \delta$$
+### Speaker-verification error
 
-Applied to speech, the mechanism adds calibrated Gaussian noise to the speaker embedding $\mathbf{e}_s$ before use:
+An automatic speaker-verification system assigns a score \(q(e,t)\) to an enrolment utterance \(e\) and trial utterance \(t\). At threshold \(\tau\):
 
-$$\tilde{\mathbf{e}}_s = \mathbf{e}_s + \mathcal{N}(0, \sigma^2 \mathbf{I})$$
+$$
+\operatorname{FAR}(\tau)
+= \Pr[q\geq\tau\mid\text{different speakers}],
+$$
 
-The noise scale $\sigma$ is set based on the **sensitivity** $\Delta f$ of the embedding function and the desired privacy budget $\varepsilon$:
+$$
+\operatorname{FRR}(\tau)
+= \Pr[q<\tau\mid\text{same speaker}].
+$$
 
-$$\sigma = \frac{\Delta f \cdot \sqrt{2 \ln(1.25/\delta)}}{\varepsilon}$$
+Equal error rate (EER) is the operating point where FAR and FRR are equal or closest. A higher EER usually indicates a less effective verifier under that protocol. It is not a universal probability of anonymity. Results depend on trial construction, attacker training, score calibration, and subgroup composition. Values near 50% indicate chance-like discrimination in a balanced verification setting; values above 50% can reflect score inversion rather than “more than perfect” privacy.
 
-Lower $\varepsilon$ means stronger privacy but more distortion. The privacy-utility tradeoff is explicit and mathematically controlled — a key advantage over heuristic methods.
+VoicePrivacy also uses the log-likelihood-ratio cost \(C_{\mathrm{llr}}\) and alternatives such as linkability measures. Report the original-speech baseline and confidence intervals, and test more than one attacker architecture where possible.
 
----
+### Distinctiveness and linkability
 
-## 📊 Measuring Anonymization Quality
+An anonymizer can make every speaker sound similar, raising verification error while destroying speaker distinctiveness needed for diarization or conversation analysis. The gain of voice distinctiveness compares how clearly different pseudo-speakers remain separated relative to original speech.
 
-Two axes matter:
+Linkability should be evaluated both within and across sessions according to policy. Average EER can hide a subset of speakers who remain easy to re-identify, so include per-speaker and subgroup distributions rather than only corpus means.
 
-**Privacy** is measured using an **Equal Error Rate (EER)** of a speaker verification system. EER is the operating point where the false acceptance rate equals the false rejection rate:
+## Measure utility explicitly
 
-$$\text{EER} = \text{FAR} = \text{FRR} \quad \text{at threshold } \theta^*$$
+Word error rate (WER) measures transcription errors:
 
-A higher EER on anonymized speech means the verification system is more confused — better anonymization. Random chance gives EER = 50%.
+$$
+\operatorname{WER}=\frac{S+D+I}{N},
+$$
 
-**Utility** is measured by **Word Error Rate (WER)** of an ASR system on the anonymized speech:
+where \(S\), \(D\), and \(I\) are substitutions, deletions, and insertions against \(N\) reference words. Report WER for original and anonymized speech using the same ASR system.
 
-$$\text{WER} = \frac{S + D + I}{N}$$
+WER does not measure everything preserved in speech. A complete evaluation may include:
 
-where $S$, $D$, $I$ are substitution, deletion, and insertion errors and $N$ is the total number of reference words. Lower WER means the content is better preserved.
+| Objective | Example measure |
+|---|---|
+| Linguistic content | WER or character error rate |
+| Naturalness | Human mean opinion score or validated predictor |
+| Intelligibility | Human transcription or intelligibility rating |
+| Emotion | Unweighted average recall and human perception |
+| Prosody | Pitch-correlation and timing measures |
+| Speaker distinctiveness | VoicePrivacy distinctiveness metric |
+| Downstream utility | Performance of the intended speech task |
+| Fairness | Privacy and utility distributions by language, accent, sex, age, and channel |
 
-A good anonymization system maximizes EER while minimizing WER — these objectives are in tension.
+Do not optimise only EER and WER if emotion, turn-taking, pathology, or speaking style is part of the authorised use.
 
-### Evaluation matrix
+## Differential privacy requires a mechanism and adjacency
 
-One headline EER/WER pair is not sufficient. A useful evaluation crosses attacker knowledge, enrolment condition, and utility slices:
+Adding Gaussian noise to a speaker embedding does not by itself establish differential privacy. A formal claim must define:
 
-| Test | Comparison | Desired direction | Failure it reveals |
-|---|---|---|---|
-| Ignorant attacker | Original enrolment vs anonymised trial | EER increases | Weak identity transformation |
-| Semi-informed attacker | Anonymised enrolment vs anonymised trial | EER increases | Linkability under a known pipeline |
-| ASR utility | Transcript vs anonymised speech | WER stays close to the original-audio baseline | Lost linguistic content |
-| Prosody utility | Original vs anonymised pitch, timing, and emotion labels | Task-specific degradation stays acceptable | Lost paralinguistic information |
-| Consistency | Multiple anonymised utterances from one speaker | Matches the chosen privacy policy | Cross-utterance tracking or unstable identity |
-| Subgroup slice | Results by language, accent, sex, and recording condition | No unexplained large gaps | Uneven privacy or utility |
+- the protected unit and adjacent inputs;
+- the randomised mechanism;
+- a finite sensitivity bound or another valid analysis;
+- the privacy parameters \((\varepsilon,\delta)\);
+- composition across frames, utterances, releases, and repeated queries;
+- every other channel through which speaker information can leak.
 
-Report confidence intervals and the original-audio baseline for every metric. The test protocol should also state whether the attacker knows the anonymization method, because that assumption can materially change the privacy result.
+For a mechanism \(M\) and adjacent inputs \(x\sim x'\), \((\varepsilon,\delta)\)-DP requires
 
----
+$$
+\Pr[M(x)\in S]
+\leq e^{\varepsilon}\Pr[M(x')\in S]+\delta
+$$
 
-## 🧪 SpeakerDiff as a research prototype
+for every measurable output set \(S\).
 
-[SpeakerDiff](https://github.com/Akshat4112/speaker-diffusion) explores denoising diffusion on speaker embeddings as a mechanism for anonymization. Rather than simply adding noise to $\mathbf{e}_s$, the prototype models the distribution of speaker embeddings $p(\mathbf{e})$ and samples a new embedding $\mathbf{e}^*$ intended to remain plausible while differing from the original. Whether this improves privacy or speech utility must be established through speaker-verification and intelligibility evaluation; the prototype does not by itself provide a formal privacy guarantee.
+The standard Gaussian calibration
 
----
+$$
+\sigma
+\geq
+\frac{\Delta_2 f\sqrt{2\ln(1.25/\delta)}}{\varepsilon}
+$$
 
-## 🔮 Open Challenges
+applies only under its theorem’s assumptions, including a bounded \(L_2\)-sensitivity \(\Delta_2 f\), and is not a generic recipe for any embedding.
 
-**Linkability attacks** — even if two utterances are individually anonymized, an adversary may still link them to the same speaker by comparing the *pattern* of anonymization. Consistent pseudo-targets must be used per-session.
+Shamsabadi et al. showed why the whole pipeline matters: speaker information can remain in linguistic and prosodic features even after speaker-embedding replacement. Their mechanism trains private feature extractors with a defined guarantee. This is materially different from adding an arbitrary amount of noise to one vector and labelling the output private.
 
-**Emotion and paralinguistics** — current VC models strip away prosodic cues. For healthcare or mental health applications where emotional content is the signal of interest, anonymizing identity without destroying affect is an unsolved problem.
+DP protects the property encoded by the chosen adjacency relation. It does not automatically remove semantic identifiers from transcripts, prevent linkage through released metadata, or guarantee acceptable naturalness.
 
-**Real-time constraints** — production systems (e.g., live call centres) need sub-50ms latency. Neural voice conversion is expensive; efficient architectures like VITS or NaturalSpeech2 are reducing this gap.
+## Evaluate an anonymizer reproducibly
 
-**Adaptive adversaries** — an attacker aware of the anonymization scheme may retrain their speaker verification model specifically against it. Robust anonymization must reason about adaptive adversaries, not just static ones.
+A useful evaluation protocol is:
 
----
+1. **Write the release purpose.** Specify which information must remain useful.
+2. **Define the protected identity and linkage policy.** Include session and longitudinal behaviour.
+3. **Specify attackers.** Record knowledge, enrolment condition, auxiliary data, and adaptation.
+4. **Freeze development and evaluation speakers.** Prevent leakage through tuning.
+5. **Run original-speech baselines.** Establish privacy and utility before transformation.
+6. **Evaluate ignorant and informed attacks.** Retrain or adapt the verifier where the threat model permits it.
+7. **Measure privacy distributions.** Report EER, calibrated costs or linkability, confidence intervals, and per-speaker slices.
+8. **Measure each required utility.** Include WER, naturalness, emotion, prosody, or downstream task performance as applicable.
+9. **Test multiple utterances and sessions.** Check consistency and linkage against the intended policy.
+10. **Stress the pipeline.** Include accents, languages, noise, codecs, short speech, overlap, and diarization errors.
+11. **Document residual disclosure.** Record transcript, metadata, background, and paralinguistic risks.
 
-## 🧠 Final Thoughts
+Results should name the attacker condition next to every privacy metric. “EER 40%” without enrolment, adaptation, dataset, and verifier details is not a portable privacy claim.
 
-Speaker anonymization sits at the intersection of signal processing, deep learning, and formal privacy theory. The core tension — transform the voice enough to defeat a verification system, but not so much that the content is lost — maps cleanly onto the EER vs. WER tradeoff.
+## SpeakerDiff as an exploratory project
 
-As voice data becomes increasingly central to AI products, building systems that handle it responsibly is not optional. Differential privacy gives us the mathematical language to make guarantees rather than just claims.
+[SpeakerDiff](https://github.com/Akshat4112/speaker-diffusion) is my public research prototype for generating speaker embeddings with denoising diffusion probabilistic models. The repository experiments with 64-, 128-, and 704-dimensional embedding datasets, linear and U-Net denoisers, and downstream synthesis from generated embeddings.
 
-— Akshat
+The motivating hypothesis is that a generative model can sample plausible pseudo-speaker embeddings from a learned distribution rather than constructing them through fixed perturbation or simple averaging. In a conditional design, one might seek a sample that is plausible under the embedding distribution yet separated from the source:
+
+$$
+\tilde{e}\sim p_\theta(e)
+\quad\text{subject to}\quad
+d(\tilde{e},e_s)\geq m.
+$$
+
+Neither plausibility nor embedding distance establishes privacy. The current public artefact should be described as an exploratory embedding-generation prototype, not as a validated anonymization system or a formal privacy mechanism. A complete evaluation would need to:
+
+- integrate generated embeddings into a reproducible synthesis pipeline;
+- compare against VoicePrivacy baselines;
+- train ignorant and semi-informed verification attackers;
+- report EER, calibrated/linkability metrics, WER, naturalness, and distinctiveness;
+- evaluate repeated utterances, subgroups, and pseudo-speaker collisions;
+- test whether generated embeddings correspond too closely to real training speakers.
+
+That distinction makes the project scientifically stronger: the repository demonstrates a mechanism and hypothesis, while the missing experiments define the next research step.
+
+## Deployment considerations
+
+Speech is sensitive data before and after transformation. Process it in a controlled environment, encrypt transport and storage, restrict access to source recordings and pseudo-speaker mappings, minimise retention, and log releases. Anonymized audio should not automatically be treated as legally or operationally non-personal data.
+
+For streaming use, measure end-to-end latency, not only model inference. Include framing delay, diarization, encoding, synthesis, network transport, and buffering. Avoid universal targets such as “under 50 ms”: acceptable latency and feasible architecture depend on whether the application is offline release, live conversation, broadcast, or analysis.
+
+Monitor privacy and utility after model, vocoder, verifier, language, or microphone changes. A stronger external speaker-verification model can invalidate an earlier privacy result even when the anonymizer is unchanged.
+
+## Takeaway
+
+Speaker anonymization is a privacy–utility system, not a voice effect. Its credibility comes from a clear attacker model, a deliberate pseudonym policy, informed verification attacks, multiple privacy and utility measures, subgroup analysis, and honest residual-risk reporting.
+
+Voice conversion, neural codecs, TTS, or diffusion-generated embeddings can all be components of that system. None automatically guarantees anonymity. Formal privacy requires a fully specified mechanism; empirical privacy requires evaluation against attackers that know enough to challenge the transformation.
+
+## References
+
+1. Tomashenko, N. et al. (2022). [The VoicePrivacy 2022 Challenge Evaluation Plan](https://arxiv.org/abs/2203.12468). arXiv:2203.12468.
+2. Tomashenko, N. et al. (2022). [The VoicePrivacy 2020 Challenge Evaluation Plan](https://arxiv.org/abs/2205.07123). arXiv:2205.07123.
+3. Tomashenko, N. et al. (2021). [The VoicePrivacy 2020 Challenge: Results and Findings](https://arxiv.org/abs/2109.00648). Computer Speech & Language.
+4. Panariello, M. et al. (2024). [Speaker Anonymization: Progress and Perspectives](https://arxiv.org/abs/2407.11516). arXiv:2407.11516.
+5. Tomashenko, N. et al. (2024). [The VoicePrivacy 2024 Challenge Evaluation Plan](https://arxiv.org/abs/2404.02677). arXiv:2404.02677.
+6. Turner, H. et al. (2020). [Speaker Anonymization with Distribution-Preserving X-Vector Generation for the VoicePrivacy Challenge 2020](https://arxiv.org/abs/2010.13457). arXiv:2010.13457.
+7. Shamsabadi, A. S. et al. (2022). [Differentially Private Speaker Anonymization](https://arxiv.org/abs/2202.11823). Proceedings on Privacy Enhancing Technologies.
