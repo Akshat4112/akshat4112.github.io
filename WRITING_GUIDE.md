@@ -250,6 +250,31 @@ Remove tracking parameters. Avoid temporary share links, search-result URLs, lin
 Before publishing, open every cited source and confirm that it supports the exact nearby claim. Check the relevant method, experiment, table, version, or documentation section—not only the title or abstract. If the source provides weaker or narrower evidence than the prose, narrow the claim.
 
 
+## Claims and confidentiality standard
+
+Portfolio writing must be specific enough to demonstrate judgement without exposing information that is private, proprietary, or unsupported.
+
+### Personal and employer claims
+
+- Link public evidence for publications, datasets, repositories, courses, awards, and other verifiable work.
+- Describe employer work at the level of responsibilities, problem domains, methods, and engineering constraints that are already public or explicitly approved for publication.
+- Do not publish internal project or client names, non-public datasets, prompts, decision rules, architecture details, commercial results, security controls, or operational incidents without written approval.
+- Avoid implying sole ownership of team work. Use `worked on`, `contributed to`, `designed`, or `implemented` according to the actual role.
+- If a material claim has no public source, confirm it with the portfolio owner and keep the wording conservative. Remove it when neither evidence nor confirmation is available.
+
+### Metrics and outcomes
+
+- Publish a metric only when its dataset, evaluation conditions, and source can be stated safely.
+- Prefer a linked paper, public benchmark, repository, model card, or dataset card.
+- Do not publish precise results from internal or client work merely because they appear in a CV.
+- Distinguish measured outcomes from objectives. Write `designed to improve` when an improvement was not independently established.
+- Avoid absolute assurances such as `accurate`, `safe`, `private`, or `production-ready` unless the nearby evidence supports that exact claim.
+
+### Confidentiality review
+
+Before publishing employer or client work, check names, dates, screenshots, examples, code, data fields, model providers, infrastructure, metrics, and failure cases. When in doubt, keep the transferable engineering lesson and remove the identifying implementation detail.
+
+
 ## Front matter standard
 
 Every post should include:
@@ -280,6 +305,9 @@ Before setting `draft: false`, verify:
 - [ ] The opening states a concrete question and central conclusion.
 - [ ] The scope and important terms are explicit.
 - [ ] Every material claim has a relevant citation placed in the same sentence.
+- [ ] Personal achievements link to public evidence or have explicit owner confirmation.
+- [ ] Employer and client descriptions omit confidential names, data, metrics, and implementation details.
+- [ ] Every published metric states a safe, reproducible source and evaluation context.
 - [ ] Each source directly supports the nearby claim and is primary or official where possible.
 - [ ] Citation labels and reference entries follow the standard format.
 - [ ] Links are stable, open correctly, and identify versions or dates when needed.
