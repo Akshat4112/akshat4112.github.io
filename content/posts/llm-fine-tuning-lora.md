@@ -8,7 +8,7 @@ description: "How to fine-tune large language models efficiently using LoRA — 
 showtoc: true
 ---
 
-As powerful as large language models (LLMs) like GPT, [LLaMA](https://github.com/meta-llama/llama), and [Mistral](https://mistral.ai/) are, they’re still *general-purpose*. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to **fine-tune** them.
+As powerful as large language models (LLMs) like GPT, [Llama](https://github.com/meta-llama/llama), and [Mistral](https://mistral.ai/) are, they’re still *general-purpose*. If you want to make them truly useful for your domain—whether it’s legal documents, financial analysis, or German tax law—you need to **fine-tune** them.
 
 And thanks to a technique called **LoRA (Low-Rank Adaptation)**, you can now fine-tune LLMs with a fraction of the data, compute, and cost.
 
@@ -16,7 +16,7 @@ And thanks to a technique called **LoRA (Low-Rank Adaptation)**, you can now fin
 
 ## 🔧 What is Fine-Tuning?
 
-Fine-tuning is the process of **continuing the training** of a pre-trained LLM on your own dataset so that it learns domain-specific patterns, vocabulary, tone, or tasks.
+Fine-tuning is the process of **continuing the training** of a pretrained LLM on your own dataset so that it learns domain-specific patterns, vocabulary, tone, or tasks.
 
 For example:
 
@@ -96,10 +96,10 @@ For general Q&A or document tasks, **combine LoRA with a [RAG](https://en.wikipe
 
 ## 🧰 Popular Libraries for LoRA
 
-- [**PEFT**](https://huggingface.co/docs/peft/index) – [HuggingFace](https://huggingface.co/)’s library for Parameter-Efficient Fine-Tuning
+- [**PEFT**](https://huggingface.co/docs/peft/index) – [Hugging Face](https://huggingface.co/)’s library for parameter-efficient fine-tuning
 - [**QLoRA**](https://huggingface.co/blog/4bit-transformers-bitsandbytes) – Quantized LoRA (8-bit/4-bit) for even more memory savings  
 - [**Axolotl**](https://github.com/OpenAccess-AI-Collective/axolotl) – Powerful config-based trainer  
-- [**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory) – Quick setup for finetuning LLaMA and Mistral models
+- [**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory) – Quick setup for fine-tuning Llama and Mistral models
 
 ---
 
