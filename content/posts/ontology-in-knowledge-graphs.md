@@ -62,6 +62,36 @@ Here's a micro-ontology in plain English:
 
 Now, when you build your graph, this ontology acts as a **guardrail**. If someone tries to say a *Product works for a Person*, the system throws a semantic red flag 🚩
 
+### Worked example: inference is not validation
+
+OWL and SHACL answer different questions. The following Turtle fragment states that `worksFor` links a `Person` to a `Company`:
+
+```turtle
+:worksFor a owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Company .
+```
+
+Under OWL's open-world semantics, this declaration can support inference. It does not necessarily reject a record just because information is missing or unexpectedly typed. A SHACL shape can express a validation rule explicitly:
+
+```turtle
+:PersonShape a sh:NodeShape ;
+  sh:targetClass :Person ;
+  sh:property [
+    sh:path :worksFor ;
+    sh:class :Company ;
+    sh:maxCount 1
+  ] .
+```
+
+| Need | Appropriate mechanism |
+|---|---|
+| Infer types or relationships from axioms | RDFS or OWL reasoning |
+| Check required fields, cardinality, or allowed values | SHACL validation |
+| Retrieve matching graph patterns | SPARQL query |
+
+This distinction matters in production: a reasoner expands what follows from the graph, while a validator checks whether data conforms to an application contract.
+
 ---
 
 ## 🧰 Common Ontology Languages & Tools
@@ -89,14 +119,14 @@ Here's why you should care about them if you're working in AI or data science:
 
 ---
 
-## 🧪 In My Own Projects
+## 🧪 Applied examples
 
-I've used ontologies in:
-- A healthcare project, where patient symptoms, diagnoses, and treatments were modeled using the [SNOMED CT](https://www.snomed.org/snomed-ct) ontology.
-- A personal finance KG, where *Income*, *Expense*, and *Account* were tightly defined — enabling automated categorization and reasoning.
-- Integrating [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) pipelines with structured knowledge graphs to improve retrieval precision using typed entity constraints.
+Ontologies can support:
+- Healthcare knowledge graphs, where symptoms, diagnoses, and treatments are modelled using standards such as [SNOMED CT](https://www.snomed.org/snomed-ct).
+- Personal-finance knowledge graphs, where concepts such as *Income*, *Expense*, and *Account* are explicitly defined.
+- Retrieval-augmented generation pipelines that use typed entities and relationships to constrain retrieval.
 
-It's honestly been a game-changer for building **explainable AI** systems.
+These structures can improve traceability, but explainability still depends on the data, inference rules, and application design.
 
 ---
 
@@ -104,9 +134,9 @@ It's honestly been a game-changer for building **explainable AI** systems.
 
 Ontologies are the **brain** behind a knowledge graph's structure. They bring order to the chaos of data and let machines "understand" concepts and their context. If you're venturing into semantic search, personalized recommendations, RAG systems, or even smart assistants — investing time in ontology design is *absolutely worth it*.
 
-Feel free to ping me if you're designing your first ontology or need help wrangling one into your GenAI pipeline. Happy graphing! 🔍🧠
+Feel free to ping me if you're designing your first ontology or need help wrangling one into your generative AI pipeline. Happy graphing! 🔍🧠
 
 ---
 
-*More posts on knowledge graphs, vector search, and GenAI systems coming soon.*  
+*More posts on knowledge graphs, vector search, and generative AI systems coming soon.*  
 — **Akshat**

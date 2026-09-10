@@ -151,11 +151,26 @@ where $S$, $D$, $I$ are substitution, deletion, and insertion errors and $N$ is 
 
 A good anonymization system maximizes EER while minimizing WER — these objectives are in tension.
 
+### Evaluation matrix
+
+One headline EER/WER pair is not sufficient. A useful evaluation crosses attacker knowledge, enrolment condition, and utility slices:
+
+| Test | Comparison | Desired direction | Failure it reveals |
+|---|---|---|---|
+| Ignorant attacker | Original enrolment vs anonymised trial | EER increases | Weak identity transformation |
+| Semi-informed attacker | Anonymised enrolment vs anonymised trial | EER increases | Linkability under a known pipeline |
+| ASR utility | Transcript vs anonymised speech | WER stays close to the original-audio baseline | Lost linguistic content |
+| Prosody utility | Original vs anonymised pitch, timing, and emotion labels | Task-specific degradation stays acceptable | Lost paralinguistic information |
+| Consistency | Multiple anonymised utterances from one speaker | Matches the chosen privacy policy | Cross-utterance tracking or unstable identity |
+| Subgroup slice | Results by language, accent, sex, and recording condition | No unexplained large gaps | Uneven privacy or utility |
+
+Report confidence intervals and the original-audio baseline for every metric. The test protocol should also state whether the attacker knows the anonymization method, because that assumption can materially change the privacy result.
+
 ---
 
-## 🧪 My Research Context
+## 🧪 SpeakerDiff as a research prototype
 
-My research at the University of Stuttgart included **denoising diffusion on speaker embeddings** as a mechanism for anonymization. The key idea: rather than simply adding noise to $\mathbf{e}_s$, a diffusion model learns the distribution of speaker embeddings $p(\mathbf{e})$ and can sample a new embedding $\mathbf{e}^*$ that is statistically plausible but distinct from the original. This produces more natural-sounding anonymized speech than Gaussian noise injection, while maintaining a controlled privacy guarantee.
+[SpeakerDiff](https://github.com/Akshat4112/speaker-diffusion) explores denoising diffusion on speaker embeddings as a mechanism for anonymization. Rather than simply adding noise to $\mathbf{e}_s$, the prototype models the distribution of speaker embeddings $p(\mathbf{e})$ and samples a new embedding $\mathbf{e}^*$ intended to remain plausible while differing from the original. Whether this improves privacy or speech utility must be established through speaker-verification and intelligibility evaluation; the prototype does not by itself provide a formal privacy guarantee.
 
 ---
 

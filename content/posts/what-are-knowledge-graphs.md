@@ -8,9 +8,9 @@ description: "A plain-language introduction to knowledge graphs — how they rep
 showtoc: true
 ---
 
-We hear the term **[knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)** everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly *is* a knowledge graph, and why is everyone suddenly obsessed with it?
+We hear the term **[knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)** everywhere now — from Google Search to enterprise AI to generative AI apps. But what exactly *is* a knowledge graph, and why is everyone suddenly obsessed with it?
 
-In this post, I'll break down knowledge graphs in plain language: what they are, how they work, and how I use them in my own projects.
+This post explains knowledge graphs in plain language: what they are, how they work, and where they are useful.
 
 ---
 
@@ -70,7 +70,7 @@ Here's where knowledge graphs really shine:
   Enables intent-based results (e.g., "founder of Tesla" → Elon Musk)
 
 - 🧠 **LLM Context Injection (RAG)**  
-  Use a knowledge graph to retrieve precise facts and inject them into prompts — improving GenAI accuracy.
+  Use a knowledge graph to retrieve precise facts and inject them into prompts — improving generative AI accuracy.
 
 - 🏥 **Healthcare & Life Sciences**  
   Model relationships between diseases, symptoms, genes, drugs.
@@ -95,13 +95,13 @@ Here's what goes into a real-world knowledge graph:
 
 ---
 
-## 🧪 My Use Cases
+## 🧪 Applied use cases
 
-I've worked with knowledge graphs in several domains:
+Knowledge graphs can support several domains:
 
-- **Insurance Claims Automation**: Extract structured facts from documents using [OpenAI](https://openai.com/) + Neo4j to speed up FNOL (First Notice of Loss).
-- **RAG Pipelines**: Create mini knowledge graphs from PDFs and inject triples into prompts for better LLM accuracy.
-- **German Tax Assistant**: Model deductions, expenses, and income types as nodes to generate explainable tax advice.
+- **Insurance claims**: Extract structured facts from documents and connect entities for review.
+- **RAG pipelines**: Build compact graphs from documents and use retrieved triples as additional model context.
+- **Tax information systems**: Model deductions, expenses, and income types as linked concepts to make rule application traceable.
 
 Whether it's documents, chatbots, or graphs powering LLMs — KGs make AI *smarter and explainable*.
 

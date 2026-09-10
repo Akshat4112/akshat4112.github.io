@@ -129,14 +129,14 @@ Some standard benchmarks have emerged:
 
 ---
 
-## 💬 My Approach to LLM Evaluation
+## 💬 A practical evaluation stack
 
-In my own projects (like document Q&A or multi-agent GenAI), I often mix:
+For systems such as document Q&A or multi-agent generative AI, a practical evaluation stack can combine:
 
 - 🔍 **Hard metrics** (accuracy, F1) for structured data extraction
 - 🧪 **Prompt-based unit tests** using `OpenAI Evals` or `LangChain`
 - 👨‍👩‍👧 **Manual grading** for edge cases and critical flows
-- 📊 **Leaderboards** when comparing [LLaMA](https://github.com/meta-llama/llama), Mixtral, GPT-4, Claude, etc.
+- 📊 **Leaderboards** when comparing [Llama](https://github.com/meta-llama/llama), Mixtral, GPT-4, Claude, etc.
 
 For production? **Human-in-the-loop testing** is key — especially for regulated or high-risk domains.
 

@@ -16,7 +16,7 @@ It's not just about "asking a question." It's about how you phrase it, structure
 
 ## 🧠 What Is Prompt Engineering?
 
-**Prompt engineering** is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs. This technique complements approaches such as [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) and [LoRA](https://arxiv.org/abs/2106.09685) fine-tuning.
+**Prompt engineering** is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs. This technique complements approaches such as [retrieval-augmented generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) and [LoRA](https://arxiv.org/abs/2106.09685) fine-tuning.
 
 It's half science, half art. A good prompt can mean the difference between:
 
@@ -39,13 +39,13 @@ Here's why good prompts matter:
 - 🧠 **Reasoning**: Get step-by-step logic, not just surface-level answers.  
 - 📦 **Structured output**: Useful for coding, data extraction, APIs.  
 
-Especially in RAG (Retrieval-Augmented Generation) or enterprise systems, a well-crafted prompt is *mission-critical*.
+Especially in retrieval-augmented generation (RAG) or enterprise systems, a well-crafted prompt is *mission-critical*.
 
 ---
 
 ## ✍️ Common Prompt Patterns
 
-Here are a few templates I've used successfully:
+Here are a few reusable prompt templates:
 
 ### 1. **Role-based prompting**
 
@@ -83,7 +83,7 @@ Summarize the following PDF in JSON format with keys: title, summary, and top_3_
 
 ## 💥 Tips to Improve Your Prompts
 
-Here are some battle-tested ideas I've used in production:
+Here are some practical techniques to test:
 
 - ✅ **Be specific**: Vagueness = unpredictable output  
 - ✅ **Define format**: JSON, markdown, table, list? Ask for it explicitly  
@@ -93,9 +93,9 @@ Here are some battle-tested ideas I've used in production:
 
 ---
 
-## 🧠 My Use Cases
+## 🧠 Applied use cases
 
-In my work with **document intelligence** and **GenAI platforms**, prompt engineering is everywhere:
+In **document intelligence** and **generative AI systems**, prompts commonly support:
 
 - **PDF to JSON Extraction**: Prompts that extract structured data from invoices, policies, etc.
 - **RAG Pipelines**: Combine vector similarity + prompt tuning for better fact-grounding.
@@ -115,7 +115,7 @@ Here are some tools to experiment with prompt engineering:
 - [LangChain](https://www.langchain.com/)
 - [Promptable](https://www.promptable.ai/)
 - [LlamaIndex](https://www.llamaindex.ai/)
-- [HuggingFace](https://huggingface.co/) – model hub and Transformers library
+- [Hugging Face](https://huggingface.co/) – model hub and Transformers library
 
 ---
 

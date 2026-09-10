@@ -1,15 +1,15 @@
 ---
 title: "About"
 date: 2024-01-01T00:00:00+00:00
-description: "About Akshat Gupta — Senior Machine Learning Engineer specializing in Agentic AI, LLM Systems, and Production GenAI."
+description: "About Akshat Gupta — an applied AI engineer working on agentic systems, document intelligence, evaluation, and trustworthy machine learning."
 schema_type: ProfilePage
 hideMeta: true
 ShowBreadCrumbs: false
 ---
 
-I'm an AI engineer who builds production GenAI systems—large language models and agentic architectures that ship into real, regulated workflows rather than staying in notebooks.
+I'm an AI engineer who builds production generative AI systems—large language models and agentic architectures designed for real, regulated workflows rather than notebook-only demonstrations.
 
-My recent work turns complex financial and insurance documents into structured, decision-ready data for credit origination, claims, and policy analysis. The hard part is not simply the model; it is making the output trustworthy. My work therefore centers on grounding safeguards, deterministic validation, and model-based verification that make AI outputs accurate and auditable enough for real decisions.
+My recent work focuses on turning complex financial and insurance documents into structured data for credit and insurance workflows. The hard part is not simply the model; it is making the output trustworthy. I therefore focus on grounding, deterministic validation, evaluation, and traceability so that outputs can be reviewed before they inform a decision.
 
 Across NLP, computer vision, speech, and generative models, the throughline is the same: translating complex models into systems people can actually rely on. I work at the intersection of ML engineering, system design, and applied AI safety.
 
@@ -19,39 +19,40 @@ Across NLP, computer vision, speech, and generative models, the throughline is t
 
 **AI Engineer — [additiv](https://www.additiv.com/)** *(May 2024 – Present · Zurich, Switzerland)*
 
-- Developed **Doc-Parser**, a core AI platform for automated extraction of structured data from financial and insurance documents — scenario-driven, multilingual, schema-locked, with audit-ready outputs and production APIs.
-- Built a modular agent-based extraction pipeline using agentic AI and LLMs on Azure for document understanding and structured data generation across credit and insurance workflows.
-- Developed **ClaimFlow**, a multi-agent AI system for end-to-end household and liability insurance claim analysis, covering damage assessment, policy interpretation, and claim consistency checks.
-- Implemented insurance decision workflows using agentic AI and Azure-based LLMs to support claim assessment, broker placement, and claim probability estimation — combining documents, images, and contextual signals into structured, explainable outputs for insurance review teams.
+- Build AI systems for document-heavy finance and insurance workflows, with a focus on structured extraction, retrieval, evaluation, and human review.
+- Design agent-based workflows using Azure-hosted language models, OCR, deterministic validation, and production APIs.
+- Work across system architecture, evaluation, monitoring, and deployment.
+
+*This description is intentionally limited to publicly shareable responsibilities; client names, internal project names, data, and implementation details are omitted.*
 
 **Machine Learning Engineer — Validaitor** *(Apr 2023 – Mar 2024 · Karlsruhe, Germany)*
 
-- Developed adversarial ML evaluation pipelines to assess and improve model robustness against evasion and poisoning attacks, including FGSM and PGD-based threat scenarios.
-- Built model security assessment workflows including copycat and model-stealing attack simulations, and implemented protection techniques such as watermarking and fingerprinting.
-- Designed LLM validation frameworks to evaluate fairness, bias, and toxicity — enabling systematic risk assessment of models prior to deployment in sensitive and regulated contexts.
+- Developed experimental pipelines for adversarial ML evaluation, including evasion, poisoning, and model-extraction scenarios.
+- Implemented watermarking and fingerprinting experiments to study model protection.
+- Evaluated LLM outputs for fairness, bias, and toxicity.
 
 **Research Assistant — Institut für Parallele und Verteilte Systeme, University of Stuttgart** *(May 2022 – Oct 2022 · Stuttgart, Germany)*
 
-- Researched spatio-temporal word embeddings, extending Skip-Gram architectures to incorporate temporal and geographic context for time- and region-aware language understanding.
-- Developed Python-based embedding pipelines and evaluation frameworks to analyse temporal semantic shifts and regional language variation across large text corpora.
-- Applied models to downstream NLP tasks including time-sensitive text analysis and regional usage detection, demonstrating improved contextual representation over static embeddings.
+- Researched spatio-temporal word embeddings that incorporate temporal and geographic context.
+- Built Python-based embedding pipelines and evaluation frameworks to analyse temporal semantic shifts and regional language variation.
+- Explored downstream NLP tasks including time-sensitive text analysis and regional usage detection.
 
 **Machine Learning Engineer — Quantiphi** *(Jan 2021 – Oct 2021 · Bengaluru, India)*
 
-- Developed a multimodal emotion recognition system combining text and speech signals into a unified architecture with joint training objectives — F1 score of 0.88 on an internal conversational dataset.
-- Built an unsupervised speaker diarization pipeline using voice activity detection and clustering techniques — diarization error rate (DER) of 17.35% on multi-speaker audio streams.
+- Worked on multimodal emotion recognition combining text and speech signals.
+- Built an unsupervised speaker diarization pipeline using voice activity detection, speaker representations, and clustering.
 
 **Machine Learning Engineer — Scanta Inc.** *(Mar 2019 – Mar 2020 · Gurgaon, India)*
 
-- Took on technical leadership responsibilities, coordinating a small team of ML engineers across the full model lifecycle from experimentation to cloud deployment.
-- Designed and deployed production NLP pipelines on cloud infrastructure for low-latency text processing and language transformation.
-- Developed and integrated data augmentation, language correction, and style transfer models — improving overall NLP system performance by 4.73%.
-- Worked closely with product and leadership stakeholders to translate business requirements into deployable AI solutions and inform product direction.
+- Coordinated a small team of ML engineers across experimentation and deployment.
+- Designed and deployed NLP pipelines on cloud infrastructure for text processing and language transformation.
+- Worked on data augmentation, language correction, and style-transfer models, evaluated on internal datasets.
+- Collaborated with product and leadership stakeholders to translate requirements into deployable ML systems.
 
 **Machine Learning Engineer — Mobile Programming LLC.** *(Jul 2018 – Dec 2018 · Gurgaon, India)*
 
-- Developed an attention-based encoder–decoder model for machine translation — BLEU score of 37.13, with improved translation quality for domain-specific text.
-- Built a BiLSTM-CRF model for named entity recognition in pharmacological and medical texts — F1 score of 0.83, integrated into downstream clinical applications.
+- Built an attention-based encoder–decoder prototype for domain-specific machine translation.
+- Developed a BiLSTM-CRF prototype for named entity recognition in pharmacological and medical text.
 
 ---
 
@@ -67,7 +68,7 @@ Across NLP, computer vision, speech, and generative models, the throughline is t
 
 **Languages & Frameworks:** Python, C++, PyTorch, TensorFlow, scikit-learn
 
-**LLMs & GenAI:** LangChain, HuggingFace Transformers, Azure OpenAI, RAG pipelines, Agentic AI, PEFT / LoRA
+**LLMs & generative AI:** LangChain, Hugging Face Transformers, Azure OpenAI, RAG pipelines, agentic AI, PEFT / LoRA
 
 **Cloud & Infrastructure:** Azure (AI Services, Functions, Blob), AWS (Lex, Dialogflow), Docker
 
@@ -77,15 +78,12 @@ Across NLP, computer vision, speech, and generative models, the throughline is t
 
 ---
 
-## Community & Recognition
+## Public work
 
-- Intel Software Innovator (2019–present)
-- AAAI Reviewer — Safe, Robust and Responsible AI track (2023–present)
-- Member of the Board of Studies at OP Jindal University (2019–present)
-- [Author with Packt Publications](https://www.packtpub.com/) — *Hands-On Deep Learning with TensorFlow 2.0*
-- Kaggle 3x Expert — Top 1% of 300k+ users
-- Intel® Edge AI Scholarship (2019)
-- Google Scholarship Recipient (2018)
+- [GlyphNet paper](https://arxiv.org/abs/2306.10392), with public [code](https://github.com/Akshat4112/Glyphnet) and [dataset](https://huggingface.co/datasets/Akshat4112/Glyphnet)
+- [FinPlainLM financial plain-language dataset](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset)
+- [Open-source repositories](https://github.com/Akshat4112), including machine-learning case studies, NLP resources, and research presentations
+- [*Hands-On Deep Learning with TensorFlow 2.0* course preview](https://www.youtube.com/watch?v=J7Dj_cswzQE), published by Packt
 
 ---
 

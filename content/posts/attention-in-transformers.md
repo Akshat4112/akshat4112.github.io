@@ -6,13 +6,13 @@ tags: ["transformers", "attention", "deep-learning", "nlp", "self-attention", "n
 weight: 112
 math: true
 showtoc: true
-description: "A deep dive into self-attention — how it works, why it powers modern Transformers, and the attention variants used in GPT, BERT, and LLaMA."
+description: "A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and Llama."
 ---
 
 When people say "[Transformers](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) revolutionized NLP," what they *really* mean is:
 > **Attention** revolutionized NLP.
 
-From GPT and [BERT](https://arxiv.org/abs/1810.04805) to [LLaMA](https://github.com/meta-llama/llama) and Claude, **[attention mechanisms](https://en.wikipedia.org/wiki/Attention_(machine_learning))** are the beating heart of modern large language models.
+From GPT and [BERT](https://arxiv.org/abs/1810.04805) to [Llama](https://github.com/meta-llama/llama) and Claude, **[attention mechanisms](https://en.wikipedia.org/wiki/Attention_(machine_learning))** are the beating heart of modern large language models.
 
 But what exactly is attention? Why is it so powerful? And how many types are there?
 
@@ -49,6 +49,18 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\rig
 
 📖 Citation: [Vaswani et al., 2017](https://arxiv.org/abs/1706.03762) (Attention is All You Need)
 
+### Worked example: one query, three keys
+
+Assume one query produces scaled dot-product scores of `[1.2, 0.3, -0.4]` against the keys for three tokens. Softmax converts those scores into approximately `[0.62, 0.25, 0.13]`.
+
+| Token | Scaled score | Attention weight | Contribution to the output |
+|---|---:|---:|---|
+| `policy` | 1.2 | 0.62 | Dominant value vector |
+| `document` | 0.3 | 0.25 | Secondary context |
+| `yesterday` | -0.4 | 0.13 | Smaller, but not zero |
+
+The output for this query is therefore `0.62 V_policy + 0.25 V_document + 0.13 V_yesterday`. This small example shows two useful properties: attention is a weighted mixture rather than a hard lookup, and a high weight does not by itself prove that a token caused the final prediction.
+
 ---
 
 ## 🔁 Multi-Head Attention
@@ -62,7 +74,7 @@ Each head learns different types of relationships (e.g., syntactic, semantic).
 
 ---
 
-## 🧩 Types of Attention in Transformers
+## 🧩 Types of attention in transformers
 
 Let's look at the key attention variations used in different transformer architectures.
 
@@ -114,9 +126,9 @@ Used in **Performer** ([Choromanski et al., 2020](https://arxiv.org/abs/2009.147
 
 ---
 
-## 🏗️ Attention Block in Transformers
+## 🏗️ Attention block in transformers
 
-Each Transformer layer consists of:
+Each transformer layer consists of:
 
 1. **Multi-head Attention**
 2. **Add & Layer Norm**

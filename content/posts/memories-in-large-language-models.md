@@ -9,7 +9,7 @@ showtoc: true
 description: "How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based retrieval — and what this means for building AI systems."
 ---
 
-Large language models (LLMs) like GPT-4, Claude, and [Llama 3](https://github.com/meta-llama/llama) feel *almost* sentient at times. They can reference earlier parts of a conversation, recall facts from pre-training, and even “remember” user preferences across sessions. But what **is** memory in a language model?  
+Large language models (LLMs) like GPT-4, Claude, and [Llama 3](https://github.com/meta-llama/llama) feel *almost* sentient at times. They can reference earlier parts of a conversation, recall facts from pretraining, and even “remember” user preferences across sessions. But what **is** memory in a language model?  
 Is it the attention mechanism? A giant vector store? A key-value cache?  
 Spoiler: it’s *all of the above*, depending on which time scale you’re talking about.
 
@@ -43,7 +43,7 @@ Recent research pushes this limit:
 
 But linear scaling can’t keep going forever—compute and memory blow up.
 
-### 2. Medium-Term Memory: KV Caches & Recurrent State
+### 2. Medium-Term Memory: KV caches and recurrent state
 
 When serving an autoregressive model, we *cache* every $(K, V)$ pair after it is first computed. Subsequent tokens reuse these keys instead of recomputing them. This KV cache is:
 
@@ -57,9 +57,9 @@ Some papers extend this idea:
 2. **Memory-Compressor** – clusters old tokens and stores centroids as *memory tokens*.
 3. **[FlashAttention-2](https://arxiv.org/abs/2205.14135)** – faster block-wise attention allows longer caches.
 
-### 3. Long-Term Memory: Retrieval-Augmented Generation (RAG)
+### 3. Long-Term Memory: retrieval-augmented generation (RAG)
 
-The hot phrase of 2023-24. Instead of enlarging the transformer, **attach an external memory** ([vector database](https://en.wikipedia.org/wiki/Vector_database), [Milvus](https://milvus.io/), [Qdrant](https://qdrant.tech/), [ElasticSearch](https://www.elastic.co/)).
+The hot phrase of 2023-24. Instead of enlarging the transformer, **attach an external memory** ([vector database](https://en.wikipedia.org/wiki/Vector_database), [Milvus](https://milvus.io/), [Qdrant](https://qdrant.tech/), [Elasticsearch](https://www.elastic.co/)).
 
 Pipeline:
 

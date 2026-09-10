@@ -1,6 +1,6 @@
 ---
 title: "Hands-on Deep Learning with TensorFlow 2.0"
-description: "A practical guide to building deep learning models with TensorFlow 2.0, published by Packt Publishing."
+description: "A practical video course on building deep learning models with TensorFlow 2.0, published by Packt."
 date: 2023-03-01T00:00:00+00:00
 draft: false
 tags: ["machine-learning", "deep-learning", "tensorflow", "book"]
@@ -11,16 +11,16 @@ cover:
     alt: "Book cover of Hands-on Deep Learning with TensorFlow 2.0"
 ---
 
-[View on Packt](https://www.packtpub.com/) · [GitHub](https://github.com/akshat4112)
+[Course preview](https://www.youtube.com/watch?v=J7Dj_cswzQE) · [GitHub](https://github.com/Akshat4112)
 
 **Publisher:** Packt Publishing
-**Author:** Akshat Gupta
+**Instructor:** Akshat Gupta
 
 ---
 
-## About the Book
+## About the course
 
-*Hands-on Deep Learning with TensorFlow 2.0* is a practical guide to building, training, and deploying deep learning models using TensorFlow 2.0 and Keras. The book is designed for practitioners who want to move beyond theory and build real neural network systems from scratch.
+*Hands-on Deep Learning with TensorFlow 2.0* is a practical video course on building, training, and deploying deep learning models using TensorFlow 2.0 and Keras. It is designed for practitioners who want to move beyond theory and build neural network systems from scratch.
 
 ## What It Covers
 

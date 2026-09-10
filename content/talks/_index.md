@@ -1,4 +1,4 @@
 ---
 title: "Talks"
-description: "Conference talks and workshops by Akshat Gupta on machine learning, NLP, healthcare AI, and deep learning."
+description: "Technical presentation notes by Akshat Gupta on machine learning, NLP, speech, and deep learning."
 ---
