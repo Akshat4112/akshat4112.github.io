@@ -12,6 +12,9 @@ showtoc: true
 
 <!--
 Use WRITING_GUIDE.md before publishing.
+Write in British English. Use title case for the article title and sentence case
+for section headings. Do not use emojis or promotional wording.
+Expand technical abbreviations on first use and follow the terminology table.
 Open with the exact question, why it matters, and the article's central conclusion.
 Delete all instructional comments as you draft.
 -->
