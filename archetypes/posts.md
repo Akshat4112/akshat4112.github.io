@@ -44,8 +44,9 @@ Rename or divide this section when topic-specific headings are clearer.
 
 <!--
 Use primary papers, official documentation, reproducible experiments, or
-clearly labelled observations from your own work. Include a minimal example
-only when it advances the explanation.
+clearly labelled observations from your own work. Put a descriptive link in
+the same sentence as every material claim. Include a minimal example only
+when it advances the explanation.
 -->
 
 ## Evaluation and trade-offs
@@ -71,4 +72,12 @@ the introduction and do not use a generic "Final Thoughts" conclusion.
 
 ## References
 
-<!-- Prefer primary sources and official documentation. -->
+<!--
+List sources in order of first appearance.
+
+- Author(s), [Paper title](stable URL), venue or archive, year.
+- Organisation, [Documentation page](stable URL), version or date if relevant.
+
+Open every source and confirm that it supports the exact nearby claim.
+Attribute adapted figures, tables, equations, and reused code.
+-->
