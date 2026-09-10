@@ -129,9 +129,9 @@ Some standard benchmarks have emerged:
 
 ---
 
-## 💬 My Approach to LLM Evaluation
+## 💬 A practical evaluation stack
 
-In my own projects (like document Q&A or multi-agent generative AI), I often mix:
+For systems such as document Q&A or multi-agent generative AI, a practical evaluation stack can combine:
 
 - 🔍 **Hard metrics** (accuracy, F1) for structured data extraction
 - 🧪 **Prompt-based unit tests** using `OpenAI Evals` or `LangChain`
