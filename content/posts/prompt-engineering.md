@@ -16,7 +16,7 @@ It's not just about "asking a question." It's about how you phrase it, structure
 
 ## 🧠 What Is Prompt Engineering?
 
-**Prompt engineering** is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs. This technique complements approaches such as [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) and [LoRA](https://arxiv.org/abs/2106.09685) fine-tuning.
+**Prompt engineering** is the process of designing effective input prompts that guide large language models (LLMs) like GPT-4 to produce accurate, helpful, or creative outputs. This technique complements approaches such as [retrieval-augmented generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) and [LoRA](https://arxiv.org/abs/2106.09685) fine-tuning.
 
 It's half science, half art. A good prompt can mean the difference between:
 
@@ -39,7 +39,7 @@ Here's why good prompts matter:
 - 🧠 **Reasoning**: Get step-by-step logic, not just surface-level answers.  
 - 📦 **Structured output**: Useful for coding, data extraction, APIs.  
 
-Especially in RAG (Retrieval-Augmented Generation) or enterprise systems, a well-crafted prompt is *mission-critical*.
+Especially in retrieval-augmented generation (RAG) or enterprise systems, a well-crafted prompt is *mission-critical*.
 
 ---
 
@@ -95,7 +95,7 @@ Here are some battle-tested ideas I've used in production:
 
 ## 🧠 My Use Cases
 
-In my work with **document intelligence** and **GenAI platforms**, prompt engineering is everywhere:
+In my work with **document intelligence** and **generative AI platforms**, prompt engineering is everywhere:
 
 - **PDF to JSON Extraction**: Prompts that extract structured data from invoices, policies, etc.
 - **RAG Pipelines**: Combine vector similarity + prompt tuning for better fact-grounding.
@@ -115,7 +115,7 @@ Here are some tools to experiment with prompt engineering:
 - [LangChain](https://www.langchain.com/)
 - [Promptable](https://www.promptable.ai/)
 - [LlamaIndex](https://www.llamaindex.ai/)
-- [HuggingFace](https://huggingface.co/) – model hub and Transformers library
+- [Hugging Face](https://huggingface.co/) – model hub and Transformers library
 
 ---
 
