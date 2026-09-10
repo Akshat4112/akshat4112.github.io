@@ -267,7 +267,10 @@ Before setting `draft: false`, verify:
 
 - [ ] The opening states a concrete question and central conclusion.
 - [ ] The scope and important terms are explicit.
-- [ ] Technical claims are correct and supported by primary sources where possible.
+- [ ] Every material claim has a relevant citation placed in the same sentence.
+- [ ] Each source directly supports the nearby claim and is primary or official where possible.
+- [ ] Citation labels and reference entries follow the standard format.
+- [ ] Links are stable, open correctly, and identify versions or dates when needed.
 - [ ] Equations define every symbol and render correctly.
 - [ ] Code is valid, focused, and necessary.
 - [ ] Comparisons specify task, data, metric, and conditions.
