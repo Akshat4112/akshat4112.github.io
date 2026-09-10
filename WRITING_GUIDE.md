@@ -90,16 +90,76 @@ The standard should create consistency without making every article sound identi
 
 Choose the variation that matches the article rather than forcing every heading into every post.
 
-## Voice and wording
+## Voice and style
 
-- Write in clear, direct English with an engineering and research perspective.
-- Prefer specific nouns and verbs over promotional adjectives.
-- Use first person only for work, decisions, or observations that are genuinely yours.
-- Distinguish fact, interpretation, and recommendation.
-- Expand acronyms on first use.
-- Keep paragraphs focused on one idea.
-- Replace “obviously,” “simply,” and “clearly” with the missing explanation.
-- Avoid “revolutionary,” “game-changing,” “state of the art,” and similar wording unless rigorously supported.
+### House voice
+
+- Write as an applied AI engineer and researcher: direct, measured, technically curious, and specific.
+- Lead with the technical substance rather than broad claims about the importance of AI.
+- Prefer evidence, concrete examples, and clearly labelled personal observations over slogans.
+- Use first person only for work, decisions, experiments, or observations that are genuinely yours.
+- Distinguish fact, interpretation, inference, and recommendation. Signal uncertainty rather than hiding it.
+- Use rhetorical questions only when one question genuinely organises the article. Avoid chains of questions as an opening device.
+- Keep paragraphs focused on one idea and vary sentence length without becoming conversational or promotional.
+- Replace “obviously,” “simply,” and “clearly” with the explanation the reader needs.
+- Avoid “revolutionary,” “game-changing,” “cutting-edge,” and similar language. Use “state of the art” only with a dated, task-specific benchmark.
+
+### English variant and spelling
+
+Use British English throughout prose:
+
+- `behaviour`, `modelling`, `optimisation`, `analyse`, `organisation`, `centre`, and `standardise`;
+- `labelled` and `labelling`;
+- `licence` as a noun and `license` as a verb;
+- `program` for software, even in British English.
+
+Keep the official spelling of product names, paper titles, APIs, code, commands, and direct quotations. Do not rewrite identifiers to match the house style.
+
+Use the Oxford comma when it removes ambiguity. Use numerals for measurements, benchmark results, model sizes, token counts, dates, and versions.
+
+### Titles and headings
+
+- Use title case for article titles.
+- Use sentence case for section and subsection headings.
+- Do not use emojis in titles or headings.
+- Prefer short, descriptive headings over slogans or teaser copy.
+- Use a question heading only when the section directly answers it.
+- Avoid terminal punctuation except for genuine questions.
+- Do not use generic headings such as “Introduction”, “Deep dive”, “The future”, or “Final thoughts” when a topic-specific heading is available.
+- Number headings only when the order is part of the explanation or the article is long enough to benefit from sequence markers.
+
+### Technical terminology
+
+Use these forms consistently:
+
+| Preferred form | Guidance |
+|---|---|
+| artificial intelligence (AI) | Expand on first use when the audience may not know the abbreviation. |
+| large language model (LLM) | Lower case in prose; plural is LLMs, without an apostrophe. |
+| retrieval-augmented generation (RAG) | Hyphenate `retrieval-augmented`; expand on first use. |
+| key-value (KV) cache | Hyphenate `key-value`; use `KV cache` afterwards. |
+| fine-tune / fine-tuning | `fine-tune` is the verb; `fine-tuning` is the noun or adjective. |
+| open source / open-source | Use `open source` as a noun and `open-source` before a noun. |
+| machine learning | Usually unhyphenated; use `machine-learning` only when needed as a compound adjective. |
+| dataset | One word. |
+| pretrained | One word, following common machine-learning usage. |
+| inference time / inference-time | Use the hyphenated form only before a noun, as in `inference-time cost`. |
+| real time / real-time | Use `real-time` before a noun; otherwise use `in real time`. |
+| ground truth / ground-truth | Use the hyphenated form only before a noun. |
+| zero-shot / few-shot | Hyphenate when used as adjectives. |
+| agentic AI | Lower case `agentic` unless it begins a sentence or heading. Define the concrete agent behaviour. |
+
+Preserve the official capitalisation of model and product names. Prefer precise system terms over human analogies: write `generates`, `retrieves`, `predicts`, or `stores` instead of `thinks`, `knows`, `understands`, or `remembers` unless the article defines those terms operationally.
+
+### Formatting mechanics
+
+- Expand an abbreviation on its first meaningful use in each standalone article.
+- Use backticks for code identifiers, commands, configuration keys, and literal values—not for emphasis.
+- Italicise a new conceptual term only when introducing it; use plain text afterwards.
+- Use bold sparingly for labels or distinctions, not to make whole sentences louder.
+- Write link text that describes the destination; avoid “click here”.
+- Introduce a list with a complete sentence and keep list items grammatically parallel.
+
 
 ## Front matter standard
 
