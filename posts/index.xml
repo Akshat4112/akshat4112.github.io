@@ -74,14 +74,14 @@
       <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
-      <description>A technical introduction to Retrieval-Augmented Generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
+      <description>A technical introduction to retrieval-augmented generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
     </item>
     <item>
       <title>Understanding Attention in Transformers</title>
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>A deep dive into self-attention — how it works, why it powers modern Transformers, and the attention variants used in GPT, BERT, and LLaMA.</description>
+      <description>A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and Llama.</description>
     </item>
     <item>
       <title>Model Extraction Attacks Explained</title>

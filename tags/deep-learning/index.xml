@@ -39,7 +39,7 @@
       <link>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</guid>
-      <description>A practical guide to building deep learning models with TensorFlow 2.0, published by Packt Publishing.</description>
+      <description>A practical video course on building deep learning models with TensorFlow 2.0, published by Packt.</description>
     </item>
     <item>
       <title>How Do You Evaluate LLMs?</title>
@@ -53,7 +53,7 @@
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>A deep dive into self-attention — how it works, why it powers modern Transformers, and the attention variants used in GPT, BERT, and LLaMA.</description>
+      <description>A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and Llama.</description>
     </item>
     <item>
       <title>Model Extraction Attacks Explained</title>
