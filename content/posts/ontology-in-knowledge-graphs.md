@@ -104,9 +104,9 @@ It's honestly been a game-changer for building **explainable AI** systems.
 
 Ontologies are the **brain** behind a knowledge graph's structure. They bring order to the chaos of data and let machines "understand" concepts and their context. If you're venturing into semantic search, personalized recommendations, RAG systems, or even smart assistants — investing time in ontology design is *absolutely worth it*.
 
-Feel free to ping me if you're designing your first ontology or need help wrangling one into your GenAI pipeline. Happy graphing! 🔍🧠
+Feel free to ping me if you're designing your first ontology or need help wrangling one into your generative AI pipeline. Happy graphing! 🔍🧠
 
 ---
 
-*More posts on knowledge graphs, vector search, and GenAI systems coming soon.*  
+*More posts on knowledge graphs, vector search, and generative AI systems coming soon.*  
 — **Akshat**
