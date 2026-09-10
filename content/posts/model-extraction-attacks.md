@@ -137,9 +137,9 @@ for any neighbouring datasets differing by one example. This limits the informat
 
 ---
 
-## 🔬 My Research Context
+## 🔬 A practical assessment pattern
 
-At Validaitor, I built **model security assessment workflows** including copycat and model-stealing attack simulations. This involved evaluating how many queries a surrogate needed to reach target fidelity across different model types (classifiers, embedding models, LLMs), and implementing watermarking and fingerprinting as countermeasures. The most practically effective defence was a combination of output truncation (returning only top-3 probabilities) and rate limiting — neither alone was sufficient for a determined adversary.
+A model-security assessment can combine copycat and model-stealing simulations with measurements of query cost, surrogate fidelity, and transferability across model types. Watermarking, fingerprinting, output controls, and rate limits should be evaluated as separate safeguards and in combination; their effectiveness depends on the attacker model and deployment constraints.
 
 ---
 
