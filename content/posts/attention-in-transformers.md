@@ -6,13 +6,13 @@ tags: ["transformers", "attention", "deep-learning", "nlp", "self-attention", "n
 weight: 112
 math: true
 showtoc: true
-description: "A deep dive into self-attention — how it works, why it powers modern Transformers, and the attention variants used in GPT, BERT, and LLaMA."
+description: "A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and LLaMA."
 ---
 
 When people say "[Transformers](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)) revolutionized NLP," what they *really* mean is:
 > **Attention** revolutionized NLP.
 
-From GPT and [BERT](https://arxiv.org/abs/1810.04805) to [LLaMA](https://github.com/meta-llama/llama) and Claude, **[attention mechanisms](https://en.wikipedia.org/wiki/Attention_(machine_learning))** are the beating heart of modern large language models.
+From GPT and [BERT](https://arxiv.org/abs/1810.04805) to [Llama](https://github.com/meta-llama/llama) and Claude, **[attention mechanisms](https://en.wikipedia.org/wiki/Attention_(machine_learning))** are the beating heart of modern large language models.
 
 But what exactly is attention? Why is it so powerful? And how many types are there?
 
@@ -116,7 +116,7 @@ Used in **Performer** ([Choromanski et al., 2020](https://arxiv.org/abs/2009.147
 
 ## 🏗️ Attention Block in Transformers
 
-Each Transformer layer consists of:
+Each transformer layer consists of:
 
 1. **Multi-head Attention**
 2. **Add & Layer Norm**
