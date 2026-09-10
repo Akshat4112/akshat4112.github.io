@@ -161,6 +161,83 @@ Preserve the official capitalisation of model and product names. Prefer precise 
 - Introduce a list with a complete sentence and keep list items grammatically parallel.
 
 
+## Citation standard
+
+Citations should let a technically informed reader verify a claim without guessing which source supports it.
+
+### What requires a citation
+
+Cite the source immediately after:
+
+- a quantitative result, benchmark, model size, cost, latency, date, or other measured value;
+- a claim about what a paper introduced, demonstrated, or concluded;
+- a comparison between models, methods, datasets, or systems;
+- a historical attribution or priority claim;
+- behaviour attributed to a product, API, library, model, or dataset;
+- a time-sensitive fact, version-specific feature, or current limitation;
+- a borrowed equation, diagram, table, taxonomy, code fragment, or adapted visual.
+
+Common mathematical operations and genuinely common background knowledge do not need citations. When uncertain, cite the source.
+
+### Source hierarchy
+
+Use the strongest available source in this order:
+
+1. **Primary research:** the original paper, technical report, standard, dataset paper, or benchmark specification.
+2. **Official technical material:** product documentation, API references, release notes, model cards, dataset cards, or maintained repositories.
+3. **Reputable secondary analysis:** surveys, textbooks, or technical articles used for context or synthesis.
+
+Do not use Wikipedia, search-result snippets, content farms, or vendor marketing pages to support a material technical claim when a primary source exists. A vendor's official documentation is appropriate for claims about that vendor's own product, but not as neutral evidence that it is superior.
+
+### Inline citation format
+
+- Place the citation in the same sentence as the claim, normally at the end.
+- Use descriptive linked text rather than a raw URL or an unexplained numeric marker.
+- For papers, use linked author-year wording such as `[Ho et al. (2020)](https://arxiv.org/abs/2006.11239)` or integrate the linked paper title naturally into the sentence.
+- For documentation, link the product or page name, for example `[PyTorch documentation](https://pytorch.org/docs/stable/)`.
+- When several sources support one claim, cite only the smallest set needed and explain disagreements rather than hiding them.
+- Never attach one citation to a paragraph containing several unrelated claims.
+
+Example:
+
+> Classifier-free guidance combines conditional and unconditional predictions without requiring a separate classifier ([Ho and Salimans, 2022](https://arxiv.org/abs/2207.12598)).
+
+### Reference-list format
+
+Use a `## References` section when an article relies on multiple sources. List sources in order of first appearance and use one of these formats:
+
+- Paper: `Author(s), [Paper title](stable URL), venue or archive, year.`
+- Documentation: `Organisation, [Page title](stable URL), version or date when relevant.`
+- Dataset or model: `Creator or organisation, [Dataset or model name](stable URL), version or release date.`
+- Software: `Maintainer or organisation, [Repository or release](stable URL), version or commit when relevant.`
+
+Do not duplicate the same source under slightly different labels. Preserve official titles and author names.
+
+### Stable links and versions
+
+Prefer:
+
+- a DOI or arXiv abstract page for a paper;
+- an official documentation permalink or versioned page;
+- a tagged release or commit for software behaviour tied to a version;
+- an official model card, dataset card, or archival identifier;
+- the original publisher or institution for standards and reports.
+
+Remove tracking parameters. Avoid temporary share links, search-result URLs, link shorteners, and copied PDF mirrors. Add a version, release date, or access date when the source can change and the claim depends on its current state.
+
+### Figures, tables, and code
+
+- Use `Source: [Name](URL).` for an unchanged visual.
+- Use `Adapted from [Author or source](URL).` when the presentation has been modified.
+- State `Figure by the author.` when provenance would otherwise be unclear.
+- Include descriptive alt text that explains the information conveyed, not merely the visual appearance.
+- For reused code, link to the exact repository file, release, or commit and respect its licence.
+
+### Verification rule
+
+Before publishing, open every cited source and confirm that it supports the exact nearby claim. Check the relevant method, experiment, table, version, or documentation section—not only the title or abstract. If the source provides weaker or narrower evidence than the prose, narrow the claim.
+
+
 ## Front matter standard
 
 Every post should include:
