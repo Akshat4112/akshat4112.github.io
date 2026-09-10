@@ -54,7 +54,7 @@ params:
   profileMode:
     enabled: true
     title: "Akshat Gupta" # optional default will be site title
-    subtitle: "Senior ML Engineer | Agentic AI & LLM Systems | Production GenAI"
+    subtitle: "Applied AI Engineer | Agentic AI & LLM Systems | Production AI"
     imageUrl: "/akshat_gupta.jpg" # optional
     imageTitle: "Akshat Gupta" # optional
     imageWidth: 120 # custom size
