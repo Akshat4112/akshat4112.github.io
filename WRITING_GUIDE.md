@@ -55,6 +55,21 @@ Support important claims with the strongest available evidence:
 
 Code examples should be minimal, valid, and directly connected to the argument. State benchmark conditions, datasets, baselines, and evaluation settings when reporting results.
 
+#### Choose one useful learning artifact
+
+Each major technical article should include at least one original artifact that helps the reader verify, apply, or reason about the idea. Choose the smallest format that fits the claim:
+
+| Reader need | Preferred artifact |
+|---|---|
+| Understand a sequence or architecture | Labelled diagram or compact flow |
+| Follow a calculation | Worked numerical example with intermediate steps |
+| Compare alternatives | Decision or trade-off table with explicit dimensions |
+| Reproduce a mechanism | Minimal executable code with stated inputs and output |
+| Evaluate a system | Metric definition, test slice, baseline, and results table |
+| Recognise risk | Concrete failure case with cause, detection, and mitigation |
+
+Do not add an artifact merely to decorate the page. Introduce what question it answers, label illustrative data clearly, define the conditions behind measured data, and explain the conclusion immediately after it. Prefer HTML, Markdown, mathematics, and syntax-highlighted code over raster screenshots when the content is structural or textual.
+
 ### 5. Evaluation and trade-offs
 
 Explain how success is measured and why those metrics are appropriate. Compare alternatives across relevant dimensions such as accuracy, latency, cost, memory, robustness, maintainability, privacy, and operational complexity.
@@ -313,6 +328,8 @@ Before setting `draft: false`, verify:
 - [ ] Links are stable, open correctly, and identify versions or dates when needed.
 - [ ] Equations define every symbol and render correctly.
 - [ ] Code is valid, focused, and necessary.
+- [ ] The article contains at least one useful original artifact or worked example.
+- [ ] Illustrative data is labelled; measured data includes its source, conditions, and baseline.
 - [ ] Comparisons specify task, data, metric, and conditions.
 - [ ] Limitations and failure modes are concrete.
 - [ ] Figures have descriptive alt text and attribution.

@@ -62,6 +62,36 @@ Here's a micro-ontology in plain English:
 
 Now, when you build your graph, this ontology acts as a **guardrail**. If someone tries to say a *Product works for a Person*, the system throws a semantic red flag 🚩
 
+### Worked example: inference is not validation
+
+OWL and SHACL answer different questions. The following Turtle fragment states that `worksFor` links a `Person` to a `Company`:
+
+```turtle
+:worksFor a owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Company .
+```
+
+Under OWL's open-world semantics, this declaration can support inference. It does not necessarily reject a record just because information is missing or unexpectedly typed. A SHACL shape can express a validation rule explicitly:
+
+```turtle
+:PersonShape a sh:NodeShape ;
+  sh:targetClass :Person ;
+  sh:property [
+    sh:path :worksFor ;
+    sh:class :Company ;
+    sh:maxCount 1
+  ] .
+```
+
+| Need | Appropriate mechanism |
+|---|---|
+| Infer types or relationships from axioms | RDFS or OWL reasoning |
+| Check required fields, cardinality, or allowed values | SHACL validation |
+| Retrieve matching graph patterns | SPARQL query |
+
+This distinction matters in production: a reasoner expands what follows from the graph, while a validator checks whether data conforms to an application contract.
+
 ---
 
 ## 🧰 Common Ontology Languages & Tools

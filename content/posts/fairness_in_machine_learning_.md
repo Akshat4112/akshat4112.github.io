@@ -40,7 +40,18 @@ Addressing unfairness involves strategies across the ML pipeline:
 - **Improved Evaluation**: Using specific metrics to assess fairness in different contexts.
 - **Causal Modeling**: Employing [causal inference](https://en.wikipedia.org/wiki/Causal_inference) techniques to understand and mitigate biases.
 
-## Real-World Example: Bias in Digital Recruitment Advertising
+## Worked example: inspect errors by group
+
+Suppose a screening model is evaluated on two equally sized groups. The figures below are illustrative, not measurements from a deployed system.
+
+| Group | True positives | False negatives | False positives | True negatives | TPR | FPR | Selection rate |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| A | 36 | 4 | 12 | 48 | 90% | 20% | 48% |
+| B | 24 | 16 | 6 | 54 | 60% | 10% | 30% |
+
+The aggregate accuracy is not enough to reveal the difference. Group B has the lower false-positive rate, but also a much lower true-positive rate and selection rate. A team must decide which error matters in the application, examine uncertainty and sample size, and document the trade-off. Changing a threshold can improve one criterion while worsening another; there is no context-free fairness metric that resolves the policy decision automatically.
+
+## Example: bias in digital recruitment advertising
 
 A notable instance highlighting the need for fairness in AI was observed in digital recruitment advertising. An algorithm disproportionately showed high-salary job ads to men over women, influenced by biased historical data that reflected existing employment trends. This case underscores the importance of evaluating training data for biases and the necessity for ongoing algorithmic assessment to avoid reinforcing social inequalities.
 

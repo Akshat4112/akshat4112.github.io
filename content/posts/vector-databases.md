@@ -53,6 +53,27 @@ Here's a simplified flow:
 
 This is called **[Approximate Nearest Neighbor (ANN)](https://en.wikipedia.org/wiki/Nearest_neighbor_search#Approximate_nearest_neighbor)** search — the core engine behind vector databases.
 
+## Worked example: evaluate retrieval, not the database brand
+
+Assume a question has three relevant passages in a labelled test set. A retriever returns five passages, two of which are relevant:
+
+```text
+relevant passages: {A, C, F}
+retrieved top 5:   {A, B, C, D, E}
+```
+
+Then `Recall@5 = 2/3` and `Precision@5 = 2/5`. If passage `A` is ranked first and `C` third, ranking-aware metrics such as mean reciprocal rank or nDCG can capture that ordering. For a RAG system, retrieval quality should be evaluated separately from answer faithfulness and answer correctness.
+
+| Change | Likely benefit | Possible cost |
+|---|---|---|
+| Increase `k` | Higher recall | More latency, tokens, and distractors |
+| Add metadata filters | Better scope and access control | Relevant items may be excluded by bad metadata |
+| Add keyword retrieval | Better exact-name and identifier matching | More fusion and tuning complexity |
+| Use a reranker | Better top-result ordering | Extra model latency and cost |
+| Compress the index | Lower memory use and faster search | Lower nearest-neighbour recall |
+
+The practical selection criterion is therefore not “which vector database is best?” but “which configuration meets the required retrieval quality, filtering correctness, update rate, latency, and operating cost on representative data?”
+
 ---
 
 ## 📦 Popular Vector Databases

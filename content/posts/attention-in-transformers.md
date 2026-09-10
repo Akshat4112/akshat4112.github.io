@@ -49,6 +49,18 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\rig
 
 📖 Citation: [Vaswani et al., 2017](https://arxiv.org/abs/1706.03762) (Attention is All You Need)
 
+### Worked example: one query, three keys
+
+Assume one query produces scaled dot-product scores of `[1.2, 0.3, -0.4]` against the keys for three tokens. Softmax converts those scores into approximately `[0.62, 0.25, 0.13]`.
+
+| Token | Scaled score | Attention weight | Contribution to the output |
+|---|---:|---:|---|
+| `policy` | 1.2 | 0.62 | Dominant value vector |
+| `document` | 0.3 | 0.25 | Secondary context |
+| `yesterday` | -0.4 | 0.13 | Smaller, but not zero |
+
+The output for this query is therefore `0.62 V_policy + 0.25 V_document + 0.13 V_yesterday`. This small example shows two useful properties: attention is a weighted mixture rather than a hard lookup, and a high weight does not by itself prove that a token caused the final prediction.
+
 ---
 
 ## 🔁 Multi-Head Attention

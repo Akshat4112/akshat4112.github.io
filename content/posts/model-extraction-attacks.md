@@ -141,6 +141,21 @@ for any neighbouring datasets differing by one example. This limits the informat
 
 A model-security assessment can combine copycat and model-stealing simulations with measurements of query cost, surrogate fidelity, and transferability across model types. Watermarking, fingerprinting, output controls, and rate limits should be evaluated as separate safeguards and in combination; their effectiveness depends on the attacker model and deployment constraints.
 
+### Threat-model worksheet
+
+Before running an extraction test, write down the observable interface and the evidence that would count as success. This prevents a high surrogate task score from being mistaken for proof that the underlying model was copied.
+
+| Question | Example observation | Why it matters |
+|---|---|---|
+| What can the caller observe? | Top-1 label, confidence vector, generated text, latency | Determines how much signal each query exposes |
+| What can the caller vary? | Arbitrary inputs, batch size, temperature, system prompt | Defines the effective query surface |
+| What is the query budget? | Requests, tokens, time, identities, cost | Makes attack feasibility measurable |
+| What is being copied? | Task behaviour, decision boundary, watermark, or parameters | Separates functional imitation from weight theft |
+| How is fidelity tested? | Held-out natural inputs plus adversarial slices | Avoids evaluating only on the attacker's query distribution |
+| Which controls are active? | Rate limits, output reduction, abuse detection, authentication | Supports defence-in-depth analysis |
+
+An assessment should report fidelity as a function of query cost and compare it with a baseline trained without oracle access. It should also test legitimate-user utility after each defence is enabled.
+
 ---
 
 ## 🧠 Final Thoughts
