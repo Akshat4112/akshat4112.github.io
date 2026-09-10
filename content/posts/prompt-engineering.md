@@ -45,7 +45,7 @@ Especially in retrieval-augmented generation (RAG) or enterprise systems, a well
 
 ## ✍️ Common Prompt Patterns
 
-Here are a few templates I've used successfully:
+Here are a few reusable prompt templates:
 
 ### 1. **Role-based prompting**
 
@@ -83,7 +83,7 @@ Summarize the following PDF in JSON format with keys: title, summary, and top_3_
 
 ## 💥 Tips to Improve Your Prompts
 
-Here are some battle-tested ideas I've used in production:
+Here are some practical techniques to test:
 
 - ✅ **Be specific**: Vagueness = unpredictable output  
 - ✅ **Define format**: JSON, markdown, table, list? Ask for it explicitly  
@@ -93,9 +93,9 @@ Here are some battle-tested ideas I've used in production:
 
 ---
 
-## 🧠 My Use Cases
+## 🧠 Applied use cases
 
-In my work with **document intelligence** and **generative AI platforms**, prompt engineering is everywhere:
+In **document intelligence** and **generative AI systems**, prompts commonly support:
 
 - **PDF to JSON Extraction**: Prompts that extract structured data from invoices, policies, etc.
 - **RAG Pipelines**: Combine vector similarity + prompt tuning for better fact-grounding.
