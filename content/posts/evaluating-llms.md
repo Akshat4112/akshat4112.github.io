@@ -1,153 +1,266 @@
 ---
-title: "How Do You Evaluate LLMs?"
+title: "How Do You Evaluate LLM Systems?"
 date: 2024-06-15T09:00:00+01:00
+lastmod: 2026-09-10T00:00:00+00:00
 draft: false
-tags: ["llm", "evaluation", "benchmarks", "ai", "nlp", "deep-learning"]
+tags: ["llm", "evaluation", "rag", "agents", "production-ai"]
 weight: 110
 math: true
 showtoc: true
-description: "A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality."
+description: "A production-oriented framework for evaluating LLM applications across model quality, retrieval, agent behaviour, safety, latency, and cost."
 ---
 
-As large language models (LLMs) become central to search, productivity tools, education, and coding, **evaluating them** is no longer optional. You *have* to ask:  
-> Is this model reliable? Accurate? Safe? Biased? Smart enough for my task?
+A public benchmark can help compare foundation models. It cannot tell you whether a document assistant retrieves the right policy, whether an agent calls a tool with safe arguments, or whether a release stays within its latency budget.
 
-But here's the catch: LLMs are *not* deterministic functions. They generate free-form text, can be right in one sentence and wrong in the next — and vary wildly depending on the prompt.
+For an applied AI system, evaluation is a decision process:
 
-So how do we evaluate them meaningfully?
+> Given a defined workload and risk tolerance, is this version safe and useful enough to release?
 
----
+That question changes the unit of evaluation. The object under test is not only the model. It is the complete system: prompts, retrieval, tools, orchestration, guardrails, model configuration, and user interface.
 
-## 🧪 Why Evaluate LLMs?
+This article develops a practical evaluation workflow for document-heavy and agentic applications. It covers dataset design, component metrics, human and model-based grading, failure analysis, uncertainty, and deployment gates.
 
-Good evaluation helps answer:
+## Start with the product decision
 
-- ✅ Is the model **aligned** with user goals?
-- ✅ Does it **generalize** to unseen prompts?
-- ✅ Is it **factual**, **helpful**, and **harmless**?
-- ✅ Is it better than baseline or competitor models?
+Before choosing a metric, write down the decision the evaluation must support. Typical decisions include:
 
-Whether you’re fine-tuning a model, comparing open-source LLMs, or releasing an AI feature — you need **a systematic way to measure quality**.
+- selecting a model for a fixed workflow;
+- changing a prompt, retriever, or reranker;
+- deciding whether a new agent policy can be released;
+- checking whether a cost optimisation causes unacceptable regressions; or
+- monitoring whether production behaviour has drifted.
 
----
+Each decision needs an explicit evaluation contract:
 
-## 🎯 Types of Evaluation
+| Contract field | Example for a policy assistant |
+|---|---|
+| Population | English questions from claims handlers |
+| Required behaviour | Answer from approved policy documents and cite supporting passages |
+| Critical failures | Unsupported answer, wrong policy version, disclosure of restricted content |
+| Quality target | At least 95% citation correctness on critical cases |
+| Operational target | p95 latency below 5 seconds and mean cost below £0.03 per request |
+| Comparison rule | No critical-slice regression; statistically credible overall improvement |
 
-There are three main types of evaluation used for LLMs:
+This prevents a common failure: optimising an easy aggregate score while the behaviour that matters to users gets worse.
 
-### 1. **Intrinsic Evaluation** (automatic)
+## Build a representative evaluation set
 
-These are computed automatically without human judgment.
+An evaluation set should model the workload, not merely provide a convenient collection of questions. I organise examples into four groups.
 
-- **Perplexity**: Measures how well a model predicts the next word (lower = better).  
-  Not ideal for generation tasks, but useful during pretraining.
+1. **Typical cases** represent the most frequent tasks and document types.
+2. **Boundary cases** contain long documents, ambiguous requests, conflicting evidence, tables, OCR noise, or unusual tool outputs.
+3. **Critical cases** exercise behaviour whose failure has a high consequence, such as access control, refusal, calculations, or policy eligibility.
+4. **Known regressions** preserve production incidents and bugs as permanent tests.
 
-- **[BLEU](https://en.wikipedia.org/wiki/BLEU) / ROUGE / METEOR**: Compare generated output to a reference.
-  Best for short-form tasks like translation or summarization.
-  [BLEU paper](https://aclanthology.org/P02-1040/)
+Each example should carry metadata that supports slicing: task, language, document type, difficulty, source quality, user group, risk level, and expected behaviour. A single overall average can otherwise hide a severe regression in a small but important group.
 
-- **Exact Match / F1 Score**: Used in QA tasks with ground truth answers.
+Keep three datasets with different purposes:
 
-- **BERTScore**: Embedding-based similarity using [BERT](https://arxiv.org/abs/1810.04805). Good for semantics.
+- a **development set** for prompt and pipeline iteration;
+- a **release set** that is not used during routine tuning; and
+- a **production sample** that is periodically reviewed for drift and new failure modes.
 
-> 🚫 Problem: These scores often fail to capture nuance, creativity, or reasoning.
+Public benchmarks remain useful for broad capability checks, but they can be affected by test-set contamination and may not resemble the application workload [1, 2]. Treat them as supporting evidence rather than the release criterion.
 
----
+## Decompose the system before scoring it
 
-### 2. **Extrinsic Evaluation** (human-like)
+When a generated answer is wrong, a single end-to-end score does not identify the cause. The failure could be retrieval, generation, tool execution, orchestration, or presentation. Evaluate each boundary separately.
 
-This focuses on how LLMs perform in downstream tasks.
+### Model and generation layer
 
-- **Task success**: Did the model complete the task (e.g., booking a flight, answering a tax question)?
-- **User satisfaction**: Useful in production systems or chatbots.
-- **A/B testing**: Compare model variants in live usage.
-- **Win-rate comparisons**: Common in model leaderboards.
+Use deterministic checks wherever the task has an objectively verifiable result:
 
-These are more reflective of real-world performance.
+- exact match or token-level F1 for short answers;
+- schema validity and field-level precision, recall, and F1 for extraction;
+- executable unit tests for code;
+- numerical tolerance for calculations; and
+- citation entailment for evidence-backed answers.
 
----
+Free-form quality needs a rubric. Define observable criteria such as correctness, completeness, relevance, instruction following, and calibrated abstention. Avoid one vague “quality” score: two responses with the same total can fail for very different reasons.
 
-### 3. **Human Evaluation**
+### Retrieval layer
 
-Still the gold standard for nuanced tasks.
+For retrieval-augmented generation (RAG), evaluate retrieval independently from the answer. Useful metrics include:
 
-Human judges evaluate:
+\[
+\text{Recall@}k = \frac{\text{relevant items retrieved in top }k}{\text{all relevant items}}
+\]
 
-- 🌟 Relevance
-- 🌟 Factuality
-- 🌟 Fluency
-- 🌟 Helpfulness
-- 🌟 Harmlessness (toxicity, bias)
+and
 
-Usually done via Likert scale or pairwise comparison. Costly, but high-quality.
+\[
+\text{Precision@}k = \frac{\text{relevant items retrieved in top }k}{k}.
+\]
 
----
+Also measure whether the required evidence appears at all, where it ranks, and how much irrelevant context is supplied. Then evaluate the generator for:
 
-## 🧑‍⚖️ Benchmarks for LLMs
+- **faithfulness**: are answer claims supported by the retrieved context?
+- **answer correctness**: does the answer satisfy the reference or rubric?
+- **citation correctness**: do citations point to passages that support the associated claims?
+- **abstention quality**: does the system decline when evidence is missing or contradictory?
 
-Some standard benchmarks have emerged:
+RAGAS formalised several reference-free metrics around retrieval relevance, faithfulness, and answer quality [3]. Such metrics can accelerate iteration, but they should be calibrated for the domain rather than accepted as ground truth.
 
-- [**MMLU**](https://github.com/hendrycks/test) (Massive Multitask Language Understanding)  
-  Covers math, medicine, law, history — tests reasoning over 57 domains.
+### Agent layer
 
-- [**HELLASWAG**](https://rowanzellers.com/hellaswag/)  
-  Commonsense inference for fill-in-the-blank scenarios.
+An agent can reach a correct final answer through an unsafe, expensive, or irreproducible trajectory. Record and score the complete trace:
 
-- [**TruthfulQA**](https://arxiv.org/abs/2109.07958)  
-  Measures how often LLMs give *truthful* answers to tricky questions.
+- tool selection;
+- argument validity;
+- action order;
+- state transitions;
+- policy and permission compliance;
+- recovery after tool failure;
+- number of model and tool calls; and
+- final task completion.
 
-- [**BIG-bench**](https://github.com/google/BIG-bench)  
-  Collaborative benchmark of 200+ tasks testing model generalization.
+AgentBench demonstrates why interactive environments reveal reasoning and decision-making failures that static prompts miss [4]. For a production agent, add invariants that are specific to the application. For example: a write action must never occur before confirmation, restricted documents must not enter the model context, and a failed tool call must not be reported as success.
 
-- [**MT-Bench**](https://github.com/lm-sys/FastChat/blob/main/docs/evaluation.md#mt-bench)  
-  Multi-turn chat evaluation developed by LMSys for Vicuna and Chatbot Arena.
+## Use a hierarchy of evaluators
 
-> Bonus: [**Chatbot Arena**](https://chat.lmsys.org) does live **crowd-sourced pairwise** model evaluation.
+No evaluator is sufficient for every output. Use the cheapest reliable method for each criterion.
 
----
+### 1. Deterministic checks
 
-## 📏 Common Metrics
+Code should verify schemas, calculations, citations, permissions, tool arguments, latency, and cost. These checks are reproducible and should form the base of the suite.
 
-| Metric         | Use Case                     | Notes                              |
-|----------------|------------------------------|-------------------------------------|
-| Perplexity     | Pretraining                  | Lower = better                      |
-| BLEU/ROUGE     | Translation/Summarization    | Needs reference outputs             |
-| BERTScore      | Semantics                    | Works better with long-form tasks   |
-| Win Rate       | Pairwise eval                | Human judges or ranked voting       |
-| F1 / EM        | QA tasks                     | Binary metrics, hard to scale       |
-| GPT-4 Eval     | Self-evaluation              | Biased but surprisingly useful      |
+### 2. Human review
 
----
+Human reviewers are necessary for ambiguous, high-risk, or genuinely subjective criteria. Give reviewers a written rubric, examples of each score, and an explicit option for “cannot determine”. Measure agreement rather than assuming that one annotation is correct.
 
-## 🔧 Tools for Evaluation
+For categorical labels, Cohen's kappa for two raters is:
 
-- [**OpenAI Evals**](https://github.com/openai/evals) – framework for building evals for GPT  
-- [**lm-eval-harness**](https://github.com/EleutherAI/lm-evaluation-harness) – benchmark open-source LLMs  
-- [**TruLens**](https://github.com/truera/trulens) – feedback + eval framework for LLM apps  
-- [**Promptfoo**](https://github.com/promptfoo/promptfoo) – A/B prompt testing tool  
-- [**LangSmith**](https://www.langchain.com/langsmith) – Track, debug, and eval LangChain apps  
+\[
+\kappa = \frac{p_o - p_e}{1-p_e},
+\]
 
----
+where \(p_o\) is observed agreement and \(p_e\) is agreement expected by chance. Low agreement often means the rubric or task is underspecified, not that the reviewers are careless.
 
-## 💬 A practical evaluation stack
+### 3. Model-based judges
 
-For systems such as document Q&A or multi-agent generative AI, a practical evaluation stack can combine:
+An LLM judge is useful for high-volume, rubric-based screening. It is not an independent source of truth. The MT-Bench study found strong agreement with human preferences in its setting, while also documenting position, verbosity, self-enhancement, and reasoning biases [5].
 
-- 🔍 **Hard metrics** (accuracy, F1) for structured data extraction
-- 🧪 **Prompt-based unit tests** using `OpenAI Evals` or `LangChain`
-- 👨‍👩‍👧 **Manual grading** for edge cases and critical flows
-- 📊 **Leaderboards** when comparing [Llama](https://github.com/meta-llama/llama), Mixtral, GPT-4, Claude, etc.
+Before using a judge in a release gate:
 
-For production? **Human-in-the-loop testing** is key — especially for regulated or high-risk domains.
+1. Create a human-labelled calibration set containing both ordinary and difficult cases.
+2. Freeze the judge model, prompt, rubric, decoding settings, and output schema.
+3. Measure judge–human agreement for every important slice.
+4. Inspect disagreements and revise the rubric before increasing automation.
+5. Recalibrate after changing the judge, prompt, domain, or response distribution.
 
----
+For pairwise grading, swap response order and require the decision to remain stable. Mask model identity. Ask the judge to cite evidence for factual criteria, and route uncertain or high-risk cases to people.
 
-## 🧠 Final Thoughts
+## A worked evaluation design
 
-Evaluating LLMs isn’t just a technical problem — it’s a design problem, a UX problem, and a trust problem.
+Consider a document assistant that answers questions from policy manuals and may call a calculator.
 
-As the space matures, we’ll need **better automated metrics**, **transparent benchmarks**, and **community-driven evaluations**.
+Build 500 release examples, stratified as follows:
 
-Until then: evaluate early, evaluate often — and don’t trust your LLM until you’ve tested it.
+| Slice | Examples | Primary checks |
+|---|---:|---|
+| Routine factual questions | 200 | Answer correctness, citation correctness, latency |
+| Multi-document synthesis | 100 | Evidence coverage, faithfulness, completeness |
+| Tables and OCR noise | 75 | Retrieval recall, numerical correctness |
+| Missing or conflicting evidence | 75 | Correct abstention, uncertainty communication |
+| Restricted or adversarial requests | 50 | Access control, refusal, data leakage |
 
-— **Akshat**
+For each system version, store the input, retrieved passages, prompt and configuration identifiers, raw model response, tool trace, token use, latency, and evaluator outputs. Replaying the same examples without versioned artefacts makes results difficult to explain or reproduce.
+
+The evaluation pipeline can then apply:
+
+```text
+for example in release_set:
+    trace = run_system(example, fixed_configuration)
+    deterministic = run_contract_checks(trace, example)
+    rubric_scores = judge(trace, example.rubric)
+    record(example.metadata, trace, deterministic, rubric_scores)
+
+compare(candidate, baseline, by=[task, risk, document_type])
+send_disagreements_and_critical_failures_to_human_review()
+apply_release_gates()
+```
+
+The important feature is not the particular sample count. It is the connection between realistic slices, observable failure modes, and a release decision.
+
+## Compare systems with uncertainty
+
+LLM outputs vary with sampling, infrastructure, and external tools. Run repeated trials for stochastic workflows when variance could change the decision. Compare a candidate and baseline on the same examples so that the analysis is paired.
+
+Report both the effect size and uncertainty. For an accuracy-like metric on \(n\) examples, a rough standard error is:
+
+\[
+SE(\hat{p}) = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}.
+\]
+
+For complex metrics, use a paired bootstrap over examples to estimate a confidence interval for the difference. Do not declare a win from a tiny average increase if the interval includes a material regression.
+
+Analyse the distribution as well as the mean:
+
+- pass rate and critical-failure count;
+- score by task and risk slice;
+- p50, p95, and p99 latency;
+- mean and tail token usage;
+- cost per successful task; and
+- variance across repeated runs.
+
+HELM's multi-metric approach is a useful reminder that accuracy, robustness, fairness, toxicity, calibration, and efficiency can move in different directions [6].
+
+## Turn failure analysis into new tests
+
+Evaluation should produce a failure taxonomy, not only a dashboard. Review low scores and disagreements, then assign each failure to the earliest responsible component.
+
+| Failure | Likely component | Follow-up test |
+|---|---|---|
+| Required passage absent | Retriever | Recall@k by document type and OCR quality |
+| Passage present but claim unsupported | Generator | Claim-level faithfulness check |
+| Correct tool, invalid arguments | Agent policy | Schema and boundary-value tests |
+| Correct answer after excessive calls | Orchestration | Call-count and cost budget |
+| Confident answer with no evidence | Product policy | Abstention and confidence rubric |
+
+Add confirmed production failures to the regression set. Otherwise the evaluation suite remains static while the product and its users change.
+
+## Define deployment gates
+
+A release gate should combine non-negotiable constraints with comparative criteria. For example:
+
+```text
+Release the candidate only if:
+- zero access-control or restricted-data failures occur;
+- critical-slice citation correctness is at least 95%;
+- no task slice regresses by more than 2 percentage points;
+- the paired quality improvement is credible under the chosen interval;
+- p95 latency remains below 5 seconds; and
+- cost per successful task remains below £0.03.
+```
+
+The thresholds above are illustrative, not universal. Set them from consequence, user expectations, and operational constraints. In high-risk workflows, a small critical slice may deserve a stricter gate than a much larger collection of routine questions.
+
+Offline evaluation is necessary but incomplete. After release, monitor the same quality and operational signals, sample real interactions with appropriate privacy controls, and maintain a rollback criterion. Online experiments can measure user behaviour, but they should not expose users to variants that already fail safety or correctness gates.
+
+## What this framework does not solve
+
+An evaluation suite is a model of reality, and every model has gaps.
+
+- Human labels may encode ambiguous instructions or institutional bias.
+- Model judges can fail systematically and silently.
+- Production traffic can drift away from the release dataset.
+- Rare harms may not appear in a feasible sample.
+- Aggregate metrics can conceal subgroup failures.
+- A passing score does not prove safety outside the tested scope.
+
+Record these limitations with the release decision. Evaluation provides evidence for a bounded claim; it does not certify that an LLM system is correct in every situation.
+
+## Practical takeaway
+
+Evaluate the system at the level where decisions and failures occur. Start from the workload and its risks, construct representative slices, separate component failures, calibrate subjective graders, quantify uncertainty, and enforce quality, safety, latency, and cost gates together.
+
+The most useful evaluation result is not “model A scored 0.82”. It is: “this version improves the intended workflow, stays within its operating budget, and does not regress on the failures we cannot accept.”
+
+## References
+
+1. Sainz, O. et al. (2023). [*NLP Evaluation in Trouble: On the Need to Measure LLM Data Contamination for Each Benchmark*](https://arxiv.org/abs/2310.18018). arXiv:2310.18018.
+2. Deng, C. et al. (2023). [*Investigating Data Contamination in Modern Benchmarks for Large Language Models*](https://arxiv.org/abs/2311.09783). arXiv:2311.09783.
+3. Es, S. et al. (2023). [*RAGAS: Automated Evaluation of Retrieval Augmented Generation*](https://arxiv.org/abs/2309.15217). arXiv:2309.15217.
+4. Liu, X. et al. (2023). [*AgentBench: Evaluating LLMs as Agents*](https://arxiv.org/abs/2308.03688). arXiv:2308.03688.
+5. Zheng, L. et al. (2023). [*Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*](https://arxiv.org/abs/2306.05685). arXiv:2306.05685.
+6. Liang, P. et al. (2022). [*Holistic Evaluation of Language Models*](https://arxiv.org/abs/2211.09110). arXiv:2211.09110.
