@@ -8,7 +8,7 @@ description: "An exploration of fairness in ML systems — defining group, indiv
 showtoc: true
 ---
 
-As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it's essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning. Related discussions on algorithmic accountability often draw on tools such as [HuggingFace](https://huggingface.co/) model cards, which document bias evaluations for publicly released models.
+As machine learning systems are increasingly used in critical areas like finance, employment, and criminal justice, it's essential to ensure these models are fair and do not discriminate against certain groups. In this post, I will explore the concept of fairness in machine learning. Related discussions on algorithmic accountability often draw on tools such as [Hugging Face](https://huggingface.co/) model cards, which document bias evaluations for publicly released models.
 
 ## Defining Fairness
 
