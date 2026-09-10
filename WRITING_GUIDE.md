@@ -148,6 +148,18 @@ Use these forms consistently:
 | ground truth / ground-truth | Use the hyphenated form only before a noun. |
 | zero-shot / few-shot | Hyphenate when used as adjectives. |
 | agentic AI | Lower case `agentic` unless it begins a sentence or heading. Define the concrete agent behaviour. |
+| generative AI | Prefer this form over `GenAI` in prose. |
+| Llama | Use Meta's current model-family capitalisation. Preserve historical titles, code identifiers, URLs, and official project names such as `LLaMA-Factory`. |
+| Hugging Face | Two words, with both words capitalised. |
+| Elasticsearch | One word, with a lower-case `s`. |
+| Sentence Transformers | Two words when naming the library or project; preserve package and code identifiers. |
+| LangChain | Capitalise the internal `C`. |
+| LoRA | Use this capitalisation; expand as `low-rank adaptation` on first use when needed. |
+| PEFT | Use uppercase; expand as `parameter-efficient fine-tuning` on first use. |
+| FAISS | Use uppercase when naming the library. |
+| vector database | Prefer this form over `vector DB` in prose. |
+| vector search | Lower case unless it begins a sentence or heading. |
+| transformer | Lower case as the common architecture noun; preserve official paper, product, and model titles. |
 
 Preserve the official capitalisation of model and product names. Prefer precise system terms over human analogies: write `generates`, `retrieves`, `predicts`, or `stores` instead of `thinks`, `knows`, `understands`, or `remembers` unless the article defines those terms operationally.
 
