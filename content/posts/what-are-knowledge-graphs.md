@@ -8,7 +8,7 @@ description: "A plain-language introduction to knowledge graphs — how they rep
 showtoc: true
 ---
 
-We hear the term **[knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)** everywhere now — from Google Search to enterprise AI to GenAI apps. But what exactly *is* a knowledge graph, and why is everyone suddenly obsessed with it?
+We hear the term **[knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph)** everywhere now — from Google Search to enterprise AI to generative AI apps. But what exactly *is* a knowledge graph, and why is everyone suddenly obsessed with it?
 
 In this post, I'll break down knowledge graphs in plain language: what they are, how they work, and how I use them in my own projects.
 
@@ -70,7 +70,7 @@ Here's where knowledge graphs really shine:
   Enables intent-based results (e.g., "founder of Tesla" → Elon Musk)
 
 - 🧠 **LLM Context Injection (RAG)**  
-  Use a knowledge graph to retrieve precise facts and inject them into prompts — improving GenAI accuracy.
+  Use a knowledge graph to retrieve precise facts and inject them into prompts — improving generative AI accuracy.
 
 - 🏥 **Healthcare & Life Sciences**  
   Model relationships between diseases, symptoms, genes, drugs.
