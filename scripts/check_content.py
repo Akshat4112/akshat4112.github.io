@@ -88,8 +88,8 @@ def inspect(path: Path) -> tuple[list[str], list[str]]:
             if index % 2 == 0 and not label.strip():
                 warnings.append("fenced code block has no language label")
 
-    prose = re.sub(r"^```.*?^```\s*$", "", body, flags=re.MULTILINE | re.DOTALL)
-    prose = re.sub(r"^~~~.*?^~~~\s*$", "", prose, flags=re.MULTILINE | re.DOTALL)
+    prose = re.sub(r"^ {0,3}```.*?^ {0,3}```\s*$", "", body, flags=re.MULTILINE | re.DOTALL)
+    prose = re.sub(r"^ {0,3}~~~.*?^ {0,3}~~~\s*$", "", prose, flags=re.MULTILINE | re.DOTALL)
     prose = re.sub(r"`[^`\n]+`", "", prose)
     prose = re.sub(r"\\\(.*?\\\)|\\\[.*?\\\]", "", prose, flags=re.DOTALL)
     prose = re.sub(r"\$\$.*?\$\$|(?<!\$)\$[^$\n]+\$(?!\$)", "", prose, flags=re.DOTALL)
