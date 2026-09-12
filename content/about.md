@@ -83,7 +83,6 @@ Across NLP, computer vision, speech, and generative models, the throughline is t
 - [GlyphNet paper](https://arxiv.org/abs/2306.10392), with public [code](https://github.com/Akshat4112/Glyphnet) and [dataset](https://huggingface.co/datasets/Akshat4112/Glyphnet)
 - [FinPlainLM financial plain-language dataset](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset)
 - [Open-source repositories](https://github.com/Akshat4112), including machine-learning case studies, NLP resources, and research presentations
-- [*Hands-On Deep Learning with TensorFlow 2.0* course preview](https://www.youtube.com/watch?v=J7Dj_cswzQE), published by Packt
 
 ---
 
