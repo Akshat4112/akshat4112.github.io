@@ -80,14 +80,16 @@ def inspect(path: Path) -> tuple[list[str], list[str]]:
     if description and len(description) < 50:
         warnings.append("description is shorter than 50 characters")
 
-    fence_lines = re.findall(r"^```(.*)$", body, flags=re.MULTILINE)
-    if len(fence_lines) % 2:
-        errors.append("unbalanced fenced code block")
-    for index, label in enumerate(fence_lines):
-        if index % 2 == 0 and not label.strip():
-            warnings.append("fenced code block has no language label")
+    for marker in ("```", "~~~"):
+        fence_lines = re.findall(rf"^{re.escape(marker)}(.*)$", body, flags=re.MULTILINE)
+        if len(fence_lines) % 2:
+            errors.append(f"unbalanced {marker} fenced code block")
+        for index, label in enumerate(fence_lines):
+            if index % 2 == 0 and not label.strip():
+                warnings.append("fenced code block has no language label")
 
-    prose = re.sub(r"^```.*?^```", "", body, flags=re.MULTILINE | re.DOTALL)
+    prose = re.sub(r"^```.*?^```\\s*$", "", body, flags=re.MULTILINE | re.DOTALL)
+    prose = re.sub(r"^~~~.*?^~~~\\s*$", "", prose, flags=re.MULTILINE | re.DOTALL)
     prose = re.sub(r"`[^`\n]+`", "", prose)
     prose = re.sub(r"\\\(.*?\\\)|\\\[.*?\\\]", "", prose, flags=re.DOTALL)
     prose = re.sub(r"\$\$.*?\$\$|(?<!\$)\$[^$\n]+\$(?!\$)", "", prose, flags=re.DOTALL)
