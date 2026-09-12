@@ -1,11 +1,38 @@
 {{- /* Head custom content area start */ -}}
 <meta name="author" content="Akshat Gupta">
+{{- if eq .Kind "404" }}
+<meta name="robots" content="noindex, follow">
+{{- end }}
+{{- $defaultLanguageURL := .Permalink -}}
+{{- range .AllTranslations -}}
+  {{- if eq .Lang "en" -}}{{- $defaultLanguageURL = .Permalink -}}{{- end -}}
+{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ $defaultLanguageURL }}">
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
 
 {{ if site.Config.Services.GoogleAnalytics.ID }}
 <link rel="preconnect" href="https://www.googletagmanager.com">
 {{ end }}
+
+{{- if and .IsHome (eq .Lang "en") }}
+<script>
+  (function () {
+    try {
+      var preferredLanguage = localStorage.getItem('preferred-language');
+      if (preferredLanguage !== 'en' && preferredLanguage !== 'de') {
+        localStorage.removeItem('preferred-language');
+        return;
+      }
+      if (preferredLanguage === 'de' && window.location.pathname === '/') {
+        window.location.replace('/de/');
+      }
+    } catch (_) {
+      /* English remains the default when storage is unavailable. */
+    }
+  }());
+</script>
+{{- end }}
 
 {{ if .Params.math }}
 <!-- KaTeX support (self-hosted, pinned to v0.16.8) -->

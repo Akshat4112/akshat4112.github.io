@@ -4,6 +4,58 @@ title: Akshat Gupta
 theme: PaperMod
 googleAnalytics: "G-8YC2E5MW2M"
 
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+languages:
+  en:
+    languageCode: en-GB
+    languageName: English
+    weight: 1
+    params:
+      languageAltTitle: English
+      description: "Akshat Gupta is an applied AI engineer and researcher working across agentic AI, document intelligence, evaluation, NLP, speech, and trustworthy machine learning."
+    menu:
+      main:
+        - name: Work
+          url: /#work
+          weight: 5
+        - name: Writing
+          url: /posts/
+          weight: 10
+        - name: Research
+          url: /publications/
+          weight: 15
+        - name: About
+          url: /about/
+          weight: 20
+        - name: CV
+          url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
+          weight: 25
+  de:
+    languageCode: de-DE
+    languageName: Deutsch
+    weight: 2
+    params:
+      languageAltTitle: Deutsch
+      description: "Akshat Gupta ist Ingenieur für angewandte KI und Forscher mit Schwerpunkt auf agentenbasierten KI-Systemen, Dokumentenintelligenz, Evaluation, NLP, Sprachverarbeitung und vertrauenswürdigem maschinellem Lernen."
+    menu:
+      main:
+        - name: Projekte
+          url: /#work
+          weight: 5
+        - name: Artikel
+          url: /posts/
+          weight: 10
+        - name: Forschung
+          url: /publications/
+          weight: 15
+        - name: Über mich
+          url: /about/
+          weight: 20
+        - name: Lebenslauf
+          url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
+          weight: 25
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -28,24 +80,6 @@ markup:
           inline:
             - ['\(', '\)']
 
-menu:
-  main:
-    - name: Work
-      url: /#work
-      weight: 5
-    - name: Writing
-      url: /posts/
-      weight: 10
-    - name: Research
-      url: /publications/
-      weight: 15
-    - name: About
-      url: /about/
-      weight: 20
-    - name: CV
-      url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
-      weight: 25
-
 params:
   author: "Akshat Gupta"
   defaultTheme: auto
@@ -53,6 +87,7 @@ params:
   social:
     twitter: akshat_rg
   schema:
+    publisherType: Person
     sameAs:
       - "https://www.linkedin.com/in/akshat-rg/"
       - "https://github.com/akshat4112"

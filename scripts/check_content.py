@@ -132,7 +132,7 @@ def inspect(path: Path) -> tuple[list[str], list[str]]:
 
 
 def main() -> int:
-    article_paths = sorted(p for p in POSTS.glob("*.md") if p.name != "_index.md")
+    article_paths = sorted(p for p in POSTS.glob("*.md") if not p.name.startswith("_index"))
     error_count = 0
     warning_count = 0
 
