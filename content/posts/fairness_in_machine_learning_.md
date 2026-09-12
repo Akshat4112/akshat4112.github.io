@@ -185,6 +185,12 @@ Training data reflects who was observed and how institutions acted. Under-repres
 
 A convenient label may be a poor proxy for the construct of interest. Healthcare expenditure, arrests, repayment history, and manager ratings can reflect unequal access or enforcement rather than underlying need, behaviour, or ability.
 
+### Real-world case: healthcare allocation
+
+Obermeyer and colleagues examined a widely used US healthcare-management algorithm that used predicted future healthcare cost as a proxy for health need. At the same risk score, Black patients were substantially sicker than White patients. Replacing predicted cost with a measure of health need would have increased the proportion of Black patients selected for additional care from 17.7% to 46.5% ([Obermeyer et al., 2019](https://doi.org/10.1126/science.aax2342)).
+
+The case demonstrates how a seemingly neutral target can create disparity even when race is not an explicit model input: unequal access to care and unequal spending made cost an imperfect proxy for need. It does not establish that every healthcare algorithm or cost-based model has the same failure. The study concerned a particular commercial population-health algorithm and setting, so teams must test label validity, access patterns, and group outcomes in their own deployment context.
+
 ### Feature and proxy effects
 
 Removing a protected attribute does not remove its information. Location, employment history, language, device, and other variables can act as proxies. Conversely, retaining protected attributes may be necessary to evaluate disparities. Data access should be purpose-limited and governed rather than decided by a simplistic “fairness through unawareness” rule.
@@ -308,3 +314,4 @@ The goal is not to declare a model fair. It is to make disparities measurable, p
 8. Selbst, A. D. et al. [Fairness and Abstraction in Sociotechnical Systems](https://doi.org/10.1145/3287560.3287598). *FAT\**, 2019.
 9. Mitchell, M. et al. [Model Cards for Model Reporting](https://doi.org/10.1145/3287560.3287596). *FAT\**, 2019.
 10. NIST. [Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://doi.org/10.6028/NIST.AI.100-1). 2023.
+11. Obermeyer, Z. et al. [Dissecting racial bias in an algorithm used to manage the health of populations](https://doi.org/10.1126/science.aax2342). *Science*, 2019.
