@@ -42,11 +42,11 @@
       <description>A clear explanation of ontologies in AI — the formal schemas that give knowledge graphs their meaning and enable structured machine reasoning.</description>
     </item>
     <item>
-      <title>LLM Fine-Tuning with LoRA</title>
+      <title>Fine-Tuning LLMs with LoRA</title>
       <link>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</link>
       <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</guid>
-      <description>How to fine-tune large language models efficiently using LoRA — low-rank adaptation that dramatically reduces compute and memory requirements.</description>
+      <description>A practical guide to deciding when an LLM needs fine-tuning, understanding LoRA and QLoRA, and building an evaluated PEFT training workflow.</description>
     </item>
     <item>
       <title>What Are Knowledge Graphs?</title>
@@ -63,53 +63,53 @@
       <description>A practical guide to prompt engineering — crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
     </item>
     <item>
-      <title>How Do You Evaluate LLMs?</title>
+      <title>How Do You Evaluate LLM Systems?</title>
       <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
-      <description>A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality.</description>
+      <description>A production-oriented framework for evaluating LLM applications across model quality, retrieval, agent behaviour, safety, latency, and cost.</description>
     </item>
     <item>
-      <title>RAG and LLMs: Using External Knowledge</title>
+      <title>Building Reliable RAG Systems</title>
       <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
-      <description>A technical introduction to retrieval-augmented generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
+      <description>An end-to-end guide to building and evaluating production RAG systems, from document ingestion and hybrid retrieval to grounded generation and observability.</description>
     </item>
     <item>
       <title>Understanding Attention in Transformers</title>
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and Llama.</description>
+      <description>A concise technical guide to transformer attention: masks, position, efficient kernels, KV caches, and interpretability limits.</description>
     </item>
     <item>
-      <title>Model Extraction Attacks Explained</title>
+      <title>Model Extraction Attacks: Threat Models, Measurement, and Defences</title>
       <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, and principled defences.</description>
+      <description>A threat-model-first guide to model extraction: behavioural cloning, parameter recovery, query strategies, evaluation, detection, watermarking, privacy boundaries, and layered defences.</description>
     </item>
     <item>
       <title>Memory in Large Language Models</title>
       <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
-      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based retrieval — and what this means for building AI systems.</description>
+      <description>A technical guide to the distinct mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage.</description>
     </item>
     <item>
-      <title>Speaker Anonymization in the AI Era</title>
+      <title>Speaker Anonymization: Privacy Beyond Changing a Voice</title>
       <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/speaker-anonymization/</guid>
-      <description>A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, and differential privacy for protecting speaker identity.</description>
+      <description>A threat-model-first guide to speaker anonymization: modern architectures, informed attackers, privacy and utility metrics, differential privacy, and lessons from SpeakerDiff.</description>
     </item>
     <item>
-      <title>LLM Agents: AI Systems That Reason and Act</title>
+      <title>LLM Agents: From Model Output to Reliable Action</title>
       <link>https://akshat4112.github.io/posts/llm-agents/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
-      <description>A theory and math-first guide to LLM agents — how autonomous AI systems reason, plan, act, and remember, with formal architectural principles.</description>
+      <description>A practical guide to building LLM agents as controlled systems: typed tool calls, permissions, retries, approvals, observability, security, and trajectory-level evaluation.</description>
     </item>
   </channel>
 </rss>

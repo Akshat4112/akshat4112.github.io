@@ -14,11 +14,11 @@
     <lastBuildDate>Sun, 15 Sep 2024 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/ai-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Model Extraction Attacks Explained</title>
+      <title>Model Extraction Attacks: Threat Models, Measurement, and Defences</title>
       <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, and principled defences.</description>
+      <description>A threat-model-first guide to model extraction: behavioural cloning, parameter recovery, query strategies, evaluation, detection, watermarking, privacy boundaries, and layered defences.</description>
     </item>
   </channel>
 </rss>

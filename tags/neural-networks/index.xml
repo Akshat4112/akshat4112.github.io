@@ -11,21 +11,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2024 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/neural-networks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Attention in Transformers</title>
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and Llama.</description>
-    </item>
-    <item>
-      <title>Memory in Large Language Models</title>
-      <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
-      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
-      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based retrieval — and what this means for building AI systems.</description>
+      <description>A concise technical guide to transformer attention: masks, position, efficient kernels, KV caches, and interpretability limits.</description>
     </item>
   </channel>
 </rss>

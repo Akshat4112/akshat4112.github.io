@@ -35,18 +35,25 @@
       <description>A practical guide to prompt engineering — crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
     </item>
     <item>
-      <title>RAG and LLMs: Using External Knowledge</title>
+      <title>How Do You Evaluate LLM Systems?</title>
+      <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
+      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
+      <description>A production-oriented framework for evaluating LLM applications across model quality, retrieval, agent behaviour, safety, latency, and cost.</description>
+    </item>
+    <item>
+      <title>Building Reliable RAG Systems</title>
       <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
-      <description>A technical introduction to retrieval-augmented generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
+      <description>An end-to-end guide to building and evaluating production RAG systems, from document ingestion and hybrid retrieval to grounded generation and observability.</description>
     </item>
     <item>
       <title>Memory in Large Language Models</title>
       <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
-      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based retrieval — and what this means for building AI systems.</description>
+      <description>A technical guide to the distinct mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage.</description>
     </item>
   </channel>
 </rss>

@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2024 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cyber Valley AI Startup Bootcamp</title>
@@ -49,13 +49,6 @@
       <description>A clear explanation of ontologies in AI — the formal schemas that give knowledge graphs their meaning and enable structured machine reasoning.</description>
     </item>
     <item>
-      <title>LLM Fine-Tuning with LoRA</title>
-      <link>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</link>
-      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
-      <guid>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</guid>
-      <description>How to fine-tune large language models efficiently using LoRA — low-rank adaptation that dramatically reduces compute and memory requirements.</description>
-    </item>
-    <item>
       <title>What Are Knowledge Graphs?</title>
       <link>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
@@ -70,53 +63,11 @@
       <description>A practical guide to prompt engineering — crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
     </item>
     <item>
-      <title>How Do You Evaluate LLMs?</title>
-      <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
-      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
-      <description>A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality.</description>
-    </item>
-    <item>
-      <title>RAG and LLMs: Using External Knowledge</title>
-      <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
-      <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
-      <description>A technical introduction to retrieval-augmented generation (RAG) — combining LLMs with external knowledge bases for accurate, up-to-date responses.</description>
-    </item>
-    <item>
       <title>Understanding Attention in Transformers</title>
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and Llama.</description>
-    </item>
-    <item>
-      <title>Model Extraction Attacks Explained</title>
-      <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
-      <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>A theory and math-first explainer on model extraction attacks — how adversaries steal ML models through queries, and principled defences.</description>
-    </item>
-    <item>
-      <title>Memory in Large Language Models</title>
-      <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
-      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
-      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based retrieval — and what this means for building AI systems.</description>
-    </item>
-    <item>
-      <title>Speaker Anonymization in the AI Era</title>
-      <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
-      <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/speaker-anonymization/</guid>
-      <description>A theory and math-first explainer on speaker anonymization — voice conversion, pitch modulation, and differential privacy for protecting speaker identity.</description>
-    </item>
-    <item>
-      <title>LLM Agents: AI Systems That Reason and Act</title>
-      <link>https://akshat4112.github.io/posts/llm-agents/</link>
-      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
-      <description>A theory and math-first guide to LLM agents — how autonomous AI systems reason, plan, act, and remember, with formal architectural principles.</description>
+      <description>A concise technical guide to transformer attention: masks, position, efficient kernels, KV caches, and interpretability limits.</description>
     </item>
   </channel>
 </rss>

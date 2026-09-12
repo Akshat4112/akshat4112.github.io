@@ -14,11 +14,11 @@
     <lastBuildDate>Sun, 20 Apr 2025 17:30:00 +0200</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/fine-tuning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LLM Fine-Tuning with LoRA</title>
+      <title>Fine-Tuning LLMs with LoRA</title>
       <link>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</link>
       <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</guid>
-      <description>How to fine-tune large language models efficiently using LoRA — low-rank adaptation that dramatically reduces compute and memory requirements.</description>
+      <description>A practical guide to deciding when an LLM needs fine-tuning, understanding LoRA and QLoRA, and building an evaluated PEFT training workflow.</description>
     </item>
   </channel>
 </rss>

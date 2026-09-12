@@ -36,7 +36,7 @@
     <lastmod>2024-01-15T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/llm-fine-tuning-lora/</loc>
-    <lastmod>2025-04-20T17:30:00+02:00</lastmod>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</loc>
     <lastmod>2024-03-15T09:00:00+01:00</lastmod>
@@ -45,10 +45,10 @@
     <lastmod>2024-04-15T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/evaluating-llms/</loc>
-    <lastmod>2024-06-15T09:00:00+01:00</lastmod>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/rag-and-llms/</loc>
-    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/attention-in-transformers/</loc>
     <lastmod>2024-08-15T09:00:00+01:00</lastmod>
@@ -57,7 +57,7 @@
     <lastmod>2024-09-15T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/memories-in-large-language-models/</loc>
-    <lastmod>2025-07-10T09:00:00+01:00</lastmod>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/speaker-anonymization/</loc>
     <lastmod>2024-10-15T09:00:00+01:00</lastmod>
@@ -65,61 +65,64 @@
     <loc>https://akshat4112.github.io/posts/llm-agents/</loc>
     <lastmod>2025-05-05T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/ai/</loc>
-    <lastmod>2025-07-10T09:00:00+01:00</lastmod>
+    <loc>https://akshat4112.github.io/tags/ai-systems/</loc>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/</loc>
-    <lastmod>2026-09-10T09:00:00+02:00</lastmod>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/deep-learning/</loc>
-    <lastmod>2026-09-10T09:00:00+02:00</lastmod>
+    <loc>https://akshat4112.github.io/tags/inference/</loc>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/llm/</loc>
-    <lastmod>2025-07-10T09:00:00+01:00</lastmod>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/memory/</loc>
-    <lastmod>2025-07-10T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/neural-networks/</loc>
-    <lastmod>2025-07-10T09:00:00+01:00</lastmod>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/posts/</loc>
-    <lastmod>2026-09-10T09:00:00+02:00</lastmod>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/rag/</loc>
-    <lastmod>2025-07-10T09:00:00+01:00</lastmod>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/</loc>
-    <lastmod>2026-09-10T09:00:00+02:00</lastmod>
+    <lastmod>2026-09-10T16:00:00+02:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/agents/</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/tags/ai-safety/</loc>
     <lastmod>2025-05-05T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/autonomous-systems/</loc>
-    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+    <loc>https://akshat4112.github.io/tags/evaluation/</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/decision-making/</loc>
-    <lastmod>2025-05-05T09:00:00+01:00</lastmod>
+    <loc>https://akshat4112.github.io/tags/production-ai/</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/reinforcement-learning/</loc>
+    <loc>https://akshat4112.github.io/tags/tool-use/</loc>
     <lastmod>2025-05-05T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/fine-tuning/</loc>
-    <lastmod>2025-04-20T17:30:00+02:00</lastmod>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/lora/</loc>
-    <lastmod>2025-04-20T17:30:00+02:00</lastmod>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/transformers/</loc>
-    <lastmod>2025-04-20T17:30:00+02:00</lastmod>
+    <loc>https://akshat4112.github.io/tags/preference-learning/</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/tags/qlora/</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/anonymization/</loc>
     <lastmod>2024-10-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/cybersecurity/</loc>
+    <loc>https://akshat4112.github.io/tags/privacy/</loc>
     <lastmod>2024-10-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/privacy/</loc>
+    <loc>https://akshat4112.github.io/tags/speaker-verification/</loc>
     <lastmod>2024-10-15T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/speech-processing/</loc>
@@ -131,13 +134,25 @@
     <loc>https://akshat4112.github.io/tags/ai-security/</loc>
     <lastmod>2024-09-15T09:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://akshat4112.github.io/tags/cybersecurity/</loc>
+    <lastmod>2024-09-15T09:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://akshat4112.github.io/tags/machine-learning/</loc>
     <lastmod>2024-09-15T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/model-extraction/</loc>
     <lastmod>2024-09-15T09:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://akshat4112.github.io/tags/ai/</loc>
+    <lastmod>2024-08-15T09:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://akshat4112.github.io/tags/attention/</loc>
+    <lastmod>2024-08-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/tags/deep-learning/</loc>
+    <lastmod>2026-09-10T09:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/tags/neural-networks/</loc>
     <lastmod>2024-08-15T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/nlp/</loc>
@@ -146,23 +161,14 @@
     <loc>https://akshat4112.github.io/tags/self-attention/</loc>
     <lastmod>2024-08-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/embeddings/</loc>
-    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
+    <loc>https://akshat4112.github.io/tags/transformers/</loc>
+    <lastmod>2024-08-15T09:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/generative-ai/</loc>
-    <lastmod>2026-09-10T09:00:00+02:00</lastmod>
+    <loc>https://akshat4112.github.io/tags/document-intelligence/</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://akshat4112.github.io/tags/information-retrieval/</loc>
-    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/vector-databases/</loc>
-    <lastmod>2024-07-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/benchmarks/</loc>
-    <lastmod>2024-06-15T09:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://akshat4112.github.io/tags/evaluation/</loc>
-    <lastmod>2024-06-15T09:00:00+01:00</lastmod>
+    <loc>https://akshat4112.github.io/tags/retrieval/</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/chatgpt/</loc>
     <lastmod>2024-04-15T09:00:00+01:00</lastmod>
@@ -185,6 +191,9 @@
     <loc>https://akshat4112.github.io/tags/diffusion-models/</loc>
     <lastmod>2026-09-10T09:00:00+02:00</lastmod>
   </url><url>
+    <loc>https://akshat4112.github.io/tags/generative-ai/</loc>
+    <lastmod>2026-09-10T09:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://akshat4112.github.io/tags/ontology/</loc>
     <lastmod>2024-01-15T09:00:00+01:00</lastmod>
   </url><url>
@@ -195,6 +204,12 @@
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/ai-infrastructure/</loc>
+    <lastmod>2023-12-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/tags/embeddings/</loc>
+    <lastmod>2023-12-15T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://akshat4112.github.io/tags/vector-databases/</loc>
     <lastmod>2023-12-15T09:00:00+01:00</lastmod>
   </url><url>
     <loc>https://akshat4112.github.io/tags/bias/</loc>

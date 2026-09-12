@@ -21,18 +21,11 @@
       <description>A workshop on the Role of Natural Language Processing in Healthcare at Poornima University, Rajasthan, covering NLP applications and ethics in medicine.</description>
     </item>
     <item>
-      <title>How Do You Evaluate LLMs?</title>
-      <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
-      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
-      <description>A practical guide to evaluating large language models — benchmarks, automated metrics, human evaluation, and the pitfalls of measuring model quality.</description>
-    </item>
-    <item>
       <title>Understanding Attention in Transformers</title>
       <link>https://akshat4112.github.io/posts/attention-in-transformers/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/attention-in-transformers/</guid>
-      <description>A deep dive into self-attention — how it works, why it powers modern transformers, and the attention variants used in GPT, BERT, and Llama.</description>
+      <description>A concise technical guide to transformer attention: masks, position, efficient kernels, KV caches, and interpretability limits.</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tool-Use on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/tool-use/</link>
+    <description>Recent content in Tool-Use on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/tool-use/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM Agents: From Model Output to Reliable Action</title>
+      <link>https://akshat4112.github.io/posts/llm-agents/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
+      <description>A practical guide to building LLM agents as controlled systems: typed tool calls, permissions, retries, approvals, observability, security, and trajectory-level evaluation.</description>
+    </item>
+  </channel>
+</rss>

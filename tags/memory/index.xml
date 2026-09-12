@@ -18,7 +18,7 @@
       <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
-      <description>How LLMs manage memory across three time scales — context windows, KV caches, and RAG-based retrieval — and what this means for building AI systems.</description>
+      <description>A technical guide to the distinct mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage.</description>
     </item>
   </channel>
 </rss>

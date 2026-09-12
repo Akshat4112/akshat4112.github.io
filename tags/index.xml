@@ -14,17 +14,17 @@
     <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI</title>
-      <link>https://akshat4112.github.io/tags/ai/</link>
+      <title>Ai-Systems</title>
+      <link>https://akshat4112.github.io/tags/ai-systems/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/ai/</guid>
+      <guid>https://akshat4112.github.io/tags/ai-systems/</guid>
       <description></description>
     </item>
     <item>
-      <title>Deep-Learning</title>
-      <link>https://akshat4112.github.io/tags/deep-learning/</link>
+      <title>Inference</title>
+      <link>https://akshat4112.github.io/tags/inference/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/deep-learning/</guid>
+      <guid>https://akshat4112.github.io/tags/inference/</guid>
       <description></description>
     </item>
     <item>
@@ -42,13 +42,6 @@
       <description></description>
     </item>
     <item>
-      <title>Neural-Networks</title>
-      <link>https://akshat4112.github.io/tags/neural-networks/</link>
-      <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/neural-networks/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Rag</title>
       <link>https://akshat4112.github.io/tags/rag/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
@@ -63,24 +56,31 @@
       <description></description>
     </item>
     <item>
-      <title>Autonomous-Systems</title>
-      <link>https://akshat4112.github.io/tags/autonomous-systems/</link>
+      <title>Ai-Safety</title>
+      <link>https://akshat4112.github.io/tags/ai-safety/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/autonomous-systems/</guid>
+      <guid>https://akshat4112.github.io/tags/ai-safety/</guid>
       <description></description>
     </item>
     <item>
-      <title>Decision-Making</title>
-      <link>https://akshat4112.github.io/tags/decision-making/</link>
+      <title>Evaluation</title>
+      <link>https://akshat4112.github.io/tags/evaluation/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/decision-making/</guid>
+      <guid>https://akshat4112.github.io/tags/evaluation/</guid>
       <description></description>
     </item>
     <item>
-      <title>Reinforcement-Learning</title>
-      <link>https://akshat4112.github.io/tags/reinforcement-learning/</link>
+      <title>Production-Ai</title>
+      <link>https://akshat4112.github.io/tags/production-ai/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/reinforcement-learning/</guid>
+      <guid>https://akshat4112.github.io/tags/production-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool-Use</title>
+      <link>https://akshat4112.github.io/tags/tool-use/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/tool-use/</guid>
       <description></description>
     </item>
     <item>
@@ -98,10 +98,17 @@
       <description></description>
     </item>
     <item>
-      <title>Transformers</title>
-      <link>https://akshat4112.github.io/tags/transformers/</link>
+      <title>Preference-Learning</title>
+      <link>https://akshat4112.github.io/tags/preference-learning/</link>
       <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
-      <guid>https://akshat4112.github.io/tags/transformers/</guid>
+      <guid>https://akshat4112.github.io/tags/preference-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Qlora</title>
+      <link>https://akshat4112.github.io/tags/qlora/</link>
+      <pubDate>Sun, 20 Apr 2025 17:30:00 +0200</pubDate>
+      <guid>https://akshat4112.github.io/tags/qlora/</guid>
       <description></description>
     </item>
     <item>
@@ -112,17 +119,17 @@
       <description></description>
     </item>
     <item>
-      <title>Cybersecurity</title>
-      <link>https://akshat4112.github.io/tags/cybersecurity/</link>
-      <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/cybersecurity/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Privacy</title>
       <link>https://akshat4112.github.io/tags/privacy/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/privacy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Speaker-Verification</title>
+      <link>https://akshat4112.github.io/tags/speaker-verification/</link>
+      <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/speaker-verification/</guid>
       <description></description>
     </item>
     <item>
@@ -147,6 +154,13 @@
       <description></description>
     </item>
     <item>
+      <title>Cybersecurity</title>
+      <link>https://akshat4112.github.io/tags/cybersecurity/</link>
+      <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Machine-Learning</title>
       <link>https://akshat4112.github.io/tags/machine-learning/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
@@ -161,10 +175,31 @@
       <description></description>
     </item>
     <item>
+      <title>AI</title>
+      <link>https://akshat4112.github.io/tags/ai/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Attention</title>
       <link>https://akshat4112.github.io/tags/attention/</link>
       <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/attention/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep-Learning</title>
+      <link>https://akshat4112.github.io/tags/deep-learning/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neural-Networks</title>
+      <link>https://akshat4112.github.io/tags/neural-networks/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
     <item>
@@ -182,45 +217,24 @@
       <description></description>
     </item>
     <item>
-      <title>Embeddings</title>
-      <link>https://akshat4112.github.io/tags/embeddings/</link>
+      <title>Transformers</title>
+      <link>https://akshat4112.github.io/tags/transformers/</link>
+      <pubDate>Thu, 15 Aug 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/transformers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Document-Intelligence</title>
+      <link>https://akshat4112.github.io/tags/document-intelligence/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/embeddings/</guid>
+      <guid>https://akshat4112.github.io/tags/document-intelligence/</guid>
       <description></description>
     </item>
     <item>
-      <title>Generative-Ai</title>
-      <link>https://akshat4112.github.io/tags/generative-ai/</link>
+      <title>Retrieval</title>
+      <link>https://akshat4112.github.io/tags/retrieval/</link>
       <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/generative-ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Information-Retrieval</title>
-      <link>https://akshat4112.github.io/tags/information-retrieval/</link>
-      <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/information-retrieval/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vector-Databases</title>
-      <link>https://akshat4112.github.io/tags/vector-databases/</link>
-      <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/vector-databases/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Benchmarks</title>
-      <link>https://akshat4112.github.io/tags/benchmarks/</link>
-      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/benchmarks/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Evaluation</title>
-      <link>https://akshat4112.github.io/tags/evaluation/</link>
-      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
-      <guid>https://akshat4112.github.io/tags/evaluation/</guid>
+      <guid>https://akshat4112.github.io/tags/retrieval/</guid>
       <description></description>
     </item>
     <item>
@@ -273,6 +287,13 @@
       <description></description>
     </item>
     <item>
+      <title>Generative-Ai</title>
+      <link>https://akshat4112.github.io/tags/generative-ai/</link>
+      <pubDate>Thu, 15 Feb 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/generative-ai/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Ontology</title>
       <link>https://akshat4112.github.io/tags/ontology/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
@@ -291,6 +312,20 @@
       <link>https://akshat4112.github.io/tags/ai-infrastructure/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/tags/ai-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Embeddings</title>
+      <link>https://akshat4112.github.io/tags/embeddings/</link>
+      <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/embeddings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vector-Databases</title>
+      <link>https://akshat4112.github.io/tags/vector-databases/</link>
+      <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/tags/vector-databases/</guid>
       <description></description>
     </item>
     <item>

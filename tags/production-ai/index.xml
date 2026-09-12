@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Production-Ai on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/production-ai/</link>
+    <description>Recent content in Production-Ai on Akshat Gupta</description>
+    <image>
+      <title>Akshat Gupta</title>
+      <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
+      <link>https://akshat4112.github.io/akshat_gupta.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
+    <atom:link href="https://akshat4112.github.io/tags/production-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Do You Evaluate LLM Systems?</title>
+      <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
+      <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/evaluating-llms/</guid>
+      <description>A production-oriented framework for evaluating LLM applications across model quality, retrieval, agent behaviour, safety, latency, and cost.</description>
+    </item>
+    <item>
+      <title>Building Reliable RAG Systems</title>
+      <link>https://akshat4112.github.io/posts/rag-and-llms/</link>
+      <pubDate>Mon, 15 Jul 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/rag-and-llms/</guid>
+      <description>An end-to-end guide to building and evaluating production RAG systems, from document ingestion and hybrid retrieval to grounded generation and observability.</description>
+    </item>
+    <item>
+      <title>LLM Agents: From Model Output to Reliable Action</title>
+      <link>https://akshat4112.github.io/posts/llm-agents/</link>
+      <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
+      <description>A practical guide to building LLM agents as controlled systems: typed tool calls, permissions, retries, approvals, observability, security, and trajectory-level evaluation.</description>
+    </item>
+  </channel>
+</rss>
