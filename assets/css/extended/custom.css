@@ -167,6 +167,7 @@ a.plain-row:hover { background: var(--accent-soft); }
 .post-title { font-family: var(--serif); font-weight: 400; letter-spacing: -.04em; }
 .post-content { font-size: 17px; line-height: 1.78; }
 .post-content h2, .post-content h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -.025em; }
+.post-content .katex-display { overflow-x: auto; overflow-y: hidden; padding-bottom: 4px; }
 .footer { border-top: 1px solid var(--border); color: var(--secondary); }
 .footer span:last-child { display: none; }
 a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 55%, transparent); outline-offset: 4px; }

@@ -1,7 +1,7 @@
 ---
-title: "Ontologies in Knowledge Graphs: Semantics, Reasoning, and Validation"
+title: "Ontologies in Knowledge Graphs: Reasoning and Validation"
 date: 2024-01-15T09:00:00+01:00
-lastmod: 2026-09-12T23:30:00+02:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["ontology", "knowledge-graph", "semantic-web", "ai", "data-modelling"]
 weight: 104

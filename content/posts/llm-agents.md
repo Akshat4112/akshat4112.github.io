@@ -1,12 +1,13 @@
 ---
 title: "LLM Agents: From Model Output to Reliable Action"
 date: 2025-05-05T09:00:00+01:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["llm", "agents", "tool-use", "evaluation", "ai-safety", "production-ai"]
 weight: 115
 math: true
 showtoc: true
-description: "A practical guide to building LLM agents as controlled systems: typed tool calls, permissions, retries, approvals, observability, security, and trajectory-level evaluation."
+description: "A guide to reliable LLM agents: typed tools, permissions, retries, human approval, observability, security, and trajectory-level evaluation."
 ---
 
 An LLM becomes an agent when its outputs can change an environment: querying a database, editing a record, sending a message, running code, or asking a person for approval. The model remains important, but the production system around it determines whether those actions are valid, authorised, repeatable, and observable.

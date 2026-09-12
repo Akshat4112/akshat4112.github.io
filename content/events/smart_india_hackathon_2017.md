@@ -6,7 +6,7 @@ draft: false
 tags: ["hackathon", "machine-learning", "government", "India"]
 weight: 102
 cover:
-    image: "/events/smart_india_hackathon.jpg"
+    image: "events/smart_india_hackathon.jpg"
     alt: "Smart India Hackathon 2017"
 ---
 

@@ -6,7 +6,7 @@ draft: false
 tags: ["hackathon", "AI", "deep-learning", "Stuttgart"]
 weight: 101
 cover:
-    image: "/events/mesh_hackathon.jpg"
+    image: "events/mesh_hackathon.jpg"
     alt: "MESH Hackathon Stuttgart 2023"
 ---
 

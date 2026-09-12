@@ -1,8 +1,8 @@
 ---
 title: "Memory in Large Language Models"
-description: "A technical guide to the distinct mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage."
+description: "A guide to the mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage."
 date: 2025-07-10T09:00:00+01:00
-lastmod: 2026-09-10T16:00:00+02:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["llm", "memory", "rag", "inference", "ai-systems"]
 weight: 114

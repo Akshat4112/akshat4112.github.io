@@ -1,11 +1,11 @@
 ---
 title: "Vector Databases: Indexes, Retrieval, and Production Trade-offs"
 date: 2023-12-15T09:00:00+01:00
-lastmod: 2026-09-13T00:20:00+02:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["vector-databases", "semantic-search", "embeddings", "rag", "ai-infrastructure"]
 weight: 103
-description: "A practical guide to vector search, ANN indexes, filtering, hybrid retrieval, production operations, and choosing whether a dedicated vector database is necessary."
+description: "A guide to vector search, ANN indexes, filtering, hybrid retrieval, production operations, and deciding whether a dedicated vector database is necessary."
 showtoc: true
 math: true
 ---

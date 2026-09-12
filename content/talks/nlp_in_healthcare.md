@@ -7,7 +7,7 @@ tags: ["machine-learning", "NLP", "healthcare", "workshop"]
 weight: 102
 venue: 
 cover:
-    image: "/talks/p1poornimauni.jpeg"
+    image: "talks/p1poornimauni.jpeg"
     alt: "NLP in Healthcare workshop at Poornima University"
 ---
 

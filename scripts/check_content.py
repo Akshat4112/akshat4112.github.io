@@ -12,7 +12,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 POSTS = ROOT / "content" / "posts"
 STATIC = ROOT / "static"
-REQUIRED = ("title", "description", "date", "draft", "tags", "weight", "showtoc")
+REQUIRED = (
+    "title",
+    "description",
+    "date",
+    "lastmod",
+    "draft",
+    "tags",
+    "weight",
+    "showtoc",
+)
 
 
 def front_matter(text: str) -> tuple[dict[str, str], str]:
@@ -71,9 +80,23 @@ def inspect(path: Path) -> tuple[list[str], list[str]]:
     if description and len(description) < 50:
         warnings.append("description is shorter than 50 characters")
 
-    fences = len(re.findall(r"^```", body, flags=re.MULTILINE))
-    if fences % 2:
+    fence_lines = re.findall(r"^```(.*)$", body, flags=re.MULTILINE)
+    if len(fence_lines) % 2:
         errors.append("unbalanced fenced code block")
+    for index, label in enumerate(fence_lines):
+        if index % 2 == 0 and not label.strip():
+            warnings.append("fenced code block has no language label")
+
+    prose = re.sub(r"^```.*?^```", "", body, flags=re.MULTILINE | re.DOTALL)
+    prose = re.sub(r"`[^`\n]+`", "", prose)
+    prose = re.sub(r"\\\(.*?\\\)|\\\[.*?\\\]", "", prose, flags=re.DOTALL)
+    prose = re.sub(r"\$\$.*?\$\$|(?<!\$)\$[^$\n]+\$(?!\$)", "", prose, flags=re.DOTALL)
+    numeric_citations = re.findall(r"(?<!\!)\[(\d+(?:,\s*\d+)*)\](?!\()", prose)
+    if numeric_citations:
+        errors.append(
+            "uses unexplained numeric citation marker(s): "
+            + ", ".join(f"[{marker}]" for marker in sorted(set(numeric_citations)))
+        )
 
     uses_math = bool(re.search(r"(?<!\\)\$\$|(?<!\\)\\\(|(?<!\\)\\\[", body))
     if uses_math and meta.get("math", "").lower() != "true":

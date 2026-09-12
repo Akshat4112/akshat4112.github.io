@@ -1,6 +1,7 @@
 ---
 title: "Understanding Attention in Transformers"
 date: 2024-08-15T09:00:00+01:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["transformers", "attention", "deep-learning", "nlp", "self-attention", "neural-networks", "ai"]
 weight: 112

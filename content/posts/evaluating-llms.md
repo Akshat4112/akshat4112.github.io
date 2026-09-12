@@ -1,7 +1,7 @@
 ---
 title: "How Do You Evaluate LLM Systems?"
 date: 2024-06-15T09:00:00+01:00
-lastmod: 2026-09-10T00:00:00+00:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["llm", "evaluation", "rag", "agents", "production-ai"]
 weight: 110
@@ -60,7 +60,7 @@ Keep three datasets with different purposes:
 - a **release set** that is not used during routine tuning; and
 - a **production sample** that is periodically reviewed for drift and new failure modes.
 
-Public benchmarks remain useful for broad capability checks, but they can be affected by test-set contamination and may not resemble the application workload [1, 2]. Treat them as supporting evidence rather than the release criterion.
+Public benchmarks remain useful for broad capability checks, but they can be affected by test-set contamination and may not resemble the application workload ([Sainz et al., 2023](https://arxiv.org/abs/2310.18018); [Deng et al., 2023](https://arxiv.org/abs/2311.09783)). Treat them as supporting evidence rather than the release criterion.
 
 ## Decompose the system before scoring it
 
@@ -99,7 +99,7 @@ Also measure whether the required evidence appears at all, where it ranks, and h
 - **citation correctness**: do citations point to passages that support the associated claims?
 - **abstention quality**: does the system decline when evidence is missing or contradictory?
 
-RAGAS formalised several reference-free metrics around retrieval relevance, faithfulness, and answer quality [3]. Such metrics can accelerate iteration, but they should be calibrated for the domain rather than accepted as ground truth.
+RAGAS formalised several reference-free metrics around retrieval relevance, faithfulness, and answer quality ([Es et al., 2023](https://arxiv.org/abs/2309.15217)). Such metrics can accelerate iteration, but they should be calibrated for the domain rather than accepted as ground truth.
 
 ### Agent layer
 
@@ -114,7 +114,7 @@ An agent can reach a correct final answer through an unsafe, expensive, or irrep
 - number of model and tool calls; and
 - final task completion.
 
-AgentBench demonstrates why interactive environments reveal reasoning and decision-making failures that static prompts miss [4]. For a production agent, add invariants that are specific to the application. For example: a write action must never occur before confirmation, restricted documents must not enter the model context, and a failed tool call must not be reported as success.
+AgentBench demonstrates why interactive environments can reveal reasoning and decision-making failures that static prompts miss ([Liu et al., 2023](https://arxiv.org/abs/2308.03688)). For a production agent, add invariants that are specific to the application. For example: a write action must never occur before confirmation, restricted documents must not enter the model context, and a failed tool call must not be reported as success.
 
 ## Use a hierarchy of evaluators
 
@@ -138,7 +138,7 @@ where \(p_o\) is observed agreement and \(p_e\) is agreement expected by chance.
 
 ### 3. Model-based judges
 
-An LLM judge is useful for high-volume, rubric-based screening. It is not an independent source of truth. The MT-Bench study found strong agreement with human preferences in its setting, while also documenting position, verbosity, self-enhancement, and reasoning biases [5].
+An LLM judge is useful for high-volume, rubric-based screening. It is not an independent source of truth. The MT-Bench study found strong agreement with human preferences in its setting, while also documenting position, verbosity, self-enhancement, and reasoning biases ([Zheng et al., 2023](https://arxiv.org/abs/2306.05685)).
 
 Before using a judge in a release gate:
 
@@ -203,7 +203,7 @@ Analyse the distribution as well as the mean:
 - cost per successful task; and
 - variance across repeated runs.
 
-HELM's multi-metric approach is a useful reminder that accuracy, robustness, fairness, toxicity, calibration, and efficiency can move in different directions [6].
+HELM's multi-metric approach is a useful reminder that accuracy, robustness, fairness, toxicity, calibration, and efficiency can move in different directions ([Liang et al., 2022](https://arxiv.org/abs/2211.09110)).
 
 ## Turn failure analysis into new tests
 
