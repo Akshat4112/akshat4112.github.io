@@ -120,7 +120,7 @@
     <div class="section-label reveal"><span>04</span><h2 id="writing-title">Recent writing</h2></div>
     <p class="section-intro reveal">Notes on ideas I am learning, systems I am building, and questions that remain unresolved.</p>
     <div class="plain-list writing-list">
-      {{- $featured := slice (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") (site.GetPage "/posts/what_are_diffusion_models") }}
+      {{- $featured := slice (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") (site.GetPage "/posts/speaker-anonymization") }}
       {{- range $page := $featured }}
       {{- with $page }}
       <a class="plain-row reveal" href="{{ .RelPermalink }}">
