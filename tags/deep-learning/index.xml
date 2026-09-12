@@ -35,13 +35,6 @@
       <description>Building AI prototypes in 48 hours at the MESH Hackathon in Stuttgart, Germany — a student and industry innovation event.</description>
     </item>
     <item>
-      <title>Hands-on Deep Learning with TensorFlow 2.0</title>
-      <link>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</link>
-      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</guid>
-      <description>A practical video course on building deep learning models with TensorFlow 2.0, published by Packt.</description>
-    </item>
-    <item>
       <title>How Do You Evaluate LLMs?</title>
       <link>https://akshat4112.github.io/posts/evaluating-llms/</link>
       <pubDate>Sat, 15 Jun 2024 09:00:00 +0100</pubDate>

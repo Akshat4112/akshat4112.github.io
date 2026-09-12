@@ -20,12 +20,5 @@
       <guid>https://akshat4112.github.io/publications/glyphnet/</guid>
       <description>GlyphNet — a 4M-domain image dataset and attention-based CNN for detecting homoglyph phishing attacks, presented at AAAI AICS 2023.</description>
     </item>
-    <item>
-      <title>Hands-on Deep Learning with TensorFlow 2.0</title>
-      <link>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</link>
-      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://akshat4112.github.io/publications/deep_learning_with_tensorflow/</guid>
-      <description>A practical video course on building deep learning models with TensorFlow 2.0, published by Packt.</description>
-    </item>
   </channel>
 </rss>
