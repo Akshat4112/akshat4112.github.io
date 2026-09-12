@@ -1,80 +1,160 @@
-# Personal Portfolio Website
+# Akshat Gupta — Portfolio
 
-This repository contains the source code for my personal portfolio website hosted at [akshat4112.github.io](https://akshat4112.github.io/).
+Source code for [akshat4112.github.io](https://akshat4112.github.io/), the personal portfolio and technical writing site of [Akshat Gupta](https://github.com/Akshat4112), an applied AI engineer and researcher.
 
-## Overview
+The site presents research, open-source projects, datasets, professional experience, and long-form writing on production AI systems.
 
-This is a static website built with [Hugo](https://gohugo.io/) using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. The site serves as a professional portfolio showcasing my work, publications, talks, and expertise in Machine Learning Engineering, Generative AI, Diffusion Models, and LLMs.
+## What the site covers
 
-## Technology Stack
+- Agentic AI and large language model systems
+- Evaluation, observability, and reliability
+- Retrieval-augmented generation and document intelligence
+- AI security, privacy, and model extraction
+- Speech processing and speaker anonymisation
+- Knowledge graphs, ontologies, and vector retrieval
 
-- **Static Site Generator**: [Hugo](https://gohugo.io/)
-- **Theme**: [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
-- **Hosting**: GitHub Pages
-- **CI/CD**: GitHub Actions
+## Technology
 
-## Site Structure
+- [Hugo Extended](https://gohugo.io/) 0.147.2
+- [PaperMod](https://github.com/adityatelange/hugo-PaperMod) as a Git submodule
+- Custom Hugo layouts and CSS
+- Self-hosted [KaTeX](https://katex.org/) for mathematical notation
+- GitHub Actions and GitHub Pages
 
-- **Posts**: Technical blog posts and articles
-- **Publications**: Research papers and technical publications
-- **Talks**: Conference presentations and speaking engagements
-- **Events**: Events I've participated in or organized
-- **About**: Professional information and bio
-- **CV**: Link to my curriculum vitae
+## Repository structure
 
-## Local Development
+```text
+.
+├── archetypes/                 # Templates for new content
+├── assets/                     # Images and Hugo-processed styles
+├── config/
+│   ├── _default/config.yml     # Production configuration
+│   └── development/config.yml  # Local-development overrides
+├── content/
+│   ├── posts/                  # Technical articles
+│   ├── publications/           # Research publications
+│   ├── talks/                  # Talks and workshops
+│   ├── events/                 # Events and community work
+│   └── about.md                # Biography and experience
+├── layouts/                    # Custom templates and theme overrides
+├── scripts/check_content.py    # Automated article checks
+├── static/                     # Files served without Hugo processing
+├── themes/PaperMod/            # Theme submodule
+├── PUBLISHING_CHECKLIST.md     # Article release checklist
+└── WRITING_GUIDE.md            # Editorial and citation standards
+```
 
-### Prerequisites
+Do not edit files inside `themes/PaperMod/` directly. Override theme behaviour with matching files under `layouts/`.
 
-- [Hugo Extended](https://gohugo.io/installation/) (v0.147.2 or later)
+## Run locally
+
+### Requirements
+
 - Git
+- Hugo Extended 0.147.2 or a compatible newer release
+- Python 3 for content validation
 
-### Setup and Run
+### Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/akshat4112/akshat4112.github.io.git
-   cd akshat4112.github.io
-   ```
-
-2. Initialize and update submodules:
-   ```bash
-   git submodule update --init --recursive
-   ```
-
-3. Start the local development server:
-   ```bash
-   hugo server --bind 0.0.0.0 --baseURL http://localhost:1313 --disableFastRender
-   ```
-
-4. View the site at [http://localhost:1313](http://localhost:1313)
-
-### Adding Content
-
-#### Creating a new post:
 ```bash
-hugo new posts/my-new-post.md
+git clone --recurse-submodules https://github.com/Akshat4112/akshat4112.github.io.git
+cd akshat4112.github.io
 ```
 
-#### Creating other content types:
+If the repository was cloned without submodules:
+
 ```bash
-hugo new publications/my-publication.md
-hugo new talks/my-talk.md
-hugo new events/my-event.md
+git submodule update --init --recursive
 ```
+
+Start the development server:
+
+```bash
+hugo server --environment development --disableFastRender
+```
+
+Open [http://localhost:1313](http://localhost:1313).
+
+## Validate changes
+
+Run the same content check used by the deployment workflow:
+
+```bash
+python3 scripts/check_content.py
+```
+
+Build the production site:
+
+```bash
+hugo --minify
+```
+
+For configuration or template changes, validate both environments:
+
+```bash
+hugo --minify
+hugo --minify --environment development -d /tmp/akshat-portfolio-dev
+```
+
+Generated output is written to `public/` and should not be committed.
+
+## Create content
+
+Create a technical article:
+
+```bash
+hugo new posts/article-name.md
+```
+
+Other content types follow the same pattern:
+
+```bash
+hugo new publications/publication-name.md
+hugo new talks/talk-name.md
+hugo new events/event-name.md
+```
+
+Before publishing an article:
+
+1. Follow [WRITING_GUIDE.md](WRITING_GUIDE.md).
+2. Complete [PUBLISHING_CHECKLIST.md](PUBLISHING_CHECKLIST.md).
+3. Run `python3 scripts/check_content.py`.
+4. Run a production build and inspect the rendered page.
+
+Article images belong under `assets/posts/`. Publication, talk, and event images should use the corresponding directory under `assets/`.
+
+## Configuration and customisation
+
+- Site configuration: `config/_default/config.yml`
+- Development overrides: `config/development/config.yml`
+- Homepage: `layouts/index.html`
+- Header: `layouts/partials/header.html`
+- Additional head markup: `layouts/partials/extend_head.html`
+- Custom styles: `assets/css/extended/custom.css`
+- Markdown image rendering: `layouts/_default/_markup/render-image.html`
+
+The site uses British English for editorial content. Technical claims should use primary sources or official documentation, and employer work must avoid confidential project details and unsupported internal metrics.
 
 ## Deployment
 
-The site is automatically deployed to GitHub Pages when changes are pushed to the main branch, using the GitHub Actions workflow defined in `.github/workflows/hugo.yml`.
+A push to `main` triggers [the Hugo deployment workflow](.github/workflows/hugo.yml). The workflow:
 
-## Customization
+1. checks out the repository and PaperMod submodule;
+2. installs Hugo Extended 0.147.2;
+3. runs the article-content validator;
+4. builds the minified production site; and
+5. publishes `public/` to the `gh-pages` branch.
 
-- **Site Configuration**: Edit `config.yml` to modify site settings, menus, and social links
-- **Theme Customization**: Override theme templates by creating matching files in the `layouts/` directory
-- **Styling**: Customize CSS by adding files to `assets/css/`
+Changes should be reviewed through pull requests before they reach `main`.
 
-## License
+## Links
 
-The content of this project is licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), and the underlying source code is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
+- [Live portfolio](https://akshat4112.github.io/)
+- [Technical writing](https://akshat4112.github.io/posts/)
+- [Research publications](https://akshat4112.github.io/publications/)
+- [GitHub profile](https://github.com/Akshat4112)
+- [Hugging Face](https://huggingface.co/Akshat4112)
 
-<!-- Last updated: May 11, 2025 -->
+## Licence
+
+No repository-wide licence file is currently provided. Unless a file states otherwise, do not assume that the website source or written content is licensed for reuse.
