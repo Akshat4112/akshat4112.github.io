@@ -81,7 +81,7 @@ def inspect(path: Path) -> tuple[list[str], list[str]]:
         warnings.append("description is shorter than 50 characters")
 
     for marker in ("```", "~~~"):
-        fence_lines = re.findall(rf"^{re.escape(marker)}(.*)$", body, flags=re.MULTILINE)
+        fence_lines = re.findall(rf"^ {0,3}{re.escape(marker)}(.*)$", body, flags=re.MULTILINE)
         if len(fence_lines) % 2:
             errors.append(f"unbalanced {marker} fenced code block")
         for index, label in enumerate(fence_lines):
