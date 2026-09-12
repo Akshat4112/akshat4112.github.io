@@ -35,6 +35,9 @@ jobs:
           hugo-version: '0.147.2'
           extended: true
 
+      - name: Validate article content
+        run: python3 scripts/check_content.py
+
       - name: Build
         run: hugo --minify
 

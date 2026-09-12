@@ -315,6 +315,8 @@ Remove `cover` when no meaningful visual is available. Set `math: true` only whe
 
 ## Review checklist
 
+Use the complete release process in [`PUBLISHING_CHECKLIST.md`](PUBLISHING_CHECKLIST.md). The checklist separates automated structural checks from editorial verification and desktop/mobile browser review. Run `python3 scripts/check_content.py` before every production build.
+
 Before setting `draft: false`, verify:
 
 - [ ] The opening states a concrete question and central conclusion.
