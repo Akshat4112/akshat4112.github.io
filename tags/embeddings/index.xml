@@ -14,11 +14,11 @@
     <lastBuildDate>Fri, 15 Dec 2023 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/embeddings/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What is a Vector Database?</title>
+      <title>Vector Databases: Indexes, Retrieval, and Production Trade-offs</title>
       <link>https://akshat4112.github.io/posts/vector-databases/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/vector-databases/</guid>
-      <description>An introduction to vector databases — what they are, how they power semantic search, and why they&amp;#39;re essential infrastructure for modern AI applications.</description>
+      <description>A practical guide to vector search, ANN indexes, filtering, hybrid retrieval, production operations, and choosing whether a dedicated vector database is necessary.</description>
     </item>
   </channel>
 </rss>

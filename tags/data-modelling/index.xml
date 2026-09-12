@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data-Modeling on Akshat Gupta</title>
-    <link>https://akshat4112.github.io/tags/data-modeling/</link>
-    <description>Recent content in Data-Modeling on Akshat Gupta</description>
+    <title>Data-Modelling on Akshat Gupta</title>
+    <link>https://akshat4112.github.io/tags/data-modelling/</link>
+    <description>Recent content in Data-Modelling on Akshat Gupta</description>
     <image>
       <title>Akshat Gupta</title>
       <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
@@ -12,20 +12,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 Mar 2024 09:00:00 +0100</lastBuildDate>
-    <atom:link href="https://akshat4112.github.io/tags/data-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akshat4112.github.io/tags/data-modelling/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What is an Ontology in a Knowledge Graph?</title>
+      <title>Ontologies in Knowledge Graphs: Semantics, Reasoning, and Validation</title>
       <link>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</guid>
-      <description>A clear explanation of ontologies in AI — the formal schemas that give knowledge graphs their meaning and enable structured machine reasoning.</description>
+      <description>A practical guide to ontology design in knowledge graphs, including RDF, RDFS, OWL, open-world reasoning, SHACL validation, and production trade-offs.</description>
     </item>
     <item>
-      <title>What Are Knowledge Graphs?</title>
+      <title>Knowledge Graphs: Data Models, Construction, and Graph RAG</title>
       <link>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</guid>
-      <description>A plain-language introduction to knowledge graphs — how they represent entities and relationships, and why they&amp;#39;re central to modern AI and search.</description>
+      <description>A practical guide to knowledge-graph models, identity, provenance, construction, querying, evaluation, and their role in retrieval-augmented generation.</description>
     </item>
   </channel>
 </rss>

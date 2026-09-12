@@ -14,11 +14,11 @@
     <lastBuildDate>Sun, 15 Sep 2024 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fairness in Machine Learning</title>
+      <title>Fairness in Machine Learning: Metrics, Trade-offs, and Evaluation</title>
       <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
       <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
-      <description>An exploration of fairness in ML systems — defining group, individual, and causal fairness, sources of algorithmic bias, and techniques to address them.</description>
+      <description>A practical guide to defining, measuring, and monitoring fairness in machine-learning systems without hiding the policy choices behind one metric.</description>
     </item>
     <item>
       <title>GlyphNet: Homoglyph Domain Detection with CNNs</title>

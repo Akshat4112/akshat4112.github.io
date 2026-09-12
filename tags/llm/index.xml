@@ -21,11 +21,11 @@
       <description>A practical guide to deciding when an LLM needs fine-tuning, understanding LoRA and QLoRA, and building an evaluated PEFT training workflow.</description>
     </item>
     <item>
-      <title>Prompt Engineering: The Art of Talking to AI</title>
+      <title>Prompt Design for Production LLM Systems</title>
       <link>https://akshat4112.github.io/posts/prompt-engineering/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/prompt-engineering/</guid>
-      <description>A practical guide to prompt engineering — crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
+      <description>A production guide to prompt contracts, structured outputs, context construction, tool use, evaluation, observability, and prompt-injection defence.</description>
     </item>
     <item>
       <title>How Do You Evaluate LLM Systems?</title>

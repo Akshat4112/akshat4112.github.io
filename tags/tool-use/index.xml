@@ -14,6 +14,13 @@
     <lastBuildDate>Mon, 05 May 2025 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/tool-use/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Prompt Design for Production LLM Systems</title>
+      <link>https://akshat4112.github.io/posts/prompt-engineering/</link>
+      <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/prompt-engineering/</guid>
+      <description>A production guide to prompt contracts, structured outputs, context construction, tool use, evaluation, observability, and prompt-injection defence.</description>
+    </item>
+    <item>
       <title>LLM Agents: From Model Output to Reliable Action</title>
       <link>https://akshat4112.github.io/posts/llm-agents/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>

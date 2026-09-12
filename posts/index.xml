@@ -21,25 +21,25 @@
       <description>A technical guide to diffusion models: the forward process, noise-prediction objective, reverse sampling, guidance, latent diffusion, and practical trade-offs.</description>
     </item>
     <item>
-      <title>Fairness in Machine Learning</title>
+      <title>Fairness in Machine Learning: Metrics, Trade-offs, and Evaluation</title>
       <link>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</link>
       <pubDate>Sun, 15 Oct 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/fairness_in_machine_learning_/</guid>
-      <description>An exploration of fairness in ML systems — defining group, individual, and causal fairness, sources of algorithmic bias, and techniques to address them.</description>
+      <description>A practical guide to defining, measuring, and monitoring fairness in machine-learning systems without hiding the policy choices behind one metric.</description>
     </item>
     <item>
-      <title>What is a Vector Database?</title>
+      <title>Vector Databases: Indexes, Retrieval, and Production Trade-offs</title>
       <link>https://akshat4112.github.io/posts/vector-databases/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/vector-databases/</guid>
-      <description>An introduction to vector databases — what they are, how they power semantic search, and why they&amp;#39;re essential infrastructure for modern AI applications.</description>
+      <description>A practical guide to vector search, ANN indexes, filtering, hybrid retrieval, production operations, and choosing whether a dedicated vector database is necessary.</description>
     </item>
     <item>
-      <title>What is an Ontology in a Knowledge Graph?</title>
+      <title>Ontologies in Knowledge Graphs: Semantics, Reasoning, and Validation</title>
       <link>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</guid>
-      <description>A clear explanation of ontologies in AI — the formal schemas that give knowledge graphs their meaning and enable structured machine reasoning.</description>
+      <description>A practical guide to ontology design in knowledge graphs, including RDF, RDFS, OWL, open-world reasoning, SHACL validation, and production trade-offs.</description>
     </item>
     <item>
       <title>Fine-Tuning LLMs with LoRA</title>
@@ -49,18 +49,18 @@
       <description>A practical guide to deciding when an LLM needs fine-tuning, understanding LoRA and QLoRA, and building an evaluated PEFT training workflow.</description>
     </item>
     <item>
-      <title>What Are Knowledge Graphs?</title>
+      <title>Knowledge Graphs: Data Models, Construction, and Graph RAG</title>
       <link>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</link>
       <pubDate>Fri, 15 Mar 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/what-are-knowledge-graphs/</guid>
-      <description>A plain-language introduction to knowledge graphs — how they represent entities and relationships, and why they&amp;#39;re central to modern AI and search.</description>
+      <description>A practical guide to knowledge-graph models, identity, provenance, construction, querying, evaluation, and their role in retrieval-augmented generation.</description>
     </item>
     <item>
-      <title>Prompt Engineering: The Art of Talking to AI</title>
+      <title>Prompt Design for Production LLM Systems</title>
       <link>https://akshat4112.github.io/posts/prompt-engineering/</link>
       <pubDate>Mon, 15 Apr 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/prompt-engineering/</guid>
-      <description>A practical guide to prompt engineering — crafting effective prompts for LLMs, covering zero-shot, few-shot, chain-of-thought, and advanced techniques.</description>
+      <description>A production guide to prompt contracts, structured outputs, context construction, tool use, evaluation, observability, and prompt-injection defence.</description>
     </item>
     <item>
       <title>How Do You Evaluate LLM Systems?</title>

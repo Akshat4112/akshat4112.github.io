@@ -14,11 +14,11 @@
     <lastBuildDate>Mon, 15 Jan 2024 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/ontology/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What is an Ontology in a Knowledge Graph?</title>
+      <title>Ontologies in Knowledge Graphs: Semantics, Reasoning, and Validation</title>
       <link>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</guid>
-      <description>A clear explanation of ontologies in AI — the formal schemas that give knowledge graphs their meaning and enable structured machine reasoning.</description>
+      <description>A practical guide to ontology design in knowledge graphs, including RDF, RDFS, OWL, open-world reasoning, SHACL validation, and production trade-offs.</description>
     </item>
   </channel>
 </rss>
