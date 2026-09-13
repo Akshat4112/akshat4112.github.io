@@ -1,0 +1,15 @@
+{{- $currentLanguage := .Lang -}}
+{{- $englishSite := index (where .Sites "Language.Lang" "en") 0 -}}
+{{- $germanSite := index (where .Sites "Language.Lang" "de") 0 -}}
+{{- $englishURL := $englishSite.Home.RelPermalink -}}
+{{- $germanURL := $germanSite.Home.RelPermalink -}}
+{{- range .AllTranslations -}}
+  {{- if eq .Lang "en" -}}{{- $englishURL = .RelPermalink -}}{{- end -}}
+  {{- if eq .Lang "de" -}}{{- $germanURL = .RelPermalink -}}{{- end -}}
+{{- end -}}
+<nav class="language-selector" aria-label="{{ i18n "language_selector" }}">
+  <ul>
+    <li><a href="{{ $englishURL }}" lang="en" hreflang="en" data-language-option="en"{{ if eq $currentLanguage "en" }} aria-current="page"{{ end }} title="English">EN</a></li>
+    <li><a href="{{ $germanURL }}" lang="de" hreflang="de" data-language-option="de"{{ if eq $currentLanguage "de" }} aria-current="page"{{ end }} title="Deutsch">DE</a></li>
+  </ul>
+</nav>

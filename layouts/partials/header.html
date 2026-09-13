@@ -96,31 +96,11 @@
                 </button>
                 {{- end }}
 
-                {{- $lang := .Lang}}
-                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.AllTranslations }}
-                <ul class="lang-switch">
-                    {{- /* Removed the vertical bar here */}}
-                    {{- range . -}}
-                    {{- if ne $lang .Lang }}
-                    <li>
-                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                            {{- .Language.LanguageName | emojify -}}
-                            {{- else }}
-                            {{- .Lang | title -}}
-                            {{- end -}}
-                        </a>
-                    </li>
-                    {{- end -}}
-                    {{- end}}
-                </ul>
-                {{- end }}
+                {{- partial "language_switch.html" . }}
             </div>
         </div>
         {{- $currentPage := . }}
-        <ul id="menu" aria-label="Main navigation">
+        <ul id="menu" aria-label="{{ i18n "main_navigation" }}">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
@@ -146,4 +126,4 @@
             {{- end }}
         </ul>
     </nav>
-</header> 
+</header>

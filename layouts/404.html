@@ -1,0 +1,28 @@
+{{- define "main" }}
+<section class="not-found-page" aria-labelledby="not-found-title">
+  <p class="not-found-code" aria-hidden="true">404</p>
+  <h1 id="not-found-title">{{ i18n "page_not_found" }}</h1>
+  <p id="not-found-description">{{ i18n "page_not_found_description" }}</p>
+  <a id="not-found-home" href="{{ "" | relLangURL }}">{{ i18n "return_home" }} →</a>
+</section>
+{{- if eq .Lang "en" }}
+<script>
+  (function () {
+    if (!/^\/de(?:\/|$)/.test(window.location.pathname)) return;
+    document.documentElement.lang = 'de';
+    document.title = 'Seite nicht gefunden | Akshat Gupta';
+    document.getElementById('not-found-title').textContent = 'Seite nicht gefunden';
+    document.getElementById('not-found-description').textContent = 'Die Seite wurde möglicherweise verschoben oder die Adresse ist nicht korrekt.';
+    var homeLink = document.getElementById('not-found-home');
+    homeLink.href = '/de/';
+    homeLink.textContent = 'Zur Startseite →';
+    var englishOption = document.querySelector('[data-language-option="en"]');
+    var germanOption = document.querySelector('[data-language-option="de"]');
+    if (englishOption && germanOption) {
+      englishOption.removeAttribute('aria-current');
+      germanOption.setAttribute('aria-current', 'page');
+    }
+  }());
+</script>
+{{- end }}
+{{- end }}

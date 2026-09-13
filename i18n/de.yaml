@@ -1,0 +1,23 @@
+- id: language_selector
+  translation: "Sprache auswählen"
+
+- id: main_navigation
+  translation: "Hauptnavigation"
+
+- id: home
+  translation: "Startseite"
+
+- id: english_content_notice
+  translation: "Dieser Inhalt ist derzeit auf Englisch verfügbar."
+
+- id: english_language
+  translation: "Englisch"
+
+- id: page_not_found
+  translation: "Seite nicht gefunden"
+
+- id: page_not_found_description
+  translation: "Die Seite wurde möglicherweise verschoben oder die Adresse ist nicht korrekt."
+
+- id: return_home
+  translation: "Zur Startseite"

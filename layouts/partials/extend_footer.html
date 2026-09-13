@@ -17,5 +17,21 @@
       items.forEach(function (item) { item.classList.add('is-visible'); });
     }
 
+    try {
+      if (document.documentElement.lang.toLowerCase().indexOf('de') === 0) {
+        localStorage.setItem('preferred-language', 'de');
+      }
+      document.querySelectorAll('[data-language-option]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          var language = link.getAttribute('data-language-option');
+          if (language === 'en' || language === 'de') {
+            localStorage.setItem('preferred-language', language);
+          }
+        });
+      });
+    } catch (_) {
+      /* Language links continue to work when storage is unavailable. */
+    }
+
   }());
 </script>

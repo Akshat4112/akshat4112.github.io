@@ -1,0 +1,33 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}
+  <div class="post-description">{{ . }}</div>
+  {{- end }}
+</header>
+
+<aside class="language-notice" role="note" aria-label="{{ i18n "english_content_notice" }}">
+  {{ .Content }}
+</aside>
+
+{{- $englishSite := index (where .Sites "Language.Lang" "en") 0 }}
+{{- $sourceSection := .Params.sourceSection }}
+{{- $pages := where $englishSite.RegularPages "Section" $sourceSection }}
+<div class="english-content-list">
+  {{- range $pages.ByDate.Reverse }}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2>{{ .Title }} <span class="language-badge">{{ i18n "english_language" }}</span></h2>
+    </header>
+    {{- with .Description }}
+    <div class="entry-content"><p>{{ . }}</p></div>
+    {{- end }}
+    <footer class="entry-footer">
+      <span>{{ .Date.Format "02.01.2006" }}</span>
+      {{- if eq .Section "posts" }}<span> · {{ .ReadingTime }} min</span>{{- end }}
+    </footer>
+    <a class="entry-link" href="{{ .RelPermalink }}" hreflang="en" lang="en" aria-label="{{ .Title }} – {{ i18n "english_language" }}"></a>
+  </article>
+  {{- end }}
+</div>
+{{- end }}

@@ -32,7 +32,10 @@
 {{- end -}}
 
 {{- with .Params.audio }}<meta property="og:audio" content="{{ . }}" />{{ end }}
-{{- with .Params.locale }}<meta property="og:locale" content="{{ . }}" />{{ end }}
+<meta property="og:locale" content="{{ replace .Language.LanguageCode "-" "_" }}" />
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ replace .Language.LanguageCode "-" "_" }}" />
+{{- end }}
 {{- with site.Params.title }}<meta property="og:site_name" content="{{ . }}" />{{ end }}
 {{- with .Params.videos }}{{- range . }}
 <meta property="og:video" content="{{ . | absURL }}" />
@@ -59,4 +62,4 @@
 {{- end }}
 
 {{- /* Facebook Page Admin ID for Domain Insights */}}
-{{ with $facebookAdmin }}<meta property="fb:admins" content="{{ . }}" />{{ end }} 
+{{ with $facebookAdmin }}<meta property="fb:admins" content="{{ . }}" />{{ end }}
