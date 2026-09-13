@@ -41,7 +41,7 @@ This turns “make the answer better” into observable requirements. It also se
 
 ## Build an explicit instruction hierarchy
 
-Model APIs normally distinguish higher-priority developer or system instructions from user messages and tool results. Exact roles and precedence vary by provider, so use the chosen API's current documentation rather than assuming that every model interprets message roles identically.
+[OpenAI's current message-role guidance](https://platform.openai.com/docs/guides/text?api-mode=responses#message-roles-and-instruction-following) gives developer messages priority over user messages, while [Anthropic's Messages API](https://docs.anthropic.com/en/api/messages#body-system) accepts a top-level `system` parameter rather than a `system` message role. Roles and precedence are provider- and API-specific, so follow the chosen API's current documentation.
 
 A practical hierarchy is:
 
