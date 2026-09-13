@@ -18,7 +18,7 @@
       <link>https://akshat4112.github.io/posts/vector-databases/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/vector-databases/</guid>
-      <description>A practical guide to vector search, ANN indexes, filtering, hybrid retrieval, production operations, and choosing whether a dedicated vector database is necessary.</description>
+      <description>A guide to vector search, ANN indexes, filtering, hybrid retrieval, production operations, and deciding whether a dedicated vector database is necessary.</description>
     </item>
     <item>
       <title>Knowledge Graphs: Data Models, Construction, and Graph RAG</title>

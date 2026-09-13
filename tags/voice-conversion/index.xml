@@ -18,7 +18,7 @@
       <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/speaker-anonymization/</guid>
-      <description>A threat-model-first guide to speaker anonymization: modern architectures, informed attackers, privacy and utility metrics, differential privacy, and lessons from SpeakerDiff.</description>
+      <description>A threat-model-first guide to speaker anonymization: system architectures, informed attackers, privacy and utility metrics, and lessons from SpeakerDiff.</description>
     </item>
   </channel>
 </rss>

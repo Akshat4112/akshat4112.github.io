@@ -42,25 +42,25 @@
       <description>An end-to-end guide to building and evaluating production RAG systems, from document ingestion and hybrid retrieval to grounded generation and observability.</description>
     </item>
     <item>
-      <title>Model Extraction Attacks: Threat Models, Measurement, and Defences</title>
+      <title>Model Extraction Attacks: Threat Models and Defences</title>
       <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>A threat-model-first guide to model extraction: behavioural cloning, parameter recovery, query strategies, evaluation, detection, watermarking, privacy boundaries, and layered defences.</description>
+      <description>A threat-model-first guide to behavioural cloning, parameter recovery, query strategies, measurement, detection, watermarking, and layered defences.</description>
     </item>
     <item>
       <title>Memory in Large Language Models</title>
       <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
-      <description>A technical guide to the distinct mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage.</description>
+      <description>A guide to the mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage.</description>
     </item>
     <item>
       <title>LLM Agents: From Model Output to Reliable Action</title>
       <link>https://akshat4112.github.io/posts/llm-agents/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
-      <description>A practical guide to building LLM agents as controlled systems: typed tool calls, permissions, retries, approvals, observability, security, and trajectory-level evaluation.</description>
+      <description>A guide to reliable LLM agents: typed tools, permissions, retries, human approval, observability, security, and trajectory-level evaluation.</description>
     </item>
   </channel>
 </rss>

@@ -32,7 +32,7 @@
       <link>https://akshat4112.github.io/posts/llm-agents/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
-      <description>A practical guide to building LLM agents as controlled systems: typed tool calls, permissions, retries, approvals, observability, security, and trajectory-level evaluation.</description>
+      <description>A guide to reliable LLM agents: typed tools, permissions, retries, human approval, observability, security, and trajectory-level evaluation.</description>
     </item>
   </channel>
 </rss>

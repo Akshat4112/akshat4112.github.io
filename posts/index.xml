@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Akshat Gupta</title>
+    <title>Writing on Akshat Gupta</title>
     <link>https://akshat4112.github.io/posts/</link>
-    <description>Recent content in Posts on Akshat Gupta</description>
+    <description>Recent content in Writing on Akshat Gupta</description>
     <image>
       <title>Akshat Gupta</title>
       <url>https://akshat4112.github.io/akshat_gupta.jpg</url>
@@ -32,10 +32,10 @@
       <link>https://akshat4112.github.io/posts/vector-databases/</link>
       <pubDate>Fri, 15 Dec 2023 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/vector-databases/</guid>
-      <description>A practical guide to vector search, ANN indexes, filtering, hybrid retrieval, production operations, and choosing whether a dedicated vector database is necessary.</description>
+      <description>A guide to vector search, ANN indexes, filtering, hybrid retrieval, production operations, and deciding whether a dedicated vector database is necessary.</description>
     </item>
     <item>
-      <title>Ontologies in Knowledge Graphs: Semantics, Reasoning, and Validation</title>
+      <title>Ontologies in Knowledge Graphs: Reasoning and Validation</title>
       <link>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/ontology-in-knowledge-graphs/</guid>
@@ -84,32 +84,32 @@
       <description>A concise technical guide to transformer attention: masks, position, efficient kernels, KV caches, and interpretability limits.</description>
     </item>
     <item>
-      <title>Model Extraction Attacks: Threat Models, Measurement, and Defences</title>
+      <title>Model Extraction Attacks: Threat Models and Defences</title>
       <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>A threat-model-first guide to model extraction: behavioural cloning, parameter recovery, query strategies, evaluation, detection, watermarking, privacy boundaries, and layered defences.</description>
+      <description>A threat-model-first guide to behavioural cloning, parameter recovery, query strategies, measurement, detection, watermarking, and layered defences.</description>
     </item>
     <item>
       <title>Memory in Large Language Models</title>
       <link>https://akshat4112.github.io/posts/memories-in-large-language-models/</link>
       <pubDate>Thu, 10 Jul 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/memories-in-large-language-models/</guid>
-      <description>A technical guide to the distinct mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage.</description>
+      <description>A guide to the mechanisms called LLM memory: model parameters, context, KV caches, retrieval, recurrent state, and persistent application storage.</description>
     </item>
     <item>
       <title>Speaker Anonymization: Privacy Beyond Changing a Voice</title>
       <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
       <pubDate>Tue, 15 Oct 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/speaker-anonymization/</guid>
-      <description>A threat-model-first guide to speaker anonymization: modern architectures, informed attackers, privacy and utility metrics, differential privacy, and lessons from SpeakerDiff.</description>
+      <description>A threat-model-first guide to speaker anonymization: system architectures, informed attackers, privacy and utility metrics, and lessons from SpeakerDiff.</description>
     </item>
     <item>
       <title>LLM Agents: From Model Output to Reliable Action</title>
       <link>https://akshat4112.github.io/posts/llm-agents/</link>
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
-      <description>A practical guide to building LLM agents as controlled systems: typed tool calls, permissions, retries, approvals, observability, security, and trajectory-level evaluation.</description>
+      <description>A guide to reliable LLM agents: typed tools, permissions, retries, human approval, observability, security, and trajectory-level evaluation.</description>
     </item>
   </channel>
 </rss>

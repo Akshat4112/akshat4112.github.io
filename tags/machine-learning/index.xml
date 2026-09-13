@@ -56,11 +56,11 @@
       <description>An introductory Artificial Intelligence workshop in Ujjain, Madhya Pradesh, covering AI fundamentals for students and enthusiasts.</description>
     </item>
     <item>
-      <title>Model Extraction Attacks: Threat Models, Measurement, and Defences</title>
+      <title>Model Extraction Attacks: Threat Models and Defences</title>
       <link>https://akshat4112.github.io/posts/model-extraction-attacks/</link>
       <pubDate>Sun, 15 Sep 2024 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/model-extraction-attacks/</guid>
-      <description>A threat-model-first guide to model extraction: behavioural cloning, parameter recovery, query strategies, evaluation, detection, watermarking, privacy boundaries, and layered defences.</description>
+      <description>A threat-model-first guide to behavioural cloning, parameter recovery, query strategies, measurement, detection, watermarking, and layered defences.</description>
     </item>
   </channel>
 </rss>
