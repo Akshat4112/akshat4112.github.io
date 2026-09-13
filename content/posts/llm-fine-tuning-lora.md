@@ -1,7 +1,7 @@
 ---
 title: "Fine-Tuning LLMs with LoRA"
 date: 2025-04-20T17:30:00+02:00
-lastmod: 2026-09-10T00:00:00+00:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["llm", "fine-tuning", "lora", "qlora", "preference-learning"]
 weight: 105
@@ -14,7 +14,7 @@ Fine-tuning is useful when a model repeatedly exhibits the wrong behaviour and h
 
 That distinction matters. Training a model on policy documents may make its language sound familiar, but it does not provide reliable document versioning, access control, citations, or guaranteed recall. Retrieval-augmented generation (RAG) or a deterministic tool is usually a better interface to knowledge that must remain inspectable.
 
-Low-Rank Adaptation (LoRA) makes weight adaptation substantially more practical by freezing the pretrained model and learning small low-rank updates [1]. This article explains the mathematics, the engineering trade-offs, and an evaluation-led workflow for deciding whether LoRA is the right intervention.
+Low-Rank Adaptation (LoRA) makes weight adaptation substantially more practical by freezing the pretrained model and learning small low-rank updates ([Hu et al., 2021](https://arxiv.org/abs/2106.09685)). This article explains the mathematics, the engineering trade-offs, and an evaluation-led workflow for deciding whether LoRA is the right intervention.
 
 ## Start with the failure, not the method
 
@@ -102,7 +102,7 @@ For a square \(4096 \times 4096\) projection, full adaptation would update 16,77
 
 parameters, about 0.78% of that projection's dense weight count. The model still has to execute the frozen layer; LoRA mainly reduces trainable parameters, optimiser state, gradient storage, and checkpoint size. Activation memory and base-model inference memory do not disappear.
 
-The original LoRA paper applied low-rank updates to transformer weight matrices and reported competitive results on its evaluated models and tasks [1]. That evidence does not establish that one rank or target-module choice works universally.
+The original LoRA paper applied low-rank updates to transformer weight matrices and reported competitive results on its evaluated models and tasks ([Hu et al., 2021](https://arxiv.org/abs/2106.09685)). That evidence does not establish that one rank or target-module choice works universally.
 
 ## Rank, scaling, and target modules
 
@@ -124,7 +124,7 @@ Inspect model.named_modules() and confirm what the configuration matched. A run 
 
 ## LoRA and QLoRA are not the same thing
 
-LoRA describes the low-rank parameterisation. QLoRA is a training approach that keeps the pretrained model frozen in 4-bit quantised form and backpropagates through it into LoRA adapters [2].
+LoRA describes the low-rank parameterisation. QLoRA is a training approach that keeps the pretrained model frozen in 4-bit quantised form and backpropagates through it into LoRA adapters ([Dettmers et al., 2023](https://arxiv.org/abs/2305.14314)).
 
 The QLoRA work introduced:
 
@@ -144,7 +144,7 @@ SFT consumes target responses. Direct Preference Optimisation (DPO) consumes pai
 (x, y_{\text{chosen}}, y_{\text{rejected}}).
 \]
 
-DPO directly optimises a policy against preferences relative to a reference policy, avoiding the separate learned reward model and reinforcement-learning loop used in conventional RLHF pipelines [3]. It is appropriate when reviewers can reliably say which of two responses is better, even when writing one canonical target is difficult.
+DPO directly optimises a policy against preferences relative to a reference policy, avoiding the separate learned reward model and reinforcement-learning loop used in conventional RLHF pipelines ([Rafailov et al., 2023](https://arxiv.org/abs/2305.18290)). It is appropriate when reviewers can reliably say which of two responses is better, even when writing one canonical target is difficult.
 
 A common workflow is:
 
@@ -228,7 +228,7 @@ tokenizer.save_pretrained("outputs/plain-language-lora/adapter")
 
 The two examples make the code executable, not the resulting adapter useful. A real training run needs sufficient licensed data, a held-out release set, secure handling, hardware-appropriate precision, and a documented baseline.
 
-The official PEFT interface creates a LoraConfig, wraps the base model with trainable adapters, and can report which parameters are trainable [5]. Use that report as an assertion, not decoration:
+The official PEFT interface creates a `LoraConfig`, wraps the base model with trainable adapters, and can report which parameters are trainable ([Hugging Face PEFT documentation](https://huggingface.co/docs/peft/package_reference/lora)). Use that report as an assertion, not decoration:
 
 ~~~python
 trainer.model.print_trainable_parameters()
@@ -244,7 +244,7 @@ For QLoRA, load the base model with an explicit 4-bit BitsAndBytesConfig, prepar
 
 ## Connecting the workflow to FinPlainLM
 
-[FinPlainLM](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset) is an example of separating the two learning objectives. Its repository exposes SFT data for financial plain-language rewriting and preference data with chosen and rejected responses [6].
+[FinPlainLM](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset) is an example of separating the two learning objectives. Its repository exposes SFT data for financial plain-language rewriting and preference data with chosen and rejected responses.
 
 For this kind of task:
 

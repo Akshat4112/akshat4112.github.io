@@ -1,12 +1,13 @@
 ---
 title: "Speaker Anonymization: Privacy Beyond Changing a Voice"
 date: 2024-10-15T09:00:00+01:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["speech-processing", "privacy", "voice-conversion", "speaker-verification", "anonymization"]
 weight: 114
 math: true
 showtoc: true
-description: "A threat-model-first guide to speaker anonymization: modern architectures, informed attackers, privacy and utility metrics, differential privacy, and lessons from SpeakerDiff."
+description: "A threat-model-first guide to speaker anonymization: system architectures, informed attackers, privacy and utility metrics, and lessons from SpeakerDiff."
 ---
 
 Speech carries more than words. It can reveal speaker identity, accent, age cues, emotion, health information, recording environment, and conversational context. Speaker anonymization transforms a recording to reduce identity disclosure while retaining the information required for an authorised use.

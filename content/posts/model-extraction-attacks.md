@@ -1,12 +1,13 @@
 ---
-title: "Model Extraction Attacks: Threat Models, Measurement, and Defences"
+title: "Model Extraction Attacks: Threat Models and Defences"
 date: 2024-09-15T09:00:00+01:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["ai-security", "model-extraction", "machine-learning", "cybersecurity", "llm"]
 weight: 113
 math: true
 showtoc: true
-description: "A threat-model-first guide to model extraction: behavioural cloning, parameter recovery, query strategies, evaluation, detection, watermarking, privacy boundaries, and layered defences."
+description: "A threat-model-first guide to behavioural cloning, parameter recovery, query strategies, measurement, detection, watermarking, and layered defences."
 ---
 
 A prediction API protects model files from direct download, but it still exposes information about the model through its outputs. With enough carefully chosen queries, an adversary may train a substitute that imitates the service, infer properties of the target, or—in narrower settings—recover parameters.

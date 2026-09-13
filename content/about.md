@@ -70,7 +70,7 @@ Across NLP, computer vision, speech, and generative models, the throughline is t
 
 **LLMs & generative AI:** LangChain, Hugging Face Transformers, Azure OpenAI, RAG pipelines, agentic AI, PEFT / LoRA
 
-**Cloud & Infrastructure:** Azure (AI Services, Functions, Blob), AWS (Lex, Dialogflow), Docker
+**Cloud & Infrastructure:** Azure (AI Services, Functions, Blob Storage), AWS, Google Cloud, Docker
 
 **ML Domains:** NLP, Speech Processing, Computer Vision, OCR, Adversarial ML, Diffusion Models
 

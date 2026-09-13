@@ -6,7 +6,7 @@ draft: false
 tags: ["AI", "startups", "deep-learning", "generative-ai"]
 weight: 100
 cover:
-    image: "/events/cyber_valley.JPG"
+    image: "events/cyber_valley.JPG"
     alt: "Participants at the Cyber Valley AI Startup Bootcamp 2023 in Stuttgart"
 ---
 

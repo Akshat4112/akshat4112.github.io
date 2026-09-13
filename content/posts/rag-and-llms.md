@@ -1,7 +1,7 @@
 ---
 title: "Building Reliable RAG Systems"
 date: 2024-07-15T09:00:00+01:00
-lastmod: 2026-09-10T00:00:00+00:00
+lastmod: 2026-09-13T01:10:00+02:00
 draft: false
 tags: ["rag", "llm", "retrieval", "document-intelligence", "production-ai"]
 weight: 111
@@ -14,7 +14,7 @@ Retrieval-augmented generation (RAG) gives a language model access to external e
 
 RAG does not make an answer correct by construction. A system can retrieve the wrong document, omit a decisive table row, use an obsolete version, misunderstand accurate evidence, or attach a citation that does not support its claim. Retrieval changes the failure surface; it does not remove it.
 
-The original RAG work combined a sequence-to-sequence model's parametric memory with dense, non-parametric retrieval [1]. In production applications, the idea becomes a larger information system:
+The original RAG work combined a sequence-to-sequence model's parametric memory with dense, non-parametric retrieval ([Lewis et al., 2020](https://arxiv.org/abs/2005.11401)). In production applications, the idea becomes a larger information system:
 
 \[
 \text{source} \rightarrow \text{parse} \rightarrow \text{index} \rightarrow
@@ -93,7 +93,7 @@ Dense retrieval maps a query \(q\) and document chunk \(d\) into vectors and sco
 s_{\text{dense}}(q,d) = E_q(q)^\top E_d(d).
 \]
 
-Dense Passage Retrieval showed that learned dense retrieval can outperform a strong sparse baseline on several open-domain question-answering datasets [2]. That does not imply dense retrieval always wins on private documents. Exact identifiers, rare terms, and newly introduced names often favour lexical matching.
+Dense Passage Retrieval showed that learned dense retrieval can outperform a strong sparse baseline on several open-domain question-answering datasets ([Karpukhin et al., 2020](https://arxiv.org/abs/2004.04906)). That does not imply dense retrieval always wins on private documents. Exact identifiers, rare terms, and newly introduced names often favour lexical matching.
 
 A hybrid system runs dense and sparse retrieval, then fuses their ranked lists. Reciprocal rank fusion is a simple option:
 
@@ -107,7 +107,7 @@ where \(R\) contains the retrieval methods and \(k\) limits the influence of ver
 
 First-stage retrieval should favour recall: collect a manageable candidate pool that is unlikely to omit the evidence. A reranker then spends more computation estimating query–passage relevance and reduces the pool passed to the generator.
 
-Cross-encoders jointly process the query and candidate, while late-interaction approaches such as ColBERT retain token-level interactions with more reusable document representations [3]. The appropriate choice depends on corpus size, latency, hardware, and the value of improved ranking.
+Cross-encoders jointly process the query and candidate, while late-interaction approaches such as ColBERT retain token-level interactions with more reusable document representations ([Santhanam et al., 2021](https://arxiv.org/abs/2112.01488)). The appropriate choice depends on corpus size, latency, hardware, and the value of improved ranking.
 
 Reranking cannot recover evidence that the first stage never retrieved. Measure both candidate recall and post-reranking quality.
 
@@ -115,7 +115,7 @@ Reranking cannot recover evidence that the first stage never retrieved. Measure 
 
 Remove exact duplicates, keep source diversity where the task requires it, and avoid filling the context window merely because space is available. Relevant evidence can be displaced or diluted by redundant passages.
 
-Ordering matters as well. Long-context models can use evidence inconsistently depending on where it appears; “Lost in the Middle” found lower performance when relevant information was placed in the middle of long inputs [4]. Test context length and ordering with the target model rather than treating a larger window as a substitute for retrieval.
+Ordering matters as well. Long-context models can use evidence inconsistently depending on where it appears; “Lost in the Middle” found lower performance when relevant information was placed in the middle of long inputs ([Liu et al., 2023](https://arxiv.org/abs/2307.03172)). Test context length and ordering with the target model rather than treating a larger window as a substitute for retrieval.
 
 ## Generate answers that expose their evidence
 
@@ -196,7 +196,7 @@ Given a fixed evidence set, measure:
 - calibrated abstention; and
 - output-schema validity.
 
-RAGAS proposed automated metrics that separate retrieval relevance, faithfulness, and answer quality [5]. Model-based metrics can accelerate iteration, but calibrate them against human judgements in the application domain before using them as release gates.
+RAGAS proposed automated metrics that separate retrieval relevance, faithfulness, and answer quality ([Es et al., 2023](https://arxiv.org/abs/2309.15217)). Model-based metrics can accelerate iteration, but calibrate them against human judgements in the application domain before using them as release gates.
 
 ### End-to-end evaluation
 
@@ -248,7 +248,7 @@ RAG should reduce the opportunity for unsupported generation when relevant evide
 
 ## Where Self-RAG fits
 
-Self-RAG is not simply query rewriting. It trains a language model to retrieve passages adaptively and to generate special reflection tokens that assess retrieval need, passage relevance, response support, and response utility [6].
+Self-RAG is not simply query rewriting. It trains a language model to retrieve passages adaptively and to generate special reflection tokens that assess retrieval need, passage relevance, response support, and response utility ([Asai et al., 2023](https://arxiv.org/abs/2310.11511)).
 
 That is a specific learned architecture, not a label for every pipeline with iterative search or self-critique. In many production systems, simpler application-level routing, retrieval thresholds, verification, and abstention may be easier to inspect and govern. Use Self-RAG when its learned adaptive behaviour matches the task and can be evaluated against a simpler baseline.
 
