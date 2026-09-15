@@ -1,6 +1,5 @@
 ---
 title: "Datenschutz und Analyse"
-url: "/privacy/"
 ---
 
 Dieses persönliche Portfolio verwendet Google Analytics 4 (Mess-ID `G-8YC2E5MW2M`) nur, wenn Sie **Zustimmen** wählen. Bis dahin wird der Google-Tag nicht geladen und diese Website sendet keine Analysedaten an Google. Bei Ablehnung funktioniert das Portfolio weiterhin normal.
