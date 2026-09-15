@@ -18,6 +18,9 @@ languages:
         - name: Work
           url: /#work
           weight: 5
+        - name: Now
+          url: /now/
+          weight: 8
         - name: Writing
           url: /posts/
           weight: 10
@@ -42,6 +45,9 @@ languages:
         - name: Projekte
           url: /#work
           weight: 5
+        - name: Aktuell
+          url: /now/
+          weight: 8
         - name: Artikel
           url: /posts/
           weight: 10

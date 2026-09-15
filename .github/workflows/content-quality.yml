@@ -29,3 +29,6 @@ jobs:
 
       - name: Verify privacy language routes
         run: python3 scripts/check_privacy_routes.py
+
+      - name: Verify Now language routes
+        run: python3 scripts/check_now_routes.py
