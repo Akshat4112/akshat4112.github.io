@@ -167,5 +167,13 @@
       <guid>https://akshat4112.github.io/about/</guid>
       <description>About Akshat Gupta — an applied AI engineer working on agentic systems, document intelligence, evaluation, and trustworthy machine learning.</description>
     </item>
+    <item>
+      <title>Privacy and analytics</title>
+      <link>https://akshat4112.github.io/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/privacy/</guid>
+      <description>&lt;p&gt;This personal portfolio uses Google Analytics 4 (measurement ID &lt;code&gt;G-8YC2E5MW2M&lt;/code&gt;) only if you choose &lt;strong&gt;Allow analytics&lt;/strong&gt;. Until then, the Google tag is not loaded and this website sends no analytics data to Google. If you decline, the portfolio still works normally.&lt;/p&gt;
+&lt;p&gt;After you opt in, Analytics records page visits and a limited set of interactions: project links, CV-link opens, email-link clicks, GitHub and LinkedIn clicks, language changes, article reading depth, and other outbound links. Event parameters contain the site language, a public project title, or an outbound host—not your email address, typed input, or full link with query parameters. The CV link currently opens a Google Drive viewing page; the &lt;code&gt;download_cv&lt;/code&gt; event counts that link click, not a confirmed file download. Google may process technical information such as your IP address and browser data as part of the service. The portfolio disables Google Signals and ads personalization in its tag configuration.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
