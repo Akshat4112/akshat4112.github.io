@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aktuell</title>
+      <link>https://akshat4112.github.io/de/now/</link>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/de/now/</guid>
+      <description>Woran Akshat Gupta derzeit arbeitet: verlässliche KI-Systeme, öffentliche Projekte, Forschung und Lernen.</description>
+    </item>
     <item>
       <title>Über mich</title>
       <link>https://akshat4112.github.io/de/about/</link>

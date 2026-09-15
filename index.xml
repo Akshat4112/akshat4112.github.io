@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 10 Jul 2025 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cyber Valley AI Startup Bootcamp</title>
@@ -159,6 +159,13 @@
       <pubDate>Mon, 05 May 2025 09:00:00 +0100</pubDate>
       <guid>https://akshat4112.github.io/posts/llm-agents/</guid>
       <description>A guide to reliable LLM agents: typed tools, permissions, retries, human approval, observability, security, and trajectory-level evaluation.</description>
+    </item>
+    <item>
+      <title>Now</title>
+      <link>https://akshat4112.github.io/now/</link>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://akshat4112.github.io/now/</guid>
+      <description>What Akshat Gupta is focused on now: reliable AI systems, public projects, research and learning.</description>
     </item>
     <item>
       <title>About</title>
