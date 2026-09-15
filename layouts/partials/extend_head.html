@@ -11,9 +11,7 @@
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
 
-{{ if site.Config.Services.GoogleAnalytics.ID }}
-<link rel="preconnect" href="https://www.googletagmanager.com">
-{{ end }}
+<script defer src="/js/portfolio-analytics.js"></script>
 
 {{- if and .IsHome (eq .Lang "en") }}
 <script>
