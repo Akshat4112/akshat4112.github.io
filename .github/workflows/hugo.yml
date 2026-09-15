@@ -41,6 +41,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Verify privacy language routes
+        run: python3 scripts/check_privacy_routes.py
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
