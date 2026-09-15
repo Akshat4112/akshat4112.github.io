@@ -26,3 +26,6 @@ jobs:
 
       - name: Build site
         run: hugo --minify
+
+      - name: Verify privacy language routes
+        run: python3 scripts/check_privacy_routes.py
