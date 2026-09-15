@@ -5,9 +5,9 @@
     <div class="intro-copy">
       <p class="intro-role">Ingenieur für angewandte KI · Forscher</p>
       <h1 id="intro-title">Akshat Gupta</h1>
-      <p class="intro-lede">Ich entwickle Machine-Learning-Systeme und untersuche, wie sie nützlich, zuverlässig und nachvollziehbar werden.</p>
-      <p>Aktuell arbeite ich an agentenbasierten KI-Systemen und Dokumentenintelligenz für Finanz- und Versicherungsanwendungen. Mein Alltag verbindet Forschung und Engineering: Fachliteratur lesen, Evaluationen entwerfen, Produktionssysteme entwickeln und systematisch untersuchen, wo Modelle scheitern.</p>
-      <p>Vor meiner Arbeit mit generativer KI habe ich mich mit NLP, Sprachverarbeitung, Computer Vision und adversarialem maschinellem Lernen beschäftigt. Ich habe Computerlinguistik an der Universität Stuttgart studiert und arbeite seit 2018 mit Machine Learning.</p>
+      <p class="intro-lede">Ich entwickle Machine-Learning-Systeme und verbringe viel Zeit damit herauszufinden, wo sie scheitern.</p>
+      <p>Aktuell geht es dabei um agentenbasierte KI und Dokumentenintelligenz für Finanz- und Versicherungsanwendungen: Systeme, die uneinheitliche, wichtige Dokumente lesen, ihre Antworten belegen und einer Prüfung standhalten müssen. Mein Alltag reicht vom Lesen wissenschaftlicher Arbeiten über den Entwurf von Evaluationen bis zur Entwicklung produktiver Software.</p>
+      <p>Vor der Arbeit mit LLMs habe ich mich mit NLP, Sprachverarbeitung, Computer Vision und adversarialem Machine Learning beschäftigt. Ich habe Computerlinguistik an der Universität Stuttgart studiert und arbeite seit 2018 mit Machine Learning.</p>
       <nav class="intro-links" aria-label="Profile von Akshat Gupta">
         <a href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         <a href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
@@ -25,18 +25,18 @@
 
   <aside class="current-focus reveal" aria-labelledby="current-title">
     <h2 id="current-title">Aktuell</h2>
-    <p>Ich entwickle agentenbasierte Dokumenten- und Entscheidungsworkflows, untersuche Evaluation, Grounding und Observability für produktive LLM-Systeme und dokumentiere, was ich dabei lerne.</p>
+    <p>Ich entwickle agentenbasierte Dokumenten- und Entscheidungsworkflows und gehe einer Frage nach: Woran erkennt man, ob ein LLM-System tatsächlich funktioniert hat? Meine Notizen dazu stehen in den Artikeln weiter unten.</p>
   </aside>
 
   <section class="portfolio-section" id="work" aria-labelledby="work-title">
     <div class="section-label reveal"><span>01</span><h2 id="work-title">Ausgewählte Projekte</h2></div>
-    <p class="section-intro reveal">Diese Auswahl zeigt meine Arbeit zwischen angewandter KI, Forschung und Open Source – von produktiven Dokumentensystemen bis zu Computer Vision und Sprachverarbeitung.</p>
+    <p class="section-intro reveal">Drei Projekte zeigen, wie ich arbeite: ein produktives System, eine veröffentlichte Forschungsarbeit und ein noch offenes Experiment.</p>
     <div class="work-list">
       <article class="work-entry reveal">
         <div>
           <p class="entry-meta">2024–heute · Berufliche Arbeit</p>
           <h3>KI-Systeme für dokumentenintensive Workflows</h3>
-          <p>Ich entwickle Systeme, die komplexe Finanz- und Versicherungsdokumente verarbeiten, relevante Informationen abrufen, spezialisierte Agenten koordinieren und strukturierte Ergebnisse liefern, die sich evaluieren und prüfen lassen. Meine Arbeit umfasst OCR, RAG, Orchestrierung, Validierung, Monitoring und produktive APIs.</p>
+          <p>Finanz- und Versicherungsdokumente sind lang, uneinheitlich und Fehler können teuer werden. Ich entwickle Pipelines, die sie mit OCR, Retrieval, spezialisierten Agenten und Validierung verarbeiten und strukturierte Ergebnisse liefern, die Menschen prüfen können. Die schwierigen Fragen betreffen oft nicht das Modell selbst, sondern die Belege und den richtigen Zeitpunkt für eine Übergabe an Menschen.</p>
           <p class="entry-links"><a href="{{ "about/#berufserfahrung" | relLangURL }}">Mehr zur Berufserfahrung →</a></p>
         </div>
         <ul class="entry-aside" aria-label="Technologiebereiche"><li>Agentic AI</li><li>Azure OpenAI</li><li>OCR</li><li>Evaluation</li></ul>
@@ -46,7 +46,7 @@
         <div>
           <p class="entry-meta">2023 · Forschung</p>
           <h3>GlyphNet</h3>
-          <p>GlyphNet erkennt Phishing-Domains, die vertrauenswürdigen Websites visuell ähneln. Dazu werden Domainnamen als Bilder gerendert und mit einem aufmerksamkeitsbasierten Convolutional Neural Network analysiert, um Homoglyph-Angriffe zu erkennen, die rein textbasierte Verfahren übersehen können.</p>
+          <p>Phishing-Domains können <em>wie</em> vertrauenswürdige Websites aussehen: Bei <code>paypa1.com</code> ersetzt etwa eine Ziffer das L. GlyphNet rendert Domainnamen als Bilder und erkennt solche visuellen Täuschungen mit einem aufmerksamkeitsbasierten CNN. Veröffentlicht mit einem Datensatz von 4 Mio. Domains; AUC 0,93.</p>
           <p class="entry-links"><a href="https://akshat4112.github.io/Glyphnet/" target="_blank" rel="noopener noreferrer">Projektwebsite ↗</a><a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="https://huggingface.co/datasets/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Datensatz ↗</a></p>
         </div>
         <dl class="entry-result"><div><dt>AUC</dt><dd>0,93</dd></div><div><dt>Ursprünglicher Datensatz</dt><dd>4 Mio. Domains</dd></div></dl>
@@ -56,7 +56,7 @@
         <div>
           <p class="entry-meta">2023 · Forschungsprototyp</p>
           <h3>SpeakerDiff</h3>
-          <p>SpeakerDiff ist ein explorativer Prototyp zur Untersuchung datenschutzfreundlicher Sprachrepräsentationen mit Diffusionsmodellen. Er erzeugt synthetische Sprecher-Embeddings für Anonymisierungsexperimente; Datenschutz und Sprachqualität müssen im vollständigen Konvertierungssystem evaluiert werden.</p>
+          <p>Eine offene Frage: Können Diffusionsmodelle Sprecher-Embeddings erzeugen, die eine Stimme anonymisieren, ohne ihre Qualität zu zerstören? SpeakerDiff ist ein Prototyp dafür, keine abschließende Antwort. Der Datenschutz muss im vollständigen Konvertierungssystem evaluiert werden; Code und Experimente sind öffentlich.</p>
           <p class="entry-links"><a href="https://github.com/Akshat4112/speaker-diffusion" target="_blank" rel="noopener noreferrer">Code und Experimente ↗</a></p>
         </div>
         <ul class="entry-aside" aria-label="Forschungsbereiche"><li>Diffusionsmodelle</li><li>Sprache</li><li>Datenschutz</li></ul>
@@ -76,7 +76,7 @@
 
   <section class="portfolio-section" aria-labelledby="datasets-title">
     <div class="section-label reveal"><span>02</span><h2 id="datasets-title">Offene Datensätze</h2></div>
-    <p class="section-intro reveal">Öffentliche Datensätze, die ich für verständliche Finanzsprache und visuelle Cybersicherheitsforschung erstellt habe.</p>
+    <p class="section-intro reveal">Zwei Datensätze, die ich veröffentlicht habe, damit andere sie nicht erneut erstellen müssen.</p>
     <div class="plain-list research-list">
       <a class="plain-row reveal" href="https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset" target="_blank" rel="noopener noreferrer">
         <span class="row-year">NLP</span>
@@ -99,11 +99,6 @@
         <span class="row-main"><strong>GlyphNet: Homoglyph domains dataset and detection using attention-based CNNs</strong><small>Forschungsartikel auf Englisch · Computer Vision und Cybersicherheit</small></span>
         <span>↗</span>
       </a>
-      <div class="plain-row reveal">
-        <span class="row-year">2022</span>
-        <span class="row-main"><strong>Räumlich-zeitliche Wortrepräsentationen</strong><small>Forschung · Universität Stuttgart</small></span>
-        <span></span>
-      </div>
       <a class="plain-row reveal" href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">
         <span class="row-year">Laufend</span>
         <span class="row-main"><strong>Open-Source-Arbeit und technische Notizen</strong><small>ML-Fallstudien · NLP-Ressourcen · Forschungspräsentationen</small></span>
@@ -114,7 +109,7 @@
 
   <section class="portfolio-section" aria-labelledby="writing-title">
     <div class="section-label reveal"><span>04</span><h2 id="writing-title">Aktuelle Artikel</h2></div>
-    <p class="section-intro reveal">Technische Artikel über Systeme, an denen ich arbeite, und Fragen, die dabei offenbleiben. Die Fachartikel sind derzeit auf Englisch verfügbar.</p>
+    <p class="section-intro reveal">Arbeitsnotizen zu Dingen, die ich lerne, Systemen, die ich entwickle, und offenen Fragen. Die Fachartikel sind derzeit auf Englisch verfügbar.</p>
     <div class="plain-list writing-list">
       {{- $englishSite := index (where .Sites "Language.Lang" "en") 0 }}
       {{- $featured := slice ($englishSite.GetPage "/posts/llm-agents") ($englishSite.GetPage "/posts/evaluating-llms") ($englishSite.GetPage "/posts/model-extraction-attacks") ($englishSite.GetPage "/posts/speaker-anonymization") }}
@@ -148,7 +143,7 @@
   </section>
 
   <footer class="home-contact reveal">
-    <p>Lust auf einen Austausch über angewandte KI oder Forschung?</p>
+    <p>Arbeiten Sie an angewandter KI und möchten sich austauschen?</p>
     <a href="mailto:akshat41121995@gmail.com">akshat41121995@gmail.com</a>
   </footer>
   {{- else }}
@@ -156,9 +151,9 @@
     <div class="intro-copy">
       <p class="intro-role">Applied AI engineer · researcher</p>
       <h1 id="intro-title">Akshat Gupta</h1>
-      <p class="intro-lede">I build machine-learning systems and study how to make them useful, reliable, and understandable.</p>
-      <p>I currently work on agentic AI and document intelligence for finance and insurance. My day-to-day sits between research and engineering: reading papers, designing evaluations, building production systems, and finding out where models fail.</p>
-      <p>Before generative AI, I worked across NLP, speech, computer vision, and adversarial machine learning. I studied Computational Linguistics at the University of Stuttgart and have been building with ML since 2018.</p>
+      <p class="intro-lede">I build machine-learning systems and spend most of my time finding out where they break.</p>
+      <p>Right now that means agentic AI and document intelligence for finance and insurance: systems that read messy, high-stakes documents and have to get the answer right, show their evidence, and survive an audit. My days move between reading papers, designing evaluations, and shipping production code.</p>
+      <p>Before LLMs took over, I worked across NLP, speech, computer vision, and adversarial ML. I studied Computational Linguistics at the University of Stuttgart and have been building with ML since 2018.</p>
       <nav class="intro-links" aria-label="Akshat's profiles">
         <a href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         <a href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
@@ -176,18 +171,18 @@
 
   <aside class="current-focus reveal" aria-labelledby="current-title">
     <h2 id="current-title">Currently</h2>
-    <p>Building agent-based document and decision workflows; exploring evaluation, grounding, and observability for production LLM systems; writing down what I learn.</p>
+    <p>Building agent-based document and decision workflows, and trying to answer one question properly: how do you know an LLM system actually worked? Notes on that go into the writing below.</p>
   </aside>
 
   <section class="portfolio-section" id="work" aria-labelledby="work-title">
     <div class="section-label reveal"><span>01</span><h2 id="work-title">Featured projects</h2></div>
-    <p class="section-intro reveal">A few projects that reflect how I work across applied AI, research, and open source—from production document systems to computer vision and speech.</p>
+    <p class="section-intro reveal">Three projects that show how I work: one production system, one published paper, one experiment that's still open.</p>
     <div class="work-list">
       <article class="work-entry reveal">
         <div>
           <p class="entry-meta">2024—Present · Professional work</p>
           <h3>AI systems for document-heavy workflows</h3>
-          <p>I build systems that read complex financial and insurance documents, retrieve the right context, coordinate specialised agents, and return structured outputs that can be evaluated and audited. My work covers OCR, RAG, orchestration, validation, monitoring, and production APIs.</p>
+          <p>Financial and insurance documents are long, inconsistent, and expensive to get wrong. I build the pipelines that read them — OCR, retrieval, specialised agents, validation — and return structured output a human reviewer can check. The interesting problems are rarely the model; they're grounding and knowing when to hand off to a person.</p>
           <p class="entry-links"><a href="/about/#experience">Work details →</a></p>
         </div>
         <ul class="entry-aside" aria-label="Technology areas"><li>Agentic AI</li><li>Azure OpenAI</li><li>OCR</li><li>Evaluation</li></ul>
@@ -197,7 +192,7 @@
         <div>
           <p class="entry-meta">2023 · Research</p>
           <h3>GlyphNet</h3>
-          <p>GlyphNet detects phishing domains that look visually similar to trusted websites. It renders domain names as images and uses an attention-based convolutional neural network to identify homoglyph attacks that text-only methods can miss.</p>
+          <p>Phishing domains that <em>look</em> like trusted ones — <code>paypa1.com</code> with a digit for an L — can slip past text-based filters. GlyphNet renders the domain as an image and uses an attention-based CNN to spot the visual trick. Published with a 4M-domain dataset; 0.93 AUC.</p>
           <p class="entry-links"><a href="https://akshat4112.github.io/Glyphnet/" target="_blank" rel="noopener noreferrer">Project website ↗</a><a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="https://huggingface.co/datasets/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Dataset ↗</a></p>
         </div>
         <dl class="entry-result"><div><dt>AUC</dt><dd>0.93</dd></div><div><dt>Original dataset</dt><dd>4M domains</dd></div></dl>
@@ -207,7 +202,7 @@
         <div>
           <p class="entry-meta">2023 · Research prototype</p>
           <h3>SpeakerDiff</h3>
-          <p>SpeakerDiff is an exploratory prototype for studying privacy-preserving speech representations with diffusion models. It generates synthetic speaker embeddings for anonymisation experiments; establishing privacy and speech utility requires evaluation of the complete conversion pipeline.</p>
+          <p>An open question I keep coming back to: can diffusion models generate speaker embeddings that anonymise a voice without wrecking it? SpeakerDiff is the prototype for testing that. It's not a finished answer — the privacy claim needs evaluation of the full conversion pipeline — but the code and experiments are public.</p>
           <p class="entry-links"><a href="https://github.com/Akshat4112/speaker-diffusion" target="_blank" rel="noopener noreferrer">Code and experiments ↗</a></p>
         </div>
         <ul class="entry-aside" aria-label="Research areas"><li>Diffusion models</li><li>Speech</li><li>Privacy</li></ul>
@@ -217,9 +212,9 @@
     <div class="more-code reveal">
       <h3>Open-source projects</h3>
       <ul>
-        <li><a href="https://github.com/Akshat4112/machine-learning-case-studies" target="_blank" rel="noopener noreferrer"><strong>Machine Learning Case Studies</strong><span>End-to-end notebooks covering NLP, computer vision, and classical machine learning.</span></a></li>
-        <li><a href="https://github.com/Akshat4112/Awesome-NLP-Resources" target="_blank" rel="noopener noreferrer"><strong>Awesome NLP Resources</strong><span>A curated reading list of foundational and practical NLP resources.</span></a></li>
-        <li><a href="https://github.com/Akshat4112/research-paper-presentations" target="_blank" rel="noopener noreferrer"><strong>Research Paper Presentations</strong><span>Slide-based explanations of machine learning and NLP papers.</span></a></li>
+        <li><a href="https://github.com/Akshat4112/machine-learning-case-studies" target="_blank" rel="noopener noreferrer"><strong>Machine Learning Case Studies</strong><span>End-to-end notebooks across NLP, vision, and classical ML.</span></a></li>
+        <li><a href="https://github.com/Akshat4112/Awesome-NLP-Resources" target="_blank" rel="noopener noreferrer"><strong>Awesome NLP Resources</strong><span>A curated NLP reading list, from foundations to practical resources.</span></a></li>
+        <li><a href="https://github.com/Akshat4112/research-paper-presentations" target="_blank" rel="noopener noreferrer"><strong>Research Paper Presentations</strong><span>Slide walkthroughs of ML and NLP papers.</span></a></li>
       </ul>
       <a class="quiet-link" href="https://github.com/Akshat4112?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories ↗</a>
     </div>
@@ -227,16 +222,16 @@
 
   <section class="portfolio-section" aria-labelledby="datasets-title">
     <div class="section-label reveal"><span>02</span><h2 id="datasets-title">Open datasets</h2></div>
-    <p class="section-intro reveal">Public datasets I have created for financial language modelling and visual cybersecurity research.</p>
+    <p class="section-intro reveal">Two datasets I've released so others don't have to build them.</p>
     <div class="plain-list research-list">
       <a class="plain-row reveal" href="https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset" target="_blank" rel="noopener noreferrer">
         <span class="row-year">NLP</span>
-        <span class="row-main"><strong>FinPlainLM — Financial Plain-Language Preference Dataset</strong><small>Financial text simplification · SFT and DPO splits · 1,500 examples</small></span>
+        <span class="row-main"><strong>FinPlainLM — Financial Plain-Language Preference Dataset</strong><small>1,500 examples · SFT and DPO splits · plain-language financial explanations</small></span>
         <span>↗</span>
       </a>
       <a class="plain-row reveal" href="https://huggingface.co/datasets/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">
         <span class="row-year">Vision</span>
-        <span class="row-main"><strong>GlyphNet Homoglyph Domains</strong><small>Phishing detection · 1.29M domain pairs · 2.57M rendered images</small></span>
+        <span class="row-main"><strong>GlyphNet Homoglyph Domains</strong><small>1.29M domain pairs · 2.57M rendered images · visual phishing detection</small></span>
         <span>↗</span>
       </a>
     </div>
@@ -250,11 +245,6 @@
         <span class="row-main"><strong>GlyphNet: Homoglyph domains dataset and detection using attention-based CNNs</strong><small>Research paper · Computer vision and cybersecurity</small></span>
         <span>↗</span>
       </a>
-      <div class="plain-row reveal">
-        <span class="row-year">2022</span>
-        <span class="row-main"><strong>Spatio-temporal word representations</strong><small>Research · University of Stuttgart</small></span>
-        <span></span>
-      </div>
       <a class="plain-row reveal" href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">
         <span class="row-year">Ongoing</span>
         <span class="row-main"><strong>Open-source work and technical notes</strong><small>ML case studies · NLP resources · research presentations</small></span>
@@ -265,7 +255,7 @@
 
   <section class="portfolio-section" aria-labelledby="writing-title">
     <div class="section-label reveal"><span>04</span><h2 id="writing-title">Recent writing</h2></div>
-    <p class="section-intro reveal">Notes on ideas I am learning, systems I am building, and questions that remain unresolved.</p>
+    <p class="section-intro reveal">Working notes — things I'm learning, systems I'm building, and questions I haven't closed yet.</p>
     <div class="plain-list writing-list">
       {{- $featured := slice (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") (site.GetPage "/posts/speaker-anonymization") }}
       {{- range $page := $featured }}
@@ -284,9 +274,9 @@
   <section class="portfolio-section" aria-labelledby="experience-title">
     <div class="section-label reveal"><span>05</span><h2 id="experience-title">Experience</h2></div>
     <div class="experience-list">
-      <div class="experience-row reveal"><time>2024—Now</time><div><strong>AI Engineer · additiv</strong><p>Agentic AI, document intelligence, and decision systems for finance and insurance.</p></div></div>
-      <div class="experience-row reveal"><time>2023—2024</time><div><strong>Machine Learning Engineer · Validaitor</strong><p>Model robustness, adversarial ML, security, fairness, bias, and toxicity evaluation.</p></div></div>
-      <div class="experience-row reveal"><time>2022</time><div><strong>Research Assistant · University of Stuttgart</strong><p>Temporal and geographic representations for language understanding.</p></div></div>
+      <div class="experience-row reveal"><time>2024—Now</time><div><strong>AI Engineer · additiv</strong><p>Agentic document and decision systems for finance and insurance — from OCR to production API.</p></div></div>
+      <div class="experience-row reveal"><time>2023—2024</time><div><strong>Machine Learning Engineer · Validaitor</strong><p>Testing models for the ways they fail: robustness, adversarial inputs, fairness, bias, and toxicity.</p></div></div>
+      <div class="experience-row reveal"><time>2022</time><div><strong>Research Assistant · University of Stuttgart</strong><p>How language models represent time and place.</p></div></div>
       <div class="experience-row reveal"><time>2018—2021</time><div><strong>Machine Learning Engineer</strong><p>NLP, machine translation, biomedical NER, speech, diarization, and multimodal learning.</p></div></div>
     </div>
     <a class="more-link reveal" href="/about/#experience">Complete experience →</a>
@@ -294,11 +284,11 @@
 
   <section class="personal-end reveal" aria-labelledby="personal-title">
     <h2 id="personal-title">Away from the keyboard</h2>
-    <p>I play table tennis and chess, cycle around Stuttgart, follow financial markets, and read about quantum physics. I am usually carrying a notebook—digital or otherwise.</p>
+    <p>Table tennis, chess, cycling around Stuttgart, following the markets, and reading more quantum physics than is strictly useful. There's usually a notebook involved.</p>
   </section>
 
   <footer class="home-contact reveal">
-    <p>Want to exchange ideas about applied AI or research?</p>
+    <p>Working on something in applied AI and want to compare notes?</p>
     <a href="mailto:akshat41121995@gmail.com">akshat41121995@gmail.com</a>
   </footer>
   {{- end }}
