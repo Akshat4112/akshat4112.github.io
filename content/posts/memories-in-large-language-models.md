@@ -36,7 +36,7 @@ Pretraining adjusts parameters $\theta$ so that the model assigns high probabili
 $$
 \theta^* = \arg\min_\theta
 \mathbb{E}_{x \sim \mathcal{D}}
-\left[-\sum_t \log p_\theta(x_t \mid x_{<t})\right].
+\left[-\sum_t \log p_\theta(x_t \mid x_{\lt t})\right].
 $$
 
 The resulting weights capture statistical regularities and can reproduce some factual associations. This is often called **parametric memory**, including in the original retrieval-augmented generation formulation, which contrasts a model's parameters with an external non-parametric index ([Lewis et al., 2020](https://arxiv.org/abs/2005.11401)).

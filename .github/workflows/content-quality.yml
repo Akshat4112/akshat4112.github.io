@@ -27,6 +27,9 @@ jobs:
       - name: Build site
         run: hugo --minify
 
+      - name: Verify rendered mathematics and reading time
+        run: python3 scripts/check_math_rendering.py
+
       - name: Verify privacy language routes
         run: python3 scripts/check_privacy_routes.py
 

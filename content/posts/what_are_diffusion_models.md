@@ -66,8 +66,8 @@ $$
 or
 
 $$
-x_t = \sqrt{\bar{\alpha}_t}x_0
-+ \sqrt{1-\bar{\alpha}_t}\,\epsilon.
+x_t = \sqrt{\bar{\alpha}_t}x_0 +
+\sqrt{1-\bar{\alpha}_t}\,\epsilon.
 $$
 
 This equation turns training into a supervised regression problem: choose a clean sample, choose a noise level, add known noise, and ask the network to predict a target derived from those quantities.
@@ -180,10 +180,10 @@ Classifier-free guidance trains the same network on conditional and deliberately
 
 $$
 \epsilon_{\text{guided}}
-= \epsilon_\theta(x_t,t,\varnothing)
-+ w\left[
-\epsilon_\theta(x_t,t,c)
-- \epsilon_\theta(x_t,t,\varnothing)
+= \epsilon_\theta(x_t,t,\varnothing) +
+w\left[
+\epsilon_\theta(x_t,t,c) -
+\epsilon_\theta(x_t,t,\varnothing)
 \right].
 $$
 
