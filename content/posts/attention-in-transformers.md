@@ -29,8 +29,7 @@ $$
 The operation introduced in the original transformer is
 
 $$
-\operatorname{Attention}(Q,K,V)
-=
+\operatorname{Attention}(Q,K,V) =
 \operatorname{softmax}\left(\frac{QK^\top}{\sqrt{d_h}} + M\right)V,
 $$
 
@@ -63,14 +62,12 @@ This is a soft mixture, not a hard lookup. A large weight says that a value cont
 A model normally projects the hidden states into several heads:
 
 $$
-\operatorname{head}_i
-=
+\operatorname{head}_i =
 \operatorname{Attention}(QW_i^Q,KW_i^K,VW_i^V),
 $$
 
 $$
-\operatorname{MHA}(Q,K,V)
-=
+\operatorname{MHA}(Q,K,V) =
 \operatorname{Concat}(\operatorname{head}_1,\ldots,\operatorname{head}_H)W^O.
 $$
 

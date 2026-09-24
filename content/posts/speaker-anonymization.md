@@ -168,7 +168,7 @@ $$
 
 $$
 \operatorname{FRR}(\tau)
-= \Pr[q<\tau\mid\text{same speaker}].
+= \Pr[q\lt\tau\mid\text{same speaker}].
 $$
 
 Equal error rate (EER) is the operating point where FAR and FRR are equal or closest. A higher EER usually indicates a less effective verifier under that protocol. It is not a universal probability of anonymity. Results depend on trial construction, attacker training, score calibration, and subgroup composition. Values near 50% indicate chance-like discrimination in a balanced verification setting; values above 50% can reflect score inversion rather than “more than perfect” privacy.

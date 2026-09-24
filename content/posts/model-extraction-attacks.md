@@ -29,7 +29,7 @@ where \(x\) is the submitted input, \(c\) captures exposed controls such as temp
 An attacker chooses queries using a strategy \(Q\). Query \(x_i\) may depend on previous observations:
 
 $$
-x_i \sim Q(\cdot \mid x_{<i}, y_{<i}, K_A),
+x_i \sim Q(\cdot \mid x_{\lt i}, y_{\lt i}, K_A),
 $$
 
 where \(K_A\) is the attacker’s prior knowledge: public data, the task definition, possible architecture families, or known training procedures. After a budget of \(B\) queries, the attacker produces an artefact \(g\).
@@ -268,9 +268,9 @@ The defender does not simply maximise this loss. The defender selects controls \
 $$
 \min_d
 \left(
-\operatorname{Risk}_{\text{extract}}(d)
-+ \lambda\,\operatorname{UtilityLoss}(d)
-+ \mu\,\operatorname{OperationalCost}(d)
+\operatorname{Risk}_{\text{extract}}(d) +
+\lambda\,\operatorname{UtilityLoss}(d) +
+\mu\,\operatorname{OperationalCost}(d)
 \right).
 $$
 

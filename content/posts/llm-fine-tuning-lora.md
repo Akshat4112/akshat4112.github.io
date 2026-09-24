@@ -38,7 +38,7 @@ For an input sequence \(x\) and desired response \(y=(y_1,\ldots,y_T)\), causal-
 
 \[
 \mathcal{L}_{\text{SFT}}
-=-\sum_{t=1}^{T}\log p_{\theta}(y_t \mid x,y_{<t}).
+=-\sum_{t=1}^{T}\log p_{\theta}(y_t \mid x,y_{\lt t}).
 \]
 
 The training signal says, in effect, “produce this response for this kind of input”. Dataset quality therefore dominates the result:
