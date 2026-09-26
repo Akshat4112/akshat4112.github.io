@@ -1,6 +1,6 @@
 ---
 title: "GlyphNet: Homoglyph Domain Detection with CNNs"
-description: "GlyphNet — a 4M-domain image dataset and attention-based CNN for detecting homoglyph phishing attacks, presented at AAAI AICS 2023."
+description: "GlyphNet — a paper reporting results on 4M domain images and an attention-based CNN for detecting homoglyph phishing attacks, presented at AAAI AICS 2023."
 date: 2023-03-01T00:00:00+00:00
 draft: false
 tags: ["machine-learning", "aics", "aaai", "computer-vision"]
@@ -17,6 +17,8 @@ showtoc: true
 
 ## Abstract
 
+The abstract below describes the paper's 4M-image experiment. The separately rendered public release is detailed under [Paper dataset and public release](#paper-dataset-and-public-release).
+
 Cyber attacks deceive machines into believing something that does not exist in the first place. However, there are some to which even humans fall prey. One such famous attack that attackers have used over the years to exploit the vulnerability of vision is known to be a Homoglyph attack. It employs a primary yet effective mechanism to create illegitimate domains that are hard to differentiate from legit ones. Moreover, as the difference is pretty indistinguishable for a user to notice, they cannot stop themselves from clicking on these homoglyph domain names.
 
 In our work, we created GlyphNet, an image dataset that contains 4M domains, both real and homoglyphs. Additionally, we introduce a baseline method for homoglyph attack detection system using an attention-based convolutional Neural Network. We show that our model can reach state-of-the-art accuracy in detecting homoglyph attacks with a 0.93 AUC on our dataset.
@@ -30,6 +32,12 @@ In cyber security, attackers employ different attacks to infiltrate our systems 
 ![Fake Frost](/publications/fakefrost.png)
 
 ## Dataset
+
+### Paper dataset and public release
+
+The [paper](https://arxiv.org/abs/2306.10392) describes **4 million rendered images**: 2 million real domains and 2 million synthetic homoglyph domains, rendered at 150 × 150 pixels with Arial. Its reported **0.93 AUC** refers to that paper experiment.
+
+The separately rendered [public Hugging Face release](https://huggingface.co/datasets/Akshat4112/Glyphnet) contains **1,285,579 genuine/spoof domain pairs** in its `pairs` config and **2,571,158 images** in its `images` config (one real and one spoofed image per pair). These images are 256 × 256 pixels and use DejaVu Sans. The public release comes from the related generation pipeline but is not the identical set of paper image files; the paper's AUC should not be read as a new evaluation of the Hub release.
 
 ### Proposed Dataset
 
