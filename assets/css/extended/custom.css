@@ -171,9 +171,9 @@ a.plain-row:hover { background: var(--accent-soft); }
 .experience-row strong { color: var(--primary); font-family: var(--serif); font-size: 19px; font-weight: 400; }
 .experience-row p { margin-top: 6px; color: var(--secondary); font-size: 13px; line-height: 1.55; }
 
-.personal-end { display: grid; grid-template-columns: 220px 1fr; gap: 50px; padding: 68px 0; border-bottom: 1px solid var(--border); }
-.personal-end h2 { color: var(--primary); font-family: var(--serif); font-size: 25px; font-weight: 400; letter-spacing: -.025em; }
-.personal-end p { color: var(--content); font-size: 15px; line-height: 1.7; }
+.personal-end { display: grid; grid-template-columns: 220px minmax(0, 640px); gap: 50px; padding: 44px 0; border-bottom: 1px solid var(--border); }
+.personal-end h2 { color: var(--primary); font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: -.025em; }
+.personal-end p { color: var(--content); font-size: 15px; line-height: 1.65; }
 
 .home-contact { padding: 72px 0 110px; }
 .home-contact p { color: var(--primary); font-family: var(--serif); font-size: clamp(25px, 4vw, 35px); line-height: 1.3; }
