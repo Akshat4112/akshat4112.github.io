@@ -30,8 +30,22 @@
 
   <section class="portfolio-section" id="work" aria-labelledby="work-title">
     <div class="section-label reveal"><span>01</span><h2 id="work-title">Ausgewählte Projekte</h2></div>
-    <p class="section-intro reveal">Drei Projekte zeigen, wie ich arbeite: ein produktives System, eine veröffentlichte Forschungsarbeit und ein noch offenes Experiment.</p>
+    <p class="section-intro reveal">Berufliche KI-Systeme, öffentliche Software und Forschung zeigen unterschiedliche Seiten meiner Arbeit.</p>
     <div class="work-list">
+      <article class="work-entry reveal">
+        <div>
+          <p class="entry-meta">2026 · Öffentliche Anwendung</p>
+          <h3>PDF Tools</h3>
+          <p>Vierzehn browserbasierte Werkzeuge zum Zusammenführen, Aufteilen, Organisieren, Lesen und Konvertieren von PDFs. Ausgewählte Dokumente werden auf dem Gerät verarbeitet; zum Laden der Anwendung wird weiterhin GitHub Pages kontaktiert. Zur Entwicklungsarbeit gehören unabhängige Prüfungen heruntergeladener Dateien und klare Grenzen für Dokumentfunktionen, die beim Export verloren gehen können.</p>
+          <figure class="project-preview">
+            <a href="https://akshat4112.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer"><img src="/projects/pdf-tools-home.jpg" width="1280" height="720" alt="Startseite von PDF Tools mit Links zu PDF-Werkzeugen im Browser und einem Hinweis zur lokalen Verarbeitung" loading="lazy"></a>
+            <figcaption>Screenshot der Anwendung · 29. Oktober 2026</figcaption>
+          </figure>
+          <p class="entry-links"><a href="https://akshat4112.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer">Anwendung öffnen ↗</a><a href="https://github.com/Akshat4112/pdf-tools" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="/posts/pdf-tools-output-validation/" hreflang="en" lang="en">Engineering-Fallstudie (Englisch) →</a></p>
+        </div>
+        <ul class="entry-aside" aria-label="Entwicklungsbereiche"><li>Lokale Verarbeitung</li><li>React · TypeScript</li><li>Ausgabevalidierung</li><li>Browsertests</li></ul>
+      </article>
+
       <article class="work-entry reveal">
         <div>
           <p class="entry-meta">2024–heute · Berufliche Arbeit</p>
@@ -61,6 +75,14 @@
         </div>
         <ul class="entry-aside" aria-label="Forschungsbereiche"><li>Diffusionsmodelle</li><li>Sprache</li><li>Datenschutz</li></ul>
       </article>
+    </div>
+
+    <div class="more-code reveal">
+      <h3>In Entwicklung</h3>
+      <ul>
+        <li><a href="https://github.com/Akshat4112/immopilot-de" target="_blank" rel="noopener noreferrer"><strong>ImmoPilot DE · Noch nicht veröffentlicht</strong><span>Immobilienkauf, Finanzierung und Szenariovergleich für Deutschland. Die Freigabeprüfung für Version 1 läuft.</span></a></li>
+        <li><a href="https://github.com/Akshat4112/nettopilot-de" target="_blank" rel="noopener noreferrer"><strong>NettoPilot DE · In Entwicklung</strong><span>Gehaltsrechner und Stellenangebotsvergleich für Deutschland. Technische Grundlagen und Berechnungen werden entwickelt.</span></a></li>
+      </ul>
     </div>
 
     <div class="more-code reveal">
@@ -112,7 +134,7 @@
     <p class="section-intro reveal">Arbeitsnotizen zu Dingen, die ich lerne, Systemen, die ich entwickle, und offenen Fragen. Die Fachartikel sind derzeit auf Englisch verfügbar.</p>
     <div class="plain-list writing-list">
       {{- $englishSite := index (where .Sites "Language.Lang" "en") 0 }}
-      {{- $featured := slice ($englishSite.GetPage "/posts/llm-agents") ($englishSite.GetPage "/posts/evaluating-llms") ($englishSite.GetPage "/posts/model-extraction-attacks") ($englishSite.GetPage "/posts/speaker-anonymization") }}
+      {{- $featured := slice ($englishSite.GetPage "/posts/pdf-tools-output-validation") ($englishSite.GetPage "/posts/llm-agents") ($englishSite.GetPage "/posts/evaluating-llms") ($englishSite.GetPage "/posts/model-extraction-attacks") }}
       {{- range $page := $featured }}
       {{- with $page }}
       <a class="plain-row reveal" href="{{ .RelPermalink }}" hreflang="en" lang="en">
@@ -176,8 +198,22 @@
 
   <section class="portfolio-section" id="work" aria-labelledby="work-title">
     <div class="section-label reveal"><span>01</span><h2 id="work-title">Featured projects</h2></div>
-    <p class="section-intro reveal">Three projects that show how I work: one production system, one published paper, one experiment that's still open.</p>
+    <p class="section-intro reveal">Production AI, public software, and research show different sides of my work.</p>
     <div class="work-list">
+      <article class="work-entry reveal">
+        <div>
+          <p class="entry-meta">2026 · Public application</p>
+          <h3>PDF Tools</h3>
+          <p>Fourteen browser-based tools for merging, splitting, organising, reading, and converting PDFs. Selected documents are processed on the device; loading the application still connects to GitHub Pages. The engineering work includes independent checks of downloaded outputs and explicit limits for document features that exports may lose.</p>
+          <figure class="project-preview">
+            <a href="https://akshat4112.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer"><img src="/projects/pdf-tools-home.jpg" width="1280" height="720" alt="PDF Tools homepage with links to its browser-based PDF workflows and local-processing notice" loading="lazy"></a>
+            <figcaption>Application screenshot · 29 October 2026</figcaption>
+          </figure>
+          <p class="entry-links"><a href="https://akshat4112.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer">Open application ↗</a><a href="https://github.com/Akshat4112/pdf-tools" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="/posts/pdf-tools-output-validation/">Engineering case study →</a></p>
+        </div>
+        <ul class="entry-aside" aria-label="Engineering areas"><li>Local processing</li><li>React · TypeScript</li><li>Output validation</li><li>Browser testing</li></ul>
+      </article>
+
       <article class="work-entry reveal">
         <div>
           <p class="entry-meta">2024—Present · Professional work</p>
@@ -207,6 +243,14 @@
         </div>
         <ul class="entry-aside" aria-label="Research areas"><li>Diffusion models</li><li>Speech</li><li>Privacy</li></ul>
       </article>
+    </div>
+
+    <div class="more-code reveal">
+      <h3>In development</h3>
+      <ul>
+        <li><a href="https://github.com/Akshat4112/immopilot-de" target="_blank" rel="noopener noreferrer"><strong>ImmoPilot DE · Unreleased</strong><span>German property-purchase, financing, and scenario comparison. Version 1 release-readiness work is in progress.</span></a></li>
+        <li><a href="https://github.com/Akshat4112/nettopilot-de" target="_blank" rel="noopener noreferrer"><strong>NettoPilot DE · In development</strong><span>A German salary calculator and job-offer comparison tool, with engineering foundations and calculation work in progress.</span></a></li>
+      </ul>
     </div>
 
     <div class="more-code reveal">
@@ -257,7 +301,7 @@
     <div class="section-label reveal"><span>04</span><h2 id="writing-title">Recent writing</h2></div>
     <p class="section-intro reveal">Working notes — things I'm learning, systems I'm building, and questions I haven't closed yet.</p>
     <div class="plain-list writing-list">
-      {{- $featured := slice (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") (site.GetPage "/posts/speaker-anonymization") }}
+      {{- $featured := slice (site.GetPage "/posts/pdf-tools-output-validation") (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") }}
       {{- range $page := $featured }}
       {{- with $page }}
       <a class="plain-row reveal" href="{{ .RelPermalink }}">

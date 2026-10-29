@@ -270,3 +270,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, va
 .analytics-choice-actions button { padding: 7px 11px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--theme); color: var(--primary); font: inherit; font-size: 13px; cursor: pointer; }
 .analytics-choice-actions button:first-child { border-color: var(--accent); background: var(--accent); color: white; }
 .analytics-choice-actions a { color: var(--accent); font-size: 13px; }
+
+/* Actual product screenshot within the existing project layout. */
+.project-preview { margin: 24px 0 0; }
+.project-preview img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 8px; }
+.project-preview figcaption { margin-top: 8px; color: var(--secondary); font-family: var(--mono); font-size: 11px; }

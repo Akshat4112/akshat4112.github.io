@@ -1,14 +1,14 @@
 ---
 title: "Aktuell"
 date: 2026-09-15T00:00:00+00:00
-lastmod: 2026-09-15T00:00:00+00:00
+lastmod: 2026-10-29T00:00:00+00:00
 description: "Woran Akshat Gupta derzeit arbeitet: verlässliche KI-Systeme, öffentliche Projekte, Forschung und Lernen."
 hideMeta: true
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
 
-*Aktualisiert am 15. September 2026 · Stuttgart, Deutschland*
+*Aktualisiert am 29. Oktober 2026 · Stuttgart, Deutschland*
 
 Dies ist ein kurzer Einblick in meine aktuellen Schwerpunkte. Auf der Seite [Über mich](/de/about/) steht mehr zu meinem bisherigen Weg.
 
@@ -18,7 +18,9 @@ Mich beschäftigen verlässliche agentenbasierte KI und Dokumentenintelligenz: E
 
 ## Öffentliche Projekte
 
-- **[ImmoPilot DE](https://github.com/Akshat4112/immopilot-de)** ist ein noch nicht veröffentlichtes, clientseitiges Projekt zur Untersuchung von Immobilienkauf und Finanzierung in Deutschland. Bevor daraus eine nutzbare Anwendung wird, arbeite ich an den Berechnungsverträgen und Tests.
+- **[PDF Tools](https://akshat4112.github.io/pdf-tools/)** ist eine Browser-Anwendung mit 14 veröffentlichten Werkzeugen zum Lesen, Organisieren und Konvertieren von PDFs. Dokumente werden auf dem Gerät verarbeitet; das [öffentliche Repository](https://github.com/Akshat4112/pdf-tools) beschreibt die verfügbaren Werkzeuge und ihre Grenzen.
+- **[ImmoPilot DE](https://github.com/Akshat4112/immopilot-de)** ist ein clientseitiges Projekt zur Untersuchung von Immobilienkauf und Finanzierung in Deutschland. Vergleich, gespeicherte Szenarien, Tilgungssteuerung und Berichte sind implementiert. Die Veröffentlichung von Version 1 wird vorbereitet; die Anwendung ist noch nicht veröffentlicht.
+- **[NettoPilot DE](https://github.com/Akshat4112/nettopilot-de)** wird als Werkzeug für Gehaltsberechnung und Stellenangebotsvergleich in Deutschland entwickelt. Derzeit arbeite ich an der Anwendungsgrundlage und der Gehaltsberechnung.
 - **[GlyphNet](/Glyphnet/)** ist mein öffentliches Forschungsprojekt zu visuell täuschenden Domainnamen, mit Projektseite, Fachartikel, Code und Datensatz.
 
 ## Lernen und Schreiben
