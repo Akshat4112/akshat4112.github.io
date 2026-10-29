@@ -17,6 +17,6 @@ def check(path: Path, language: str, title: str, body: str) -> None:
 
 if __name__ == "__main__":
     output = Path("public")
-    check(output / "now/index.html", "en", "Now | Akshat Gupta", "Updated 15 September 2026")
-    check(output / "de/now/index.html", "de", "Aktuell | Akshat Gupta", "Aktualisiert am 15. September 2026")
+    check(output / "now/index.html", "en", "Now | Akshat Gupta", "Updated 29 October 2026")
+    check(output / "de/now/index.html", "de", "Aktuell | Akshat Gupta", "Aktualisiert am 29. Oktober 2026")
     print("English and German Now pages render independently.")

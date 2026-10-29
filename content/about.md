@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2024-01-01T00:00:00+00:00
+lastmod: 2026-10-29T00:00:00+01:00
 description: "About Akshat Gupta — an applied AI engineer working on agentic systems, document intelligence, evaluation, and trustworthy machine learning."
 schema_type: ProfilePage
 hideMeta: true
@@ -17,7 +18,7 @@ Across NLP, computer vision, speech, and generative models, the throughline is t
 
 ## Experience
 
-**AI Engineer — [additiv](https://www.additiv.com/)** *(May 2024 – Present · Zurich, Switzerland)*
+**AI Engineer — [additiv](https://www.additiv.com/)** *(May 2024 – Present · Stuttgart, Germany)*
 
 - Build AI systems for document-heavy finance and insurance workflows, with a focus on structured extraction, retrieval, evaluation, and human review.
 - Design agent-based workflows using Azure-hosted language models, OCR, deterministic validation, and production APIs.
@@ -68,7 +69,9 @@ Across NLP, computer vision, speech, and generative models, the throughline is t
 
 **Languages & Frameworks:** Python, C++, PyTorch, TensorFlow, scikit-learn
 
-**LLMs & generative AI:** LangChain, Hugging Face Transformers, Azure OpenAI, RAG pipelines, agentic AI, PEFT / LoRA
+**LLMs & generative AI:** Agno, LangChain, Hugging Face Transformers, Azure OpenAI, RAG pipelines, agentic AI, PEFT / LoRA
+
+**Validation, observability & tooling:** Pydantic, Langfuse, uv
 
 **Cloud & Infrastructure:** Azure (AI Services, Functions, Blob Storage), AWS, Google Cloud, Docker
 
@@ -80,6 +83,9 @@ Across NLP, computer vision, speech, and generative models, the throughline is t
 
 ## Public work
 
+- [PDF Tools](https://akshat4112.github.io/pdf-tools/): a browser application with 14 PDF tools that process documents on the device; [source code](https://github.com/Akshat4112/pdf-tools)
+- [ImmoPilot DE](https://github.com/Akshat4112/immopilot-de): German property-purchase and financing scenarios, with version 1 release readiness in progress
+- [NettoPilot DE](https://github.com/Akshat4112/nettopilot-de): a German salary calculator and job-offer comparison project in development
 - [GlyphNet paper](https://arxiv.org/abs/2306.10392), with public [code](https://github.com/Akshat4112/Glyphnet) and [dataset](https://huggingface.co/datasets/Akshat4112/Glyphnet)
 - [FinPlainLM financial plain-language dataset](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset)
 - [Open-source repositories](https://github.com/Akshat4112), including machine-learning case studies, NLP resources, and research presentations

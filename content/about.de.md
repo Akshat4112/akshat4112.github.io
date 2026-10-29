@@ -1,6 +1,7 @@
 ---
 title: "Über mich"
 date: 2024-01-01T00:00:00+00:00
+lastmod: 2026-10-29T00:00:00+01:00
 description: "Über Akshat Gupta – Ingenieur für angewandte KI mit Schwerpunkt auf agentenbasierten Systemen, Dokumentenintelligenz, Evaluation und vertrauenswürdigem maschinellem Lernen."
 schema_type: ProfilePage
 hideMeta: true
@@ -17,7 +18,7 @@ Von NLP über Computer Vision und Sprachverarbeitung bis zu generativen Modellen
 
 ## Berufserfahrung
 
-**AI Engineer – [additiv](https://www.additiv.com/)** *(Mai 2024–heute · Zürich, Schweiz)*
+**AI Engineer – [additiv](https://www.additiv.com/)** *(Mai 2024–heute · Stuttgart, Deutschland)*
 
 - Entwicklung von KI-Systemen für dokumentenintensive Finanz- und Versicherungsprozesse mit Fokus auf strukturierte Extraktion, Retrieval, Evaluation und menschliche Prüfung.
 - Konzeption agentenbasierter Workflows mit in Azure betriebenen Sprachmodellen, OCR, deterministischer Validierung und produktiven APIs.
@@ -68,7 +69,9 @@ Von NLP über Computer Vision und Sprachverarbeitung bis zu generativen Modellen
 
 **Programmiersprachen und Frameworks:** Python, C++, PyTorch, TensorFlow, scikit-learn
 
-**LLMs und generative KI:** LangChain, Hugging Face Transformers, Azure OpenAI, RAG-Pipelines, Agentic AI, PEFT / LoRA
+**LLMs und generative KI:** Agno, LangChain, Hugging Face Transformers, Azure OpenAI, RAG-Pipelines, Agentic AI, PEFT / LoRA
+
+**Validierung, Observability und Werkzeuge:** Pydantic, Langfuse, uv
 
 **Cloud und Infrastruktur:** Azure (AI Services, Functions, Blob Storage), AWS, Google Cloud, Docker
 
@@ -80,6 +83,9 @@ Von NLP über Computer Vision und Sprachverarbeitung bis zu generativen Modellen
 
 ## Öffentliche Arbeiten
 
+- [PDF Tools](https://akshat4112.github.io/pdf-tools/): eine Browser-Anwendung mit 14 PDF-Werkzeugen, die Dokumente auf dem Gerät verarbeiten; [Quellcode](https://github.com/Akshat4112/pdf-tools)
+- [ImmoPilot DE](https://github.com/Akshat4112/immopilot-de): Szenarien für Immobilienkauf und Finanzierung in Deutschland; die Veröffentlichung von Version 1 wird vorbereitet
+- [NettoPilot DE](https://github.com/Akshat4112/nettopilot-de): ein Projekt für Gehaltsberechnung und Stellenangebotsvergleich in Deutschland, derzeit in Entwicklung
 - [GlyphNet-Paper](https://arxiv.org/abs/2306.10392) mit öffentlichem [Code](https://github.com/Akshat4112/Glyphnet) und [Datensatz](https://huggingface.co/datasets/Akshat4112/Glyphnet)
 - [FinPlainLM-Datensatz für verständliche Finanzsprache](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset)
 - [Open-Source-Repositories](https://github.com/Akshat4112), darunter Machine-Learning-Fallstudien, NLP-Ressourcen und Forschungspräsentationen

@@ -35,3 +35,6 @@ jobs:
 
       - name: Verify Now language routes
         run: python3 scripts/check_now_routes.py
+
+      - name: Verify project discovery and writing chronology
+        run: python3 scripts/check_portfolio_refresh.py

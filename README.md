@@ -89,6 +89,16 @@ Build the production site:
 hugo --minify
 ```
 
+After the production build, validate rendered articles, language routes, project links,
+and chronological writing archives:
+
+```bash
+python3 scripts/check_math_rendering.py
+python3 scripts/check_privacy_routes.py
+python3 scripts/check_now_routes.py
+python3 scripts/check_portfolio_refresh.py
+```
+
 For configuration or template changes, validate both environments:
 
 ```bash
