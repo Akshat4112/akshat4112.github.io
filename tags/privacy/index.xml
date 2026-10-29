@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 15 Oct 2024 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0100</lastBuildDate>
     <atom:link href="https://akshat4112.github.io/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF Tools: Checking the Download, Not Just the Preview</title>
+      <link>https://akshat4112.github.io/posts/pdf-tools-output-validation/</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0100</pubDate>
+      <guid>https://akshat4112.github.io/posts/pdf-tools-output-validation/</guid>
+      <description>An engineering case study of independent export validation, browser resource cleanup, and bounded privacy claims in PDF Tools.</description>
+    </item>
     <item>
       <title>Speaker Anonymization: Privacy Beyond Changing a Voice</title>
       <link>https://akshat4112.github.io/posts/speaker-anonymization/</link>
