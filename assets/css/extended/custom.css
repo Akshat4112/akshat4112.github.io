@@ -74,9 +74,9 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 .personal-intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 180px;
-  gap: 72px;
+  gap: 56px;
   align-items: start;
-  padding: 96px 0 74px;
+  padding: 56px 0 44px;
 }
 
 .intro-role {
@@ -116,7 +116,11 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
   line-height: 1.72;
 }
 
-.intro-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 28px; }
+.intro-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 24px; }
+.intro-actions a { color: var(--accent); font-size: 14px; font-weight: 600; }
+.intro-actions .intro-primary { padding: 10px 16px; border: 1px solid var(--accent); border-radius: var(--radius); background: var(--accent); color: var(--theme); }
+.intro-actions a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.intro-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 20px; }
 .intro-links a, .entry-links a, .quiet-link, .more-link, .home-contact a { color: var(--accent); font-size: 14px; font-weight: 600; }
 .intro-links a:hover, .entry-links a:hover, .quiet-link:hover, .more-link:hover, .home-contact a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
@@ -124,15 +128,12 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 .intro-portrait img { display: block; width: 180px; height: 180px; border-radius: 50%; object-fit: cover; object-position: center top; filter: grayscale(1) contrast(1.05); background: var(--tertiary); }
 .intro-portrait figcaption { margin-top: 12px; color: var(--secondary); font-family: var(--mono); font-size: 12px; text-align: center; }
 
-.current-focus { display: grid; grid-template-columns: 130px 1fr; gap: 30px; padding: 25px 0; border-top: 1px solid var(--primary); border-bottom: 1px solid var(--border); }
-.current-focus h2 { color: var(--primary); font-family: var(--mono); font-size: 13px; font-weight: 600; text-transform: uppercase; }
-.current-focus p { max-width: 680px; color: var(--content); font-size: 15px; line-height: 1.65; }
 
-.portfolio-section { padding: 92px 0; border-bottom: 1px solid var(--border); }
-.section-label { display: grid; grid-template-columns: 46px 1fr; align-items: baseline; margin-bottom: 40px; }
+.portfolio-section { padding: 64px 0; border-bottom: 1px solid var(--border); }
+.section-label { display: grid; grid-template-columns: 46px 1fr; align-items: baseline; margin-bottom: 32px; }
 .section-label > span { color: var(--accent); font-family: var(--mono); font-size: 12px; }
 .section-label h2 { color: var(--primary); font-family: var(--serif); font-size: clamp(32px, 5vw, 43px); font-weight: 400; letter-spacing: -.04em; }
-.section-intro { max-width: 630px; margin: -20px 0 34px 46px !important; color: var(--secondary); font-size: 15px; line-height: 1.65; }
+.section-intro { max-width: 630px; margin: -12px 0 24px 46px !important; color: var(--secondary); font-size: 15px; line-height: 1.65; }
 
 .work-list { border-top: 1px solid var(--border); }
 .work-entry { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 54px; padding: 42px 0; border-bottom: 1px solid var(--border); }
@@ -225,13 +226,18 @@ a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, va
 
 @media (max-width: 720px) {
   .portfolio-home { width: min(100% - 30px, 900px); }
-  .personal-intro { grid-template-columns: 1fr; gap: 38px; padding: 66px 0 58px; }
+  .personal-intro { grid-template-columns: 1fr; gap: 18px; padding: 24px 0; }
   .intro-portrait { grid-row: 1; }
-  .intro-portrait img { width: 128px; height: 128px; }
-  .intro-portrait figcaption { width: 128px; }
+  .intro-portrait { display: flex; align-items: center; gap: 16px; margin: 0; }
+  .intro-portrait img { width: 64px; height: 64px; }
+  .intro-portrait figcaption { margin-top: 0; text-align: left; }
   .intro-role { font-size: 11px; }
-  .current-focus { grid-template-columns: 1fr; gap: 10px; }
-  .portfolio-section { padding: 72px 0; }
+  .intro-lede { margin-top: 18px !important; line-height: 1.3; }
+  #work { padding-top: 28px; }
+  #work .section-label { margin-bottom: 20px; }
+  #work .section-intro { margin-top: -4px !important; margin-bottom: 16px !important; }
+  #work .work-entry { padding: 28px 0; }
+  .portfolio-section { padding: 40px 0; }
   .section-label { grid-template-columns: 35px 1fr; }
   .section-intro, .more-code, .more-link { margin-left: 35px !important; }
   .work-entry { grid-template-columns: 1fr; gap: 25px; }

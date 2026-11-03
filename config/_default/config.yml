@@ -30,9 +30,6 @@ languages:
         - name: About
           url: /about/
           weight: 20
-        - name: CV
-          url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
-          weight: 25
   de:
     languageCode: de-DE
     languageName: Deutsch
@@ -57,9 +54,6 @@ languages:
         - name: Über mich
           url: /about/
           weight: 20
-        - name: Lebenslauf
-          url: https://drive.google.com/file/d/1Qj6kaZXM40ixUgOAewhZlTj57piWERSw/view?usp=drive_link
-          weight: 25
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

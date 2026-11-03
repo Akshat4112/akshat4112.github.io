@@ -1,5 +1,8 @@
 {{- /* Head custom content area start */ -}}
 <meta name="author" content="Akshat Gupta">
+{{- if and .IsPage (eq .Section "posts") }}
+<meta name="portfolio-content-type" content="post">
+{{- end }}
 {{- if eq .Kind "404" }}
 <meta name="robots" content="noindex, follow">
 {{- end }}

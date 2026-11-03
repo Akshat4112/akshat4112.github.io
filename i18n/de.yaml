@@ -4,6 +4,9 @@
 - id: main_navigation
   translation: "Hauptnavigation"
 
+- id: toggle_theme
+  translation: "Farbschema wechseln"
+
 - id: home
   translation: "Startseite"
 
