@@ -138,6 +138,7 @@
   }
 
   function observeArticle() {
+    if (!document.querySelector('meta[name="portfolio-content-type"][content="post"]')) return;
     var article = document.querySelector('.post-single .post-content');
     if (!article) return;
     var fired = false;
