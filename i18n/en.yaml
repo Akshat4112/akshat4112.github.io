@@ -4,6 +4,9 @@
 - id: main_navigation
   translation: "Main navigation"
 
+- id: toggle_theme
+  translation: "Toggle colour theme"
+
 - id: english_content_notice
   translation: "This content is currently available in English."
 

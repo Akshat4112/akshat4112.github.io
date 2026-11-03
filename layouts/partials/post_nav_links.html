@@ -1,0 +1,31 @@
+{{- if and .IsPage (eq .Section "posts") }}
+{{- $currentPage := . }}
+{{- /* Use the archive's exact order: Pages.Next/Prev may independently sort by weight. */}}
+{{- $pages := (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+{{- if gt (len $pages) 1 }}
+{{- range $index, $page := $pages }}
+{{- if eq $page $currentPage }}
+<nav class="paginav">
+  {{- if gt $index 0 }}
+  {{- with index $pages (sub $index 1) }}
+  <a class="prev" href="{{ .Permalink }}">
+    <span class="title">« {{ i18n "prev_page" }}</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end }}
+  {{- end }}
+  {{- if lt (add $index 1) (len $pages) }}
+  {{- with index $pages (add $index 1) }}
+  <a class="next" href="{{ .Permalink }}">
+    <span class="title">{{ i18n "next_page" }} »</span>
+    <br>
+    <span>{{- .Name -}}</span>
+  </a>
+  {{- end }}
+  {{- end }}
+</nav>
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}

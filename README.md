@@ -53,6 +53,7 @@ Do not edit files inside `themes/PaperMod/` directly. Override theme behaviour w
 - Git
 - Hugo Extended 0.147.2 or a compatible newer release
 - Python 3 for content validation
+- Node.js 24 for analytics regression checks
 
 ### Setup
 
@@ -97,6 +98,10 @@ python3 scripts/check_math_rendering.py
 python3 scripts/check_privacy_routes.py
 python3 scripts/check_now_routes.py
 python3 scripts/check_portfolio_refresh.py
+python3 scripts/check_portfolio_presentation.py
+python3 scripts/check_navigation_accessibility.py
+python3 scripts/check_analytics_pages.py
+node --test scripts/test_analytics.cjs
 ```
 
 For configuration or template changes, validate both environments:

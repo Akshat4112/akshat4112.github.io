@@ -1,7 +1,7 @@
 ---
 title: "Über mich"
 date: 2024-01-01T00:00:00+00:00
-lastmod: 2026-10-29T00:00:00+01:00
+lastmod: 2026-11-03T00:00:00+01:00
 description: "Über Akshat Gupta – Ingenieur für angewandte KI mit Schwerpunkt auf agentenbasierten Systemen, Dokumentenintelligenz, Evaluation und vertrauenswürdigem maschinellem Lernen."
 schema_type: ProfilePage
 hideMeta: true
@@ -13,6 +13,8 @@ Ich bin KI-Ingenieur und entwickle produktive Systeme mit generativer KI: Large 
 Meine aktuelle Arbeit konzentriert sich darauf, komplexe Finanz- und Versicherungsdokumente in strukturierte Daten für Kredit- und Versicherungsprozesse zu überführen. Die eigentliche Herausforderung liegt nicht allein im Modell, sondern in der Vertrauenswürdigkeit seiner Ergebnisse. Deshalb arbeite ich mit Grounding, deterministischer Validierung, Evaluation und Nachvollziehbarkeit, damit Ergebnisse geprüft werden können, bevor sie in Entscheidungen einfließen.
 
 Von NLP über Computer Vision und Sprachverarbeitung bis zu generativen Modellen zieht sich ein Thema durch meine Arbeit: komplexe Modelle in Systeme zu überführen, auf die sich Menschen tatsächlich verlassen können. Dabei verbinde ich ML Engineering, Systemdesign und angewandte KI-Sicherheit.
+
+Seit 2018 arbeite ich mit Machine Learning, unter anderem in NLP, Sprachverarbeitung, Computer Vision und adversarialem ML. Ich habe Computerlinguistik an der Universität Stuttgart studiert.
 
 ---
 

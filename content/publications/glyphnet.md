@@ -2,6 +2,7 @@
 title: "GlyphNet: Homoglyph Domain Detection with CNNs"
 description: "GlyphNet — a paper reporting results on 4M domain images and an attention-based CNN for detecting homoglyph phishing attacks, presented at AAAI AICS 2023."
 date: 2023-03-01T00:00:00+00:00
+lastmod: 2026-11-03T00:00:00+00:00
 draft: false
 tags: ["machine-learning", "aics", "aaai", "computer-vision"]
 weight: 101
@@ -11,17 +12,13 @@ showtoc: true
 
 ---
 
-[Paper](https://arxiv.org/abs/2306.10392)
+**[Paper](https://arxiv.org/abs/2306.10392) · [Code](https://github.com/Akshat4112/Glyphnet) · [Dataset](https://huggingface.co/datasets/Akshat4112/Glyphnet)**
 
 **Authors:** Akshat Gupta, Laxman Singh Tomar, Ridhima Garg
 
-## Abstract
+## Research overview
 
-The abstract below describes the paper's 4M-image experiment. The separately rendered public release is detailed under [Paper dataset and public release](#paper-dataset-and-public-release).
-
-Cyber attacks deceive machines into believing something that does not exist in the first place. However, there are some to which even humans fall prey. One such famous attack that attackers have used over the years to exploit the vulnerability of vision is known to be a Homoglyph attack. It employs a primary yet effective mechanism to create illegitimate domains that are hard to differentiate from legit ones. Moreover, as the difference is pretty indistinguishable for a user to notice, they cannot stop themselves from clicking on these homoglyph domain names.
-
-In our work, we created GlyphNet, an image dataset that contains 4M domains, both real and homoglyphs. Additionally, we introduce a baseline method for homoglyph attack detection system using an attention-based convolutional Neural Network. We show that our model can reach state-of-the-art accuracy in detecting homoglyph attacks with a 0.93 AUC on our dataset.
+GlyphNet studies visual detection of homoglyph domains using an attention-based CNN and a dataset of real and synthetically altered domain images. The paper reports 0.93 accuracy, F1 and AUC on its own test set. These results describe the paper experiment; the separately rendered public release is detailed under [Paper dataset and public release](#paper-dataset-and-public-release).
 
 ## Introduction
 
@@ -35,7 +32,7 @@ In cyber security, attackers employ different attacks to infiltrate our systems 
 
 ### Paper dataset and public release
 
-The [paper](https://arxiv.org/abs/2306.10392) describes **4 million rendered images**: 2 million real domains and 2 million synthetic homoglyph domains, rendered at 150 × 150 pixels with Arial. Its reported **0.93 AUC** refers to that paper experiment.
+The [paper](https://arxiv.org/html/2306.10392#S3) describes **4 million rendered images**: 2 million real domains and 2 million synthetic homoglyph domains, using Arial. Its Dataset and Experimentation sections specify **150 × 150 pixels**, while its [Discussion](https://arxiv.org/html/2306.10392#S7) says **256 × 256 pixels** gave the best results and was used. This inconsistency leaves the resolution used for the reported results ambiguous.
 
 The separately rendered [public Hugging Face release](https://huggingface.co/datasets/Akshat4112/Glyphnet) contains **1,285,579 genuine/spoof domain pairs** in its `pairs` config and **2,571,158 images** in its `images` config (one real and one spoofed image per pair). These images are 256 × 256 pixels and use DejaVu Sans. The public release comes from the related generation pipeline but is not the identical set of paper image files; the paper's AUC should not be read as a new evaluation of the Hub release.
 
@@ -53,6 +50,8 @@ Homoglyph attacks exploit the weakness of human vision to differentiate real fro
 
 ## Methodology
 
+The CNN classifies one rendered domain image at a time. Four convolutional layers extract visual features, with max pooling and convolutional block attention modules that refine features across channel and spatial dimensions, as described in the [paper's Methodology section](https://arxiv.org/html/2306.10392#S4).
+
 ![Architecture](/publications/architecture.png)
 ![Attention Layer](/publications/attentionlayer.png)
 
@@ -64,11 +63,24 @@ We split our dataset into train, validation, and test, with a ratio of 70:20:10,
 
 ### Experimental Settings
 
-For training, we used binary cross-entropy as a Loss Function and RMSProp Optimizer. The network is trained for 30 epochs with early stopping, using a batch size of 256.
+For training, we used binary cross-entropy loss and the RMSProp optimiser. The network was trained for 30 epochs with early stopping, using a batch size of 256.
 
 ## Results
 
-We evaluated our model on two unpaired datasets for domain names, achieving an accuracy of 0.93 and an F1-score of 0.93, outperforming other models.
+The [paper's Table 2](https://arxiv.org/html/2306.10392#S4.T2) reports the following comparison on its dataset. The test set contains **400,000 images** from the 70:20:10 split; the Results section reports **372,000 correctly classified images** for the attention CNN.
+
+| Architecture | Accuracy | F1 | AUC |
+| --- | --- | --- | --- |
+| Siamese CNN | 0.79 | 0.74 | 0.78 |
+| Ensemble CNN | 0.83 | 0.80 | 0.83 |
+| PhishGAN | 0.71 | 0.69 | 0.71 |
+| Attention CNN (GlyphNet) | 0.93 | 0.93 | 0.93 |
+
+This comparison is limited to the paper's dataset and experimental setup.
+
+## Limitations
+
+Synthetic homoglyphs and fixed rendering conditions limit conclusions about live phishing and other fonts. The paper's resolution ambiguity also limits reproducibility. The reported scores do not establish performance on the separately rendered Hugging Face release or in production; either setting requires its own evaluation. For the public release, follow its provided splits or group by `pair_id` to avoid leakage between near-identical pairs, as explained in the [dataset card](https://huggingface.co/datasets/Akshat4112/Glyphnet#intended-uses--limitations).
 
 ## References
 1. Bahdanau, D.; Cho, K.; and Bengio, Y. 2014. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473.
@@ -85,7 +97,7 @@ We evaluated our model on two unpaired datasets for domain names, achieving an a
 12. Isola, P.; Zhu, J.-Y.; Zhou, T.; and Efros, A. A. 2017. Imageto-image translation with conditional adversarial networks. In Proceedings of the IEEE conference on computer vision and pattern recognition, 1125–1134.
 
 ## Citation
-```
+```bibtex
 @article{gupta2023glyphnet,
   title={GlyphNet: Homoglyph domains dataset and detection using attention-based Convolutional Neural Networks},
   author={Gupta, Akshat and Tomar, Laxman Singh and Garg, Ridhima},

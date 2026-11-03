@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2024-01-01T00:00:00+00:00
-lastmod: 2026-10-29T00:00:00+01:00
+lastmod: 2026-11-03T00:00:00+01:00
 description: "About Akshat Gupta — an applied AI engineer working on agentic systems, document intelligence, evaluation, and trustworthy machine learning."
 schema_type: ProfilePage
 hideMeta: true
@@ -13,6 +13,8 @@ I'm an AI engineer who builds production generative AI systems—large language 
 My recent work focuses on turning complex financial and insurance documents into structured data for credit and insurance workflows. The hard part is not simply the model; it is making the output trustworthy. I therefore focus on grounding, deterministic validation, evaluation, and traceability so that outputs can be reviewed before they inform a decision.
 
 Across NLP, computer vision, speech, and generative models, the throughline is the same: translating complex models into systems people can actually rely on. I work at the intersection of ML engineering, system design, and applied AI safety.
+
+I have worked with machine learning since 2018, across NLP, speech, computer vision, and adversarial ML. I studied Computational Linguistics at the University of Stuttgart.
 
 ---
 

@@ -35,6 +35,14 @@ jobs:
           hugo-version: '0.147.2'
           extended: true
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Verify consent and article analytics
+        run: node --test scripts/test_analytics.cjs
+
       - name: Validate article content
         run: python3 scripts/check_content.py
 
@@ -49,6 +57,15 @@ jobs:
 
       - name: Verify project discovery and writing chronology
         run: python3 scripts/check_portfolio_refresh.py
+
+      - name: Verify landing-page entry points
+        run: python3 scripts/check_portfolio_presentation.py
+
+      - name: Verify article navigation and accessibility
+        run: python3 scripts/check_navigation_accessibility.py
+
+      - name: Verify article analytics page markers
+        run: python3 scripts/check_analytics_pages.py
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

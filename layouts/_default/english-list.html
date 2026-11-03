@@ -17,10 +17,10 @@
   {{- range $pages.ByDate.Reverse }}
   <article class="post-entry">
     <header class="entry-header">
-      <h2>{{ .Title }} <span class="language-badge">{{ i18n "english_language" }}</span></h2>
+      <h2><span lang="en">{{ .Title }}</span> <span class="language-badge">{{ i18n "english_language" }}</span></h2>
     </header>
     {{- with .Description }}
-    <div class="entry-content"><p>{{ . }}</p></div>
+    <div class="entry-content" lang="en"><p>{{ . }}</p></div>
     {{- end }}
     <footer class="entry-footer">
       <span>{{ .Date.Format "02.01.2006" }}</span>
