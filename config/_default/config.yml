@@ -16,7 +16,7 @@ languages:
     menu:
       main:
         - name: Work
-          url: /#work
+          url: /work/
           weight: 5
         - name: Now
           url: /now/
@@ -40,7 +40,7 @@ languages:
     menu:
       main:
         - name: Projekte
-          url: /#work
+          url: /work/
           weight: 5
         - name: Aktuell
           url: /now/

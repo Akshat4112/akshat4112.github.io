@@ -1,334 +1,74 @@
 {{- define "main" }}
+{{- $de := eq .Lang "de" }}
+{{- $copy := index site.Data.portfolio .Lang }}
+{{- $englishSite := index (where .Sites "Language.Lang" "en") 0 }}
 <div class="portfolio-home">
-  {{- if eq .Lang "de" }}
-  <header class="personal-intro reveal" aria-labelledby="intro-title">
+  <header class="personal-intro" aria-labelledby="intro-title">
     <div class="intro-copy">
-      <p class="intro-role">Ingenieur für angewandte KI · Forscher</p>
+      <p class="intro-role">{{ $copy.role }}</p>
       <h1 id="intro-title">Akshat Gupta</h1>
-      <p class="intro-lede">Ich entwickle agentenbasierte KI für Finanz- und Versicherungsdokumente.</p>
-      <p>Mein Schwerpunkt: belegbare Antworten, verlässliche Evaluation und prüfbare Ergebnisse.</p>
-      <nav class="intro-actions" aria-label="Meine Arbeit entdecken">
-        <a class="intro-primary" href="#work">Projekte ansehen <span aria-hidden="true">↓</span></a>
-        <a href="{{ "about/" | relLangURL }}">Über mich <span aria-hidden="true">→</span></a>
-      </nav>
-      <nav class="intro-links" aria-label="Profile von Akshat Gupta">
-        <a href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Forschung ↗</a>
+      <p class="intro-lede">{{ $copy.intro }}</p>
+      <p>{{ $copy.focus }}</p>
+      <nav class="intro-links" aria-label="{{ $copy.profileLabel }}">
+        <a href="https://github.com/Akshat4112">GitHub</a>
+        <a href="https://www.linkedin.com/in/akshat-rg/">LinkedIn</a>
+        <a href="mailto:akshat41121995@gmail.com">{{ $copy.email }}</a>
       </nav>
     </div>
     <figure class="intro-portrait">
       {{- with resources.Get "akshat_gupta.jpg" }}
-      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Porträt von Akshat Gupta" fetchpriority="high">
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $copy.portraitAlt }}" fetchpriority="high">
       {{- end }}
-      <figcaption>Stuttgart, Deutschland</figcaption>
+      <figcaption>{{ $copy.location }}</figcaption>
     </figure>
   </header>
 
   <section class="portfolio-section" id="work" aria-labelledby="work-title">
-    <div class="section-label reveal"><span>01</span><h2 id="work-title">Ausgewählte Projekte</h2></div>
-    <p class="section-intro reveal">Berufliche KI-Systeme, öffentliche Software und Forschung zeigen unterschiedliche Seiten meiner Arbeit.</p>
+    <div class="section-label"><h2 id="work-title">{{ $copy.workTitle }}</h2></div>
     <div class="work-list">
-      <article class="work-entry reveal">
+      {{- range site.Data.portfolio.featured }}
+      {{- $project := index . $.Lang }}
+      <article class="work-entry" id="{{ .id }}">
         <div>
-          <p class="entry-meta">2026 · Öffentliche Anwendung</p>
-          <h3>PDF Tools</h3>
-          <p>Vierzehn browserbasierte Werkzeuge zum Zusammenführen, Aufteilen, Organisieren, Lesen und Konvertieren von PDFs. Ausgewählte Dokumente werden auf dem Gerät verarbeitet; zum Laden der Anwendung wird weiterhin GitHub Pages kontaktiert. Zur Entwicklungsarbeit gehören unabhängige Prüfungen heruntergeladener Dateien und klare Grenzen für Dokumentfunktionen, die beim Export verloren gehen können.</p>
-          <figure class="project-preview">
-            <a href="https://akshat4112.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer"><img src="/projects/pdf-tools-home.jpg" width="1280" height="720" alt="Startseite von PDF Tools mit Links zu PDF-Werkzeugen im Browser und einem Hinweis zur lokalen Verarbeitung" loading="lazy"></a>
-            <figcaption>Screenshot der Anwendung · 29. Oktober 2026</figcaption>
-          </figure>
-          <p class="entry-links"><a href="https://akshat4112.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer">Anwendung öffnen ↗</a><a href="https://github.com/Akshat4112/pdf-tools" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="/posts/pdf-tools-output-validation/" hreflang="en" lang="en">Engineering-Fallstudie (Englisch) →</a></p>
+          <p class="entry-meta">{{ $project.kind }}</p>
+          <h3>{{ $project.title }}</h3>
+          <p>{{ $project.description }}</p>
+          <p class="entry-links">
+            {{- range .links }}
+            {{- $href := .url }}
+            {{- if and $de .germanURL }}{{ $href = .germanURL }}{{ end }}
+            {{- if .local }}{{ $href = $href | relLangURL }}{{ end }}
+            <a href="{{ $href }}"{{ if .englishOnly }} hreflang="en"{{ end }}>{{ index .label $.Lang }}</a>
+            {{- end }}
+          </p>
         </div>
-        <ul class="entry-aside" aria-label="Entwicklungsbereiche"><li>Lokale Verarbeitung</li><li>React · TypeScript</li><li>Ausgabevalidierung</li><li>Browsertests</li></ul>
       </article>
-
-      <article class="work-entry reveal">
-        <div>
-          <p class="entry-meta">2024–heute · Berufliche Arbeit</p>
-          <h3>KI-Systeme für dokumentenintensive Workflows</h3>
-          <p>Finanz- und Versicherungsdokumente sind lang, uneinheitlich und Fehler können teuer werden. Ich entwickle Pipelines, die sie mit OCR, Retrieval, spezialisierten Agenten und Validierung verarbeiten und strukturierte Ergebnisse liefern, die Menschen prüfen können. Die schwierigen Fragen betreffen oft nicht das Modell selbst, sondern die Belege und den richtigen Zeitpunkt für eine Übergabe an Menschen.</p>
-          <p class="entry-links"><a href="{{ "about/#berufserfahrung" | relLangURL }}">Mehr zur Berufserfahrung →</a></p>
-        </div>
-        <ul class="entry-aside" aria-label="Technologiebereiche"><li>Agentic AI</li><li>Azure OpenAI</li><li>OCR</li><li>Evaluation</li></ul>
-      </article>
-
-      <article class="work-entry reveal">
-        <div>
-          <p class="entry-meta">2023 · Forschung</p>
-          <h3>GlyphNet</h3>
-          <p>Phishing-Domains können <em>wie</em> vertrauenswürdige Websites aussehen: Bei <code>paypa1.com</code> ersetzt etwa eine Ziffer das L. GlyphNet rendert Domainnamen als Bilder und erkennt solche visuellen Täuschungen mit einem aufmerksamkeitsbasierten CNN. Das Paper berichtet eine AUC von 0,93 auf 4 Mio. Bildern; die separat gerenderte öffentliche Version umfasst 1,29 Mio. Domainpaare.</p>
-          <p class="entry-links"><a href="https://akshat4112.github.io/Glyphnet/" target="_blank" rel="noopener noreferrer">Projektwebsite ↗</a><a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="https://huggingface.co/datasets/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Datensatz ↗</a></p>
-        </div>
-        <dl class="entry-result"><div><dt>AUC im Paper</dt><dd>0,93</dd></div><div><dt>Datensatz im Paper</dt><dd>4 Mio. Bilder</dd></div></dl>
-      </article>
-
-      <article class="work-entry reveal">
-        <div>
-          <p class="entry-meta">2023 · Forschungsprototyp</p>
-          <h3>SpeakerDiff</h3>
-          <p>Eine offene Frage: Können Diffusionsmodelle Sprecher-Embeddings erzeugen, die eine Stimme anonymisieren, ohne ihre Qualität zu zerstören? SpeakerDiff ist ein Prototyp dafür, keine abschließende Antwort. Der Datenschutz muss im vollständigen Konvertierungssystem evaluiert werden; Code und Experimente sind öffentlich.</p>
-          <p class="entry-links"><a href="https://github.com/Akshat4112/speaker-diffusion" target="_blank" rel="noopener noreferrer">Code und Experimente ↗</a></p>
-        </div>
-        <ul class="entry-aside" aria-label="Forschungsbereiche"><li>Diffusionsmodelle</li><li>Sprache</li><li>Datenschutz</li></ul>
-      </article>
+      {{- end }}
     </div>
-
-    <div class="more-code reveal">
-      <h3>In Entwicklung</h3>
-      <ul>
-        <li><a href="https://github.com/Akshat4112/immopilot-de" target="_blank" rel="noopener noreferrer"><strong>ImmoPilot DE · Noch nicht veröffentlicht</strong><span>Immobilienkauf, Finanzierung und Szenariovergleich für Deutschland. Die Freigabeprüfung für Version 1 läuft.</span></a></li>
-        <li><a href="https://github.com/Akshat4112/nettopilot-de" target="_blank" rel="noopener noreferrer"><strong>NettoPilot DE · In Entwicklung</strong><span>Gehaltsrechner und Stellenangebotsvergleich für Deutschland. Technische Grundlagen und Berechnungen werden entwickelt.</span></a></li>
-      </ul>
-    </div>
-
-    <div class="more-code reveal">
-      <h3>Open-Source-Projekte</h3>
-      <ul>
-        <li><a href="https://github.com/Akshat4112/machine-learning-case-studies" target="_blank" rel="noopener noreferrer"><strong>Machine Learning Case Studies</strong><span>Durchgängige Notebooks zu NLP, Computer Vision und klassischem Machine Learning.</span></a></li>
-        <li><a href="https://github.com/Akshat4112/Awesome-NLP-Resources" target="_blank" rel="noopener noreferrer"><strong>Awesome NLP Resources</strong><span>Eine kuratierte Leseliste mit grundlegenden und praxisorientierten NLP-Ressourcen.</span></a></li>
-        <li><a href="https://github.com/Akshat4112/research-paper-presentations" target="_blank" rel="noopener noreferrer"><strong>Research Paper Presentations</strong><span>Folienbasierte Erklärungen von Machine-Learning- und NLP-Papern.</span></a></li>
-      </ul>
-      <a class="quiet-link" href="https://github.com/Akshat4112?tab=repositories" target="_blank" rel="noopener noreferrer">Alle Repositories ansehen ↗</a>
-    </div>
-  </section>
-
-  <section class="portfolio-section" aria-labelledby="datasets-title">
-    <div class="section-label reveal"><span>02</span><h2 id="datasets-title">Offene Datensätze</h2></div>
-    <p class="section-intro reveal">Zwei Datensätze, die ich veröffentlicht habe, damit andere sie nicht erneut erstellen müssen.</p>
-    <div class="plain-list research-list">
-      <a class="plain-row reveal" href="https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset" target="_blank" rel="noopener noreferrer">
-        <span class="row-year">NLP</span>
-        <span class="row-main"><strong>FinPlainLM – Financial Plain-Language Preference Dataset</strong><small>Vereinfachung von Finanztexten · SFT- und DPO-Splits · 1.500 Beispiele</small></span>
-        <span>↗</span>
-      </a>
-      <a class="plain-row reveal" href="https://huggingface.co/datasets/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">
-        <span class="row-year">Vision</span>
-        <span class="row-main"><strong>GlyphNet Homoglyph Domains</strong><small>Öffentliche Version · 1,29 Mio. Domainpaare · 2,57 Mio. gerenderte Bilder</small></span>
-        <span>↗</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="portfolio-section" aria-labelledby="research-title">
-    <div class="section-label reveal"><span>03</span><h2 id="research-title">Forschung und Publikationen</h2></div>
-    <div class="plain-list research-list">
-      <a class="plain-row reveal" href="https://akshat4112.github.io/Glyphnet/" target="_blank" rel="noopener noreferrer">
-        <span class="row-year">2023</span>
-        <span class="row-main"><strong>GlyphNet: Homoglyph domains dataset and detection using attention-based CNNs</strong><small>Forschungsartikel auf Englisch · Computer Vision und Cybersicherheit</small></span>
-        <span>↗</span>
-      </a>
-      <a class="plain-row reveal" href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">
-        <span class="row-year">Laufend</span>
-        <span class="row-main"><strong>Open-Source-Arbeit und technische Notizen</strong><small>ML-Fallstudien · NLP-Ressourcen · Forschungspräsentationen</small></span>
-        <span>↗</span>
-      </a>
-    </div>
+    <a class="more-link" href="{{ "work/" | relLangURL }}">{{ $copy.allWork }}</a>
   </section>
 
   <section class="portfolio-section" aria-labelledby="writing-title">
-    <div class="section-label reveal"><span>04</span><h2 id="writing-title">Aktuelle Artikel</h2></div>
-    <p class="section-intro reveal">Arbeitsnotizen zu Dingen, die ich lerne, Systemen, die ich entwickle, und offenen Fragen. Die Fachartikel sind derzeit auf Englisch verfügbar.</p>
-    <div class="plain-list writing-list">
-      {{- $englishSite := index (where .Sites "Language.Lang" "en") 0 }}
-      {{- $featured := slice ($englishSite.GetPage "/posts/pdf-tools-output-validation") ($englishSite.GetPage "/posts/llm-agents") ($englishSite.GetPage "/posts/evaluating-llms") ($englishSite.GetPage "/posts/model-extraction-attacks") }}
-      {{- range $page := $featured }}
-      {{- with $page }}
-      <a class="plain-row reveal" href="{{ .RelPermalink }}" hreflang="en" lang="en">
-        <span class="row-year">{{ .Date.Format "2006" }}</span>
-        <span class="row-main"><strong>{{ .Title }}</strong><small><span class="language-badge">English</span> · {{ .ReadingTime }} Min. Lesezeit</small></span>
-        <span>↗</span>
-      </a>
+    <div class="section-label"><h2 id="writing-title">{{ $copy.writingTitle }}</h2></div>
+    <ul class="selected-writing">
+      {{- range site.Data.portfolio.writing }}
+      {{- $entry := . }}
+      {{- with $englishSite.GetPage .page }}
+      <li>
+        <a href="{{ .RelPermalink }}"{{ if $de }} hreflang="en" lang="en"{{ end }}>{{ .Title }}</a>
+        {{- if $de }} <span class="language-badge">Englisch</span>{{ end }}
+        <p>{{ index $entry.summary $.Lang }}</p>
+      </li>
       {{- end }}
       {{- end }}
-    </div>
-    <a class="more-link reveal" href="{{ "posts/" | relLangURL }}">Alle Artikel →</a>
+    </ul>
+    <a class="more-link" href="{{ "posts/" | relLangURL }}">{{ $copy.allWriting }}</a>
   </section>
 
-  <section class="portfolio-section" aria-labelledby="experience-title">
-    <div class="section-label reveal"><span>05</span><h2 id="experience-title">Berufserfahrung</h2></div>
-    <div class="experience-list">
-      <div class="experience-row reveal"><time>2024–heute</time><div><strong>AI Engineer · additiv</strong><p>Agentenbasierte KI, Dokumentenintelligenz und Entscheidungssysteme für Finanz- und Versicherungsanwendungen.</p></div></div>
-      <div class="experience-row reveal"><time>2023–2024</time><div><strong>Machine Learning Engineer · Validaitor</strong><p>Modellrobustheit, adversariales ML, Sicherheit sowie Evaluation von Fairness, Bias und Toxizität.</p></div></div>
-      <div class="experience-row reveal"><time>2022</time><div><strong>Wissenschaftlicher Mitarbeiter · Universität Stuttgart</strong><p>Zeitliche und geografische Repräsentationen für Sprachverstehen.</p></div></div>
-      <div class="experience-row reveal"><time>2018–2021</time><div><strong>Machine Learning Engineer</strong><p>NLP, maschinelle Übersetzung, biomedizinische NER, Sprachverarbeitung, Sprecherdiarisierung und multimodales Lernen.</p></div></div>
-    </div>
-    <a class="more-link reveal" href="{{ "about/#berufserfahrung" | relLangURL }}">Vollständige Berufserfahrung →</a>
+  <section class="portfolio-section home-about" aria-labelledby="about-title">
+    <div class="section-label"><h2 id="about-title">{{ $copy.aboutTitle }}</h2></div>
+    <p>{{ $copy.about }}</p>
+    <a class="more-link" href="{{ "about/" | relLangURL }}">{{ $copy.fullAbout }}</a>
   </section>
-
-  <section class="personal-end reveal" aria-labelledby="personal-title">
-    <h2 id="personal-title">Außerhalb der Arbeit</h2>
-    <p>Ich spiele Tischtennis und Schach und bin gern mit dem Rad in Stuttgart unterwegs.</p>
-  </section>
-
-  <footer class="home-contact reveal">
-    <h2>Kontakt</h2>
-    <a href="mailto:akshat41121995@gmail.com" aria-label="Akshat Gupta eine E-Mail schreiben">E-Mail schreiben →</a>
-  </footer>
-  {{- else }}
-  <header class="personal-intro reveal" aria-labelledby="intro-title">
-    <div class="intro-copy">
-      <p class="intro-role">Applied AI engineer · researcher</p>
-      <h1 id="intro-title">Akshat Gupta</h1>
-      <p class="intro-lede">I build agentic AI and document systems for finance and insurance.</p>
-      <p>My focus is evidence-backed answers, reliable evaluation, and outputs that people can review.</p>
-      <nav class="intro-actions" aria-label="Explore my work">
-        <a class="intro-primary" href="#work">View selected work <span aria-hidden="true">↓</span></a>
-        <a href="{{ "about/" | relLangURL }}">About me <span aria-hidden="true">→</span></a>
-      </nav>
-      <nav class="intro-links" aria-label="Akshat's profiles">
-        <a href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/akshat-rg/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Research ↗</a>
-      </nav>
-    </div>
-    <figure class="intro-portrait">
-      {{- with resources.Get "akshat_gupta.jpg" }}
-      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Akshat Gupta" fetchpriority="high">
-      {{- end }}
-      <figcaption>Stuttgart, Germany</figcaption>
-    </figure>
-  </header>
-
-  <section class="portfolio-section" id="work" aria-labelledby="work-title">
-    <div class="section-label reveal"><span>01</span><h2 id="work-title">Featured projects</h2></div>
-    <p class="section-intro reveal">Production AI, public software, and research show different sides of my work.</p>
-    <div class="work-list">
-      <article class="work-entry reveal">
-        <div>
-          <p class="entry-meta">2026 · Public application</p>
-          <h3>PDF Tools</h3>
-          <p>Fourteen browser-based tools for merging, splitting, organising, reading, and converting PDFs. Selected documents are processed on the device; loading the application still connects to GitHub Pages. The engineering work includes independent checks of downloaded outputs and explicit limits for document features that exports may lose.</p>
-          <figure class="project-preview">
-            <a href="https://akshat4112.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer"><img src="/projects/pdf-tools-home.jpg" width="1280" height="720" alt="PDF Tools homepage with links to its browser-based PDF workflows and local-processing notice" loading="lazy"></a>
-            <figcaption>Application screenshot · 29 October 2026</figcaption>
-          </figure>
-          <p class="entry-links"><a href="https://akshat4112.github.io/pdf-tools/" target="_blank" rel="noopener noreferrer">Open application ↗</a><a href="https://github.com/Akshat4112/pdf-tools" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="/posts/pdf-tools-output-validation/">Engineering case study →</a></p>
-        </div>
-        <ul class="entry-aside" aria-label="Engineering areas"><li>Local processing</li><li>React · TypeScript</li><li>Output validation</li><li>Browser testing</li></ul>
-      </article>
-
-      <article class="work-entry reveal">
-        <div>
-          <p class="entry-meta">2024—Present · Professional work</p>
-          <h3>AI systems for document-heavy workflows</h3>
-          <p>Financial and insurance documents are long, inconsistent, and expensive to get wrong. I build the pipelines that read them — OCR, retrieval, specialised agents, validation — and return structured output a human reviewer can check. The interesting problems are rarely the model; they're grounding and knowing when to hand off to a person.</p>
-          <p class="entry-links"><a href="/about/#experience">Work details →</a></p>
-        </div>
-        <ul class="entry-aside" aria-label="Technology areas"><li>Agentic AI</li><li>Azure OpenAI</li><li>OCR</li><li>Evaluation</li></ul>
-      </article>
-
-      <article class="work-entry reveal">
-        <div>
-          <p class="entry-meta">2023 · Research</p>
-          <h3>GlyphNet</h3>
-          <p>Phishing domains that <em>look</em> like trusted ones — <code>paypa1.com</code> with a digit for an L — can slip past text-based filters. GlyphNet renders the domain as an image and uses an attention-based CNN to spot the visual trick. The paper reports 0.93 AUC on 4M images; the separately rendered public release contains 1.29M domain pairs.</p>
-          <p class="entry-links"><a href="https://akshat4112.github.io/Glyphnet/" target="_blank" rel="noopener noreferrer">Project website ↗</a><a href="https://arxiv.org/abs/2306.10392" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="https://huggingface.co/datasets/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">Dataset ↗</a></p>
-        </div>
-        <dl class="entry-result"><div><dt>Paper AUC</dt><dd>0.93</dd></div><div><dt>Paper dataset</dt><dd>4M images</dd></div></dl>
-      </article>
-
-      <article class="work-entry reveal">
-        <div>
-          <p class="entry-meta">2023 · Research prototype</p>
-          <h3>SpeakerDiff</h3>
-          <p>An open question I keep coming back to: can diffusion models generate speaker embeddings that anonymise a voice without wrecking it? SpeakerDiff is the prototype for testing that. It's not a finished answer — the privacy claim needs evaluation of the full conversion pipeline — but the code and experiments are public.</p>
-          <p class="entry-links"><a href="https://github.com/Akshat4112/speaker-diffusion" target="_blank" rel="noopener noreferrer">Code and experiments ↗</a></p>
-        </div>
-        <ul class="entry-aside" aria-label="Research areas"><li>Diffusion models</li><li>Speech</li><li>Privacy</li></ul>
-      </article>
-    </div>
-
-    <div class="more-code reveal">
-      <h3>In development</h3>
-      <ul>
-        <li><a href="https://github.com/Akshat4112/immopilot-de" target="_blank" rel="noopener noreferrer"><strong>ImmoPilot DE · Unreleased</strong><span>German property-purchase, financing, and scenario comparison. Version 1 release-readiness work is in progress.</span></a></li>
-        <li><a href="https://github.com/Akshat4112/nettopilot-de" target="_blank" rel="noopener noreferrer"><strong>NettoPilot DE · In development</strong><span>A German salary calculator and job-offer comparison tool, with engineering foundations and calculation work in progress.</span></a></li>
-      </ul>
-    </div>
-
-    <div class="more-code reveal">
-      <h3>Open-source projects</h3>
-      <ul>
-        <li><a href="https://github.com/Akshat4112/machine-learning-case-studies" target="_blank" rel="noopener noreferrer"><strong>Machine Learning Case Studies</strong><span>End-to-end notebooks across NLP, vision, and classical ML.</span></a></li>
-        <li><a href="https://github.com/Akshat4112/Awesome-NLP-Resources" target="_blank" rel="noopener noreferrer"><strong>Awesome NLP Resources</strong><span>A curated NLP reading list, from foundations to practical resources.</span></a></li>
-        <li><a href="https://github.com/Akshat4112/research-paper-presentations" target="_blank" rel="noopener noreferrer"><strong>Research Paper Presentations</strong><span>Slide walkthroughs of ML and NLP papers.</span></a></li>
-      </ul>
-      <a class="quiet-link" href="https://github.com/Akshat4112?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories ↗</a>
-    </div>
-  </section>
-
-  <section class="portfolio-section" aria-labelledby="datasets-title">
-    <div class="section-label reveal"><span>02</span><h2 id="datasets-title">Open datasets</h2></div>
-    <p class="section-intro reveal">Two datasets I've released so others don't have to build them.</p>
-    <div class="plain-list research-list">
-      <a class="plain-row reveal" href="https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset" target="_blank" rel="noopener noreferrer">
-        <span class="row-year">NLP</span>
-        <span class="row-main"><strong>FinPlainLM — Financial Plain-Language Preference Dataset</strong><small>1,500 examples · SFT and DPO splits · plain-language financial explanations</small></span>
-        <span>↗</span>
-      </a>
-      <a class="plain-row reveal" href="https://huggingface.co/datasets/Akshat4112/Glyphnet" target="_blank" rel="noopener noreferrer">
-        <span class="row-year">Vision</span>
-        <span class="row-main"><strong>GlyphNet Homoglyph Domains</strong><small>Public release · 1.29M domain pairs · 2.57M rendered images</small></span>
-        <span>↗</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="portfolio-section" aria-labelledby="research-title">
-    <div class="section-label reveal"><span>03</span><h2 id="research-title">Research & publications</h2></div>
-    <div class="plain-list research-list">
-      <a class="plain-row reveal" href="https://akshat4112.github.io/Glyphnet/" target="_blank" rel="noopener noreferrer">
-        <span class="row-year">2023</span>
-        <span class="row-main"><strong>GlyphNet: Homoglyph domains dataset and detection using attention-based CNNs</strong><small>Research paper · Computer vision and cybersecurity</small></span>
-        <span>↗</span>
-      </a>
-      <a class="plain-row reveal" href="https://github.com/Akshat4112" target="_blank" rel="noopener noreferrer">
-        <span class="row-year">Ongoing</span>
-        <span class="row-main"><strong>Open-source work and technical notes</strong><small>ML case studies · NLP resources · research presentations</small></span>
-        <span>↗</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="portfolio-section" aria-labelledby="writing-title">
-    <div class="section-label reveal"><span>04</span><h2 id="writing-title">Recent writing</h2></div>
-    <p class="section-intro reveal">Working notes — things I'm learning, systems I'm building, and questions I haven't closed yet.</p>
-    <div class="plain-list writing-list">
-      {{- $featured := slice (site.GetPage "/posts/pdf-tools-output-validation") (site.GetPage "/posts/llm-agents") (site.GetPage "/posts/evaluating-llms") (site.GetPage "/posts/model-extraction-attacks") }}
-      {{- range $page := $featured }}
-      {{- with $page }}
-      <a class="plain-row reveal" href="{{ .RelPermalink }}">
-        <span class="row-year">{{ .Date.Format "2006" }}</span>
-        <span class="row-main"><strong>{{ .Title }}</strong><small>{{ delimit (.Params.tags | first 3) " · " }} · {{ .ReadingTime }} min read</small></span>
-        <span>↗</span>
-      </a>
-      {{- end }}
-      {{- end }}
-    </div>
-    <a class="more-link reveal" href="/posts/">All writing →</a>
-  </section>
-
-  <section class="portfolio-section" aria-labelledby="experience-title">
-    <div class="section-label reveal"><span>05</span><h2 id="experience-title">Experience</h2></div>
-    <div class="experience-list">
-      <div class="experience-row reveal"><time>2024—Now</time><div><strong>AI Engineer · additiv</strong><p>Agentic document and decision systems for finance and insurance — from OCR to production API.</p></div></div>
-      <div class="experience-row reveal"><time>2023—2024</time><div><strong>Machine Learning Engineer · Validaitor</strong><p>Testing models for the ways they fail: robustness, adversarial inputs, fairness, bias, and toxicity.</p></div></div>
-      <div class="experience-row reveal"><time>2022</time><div><strong>Research Assistant · University of Stuttgart</strong><p>How language models represent time and place.</p></div></div>
-      <div class="experience-row reveal"><time>2018—2021</time><div><strong>Machine Learning Engineer</strong><p>NLP, machine translation, biomedical NER, speech, diarization, and multimodal learning.</p></div></div>
-    </div>
-    <a class="more-link reveal" href="/about/#experience">Complete experience →</a>
-  </section>
-
-  <section class="personal-end reveal" aria-labelledby="personal-title">
-    <h2 id="personal-title">Outside work</h2>
-    <p>I play table tennis and chess, and I like cycling around Stuttgart.</p>
-  </section>
-
-  <footer class="home-contact reveal">
-    <h2>Contact</h2>
-    <a href="mailto:akshat41121995@gmail.com" aria-label="Email Akshat Gupta">Email me →</a>
-  </footer>
-  {{- end }}
 </div>
 {{- end }}

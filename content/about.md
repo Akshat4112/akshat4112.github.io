@@ -86,7 +86,7 @@ I have worked with machine learning since 2018, across NLP, speech, computer vis
 ## Public work
 
 - [PDF Tools](https://akshat4112.github.io/pdf-tools/): a browser application with 14 PDF tools that process documents on the device; [source code](https://github.com/Akshat4112/pdf-tools)
-- [ImmoPilot DE](https://github.com/Akshat4112/immopilot-de): German property-purchase and financing scenarios, with version 1 release readiness in progress
+- [ImmoPilot DE](https://akshat4112.github.io/immopilot-de/): German property-purchase and financing scenarios; the online build is available and development continues
 - [NettoPilot DE](https://github.com/Akshat4112/nettopilot-de): a German salary calculator and job-offer comparison project in development
 - [GlyphNet paper](https://arxiv.org/abs/2306.10392), with public [code](https://github.com/Akshat4112/Glyphnet) and [dataset](https://huggingface.co/datasets/Akshat4112/Glyphnet)
 - [FinPlainLM financial plain-language dataset](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset)
