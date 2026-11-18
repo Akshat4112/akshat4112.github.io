@@ -25,7 +25,7 @@ def main() -> None:
         page = PageMarker()
         page.feed(path.read_text())
         assert page.is_article, f"Missing article marker: {path}"
-    for route in ("", "de", "about", "de/about", "now", "de/now", "privacy", "de/privacy", "posts", "de/posts", "publications/glyphnet"):
+    for route in ("", "de", "about", "de/about", "now", "de/now", "work", "de/work", "privacy", "de/privacy", "posts", "de/posts", "publications/glyphnet"):
         path = root / route / "index.html"
         page = PageMarker()
         page.feed(path.read_text())

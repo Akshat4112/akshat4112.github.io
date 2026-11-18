@@ -86,7 +86,7 @@ Seit 2018 arbeite ich mit Machine Learning, unter anderem in NLP, Sprachverarbei
 ## Öffentliche Arbeiten
 
 - [PDF Tools](https://akshat4112.github.io/pdf-tools/): eine Browser-Anwendung mit 14 PDF-Werkzeugen, die Dokumente auf dem Gerät verarbeiten; [Quellcode](https://github.com/Akshat4112/pdf-tools)
-- [ImmoPilot DE](https://github.com/Akshat4112/immopilot-de): Szenarien für Immobilienkauf und Finanzierung in Deutschland; die Veröffentlichung von Version 1 wird vorbereitet
+- [ImmoPilot DE](https://akshat4112.github.io/immopilot-de/): Szenarien für Immobilienkauf und Finanzierung in Deutschland; die Online-Version ist verfügbar und wird weiterentwickelt
 - [NettoPilot DE](https://github.com/Akshat4112/nettopilot-de): ein Projekt für Gehaltsberechnung und Stellenangebotsvergleich in Deutschland, derzeit in Entwicklung
 - [GlyphNet-Paper](https://arxiv.org/abs/2306.10392) mit öffentlichem [Code](https://github.com/Akshat4112/Glyphnet) und [Datensatz](https://huggingface.co/datasets/Akshat4112/Glyphnet)
 - [FinPlainLM-Datensatz für verständliche Finanzsprache](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset)
