@@ -1,7 +1,19 @@
 en:
   role: Applied AI engineer · researcher
-  intro: I build agentic AI and document systems for finance and insurance at additiv.
-  focus: I care about how these systems are evaluated and how people can check the evidence behind an answer.
+  bio: |-
+    I’m an AI engineer based in Stuttgart. At [additiv](https://additiv.com/), I build multi-agent document workflows for regulated industries, particularly insurance and lending. My work takes these systems from early experiments into production—connecting the flexibility of language models with deterministic business rules, and keeping an audit trail of how each workflow reached its outcome.
+
+    Outside work, I build tools around problems I’m curious about. [ImmoPilot DE](https://akshat4112.github.io/immopilot-de/) explores the numbers behind buying, financing, and renting out property in Germany. [PDF Tools](https://akshat4112.github.io/pdf-tools/) brings everyday document tasks into the browser without uploading files. Both are open source: [ImmoPilot code](https://github.com/Akshat4112/immopilot-de) and [PDF Tools code](https://github.com/Akshat4112/pdf-tools). My interest in financial language also led to [FinPlainLM](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset), a dataset for training models to turn dense financial text into plain language.
+
+    Before additiv, I worked on machine learning security at [Validaitor](https://www.validaitor.com/). There, I approached models from the other side: testing where they break, how they respond to adversarial inputs, and whether watermarking can help identify model copies. Alongside that work, my [master’s thesis, KGGLDM](https://elib.uni-stuttgart.de/bitstream/11682/15432/1/Gupta_MSc_Knowledge_Graph_Guided_Latent_Diffusion_Models.pdf), explored how knowledge graphs could guide diffusion models towards more controllable image generation.
+
+    I completed my [M.Sc. in Computational Linguistics at the University of Stuttgart](https://www.uni-stuttgart.de/en/study/master-programs/computational-linguistics-m.sc./), where I worked across language, speech, and generative modelling. My research included how word meanings vary across time and geography, while [SpeakerDiff](https://github.com/Akshat4112/speaker-diffusion) explored generating speaker representations for voice anonymisation. I continue to share what I learn through [technical writing](/posts/) and collections such as [Awesome NLP Resources](https://github.com/Akshat4112/Awesome-NLP-Resources).
+
+    During that period, I also co-authored [GlyphNet](https://akshat4112.github.io/Glyphnet/), which treats lookalike web-domain detection as a visual recognition problem. The work was accepted at the [2023 AAAI Workshop on Artificial Intelligence for Cyber Security](https://aics.site/AICS2023/program.html), and the [paper](https://arxiv.org/abs/2306.10392), [code](https://github.com/Akshat4112/Glyphnet), and [dataset](https://huggingface.co/datasets/Akshat4112/Glyphnet) are publicly available.
+
+    Before moving to Germany, I worked in India at [Quantiphi](https://quantiphi.com/), [Scanta](https://www.linkedin.com/company/scanta), and [Mobile Programming](https://www.mobileprogramming.com/). Those roles took me through machine translation, medical text analysis, and speech processing. I still develop an [open-source speaker diarisation project](https://github.com/Akshat4112/unsupervised-speaker-diarization), continuing that interest in understanding who spoke when.
+
+    My foundation was a B.Tech. in Computer Science from [Dr. A.P.J. Abdul Kalam Technical University](https://aktu.ac.in/). My final-year project used deep learning to tag product catalogues; other student projects included [School ERP](https://github.com/Akshat4112/school-erp), which remains on GitHub. Away from the keyboard, I enjoy table tennis, chess, cycling, and following financial markets.
   profileLabel: Profiles and contact
   email: Email
   portraitAlt: Portrait of Akshat Gupta
@@ -15,8 +27,20 @@ en:
   fullAbout: About me and my experience
 de:
   role: Ingenieur für angewandte KI · Forscher
-  intro: Bei additiv entwickle ich agentenbasierte KI und Systeme zur Dokumentenverarbeitung für Finanz- und Versicherungsanwendungen.
-  focus: Mich interessiert, wie sich solche Systeme sinnvoll evaluieren lassen und wie Menschen die Belege hinter einer Antwort prüfen können.
+  bio: |-
+    Ich bin KI-Ingenieur und lebe in Stuttgart. Bei [additiv](https://additiv.com/) entwickle ich Multi-Agenten-Systeme für dokumentenbasierte Abläufe in regulierten Branchen, vor allem im Versicherungs- und Kreditgeschäft. Ich begleite diese Systeme von den ersten Experimenten bis zum produktiven Einsatz. Dabei verbinde ich die Flexibilität von Sprachmodellen mit deterministischen Geschäftsregeln und dokumentiere, wie ein Ablauf zu seinem Ergebnis gekommen ist.
+
+    Neben der Arbeit entwickle ich Werkzeuge für Fragen, die mich selbst beschäftigen. Mit [ImmoPilot DE](https://akshat4112.github.io/immopilot-de/) lassen sich Kauf, Finanzierung und Vermietung von Immobilien in Deutschland durchrechnen. [PDF Tools](https://akshat4112.github.io/pdf-tools/) erledigt alltägliche Aufgaben mit PDFs direkt im Browser, ohne die Dateien hochzuladen. Beide Projekte sind Open Source: [ImmoPilot-Quellcode](https://github.com/Akshat4112/immopilot-de) und [PDF-Tools-Quellcode](https://github.com/Akshat4112/pdf-tools). Aus meinem Interesse an Finanzsprache entstand außerdem [FinPlainLM](https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset), ein Trainingsdatensatz für Modelle, die komplexe Finanztexte verständlicher formulieren.
+
+    Vor additiv habe ich bei [Validaitor](https://www.validaitor.com/) an der Sicherheit von Machine-Learning-Modellen gearbeitet. Dort habe ich Modelle aus der entgegengesetzten Perspektive betrachtet: Wo versagen sie, wie reagieren sie auf gezielt manipulierte Eingaben und lassen sich Modellkopien mit Wasserzeichen erkennen? Parallel dazu habe ich in meiner [Masterarbeit KGGLDM](https://elib.uni-stuttgart.de/bitstream/11682/15432/1/Gupta_MSc_Knowledge_Graph_Guided_Latent_Diffusion_Models.pdf) untersucht, wie Wissensgraphen Diffusionsmodelle bei der gezielten Bildgenerierung unterstützen können.
+
+    Meinen [M.Sc. in Computerlinguistik habe ich an der Universität Stuttgart](https://www.uni-stuttgart.de/studium/master/computational-linguistics-m.sc./) abgeschlossen. Dort habe ich mich mit Sprache, Sprachverarbeitung und generativen Modellen beschäftigt. Ich habe untersucht, wie sich Wortbedeutungen über Zeit und Regionen verändern. Mit [SpeakerDiff](https://github.com/Akshat4112/speaker-diffusion) habe ich außerdem erprobt, wie sich Sprecherrepräsentationen für die Stimmanonymisierung generieren lassen. Was ich dabei und seitdem lerne, teile ich in [Fachartikeln](/de/posts/) und Sammlungen wie [Awesome NLP Resources](https://github.com/Akshat4112/Awesome-NLP-Resources).
+
+    In dieser Zeit war ich auch Mitautor von [GlyphNet](https://akshat4112.github.io/Glyphnet/). Darin behandeln wir die Erkennung täuschend ähnlicher Domainnamen als Problem der Bilderkennung. Die Arbeit wurde beim [AAAI-Workshop für KI in der Cybersicherheit 2023](https://aics.site/AICS2023/program.html) angenommen. [Artikel](https://arxiv.org/abs/2306.10392), [Quellcode](https://github.com/Akshat4112/Glyphnet) und [Datensatz](https://huggingface.co/datasets/Akshat4112/Glyphnet) sind öffentlich zugänglich.
+
+    Bevor ich nach Deutschland zog, arbeitete ich in Indien bei [Quantiphi](https://quantiphi.com/), [Scanta](https://www.linkedin.com/company/scanta) und [Mobile Programming](https://www.mobileprogramming.com/). Diese Stationen führten mich von maschineller Übersetzung und medizinischer Textanalyse zur Verarbeitung gesprochener Sprache. Mein [Open-Source-Projekt zur Sprecherdiarisierung](https://github.com/Akshat4112/unsupervised-speaker-diarization) knüpft daran an: Wer hat in einer Aufnahme wann gesprochen?
+
+    Die Grundlage dafür war mein B.Tech. in Informatik an der [Dr. A.P.J. Abdul Kalam Technical University](https://aktu.ac.in/). In meinem Abschlussprojekt nutzte ich Deep Learning, um Produktkataloge automatisch zu verschlagworten. Ein anderes Projekt aus dem Studium, [School ERP](https://github.com/Akshat4112/school-erp), ist weiterhin auf GitHub zu finden. Abseits der Tastatur spiele ich Tischtennis und Schach, fahre Rad und verfolge die Finanzmärkte.
   profileLabel: Profile und Kontakt
   email: E-Mail
   portraitAlt: Porträt von Akshat Gupta
