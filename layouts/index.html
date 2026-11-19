@@ -1,8 +1,6 @@
 {{- define "main" }}
-{{- $de := eq .Lang "de" }}
 {{- $copy := index site.Data.portfolio .Lang }}
 {{- $paragraphs := split $copy.bio "\n\n" }}
-{{- $englishSite := index (where .Sites "Language.Lang" "en") 0 }}
 <div class="portfolio-home">
   <header class="personal-intro" aria-labelledby="intro-title">
     <h1 class="intro-role" id="intro-title">{{ $copy.role }}</h1>
@@ -12,7 +10,7 @@
       {{- end }}
       <p class="intro-location">{{ $copy.location }}</p>
     </div>
-    <p class="intro-opening">{{ index $paragraphs 0 | markdownify }} <a class="intro-work-link" href="#work">{{ $copy.workJump }}</a></p>
+    <p class="intro-opening">{{ index $paragraphs 0 | markdownify }} <a class="intro-work-link" href="{{ "work/" | relLangURL }}">{{ $copy.workJump }}</a></p>
     <div class="intro-bio">{{ delimit (after 1 $paragraphs) "\n\n" | markdownify }}</div>
     <nav class="intro-links" aria-label="{{ $copy.profileLabel }}">
       <a href="https://github.com/Akshat4112">GitHub</a>
@@ -21,53 +19,5 @@
       <a href="mailto:akshat41121995@gmail.com">{{ $copy.email }}</a>
     </nav>
   </header>
-
-  <section class="portfolio-section" id="work" aria-labelledby="work-title">
-    <div class="section-label"><h2 id="work-title">{{ $copy.workTitle }}</h2></div>
-    <div class="work-list">
-      {{- range site.Data.portfolio.featured }}
-      {{- $project := index . $.Lang }}
-      <article class="work-entry" id="{{ .id }}">
-        <div>
-          <p class="entry-meta">{{ $project.kind }}</p>
-          <h3>{{ $project.title }}</h3>
-          <p>{{ $project.description }}</p>
-          <p class="entry-links">
-            {{- range .links }}
-            {{- $href := .url }}
-            {{- if and $de .germanURL }}{{ $href = .germanURL }}{{ end }}
-            {{- if .local }}{{ $href = $href | relLangURL }}{{ end }}
-            <a href="{{ $href }}"{{ if .englishOnly }} hreflang="en"{{ end }}>{{ index .label $.Lang }}</a>
-            {{- end }}
-          </p>
-        </div>
-      </article>
-      {{- end }}
-    </div>
-    <a class="more-link" href="{{ "work/" | relLangURL }}">{{ $copy.allWork }}</a>
-  </section>
-
-  <section class="portfolio-section" aria-labelledby="writing-title">
-    <div class="section-label"><h2 id="writing-title">{{ $copy.writingTitle }}</h2></div>
-    <ul class="selected-writing">
-      {{- range site.Data.portfolio.writing }}
-      {{- $entry := . }}
-      {{- with $englishSite.GetPage .page }}
-      <li>
-        <a href="{{ .RelPermalink }}"{{ if $de }} hreflang="en" lang="en"{{ end }}>{{ .Title }}</a>
-        {{- if $de }} <span class="language-badge">Englisch</span>{{ end }}
-        <p>{{ index $entry.summary $.Lang }}</p>
-      </li>
-      {{- end }}
-      {{- end }}
-    </ul>
-    <a class="more-link" href="{{ "posts/" | relLangURL }}">{{ $copy.allWriting }}</a>
-  </section>
-
-  <section class="portfolio-section home-about" aria-labelledby="about-title">
-    <div class="section-label"><h2 id="about-title">{{ $copy.aboutTitle }}</h2></div>
-    <p>{{ $copy.about }}</p>
-    <a class="more-link" href="{{ "about/" | relLangURL }}">{{ $copy.fullAbout }}</a>
-  </section>
 </div>
 {{- end }}

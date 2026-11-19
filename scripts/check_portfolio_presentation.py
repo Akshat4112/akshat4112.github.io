@@ -31,7 +31,8 @@ def main() -> None:
         portfolio = homepage.elements("portfolio-home")[0]
         headings = [node.attrs.get("id") for node in portfolio.descendants()
                     if node.tag in {"h1", "h2"}]
-        assert headings == ["intro-title", "work-title", "writing-title", "about-title"], headings
+        assert headings == ["intro-title"], headings
+        assert not any(node.tag == "section" for node in portfolio.descendants())
         intro = next(node for node in portfolio.descendants() if node.attrs.get("id") == "intro-title")
         assert intro.tag == "h1" and "Akshat Gupta" not in intro.text()
         header = homepage.elements("personal-intro")[0]
@@ -48,9 +49,8 @@ def main() -> None:
         assert opening.tag == "p" and any(node.attrs.get("href") == "https://additiv.com/"
                                           for node in opening.descendants())
         shortcut = homepage.elements("intro-work-link")[0]
-        assert shortcut in list(opening.descendants()) and shortcut.attrs.get("href") == "#work"
+        assert shortcut in list(opening.descendants()) and shortcut.attrs.get("href") == f"{prefix}/work/"
         assert shortcut.text() == ("Meine Projekte ansehen" if prefix else "See my work")
-        assert any(node.tag == "section" and node.attrs.get("id") == "work" for node in portfolio.descendants())
         bio = homepage.elements("intro-bio")[0]
         assert intro_nodes.index(opening) < intro_nodes.index(bio)
         assert len([node for node in bio.descendants() if node.tag == "p"]) == 6
@@ -68,28 +68,13 @@ def main() -> None:
             "https://github.com/Akshat4112/school-erp",
         } <= bio_links
         assert any(link and link.startswith("https://elib.uni-stuttgart.de/") for link in bio_links)
-        entries = homepage.elements("work-entry")
-        assert [entry.attrs.get("id") for entry in entries] == ["document-ai", "glyphnet", "pdf-tools"]
-        assert [node.text() for node in portfolio.descendants()
-                if node.tag == "h3"].count("GlyphNet") == 1
         links = [node.attrs.get("href") or "" for node in portfolio.descendants() if node.tag == "a"]
-        assert f"{prefix}/work/" in links and f"{prefix}/about/" in links
-        assert f"{prefix}/about/#{experience}" in links
         about = Document(local / "about/index.html")
         assert any(node.attrs.get("id") == experience for node in about.root.descendants())
         assert any(link.startswith("mailto:") for link in links)
         assert "https://huggingface.co/Akshat4112" in links
         assert not any("pdf-tools-home.jpg" in (node.attrs.get("src") or "")
                        for node in portfolio.descendants() if node.tag == "img")
-        articles = homepage.elements("selected-writing")[0]
-        article_links = [node for node in articles.descendants() if node.tag == "a"]
-        assert [node.attrs.get("href") for node in article_links] == [
-            "/posts/llm-agents/", "/posts/evaluating-llms/", "/posts/model-extraction-attacks/",
-        ]
-        if prefix:
-            assert all(node.attrs.get("hreflang") == "en" and node.language == "en"
-                       for node in article_links)
-            assert len(homepage.elements("language-badge")) == 3
         work = Document(local / "work/index.html")
         work_links = [node.attrs.get("href") or "" for node in work.root.descendants()
                       if node.tag == "a"]
@@ -98,16 +83,20 @@ def main() -> None:
                          "research-paper-presentations", "datasets/Akshat4112/Glyphnet"):
             assert any(fragment in link for link in work_links), f"{prefix}: missing {fragment}"
         assert {"/work/", "/de/work/"} <= {urlparse(link).path for link in work_links}
+        assert f"{prefix}/about/#{experience}" in work_links
+        assert not any(urlparse(link).path == f"{prefix}/" and urlparse(link).fragment == "work"
+                       for link in work_links)
         assert any(node.tag == "img" and node.attrs.get("src") == "/projects/pdf-tools-home.jpg"
                    for node in work.root.descendants())
         menu = next(node for node in homepage.root.descendants() if node.attrs.get("id") == "menu")
-        assert f"{prefix}/work/" in {urlparse(node.attrs.get("href") or "").path
-                                     for node in menu.descendants() if node.tag == "a"}
+        menu_paths = {urlparse(node.attrs.get("href") or "").path
+                      for node in menu.descendants() if node.tag == "a"}
+        assert {f"{prefix}/{page}/" for page in ("work", "posts", "publications", "about")} <= menu_paths
     for path in root.rglob("*.html"):
         parser = Links()
         parser.feed(path.read_text())
         assert not any("1Qj6kaZXM40ixUgOAewhZlTj57piWERSw" in link for link in parser.links), f"Outdated CV remains linked: {path}"
-    print("Bilingual homepage biography, hierarchy, Work catalogues, article links and CV verified.")
+    print("Bilingual biography-only homepages, navigation, Work catalogues and CV verified.")
 
 
 if __name__ == "__main__":

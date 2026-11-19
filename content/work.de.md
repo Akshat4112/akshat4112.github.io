@@ -6,7 +6,7 @@ ShowBreadCrumbs: false
 disableShare: true
 ---
 
-Ich arbeite an angewandter KI für Finanz- und Versicherungsanwendungen und entwickle öffentliche Werkzeuge und Forschungsprototypen. Auf der [Startseite](/de/#work) steht eine kurze Auswahl; hier finden sich weitere Projekte.
+Ich arbeite an angewandter KI für Finanz- und Versicherungsanwendungen und entwickle öffentliche Werkzeuge und Forschungsprototypen.
 
 ## Angewandte KI
 
