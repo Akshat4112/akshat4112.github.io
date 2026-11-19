@@ -35,7 +35,7 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 .main { padding-top: 0; }
 
 .header { border-bottom: 1px solid var(--border); background: var(--theme); }
-.nav { max-width: 980px; height: 64px; }
+.nav { max-width: 980px; min-height: 64px; height: auto; }
 .logo a { font-size: 16px; letter-spacing: -0.025em; }
 #menu a { color: var(--secondary); font-size: 14px; font-weight: 500; }
 #menu a:hover, #menu .active { color: var(--primary); }
@@ -72,7 +72,7 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 .personal-intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 180px;
-  grid-template-areas: "role aside" "opening aside" "bio aside" "profiles .";
+  grid-template-areas: "role aside" "opening aside" "profiles aside" "bio aside";
   gap: 10px 48px;
   align-items: start;
   padding: 56px 0 36px;
@@ -96,14 +96,14 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
   line-height: 1.72;
 }
 
-.intro-opening { grid-area: opening; }
+.intro-opening { grid-area: opening; font-size: 1.0625rem; }
 .intro-bio { grid-area: bio; margin-top: 14px; }
 .intro-bio p + p { margin-top: 1em; }
 .intro-opening a, .intro-bio a { color: var(--accent); text-decoration: underline; text-underline-offset: .17em; }
 .intro-work-link { font-weight: 600; white-space: nowrap; }
 
-.intro-links { grid-area: profiles; display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 10px; }
-.intro-links a { color: var(--accent); font-size: 14px; font-weight: 600; }
+.intro-links { grid-area: profiles; display: flex; flex-wrap: wrap; gap: 4px 22px; margin-top: 2px; }
+.intro-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); font-size: 14px; font-weight: 600; }
 .intro-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 .intro-aside { grid-area: aside; }
@@ -166,18 +166,39 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 .not-found-page h1 { margin-top: 12px; color: var(--primary); font-family: var(--serif); font-size: clamp(36px, 7vw, 56px); font-weight: 400; letter-spacing: -.04em; }
 .not-found-page > p:not(.not-found-code) { margin-top: 16px; color: var(--secondary); font-size: 16px; line-height: 1.65; }
 .not-found-page a { display: inline-block; margin-top: 26px; color: var(--accent); font-size: 14px; font-weight: 600; }
-.footer { border-top: 1px solid var(--border); color: var(--secondary); }
-.footer span:last-child { display: none; }
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 24px;
+  padding-block: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--secondary);
+  font-size: 0.8125rem;
+}
+.footer > span { margin: 0; }
+.footer-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; }
+.footer .analytics-footer-link,
+.footer .analytics-settings { margin: 0; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 0; text-decoration: none; }
+.footer .analytics-footer-link:hover,
+.footer .analytics-settings:hover { color: var(--primary); text-decoration: underline; text-underline-offset: .17em; }
 a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 55%, transparent); outline-offset: 4px; }
 
 @media (max-width: 720px) {
+  .nav { padding-bottom: 8px; }
+  #menu { flex-wrap: wrap; overflow: visible; white-space: normal; gap: 0 8px; }
+  #menu li + li { margin-inline-start: 0; }
+  #menu a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; padding-inline: 6px; line-height: 1.5; }
+  .language-selector a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+  button#theme-toggle { min-width: 44px; min-height: 44px; }
   .portfolio-home { width: min(100% - 30px, 900px); }
   .personal-intro {
     grid-template-columns: 66px minmax(0, 1fr);
-    grid-template-rows: 1fr 1fr auto auto auto;
-    grid-template-areas: "portrait role" "portrait location" "opening opening" "bio bio" "profiles profiles";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "portrait role" "portrait location" "opening opening" "profiles profiles" "bio bio";
     gap: 6px 16px;
-    padding: 24px 0;
+    padding: 32px 0;
   }
   .intro-role { align-self: end; }
   .intro-aside { display: contents; }
@@ -185,13 +206,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, va
   .intro-aside .intro-location { grid-area: location; margin-block-start: 0; text-align: start; }
   .portfolio-home .intro-opening { margin-top: 12px; }
   .intro-bio { margin-top: 10px; }
-  .intro-links { margin-top: 14px; }
+  .intro-links { margin-top: 6px; gap: 4px 18px; }
+  .footer { flex-direction: column; justify-content: center; gap: 4px; }
+  .footer-actions { justify-content: center; gap: 4px 20px; }
 }
 
 @media (max-width: 480px) {
   .nav { line-height: 52px; }
   .logo, #menu { margin-inline: 10px; }
-  .language-selector a { min-width: 26px; padding-inline: 5px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

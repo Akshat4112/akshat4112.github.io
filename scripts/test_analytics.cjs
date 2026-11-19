@@ -52,9 +52,13 @@ function element(tagName) {
   });
 }
 
-function page({ path = '/posts/example/', isPost = true, consent = 'accepted', height = 2000 } = {}) {
+function page({ path = '/posts/example/', isPost = true, consent = 'accepted', height = 2000, language = 'en' } = {}) {
   const head = element('head');
   const body = element('body');
+  const footerActions = element('nav');
+  const privacyLink = element('a');
+  privacyLink.href = language === 'de' ? '/de/privacy/' : '/privacy/';
+  footerActions.appendChild(privacyLink);
   // This marker is the contract emitted by Hugo for individual posts only.
   if (isPost) {
     const marker = element('meta');
@@ -72,13 +76,14 @@ function page({ path = '/posts/example/', isPost = true, consent = 'accepted', h
     getBoundingClientRect() { return { top: 100 - window.scrollY }; }
   };
   const document = Object.assign(eventTarget(), {
-    documentElement: { lang: 'en' },
+    documentElement: { lang: language },
     readyState: 'complete',
     head,
     body,
     createElement: element,
     getElementById(id) { return body.children.find(child => child.id === id) || null; },
     querySelector(selector) {
+      if (selector === '.footer-actions') return footerActions;
       if (selector === '.post-single .post-content') return article;
       return head.querySelector(selector) || body.querySelector(selector);
     }
@@ -96,10 +101,24 @@ function page({ path = '/posts/example/', isPost = true, consent = 'accepted', h
     window,
     document,
     body,
+    footerActions,
     scripts: () => head.children.filter(child => child.tagName === 'script'),
     events: () => Array.from(window.dataLayer || [], args => Array.from(args)).filter(args => args[0] === 'event'),
     scroll(y) { window.scrollY = y; window.dispatchEvent({ type: 'scroll' }); }
   };
+}
+
+for (const language of ['en', 'de']) {
+  test(`${language} footer keeps the static privacy link and adds exactly one settings button`, () => {
+    const browser = page({ language, consent: 'rejected' });
+    const children = browser.footerActions.children;
+    assert.equal(children.length, 2);
+    assert.equal(children[0].href, language === 'de' ? '/de/privacy/' : '/privacy/');
+    assert.equal(children[1].tagName, 'button');
+    assert.equal(children[1].className, 'analytics-settings');
+    assert.equal(children[1].textContent, language === 'de' ? 'Analyse-Einstellungen' : 'Analytics settings');
+    assert.equal(browser.scripts().length, 0);
+  });
 }
 
 test('accepted posts emit article_read_75 exactly once at the reading threshold', () => {

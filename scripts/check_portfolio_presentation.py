@@ -28,6 +28,15 @@ def main() -> None:
     for prefix, experience in (("", "experience"), ("/de", "berufserfahrung")):
         local = root / prefix.strip("/")
         homepage = Document(local / "index.html")
+        footer = homepage.elements("footer")[0]
+        assert "Powered by" not in footer.text()
+        assert "Akshat Gupta" in footer.text()
+        actions = homepage.elements("footer-actions")[0]
+        assert actions.tag == "nav" and actions.attrs.get("aria-label")
+        privacy = homepage.elements("analytics-footer-link")[0]
+        assert privacy in list(actions.descendants())
+        assert privacy.attrs.get("href") == f"{prefix}/privacy/"
+        assert privacy.text() == ("Datenschutz" if prefix else "Privacy")
         portfolio = homepage.elements("portfolio-home")[0]
         headings = [node.attrs.get("id") for node in portfolio.descendants()
                     if node.tag in {"h1", "h2"}]
@@ -52,7 +61,10 @@ def main() -> None:
         assert shortcut in list(opening.descendants()) and shortcut.attrs.get("href") == f"{prefix}/work/"
         assert shortcut.text() == ("Meine Projekte ansehen" if prefix else "See my work")
         bio = homepage.elements("intro-bio")[0]
-        assert intro_nodes.index(opening) < intro_nodes.index(bio)
+        profiles = homepage.elements("intro-links")[0]
+        assert intro_nodes.index(opening) < intro_nodes.index(profiles) < intro_nodes.index(bio)
+        assert len(homepage.elements("intro-links")) == 1
+        assert len([node for node in profiles.descendants() if node.tag == "a"]) == 4
         assert len([node for node in bio.descendants() if node.tag == "p"]) == 6
         bio_links = {node.attrs.get("href") for node in bio.descendants() if node.tag == "a"}
         assert {
