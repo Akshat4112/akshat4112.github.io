@@ -34,19 +34,25 @@ def main() -> None:
         assert headings == ["intro-title", "work-title", "writing-title", "about-title"], headings
         intro = next(node for node in portfolio.descendants() if node.attrs.get("id") == "intro-title")
         assert intro.tag == "h1" and "Akshat Gupta" not in intro.text()
-        lead = homepage.elements("intro-lead")[0]
-        intro_nodes = list(lead.descendants())
+        header = homepage.elements("personal-intro")[0]
+        aside = homepage.elements("intro-aside")[0]
+        intro_nodes = list(header.descendants())
         portrait = homepage.elements("intro-portrait")[0]
         location = homepage.elements("intro-location")[0]
         opening = homepage.elements("intro-opening")[0]
         assert all(node in intro_nodes for node in (intro, portrait, location, opening))
+        assert list(aside.descendants()) == [portrait, location]
         assert portrait.tag == "img" and portrait.attrs.get("src") == "/akshat_gupta.jpg"
         assert portrait.attrs.get("alt") and portrait.attrs.get("width") and portrait.attrs.get("height")
         assert location.text() == ("Stuttgart, Deutschland" if prefix else "Stuttgart, Germany")
         assert opening.tag == "p" and any(node.attrs.get("href") == "https://additiv.com/"
                                           for node in opening.descendants())
+        shortcut = homepage.elements("intro-work-link")[0]
+        assert shortcut in list(opening.descendants()) and shortcut.attrs.get("href") == "#work"
+        assert shortcut.text() == ("Meine Projekte ansehen" if prefix else "See my work")
+        assert any(node.tag == "section" and node.attrs.get("id") == "work" for node in portfolio.descendants())
         bio = homepage.elements("intro-bio")[0]
-        assert bio not in intro_nodes
+        assert intro_nodes.index(opening) < intro_nodes.index(bio)
         assert len([node for node in bio.descendants() if node.tag == "p"]) == 6
         bio_links = {node.attrs.get("href") for node in bio.descendants() if node.tag == "a"}
         assert {

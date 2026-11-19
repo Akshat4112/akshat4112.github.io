@@ -72,16 +72,12 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 .portfolio-home p { margin: 0; }
 
 .personal-intro {
-  padding: 56px 0 36px;
-}
-
-.intro-lead {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 180px;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "role portrait" "opening portrait" "opening location";
+  grid-template-areas: "role aside" "opening aside" "bio aside" "profiles .";
   gap: 10px 48px;
   align-items: start;
+  padding: 56px 0 36px;
 }
 
 .intro-role {
@@ -103,16 +99,18 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 }
 
 .intro-opening { grid-area: opening; }
-.intro-bio { margin-top: 24px; }
+.intro-bio { grid-area: bio; margin-top: 14px; }
 .intro-bio p + p { margin-top: 1em; }
 .intro-opening a, .intro-bio a { color: var(--accent); text-decoration: underline; text-underline-offset: .17em; }
+.intro-work-link { font-weight: 600; white-space: nowrap; }
 
-.intro-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 20px; }
+.intro-links { grid-area: profiles; display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 10px; }
 .intro-links a, .entry-links a, .more-link { color: var(--accent); font-size: 14px; font-weight: 600; }
 .intro-links a:hover, .entry-links a:hover, .more-link { text-decoration: underline; text-underline-offset: 4px; }
 
+.intro-aside { grid-area: aside; }
+
 .intro-portrait {
-  grid-area: portrait;
   display: block;
   width: 100%;
   height: auto;
@@ -124,8 +122,8 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
   background: var(--tertiary);
 }
 
-.intro-location {
-  grid-area: location;
+.intro-aside .intro-location {
+  margin-block-start: 10px;
   color: var(--secondary);
   font-family: var(--mono);
   font-size: 0.8125rem;
@@ -208,18 +206,20 @@ a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, va
 
 @media (max-width: 720px) {
   .portfolio-home { width: min(100% - 30px, 900px); }
-  .personal-intro { padding: 24px 0; }
-  .intro-lead {
+  .personal-intro {
     grid-template-columns: 66px minmax(0, 1fr);
-    grid-template-rows: 1fr 1fr auto;
-    grid-template-areas: "portrait role" "portrait location" "opening opening";
+    grid-template-rows: 1fr 1fr auto auto auto;
+    grid-template-areas: "portrait role" "portrait location" "opening opening" "bio bio" "profiles profiles";
     gap: 6px 16px;
+    padding: 24px 0;
   }
   .intro-role { align-self: end; }
-  .intro-portrait { border-radius: 8px; }
-  .intro-location { text-align: start; }
+  .intro-aside { display: contents; }
+  .intro-portrait { grid-area: portrait; border-radius: 8px; }
+  .intro-aside .intro-location { grid-area: location; margin-block-start: 0; text-align: start; }
   .portfolio-home .intro-opening { margin-top: 12px; }
-  .intro-bio { margin-top: 1em; }
+  .intro-bio { margin-top: 10px; }
+  .intro-links { margin-top: 14px; }
   .portfolio-home .portfolio-section { padding: 28px 0; }
 }
 
