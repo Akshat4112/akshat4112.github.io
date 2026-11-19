@@ -28,6 +28,15 @@ def main() -> None:
     for prefix, experience in (("", "experience"), ("/de", "berufserfahrung")):
         local = root / prefix.strip("/")
         homepage = Document(local / "index.html")
+        footer = homepage.elements("footer")[0]
+        assert "Powered by" not in footer.text()
+        assert "Akshat Gupta" in footer.text()
+        actions = homepage.elements("footer-actions")[0]
+        assert actions.tag == "nav" and actions.attrs.get("aria-label")
+        privacy = homepage.elements("analytics-footer-link")[0]
+        assert privacy in list(actions.descendants())
+        assert privacy.attrs.get("href") == f"{prefix}/privacy/"
+        assert privacy.text() == ("Datenschutz" if prefix else "Privacy")
         portfolio = homepage.elements("portfolio-home")[0]
         headings = [node.attrs.get("id") for node in portfolio.descendants()
                     if node.tag in {"h1", "h2"}]
