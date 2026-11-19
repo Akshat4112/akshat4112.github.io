@@ -11,13 +11,13 @@
       <p class="intro-location">{{ $copy.location }}</p>
     </div>
     <p class="intro-opening">{{ index $paragraphs 0 | markdownify }} <a class="intro-work-link" href="{{ "work/" | relLangURL }}">{{ $copy.workJump }}</a></p>
-    <div class="intro-bio">{{ delimit (after 1 $paragraphs) "\n\n" | markdownify }}</div>
     <nav class="intro-links" aria-label="{{ $copy.profileLabel }}">
       <a href="https://github.com/Akshat4112">GitHub</a>
       <a href="https://www.linkedin.com/in/akshat-rg/">LinkedIn</a>
       <a href="https://huggingface.co/Akshat4112">Hugging Face</a>
       <a href="mailto:akshat41121995@gmail.com">{{ $copy.email }}</a>
     </nav>
+    <div class="intro-bio">{{ delimit (after 1 $paragraphs) "\n\n" | markdownify }}</div>
   </header>
 </div>
 {{- end }}

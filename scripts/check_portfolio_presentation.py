@@ -52,7 +52,10 @@ def main() -> None:
         assert shortcut in list(opening.descendants()) and shortcut.attrs.get("href") == f"{prefix}/work/"
         assert shortcut.text() == ("Meine Projekte ansehen" if prefix else "See my work")
         bio = homepage.elements("intro-bio")[0]
-        assert intro_nodes.index(opening) < intro_nodes.index(bio)
+        profiles = homepage.elements("intro-links")[0]
+        assert intro_nodes.index(opening) < intro_nodes.index(profiles) < intro_nodes.index(bio)
+        assert len(homepage.elements("intro-links")) == 1
+        assert len([node for node in profiles.descendants() if node.tag == "a"]) == 4
         assert len([node for node in bio.descendants() if node.tag == "p"]) == 6
         bio_links = {node.attrs.get("href") for node in bio.descendants() if node.tag == "a"}
         assert {
