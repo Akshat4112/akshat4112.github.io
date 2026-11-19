@@ -161,13 +161,8 @@
   function ready() {
     if (choice === 'accepted') start();
     render();
-    var footer = document.querySelector('.footer');
+    var footer = document.querySelector('.footer-actions');
     if (footer) {
-      var policy = document.createElement('a');
-      policy.href = german ? '/de/privacy/' : '/privacy/';
-      policy.textContent = german ? 'Datenschutz' : 'Privacy';
-      policy.className = 'analytics-footer-link';
-      footer.appendChild(policy);
       var settings = button(german ? 'Analyse-Einstellungen' : 'Analytics settings', function () {
         choice = null;
         render();
