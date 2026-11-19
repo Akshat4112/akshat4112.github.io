@@ -34,11 +34,23 @@ def main() -> None:
         assert headings == ["intro-title", "work-title", "writing-title", "about-title"], headings
         intro = next(node for node in portfolio.descendants() if node.attrs.get("id") == "intro-title")
         assert intro.tag == "h1" and "Akshat Gupta" not in intro.text()
+        lead = homepage.elements("intro-lead")[0]
+        intro_nodes = list(lead.descendants())
+        portrait = homepage.elements("intro-portrait")[0]
+        location = homepage.elements("intro-location")[0]
+        opening = homepage.elements("intro-opening")[0]
+        assert all(node in intro_nodes for node in (intro, portrait, location, opening))
+        assert portrait.tag == "img" and portrait.attrs.get("src") == "/akshat_gupta.jpg"
+        assert portrait.attrs.get("alt") and portrait.attrs.get("width") and portrait.attrs.get("height")
+        assert location.text() == ("Stuttgart, Deutschland" if prefix else "Stuttgart, Germany")
+        assert opening.tag == "p" and any(node.attrs.get("href") == "https://additiv.com/"
+                                          for node in opening.descendants())
         bio = homepage.elements("intro-bio")[0]
-        assert len([node for node in bio.descendants() if node.tag == "p"]) == 7
+        assert bio not in intro_nodes
+        assert len([node for node in bio.descendants() if node.tag == "p"]) == 6
         bio_links = {node.attrs.get("href") for node in bio.descendants() if node.tag == "a"}
         assert {
-            "https://additiv.com/", "https://www.validaitor.com/",
+            "https://www.validaitor.com/",
             "https://akshat4112.github.io/immopilot-de/", "https://github.com/Akshat4112/immopilot-de",
             "https://akshat4112.github.io/pdf-tools/", "https://github.com/Akshat4112/pdf-tools",
             "https://huggingface.co/datasets/Akshat4112/finplainlm-dpo-dataset",

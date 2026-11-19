@@ -1,25 +1,25 @@
 {{- define "main" }}
 {{- $de := eq .Lang "de" }}
 {{- $copy := index site.Data.portfolio .Lang }}
+{{- $paragraphs := split $copy.bio "\n\n" }}
 {{- $englishSite := index (where .Sites "Language.Lang" "en") 0 }}
 <div class="portfolio-home">
   <header class="personal-intro" aria-labelledby="intro-title">
-    <div class="intro-copy">
+    <div class="intro-lead">
       <h1 class="intro-role" id="intro-title">{{ $copy.role }}</h1>
-      <div class="intro-bio">{{ $copy.bio | markdownify }}</div>
-      <nav class="intro-links" aria-label="{{ $copy.profileLabel }}">
-        <a href="https://github.com/Akshat4112">GitHub</a>
-        <a href="https://www.linkedin.com/in/akshat-rg/">LinkedIn</a>
-        <a href="https://huggingface.co/Akshat4112">Hugging Face</a>
-        <a href="mailto:akshat41121995@gmail.com">{{ $copy.email }}</a>
-      </nav>
-    </div>
-    <figure class="intro-portrait">
       {{- with resources.Get "akshat_gupta.jpg" }}
-      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $copy.portraitAlt }}" fetchpriority="high">
+      <img class="intro-portrait" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $copy.portraitAlt }}" fetchpriority="high">
       {{- end }}
-      <figcaption>{{ $copy.location }}</figcaption>
-    </figure>
+      <p class="intro-location">{{ $copy.location }}</p>
+      <p class="intro-opening">{{ index $paragraphs 0 | markdownify }}</p>
+    </div>
+    <div class="intro-bio">{{ delimit (after 1 $paragraphs) "\n\n" | markdownify }}</div>
+    <nav class="intro-links" aria-label="{{ $copy.profileLabel }}">
+      <a href="https://github.com/Akshat4112">GitHub</a>
+      <a href="https://www.linkedin.com/in/akshat-rg/">LinkedIn</a>
+      <a href="https://huggingface.co/Akshat4112">Hugging Face</a>
+      <a href="mailto:akshat41121995@gmail.com">{{ $copy.email }}</a>
+    </nav>
   </header>
 
   <section class="portfolio-section" id="work" aria-labelledby="work-title">
