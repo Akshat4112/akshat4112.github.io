@@ -5,13 +5,12 @@
 <div class="portfolio-home">
   <header class="personal-intro" aria-labelledby="intro-title">
     <div class="intro-copy">
-      <p class="intro-role">{{ $copy.role }}</p>
-      <h1 id="intro-title">Akshat Gupta</h1>
-      <p class="intro-lede">{{ $copy.intro }}</p>
-      <p>{{ $copy.focus }}</p>
+      <h1 class="intro-role" id="intro-title">{{ $copy.role }}</h1>
+      <div class="intro-bio">{{ $copy.bio | markdownify }}</div>
       <nav class="intro-links" aria-label="{{ $copy.profileLabel }}">
         <a href="https://github.com/Akshat4112">GitHub</a>
         <a href="https://www.linkedin.com/in/akshat-rg/">LinkedIn</a>
+        <a href="https://huggingface.co/Akshat4112">Hugging Face</a>
         <a href="mailto:akshat41121995@gmail.com">{{ $copy.email }}</a>
       </nav>
     </div>
