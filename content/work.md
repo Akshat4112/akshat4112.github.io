@@ -6,7 +6,7 @@ ShowBreadCrumbs: false
 disableShare: true
 ---
 
-I work on applied AI in finance and insurance and build tools and research prototypes in public. The [homepage](/#work) has a short selection; this page is the fuller index.
+I work on applied AI in finance and insurance and build tools and research prototypes in public.
 
 ## Applied AI
 

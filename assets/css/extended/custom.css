@@ -67,8 +67,6 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 }
 
 .portfolio-home h1,
-.portfolio-home h2,
-.portfolio-home h3,
 .portfolio-home p { margin: 0; }
 
 .personal-intro {
@@ -105,8 +103,8 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
 .intro-work-link { font-weight: 600; white-space: nowrap; }
 
 .intro-links { grid-area: profiles; display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 10px; }
-.intro-links a, .entry-links a, .more-link { color: var(--accent); font-size: 14px; font-weight: 600; }
-.intro-links a:hover, .entry-links a:hover, .more-link { text-decoration: underline; text-underline-offset: 4px; }
+.intro-links a { color: var(--accent); font-size: 14px; font-weight: 600; }
+.intro-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 .intro-aside { grid-area: aside; }
 
@@ -129,38 +127,6 @@ body { font-family: var(--sans); font-size: 16px; letter-spacing: -0.01em; }
   font-size: 0.8125rem;
   text-align: center;
 }
-
-
-.portfolio-section { border-bottom: 1px solid var(--border); }
-.section-label h2 { color: var(--primary); font-family: var(--serif); font-weight: 400; letter-spacing: -.04em; }
-.work-list { border-top: 1px solid var(--border); }
-.work-entry { border-bottom: 1px solid var(--border); }
-.entry-meta { color: var(--secondary); font-family: var(--mono); font-size: 0.8125rem; }
-.work-entry h3 { margin-top: 9px; color: var(--primary); font-family: var(--serif); font-weight: 400; letter-spacing: -.035em; line-height: 1.12; }
-.work-entry > div > p:not(.entry-meta):not(.entry-links) { margin-top: 12px; }
-.entry-links { display: flex; flex-wrap: wrap; }
-.more-link { display: inline-block; }
-
-/* Compact homepage index; the full project catalogue lives on Work. */
-.portfolio-home .portfolio-section { padding: 36px 0; }
-.portfolio-home .section-label { display: block; margin-bottom: 20px; }
-.portfolio-home .section-label h2 { font-size: clamp(27px, 4.5vw, 36px); }
-.portfolio-home .work-entry { display: block; padding: 20px 0; }
-.portfolio-home .work-entry h3 { font-size: clamp(22px, 3vw, 27px); }
-.portfolio-home .work-entry > div > p:not(.entry-meta):not(.entry-links),
-.portfolio-home .home-about > p {
-  max-width: 680px;
-  color: var(--content);
-  font-size: 1rem;
-  line-height: 1.65;
-}
-.portfolio-home .entry-links { gap: 8px 18px; margin-top: 12px !important; }
-.portfolio-home .more-link { margin: 16px 0 0; }
-.selected-writing { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
-.selected-writing li { padding: 14px 0; border-bottom: 1px solid var(--border); }
-.selected-writing li a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
-.selected-writing li p { max-width: 680px; margin-top: 5px; color: var(--secondary); line-height: 1.55; }
-.portfolio-home .home-about { border-bottom: 0; }
 
 
 .post-single, .post-header, .post-content { letter-spacing: -.01em; }
@@ -220,7 +186,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, va
   .portfolio-home .intro-opening { margin-top: 12px; }
   .intro-bio { margin-top: 10px; }
   .intro-links { margin-top: 14px; }
-  .portfolio-home .portfolio-section { padding: 28px 0; }
 }
 
 @media (max-width: 480px) {

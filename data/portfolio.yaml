@@ -18,14 +18,7 @@ en:
   email: Email
   portraitAlt: Portrait of Akshat Gupta
   location: Stuttgart, Germany
-  workTitle: Work and research
   workJump: See my work
-  allWork: See all projects
-  writingTitle: Selected writing
-  allWriting: Browse the writing archive
-  aboutTitle: A little about me
-  about: I studied Computational Linguistics at the University of Stuttgart. Before working on document AI, I worked on NLP, speech and adversarial machine learning. Away from the keyboard, I play table tennis and chess and cycle around Stuttgart.
-  fullAbout: About me and my experience
 de:
   role: Ingenieur für angewandte KI · Forscher
   bio: |-
@@ -46,70 +39,4 @@ de:
   email: E-Mail
   portraitAlt: Porträt von Akshat Gupta
   location: Stuttgart, Deutschland
-  workTitle: Projekte und Forschung
   workJump: Meine Projekte ansehen
-  allWork: Alle Projekte ansehen
-  writingTitle: Ausgewählte Artikel
-  allWriting: Zum Artikelarchiv
-  aboutTitle: Ein bisschen über mich
-  about: Ich habe Computerlinguistik an der Universität Stuttgart studiert. Vor meiner Arbeit an KI für Dokumente habe ich mich mit NLP, Sprachverarbeitung und adversarialem maschinellem Lernen beschäftigt. In meiner Freizeit spiele ich Tischtennis und Schach und fahre Rad in Stuttgart.
-  fullAbout: Mehr über mich und meine Berufserfahrung
-featured:
-  - id: document-ai
-    en:
-      kind: Professional work
-      title: Document AI for finance and insurance
-      description: I build workflows that combine OCR, retrieval and specialised agents to extract structured information from complex documents. Validation and source references help a human reviewer check the result before it informs a decision.
-    de:
-      kind: Berufliche Arbeit
-      title: KI für Finanz- und Versicherungsdokumente
-      description: Ich entwickle Abläufe, die OCR, Retrieval und spezialisierte Agenten verbinden, um strukturierte Informationen aus komplexen Dokumenten zu gewinnen. Validierung und Quellenangaben helfen dabei, das Ergebnis vor einer Entscheidung zu prüfen.
-    links:
-      - url: "about/#experience"
-        local: true
-        germanURL: "about/#berufserfahrung"
-        label: { en: "Professional experience", de: "Berufserfahrung" }
-  - id: glyphnet
-    en:
-      kind: Published research · AAAI AICS 2023
-      title: GlyphNet
-      description: I co-authored this study on using rendered domain names to detect lookalike phishing domains. The paper reports an AUC of 0.93 in its own experiment on 4 million images; the public dataset is a separate release.
-    de:
-      kind: Veröffentlichte Forschung · AAAI AICS 2023
-      title: GlyphNet
-      description: Als Mitautor habe ich untersucht, wie sich täuschend ähnliche Phishing-Domains anhand gerenderter Domainnamen erkennen lassen. Das Paper berichtet eine AUC von 0,93 im eigenen Experiment mit 4 Millionen Bildern. Der öffentliche Datensatz ist eine separate Veröffentlichung.
-    links:
-      - url: https://arxiv.org/abs/2306.10392
-        label: { en: Paper, de: Paper }
-      - url: https://github.com/Akshat4112/Glyphnet
-        label: { en: Code, de: Code }
-      - url: https://huggingface.co/datasets/Akshat4112/Glyphnet
-        label: { en: Dataset, de: Datensatz }
-  - id: pdf-tools
-    en:
-      kind: Open-source application
-      title: PDF Tools
-      description: I built a browser application for everyday PDF tasks that processes selected documents on the device. The case study explains how I verify the downloaded file independently from the preview.
-    de:
-      kind: Open-Source-Anwendung
-      title: PDF Tools
-      description: Ich habe eine Browser-Anwendung für alltägliche PDF-Aufgaben entwickelt, die ausgewählte Dokumente lokal verarbeitet. In der Fallstudie erkläre ich, wie ich die heruntergeladene Datei unabhängig von der Vorschau prüfe.
-    links:
-      - url: https://akshat4112.github.io/pdf-tools/
-        label: { en: Open PDF Tools, de: PDF Tools öffnen }
-      - url: /posts/pdf-tools-output-validation/
-        englishOnly: true
-        label: { en: Engineering case study, de: "Fallstudie (Englisch)" }
-writing:
-  - page: /posts/llm-agents
-    summary:
-      en: "How to make tool-using agents reliable with explicit permissions, safe retries and tests of the full workflow."
-      de: "Wie klare Berechtigungen, sichere Wiederholungen und Tests des gesamten Ablaufs Agenten mit Werkzeugzugriff verlässlicher machen."
-  - page: /posts/evaluating-llms
-    summary:
-      en: "How to decide whether an LLM system is ready to release by measuring quality, failure modes, latency and cost."
-      de: "Wie sich anhand von Qualität, Fehlerfällen, Latenz und Kosten beurteilen lässt, ob ein LLM-System zur Freigabe bereit ist."
-  - page: /posts/model-extraction-attacks
-    summary:
-      en: "What prediction APIs reveal about a model, how to measure the risk and where defences help."
-      de: "Was Vorhersage-APIs über ein Modell preisgeben, wie sich das Risiko messen lässt und wo Schutzmaßnahmen helfen."

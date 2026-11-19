@@ -34,13 +34,12 @@ def archive_links(path: Path) -> list[str]:
 
 def main() -> None:
     for language in ("", "de/"):
-        homepage = (PUBLIC / language / "index.html").read_text(encoding="utf-8")
         work = (PUBLIC / language / "work/index.html").read_text(encoding="utf-8")
         for project in PROJECTS:
             if f"https://github.com/Akshat4112/{project}" not in work:
                 raise SystemExit(f"{language or 'English'} Work page omits {project}")
-        if "/posts/pdf-tools-output-validation/" not in homepage:
-            raise SystemExit(f"{language or 'English'} homepage omits the engineering case study")
+        if "/posts/pdf-tools-output-validation/" not in work:
+            raise SystemExit(f"{language or 'English'} Work page omits the engineering case study")
 
     english = archive_links(PUBLIC / "posts/index.html")
     for path in sorted((PUBLIC / "posts/page").glob("*/index.html"), key=lambda p: int(p.parent.name)):
